@@ -1,0 +1,18 @@
+<div class="header">
+  <h1>ANTON X</h1>
+  <div class="nav-lang-container">
+    <%- include('nav.ejs', { database: database }) %>
+    <div class="lang-menu">
+      <a href="javascript:void(0)" onclick="changeLanguage('de')">Deutsch</a> |
+      <a href="javascript:void(0)" onclick="changeLanguage('en')">English</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function changeLanguage(lang) {
+    var currentPath = window.location.pathname;
+    var newPath = '/' + lang + currentPath.substring(3);
+    window.location.href = newPath;
+  }
+</script>

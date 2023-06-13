@@ -1,0 +1,13 @@
+<div class="proj-media">
+  <% for (var i = 0; i < proj_database.media.length; i++) { 
+    if (proj_database.media[i].type=="youtube") { %>
+  <div class="iframe-container">
+    <iframe src=<%=proj_database.media[i].src %> frameborder="0" allowfullscreen class="youtube-video"></iframe>
+  </div>
+  <% }
+    else if (proj_database.media[i].type=="img") { %>
+  <img src=<%=proj_database.media[i].src %>>
+  <% }
+
+   } %>
+</div>

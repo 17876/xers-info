@@ -1,0 +1,128 @@
+{
+    "de": {
+        "language": "de",
+        "nav": ["Home", "About", "Konzeption", "Kontakt"],
+        "shortabout": "Anton X ist ein Komponist, Medienkünstler, Musiker und Lyriker.",
+        "projects": {
+            "mama-rodina-lenin": {
+                "id": 1,
+                "src": "/projects/mama-rodina-lenin",
+                "img_src": "/mama_rodina_lenin/img/mama_rodina_lenin_thumbnail.png",
+                "title": "Mama, Vaterland, Lenin",
+                "subtitle": "Audio, Video, Live-Audio, Live-Video",
+                "description": "Mama, Vaterland, Lenin<br>Mama, Rodina, Lenin<br>&#1052;&#1072;&#1084;&#1072;, &#1056;&#1086;&#1076;&#1080;&#1085;&#1072;, &#1051;&#1077;&#1085;&#1080;&#1085;<br>Ein Jahr Arbeit<br>Die ersten Ideen<br>&nbsp;Material sammeln<br>&nbsp;&nbsp;Skizzen und Texte &#8211; vor dem Krieg<br>Ist ber Zuhause<br>&nbsp;Schule<br>&nbsp;&nbsp;Sozialisation<br>&nbsp;&nbsp;&nbsp;Geschichte<br>&nbsp;&nbsp;&nbsp;&nbsp;Propaganda<br>Horror<br>&nbsp;Vergangenheit<br>&nbsp;&nbsp;Jetzt<br><br>Symmetrische Struktur stofflich<br>&nbsp;nicht zeitlich<br>Dokumentaraufnahmen von Tscherepowez aus verschiedenen Jahrzehnten<br>&nbsp;60er, 70er, 80er, 90er<br>Dokumentaraufnahmen meines Dorfes Glukhoe<br>&nbsp;2021<br>Dokumentaraufnahmen des Ersten Tschetschenienkrieges<br>Dokumentaraufnahmen des Krieges der Sowjetunion in Afghanistan<br>Stalins Erschie&#223;ungslisten f&#252;r Charkiw<br>&nbsp;in der Schreibvorlage der ersten Klasse <br>Meine Fibel<br>Die S&#228;tze daraus<br>&nbsp;in die Stalins Erschie&#223;ungslisten reinmontiert<br>Ein Video aus Charkiw nach den ersten Bomben<br>&nbsp;die mir die Jungs geschickt<br>&nbsp;&nbsp;die bei uns im M&#228;rz waren<br><br>Polyphonie der Zeiten<br><br>Am Anfang lese ich Eugen Onegin im Alter von f&#252;nf vor<br>&nbsp;von meinem Vater aufgenommen<br>Am Ende lese ich Eugen Onegin im Alter von 38 vor<br>&nbsp;von mir selbst aufgenommen<br>Am Anfang jede f&#252;nfj&#228;hrige Silbe granular eingefroren<br>Im Laufe dieser 17 Minuten altern sich die Silben<br>Klangalterung echot Fleischalterung<br><br>Polyphonie der Zeiten<br><br>Die Silben sprechen aus der Fibel<br>Die Silben sprechen &#252;ber den Gro&#223;en Terror<br><br>Kein 100%-fixed-media-Ding<br>Beim Screening: In der strukturellen Mitte ein Live-Einschub<br>Auf YouTube &#8211; ohne<br><br>&#1053;&#1077;&#1090; &#1074;&#1086;&#1081;&#1085;&#1077;!<br>",
+                "media": [
+                    {
+                        "type": "youtube",
+                        "src": "https://www.youtube.com/embed/5isxyVFdVBU"
+                    }
+                ],
+                "project_meta": {
+                    "title": "Projektinformation",
+                    "meta": [
+                        {
+                            "type": "media",
+                            "name": "Medien",
+                            "value": "Audio, Video, Live-Audio, Live-Audio"
+                        },
+                        {
+                            "type": "duration",
+                            "name": "Dauer",
+                            "value": "27'24''"
+                        },
+                        {
+                            "type": "date",
+                            "name": "Datum",
+                            "value": "13. Nov 2022"
+                        }
+                    ]
+                }
+            },
+            "pseudoanarchy-of-demons": {
+                "id": 2,
+                "src": "/projects/pseudoanarchy-of-demons",
+                "img_src": "/pseudoanarchy_of_demons/img/demons_thumb.jpg",
+                "title": "Pseudoanarchy of Demons",
+                "subtitle": "Text",
+                "description": "",
+                "media": [
+                    {
+                        "type": "img",
+                        "src": "/pseudoanarchy_of_demons/img/demons_post.jpg"
+                    },
+                    {
+                        "type": "pdf",
+                        "src": "/pseudoanarchy_of_demons/img/demons_post.jpg"
+                    }
+                ],
+                "project_meta": {
+                    "title": "Projektinformation",
+                    "meta": [
+                        {
+                            "type": "media",
+                            "name": "Medien",
+                            "value": "Text"
+                        },
+                        {
+                            "type": "language",
+                            "name": "Sprache",
+                            "value": "Ru"
+                        },
+                        {
+                            "type": "link",
+                            "name": "Link",
+                            "value": "PDF",
+                            "src": "/pseudoanarchy_of_demons/demons_v01_a5_no_bleed.pdf"
+                        },
+                        {
+                            "type": "date",
+                            "name": "Datum",
+                            "value": "27. Okt 2022"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "en": {
+        "language": "en",
+        "nav": ["Home", "About", "Concept", "Contact"],
+        "shortabout": "Anton X is a composer, media artist, musician and poet.",
+        "projects": {
+            "mama-rodina-lenin": {
+                "id": 1,
+                "src": "/projects/mama-rodina-lenin",
+                "img_src": "/mama_rodina_lenin/img/mama_rodina_lenin_thumbnail.png",
+                "title": "Mum, Motherland, Lenin",
+                "subtitle": "Audio, video, live audio, live video",
+                "description": "Mum, Motherland, Lenin<br>Mama, Rodina, Lenin<br>&#1052;&#1072;&#1084;&#1072;, &#1056;&#1086;&#1076;&#1080;&#1085;&#1072;, &#1051;&#1077;&#1085;&#1080;&#1085;<br>One year of work<br>The first ideas<br>&nbsp;collecting material<br>&nbsp;&nbsp;sketches and texts - before the war<br>Is about home<br>&nbsp;school<br>&nbsp;&nbsp;socialisation<br>&nbsp;&nbsp;&nbsp;history<br>&nbsp;&nbsp;&nbsp;&nbsp;propaganda<br>Horror<br>&nbsp;past<br>&nbsp;&nbsp;now<br><br>Symmetrical structure material<br>&nbsp;not temporal<br>Documentary footages of Cherepovets from different decades<br>&nbsp;60s, 70s, 80s, 90s<br>Documentary footage of my village Glukhoe<br>&nbsp;2021<br>Documentary footage of the First Chechen War<br>Documentary footage of the Soviet Union's war in Afghanistan<br>Stalin's shooting lists for Kharkiv<br>&nbsp;in the first grade writing primer<br>My soviet alphabet book<br>&nbsp;the sentences from it<br>&nbsp;&nbsp;montaged into Stalin's shooting lists<br>A video from Kharkiv after the first bombs<br>&nbsp;that the guys sent me<br>&nbsp;&nbsp;who were at our place in March<br><br>Polyphony of times<br><br>At the beginning I read out Eugene Onegin at the age of five<br>&nbsp;recorded by my father<br>At the end I read Eugene Onegin at the age of 38<br>&nbsp;recorded by myself<br>At the beginning every five year old syllable granularly frozen<br>In the course of these 17 minutes the syllables age<br>Sound ageing echoes flesh ageing<br><br>Polyphony of the ages<br><br>The syllables speak from the alphabet book<br>The syllables speak of the Great Terror<br><br>Not a 100%-fixed-media thing<br>At the screening: in the structural middle a live insertion<br>On YouTube - without<br>",
+                "media": [
+                    {
+                        "type": "youtube",
+                        "src": "https://www.youtube.com/embed/5isxyVFdVBU"
+                    }
+                ],
+                "project_meta": {
+                    "title": "Project information",
+                    "meta": [
+                        {
+                            "type": "media",
+                            "name": "Media",
+                            "value": "Audio, Video, Live-Audio, Live-Audio"
+                        },
+                        {
+                            "type": "duration",
+                            "name": "Duration",
+                            "value": "27'24''"
+                        },
+                        {
+                            "type": "date",
+                            "name": "Date",
+                            "value": "Nov 13th, 2022"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

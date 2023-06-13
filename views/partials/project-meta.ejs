@@ -1,0 +1,17 @@
+<div id="project-meta">
+  <p>
+    <b><%=proj_database.project_meta.title%>:</b>
+  </p>
+  <% for (var i = 0; i < proj_database.project_meta.meta.length; i++) {
+    if (proj_database.project_meta.meta[i].type=="link") { %>
+  <p>
+    <%=proj_database.project_meta.meta[i].name%>: <a href=<%=proj_database.project_meta.meta[i].src%>><%=proj_database.project_meta.meta[i].value%></a>
+  </p>
+  <% }
+  else { %>
+  <p>
+    <%=proj_database.project_meta.meta[i].name%>: <%=proj_database.project_meta.meta[i].value%>
+  </p>
+  <% } %>
+  <% } %>
+</div>
