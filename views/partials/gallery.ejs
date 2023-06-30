@@ -1,0 +1,26 @@
+<div class="gallery-wrapper">
+  <p class="gallery-title"><%- media.title %></p>
+  <div class="flex-container">
+    <div class="gallery-container">
+
+      <% for (var j = 0; j< media.images.length; j++) { %>
+      <a href=<%=media.images[j].src%> target="_blank">
+        <img src=<%=media.images[j].src %> style="<%=media.images[j].style %>">
+      </a>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<script>
+  //making gallery elements to links, opening in an pop up
+  var images = document.querySelectorAll('.gallery-container a');
+  images.forEach(function(image) {
+    image.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the link from navigating to the full-size image
+      var fullImageURL = this.href;
+      var windowFeatures = 'width=800,height=600,resizable,scrollbars=yes'; // Customize the pop-up window features
+      window.open(fullImageURL, '_blank', windowFeatures);
+    });
+  });
+</script>

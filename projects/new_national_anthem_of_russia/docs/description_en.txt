@@ -1,0 +1,8 @@
+The constitution of Russia is set to music word by word.
+The word president triggers octaves.
+The word people triggers the whole piano keyboard.
+ASCII values of all other words are translated into chords.
+
+///
+
+The constitution of Russia is set to music word by word.<br>The word president triggers octaves.<br>The word people triggers the whole piano keyboard.<br>ASCII values of all other words are translated into chords.

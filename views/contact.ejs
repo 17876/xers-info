@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `ANTON X - ${database.contact.title}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="contact-title">
+      <%- database.contact.title %>
+    </div>
+    <div class="flex-container">
+      <div class="contact">
+        <%- database.contact.text %>
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>

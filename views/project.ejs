@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang=<%= database.lang %>>
 
-<%- include('./partials/head.ejs') %>
+<% let title = `ANTON X - ${proj_database.title}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
   <div class="wrapper">
@@ -13,9 +14,8 @@
       <%= proj_database.subtitle %>
     </div>
     <div class="flex-container">
-      <div id="content">
+      <div id="project-content">
         <div id="main-content-div">
-
           <%- include('./partials/proj-media.ejs', { proj_database: proj_database }) %>
           <div class="proj-description">
             <%- proj_database.description %>
@@ -24,10 +24,7 @@
       </div>
       <%- include('./partials/project-meta.ejs', { proj_database: proj_database }) %>
     </div>
-    <div class="footer">
-      <a href="/imprint">Impressum</a>
-      &copy; Detox 2023
-    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
   </div>
 </body>
 

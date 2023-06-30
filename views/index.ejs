@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang=<%= database.language %>>
 
-<%- include('./partials/head.ejs') %>
+<% let title = "ANTON X - Home"%>
+<%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
   <div class="wrapper">
     <%- include('./partials/header.ejs', { database: database }) %>
-    <div class="flex-container">
-      <div id="content">
-        <div id="main-content-div"><%= database.shortabout %></div>
+    <div id="main-content-div">
+      <%= database.shortabout %>
+      <div id="projects-content">
         <div class="projects-flex-container">
           <% for (var [key, value] of Object.entries(database.projects)) { %>
           <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
@@ -17,10 +18,7 @@
       </div>
     </div>
   </div>
-  <div class="footer">
-    <a href="/imprint">Impressum</a>
-    &copy; Detox 2023
-  </div>
+  <%- include('./partials/footer.ejs', { database: database }) %>
   </div>
 </body>
 

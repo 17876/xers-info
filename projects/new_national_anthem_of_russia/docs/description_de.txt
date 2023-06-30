@@ -1,0 +1,8 @@
+Die Verfassung Russlands wird Wort für Wort vertont.
+Das Wort Präsident triggert Oktaven.
+Das Wort Volk triggert die gesamte Klaviertastatur.
+Die ASCII-Werte aller anderen Wörter werden in Akkorde übersetzt.
+
+///
+
+Die Verfassung Russlands wird Wort f&#252;r Wort vertont.<br>Das Wort Pr&#228;sident triggert Oktaven.<br>Das Wort Volk triggert die gesamte Klaviertastatur.<br>Die ASCII-Werte aller anderen W&#246;rter werden in Akkorde &#252;bersetzt.

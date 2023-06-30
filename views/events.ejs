@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `ANTON X - ${database.events.title}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="events-title">
+      <%- database.events.title %>
+    </div>
+    <div class="flex-container">
+      <div class="events">
+        <%- database.events.text %>
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>

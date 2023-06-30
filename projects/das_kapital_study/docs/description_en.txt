@@ -1,0 +1,10 @@
+The first volume of Das Kapital by Karl Marx consists of 286784 words.
+The word Arbeit (labor) is used 1270 times.
+The word Geld (money) is used 423 times.
+
+Each sample of this audio file represents one word from the book.
+The impulses coming from the left and right channel stand for words Arbeit and Geld respectively. The noise stands for all other words.
+
+///
+
+The first volume of Das Kapital by Karl Marx consists of 286784 words.<br>The word Arbeit (labor) is used 1270 times.<br>The word Geld (money) is used 423 times.<br><br>Each sample of this audio file represents one word from the book.<br>The impulses coming from the left and right channel stand for words Arbeit and Geld respectively. The noise stands for all other words.

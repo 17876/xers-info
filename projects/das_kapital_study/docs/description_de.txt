@@ -1,0 +1,10 @@
+Der erste Band von Das Kapital von Karl Marx besteht aus 286784 Wörtern.
+Das Wort Arbeit wird 1270 Mal verwendet.
+Das Wort Geld wird 423-mal verwendet.
+
+Jedes Sample dieser Audiodatei repräsentiert ein Wort aus dem Buch.
+Die Impulse, die vom linken und rechten Kanal kommen, stehen für die Wörter Arbeit und Geld. Das Rauschen steht für alle anderen Wörter.
+
+///
+
+Der erste Band von Das Kapital von Karl Marx besteht aus 286784 W&#246;rtern.<br>Das Wort Arbeit wird 1270 Mal verwendet.<br>Das Wort Geld wird 423-mal verwendet.<br><br>Jedes Sample dieser Audiodatei repr&#228;sentiert ein Wort aus dem Buch.<br>Die Impulse, die vom linken und rechten Kanal kommen, stehen f&#252;r die W&#246;rter Arbeit und Geld. Das Rauschen steht f&#252;r alle anderen W&#246;rter.

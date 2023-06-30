@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = "ANTON X - CV"%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="flex-container">
+      <div class="cv2">
+
+        <div class="cv2-table-container">
+          <% for (var i = 0; i < database.cv2.length; i++) { %>
+          <div class="cv2-table-row">
+            <div class="cv2-table-cell cv2-when"><%- database.cv2[i].when %></div>
+            <div class="cv2-table-cell cv2-what"><%- database.cv2[i].what %></div>
+          </div>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>

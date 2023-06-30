@@ -1,0 +1,32 @@
+Die graphische Darstellung der Genomsequenz des Virus Sars-CoV-2 soll als graphische Partitur für ein zeitbasiertes Kunstwerk interpetiert werden.
+
+Es gibt keinerlei Vorgaben zu den Medien, in welchen das Werk realisiert werden kann. Die Partitur gibt nur den Zeitraster sowie die Anordnung der Schichten vor.
+
+Jeder farbige Block ist ein Element, das von anderen Elementen unterscheidbar sein muss.
+
+Die übereinander liegenden Elemente sind gleichzeitig: genauso, wie in einer graphischen Partitur.
+
+Es gibt auch keine Voragben zur Dauer des Werkes. Die zeitlichen Proportionen müssen aber der graphischen Anordnung in der Partitur  genau entsprechen.
+
+Genaue Angaben:
+https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=graph
+
+Die graphische Darstellung der Genomsequenz des Virus Sars-CoV-2 soll als graphische Partitur f&#252;r ein zeitbasiertes Kunstwerk interpetiert werden.<br><br>Es gibt keinerlei Vorgaben zu den Medien, in welchen das Werk realisiert werden kann. Die Partitur gibt nur den Zeitraster sowie die Anordnung der Schichten vor.<br><br>Jeder farbige Block ist ein Element, das von anderen Elementen unterscheidbar sein muss.<br><br>Die &#252;bereinander liegenden Elemente sind gleichzeitig: genauso, wie in einer graphischen Partitur.<br><br>Es gibt auch keine Voragben zur Dauer des Werkes. Die zeitlichen Proportionen m&#252;ssen aber der graphischen Anordnung in der Partitur  genau entsprechen.<br><br>Genaue Angaben:<br>https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=graph
+
+///
+
+The graphic representation of the genome sequence of the Sars-CoV-2 virus is to be interpreted as a graphic score for a time-based artwork.
+
+There are no specifications regarding the media in which the work can be realised. The score only specifies the time grid and the arrangement of the layers.
+
+Each coloured block is an element that must be distinguishable from other elements.
+
+The superimposed elements are simultaneous: just as in a graphic score.
+
+There are also no prescriptions about the duration of the work. However, the temporal proportions must correspond exactly to the graphic arrangement in the score.
+
+More information:
+https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=graph
+
+The graphic representation of the genome sequence of the Sars-CoV-2 virus is to be interpreted as a graphic score for a time-based artwork.<br><br>There are no specifications regarding the media in which the work can be realised. The score only specifies the time grid and the arrangement of the layers.<br><br>Each coloured block is an element that must be distinguishable from other elements.<br><br>The superimposed elements are simultaneous: just as in a graphic score.<br><br>There are also no prescriptions about the duration of the work. However, the temporal proportions must correspond exactly to the graphic arrangement in the score.<br><br>More information:<br>https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=graph
+

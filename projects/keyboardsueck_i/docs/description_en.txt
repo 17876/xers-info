@@ -1,0 +1,5 @@
+The original text of Stockhausen's Klavierstück IX is played on the keyboard. Each keystroke triggers either a piano sample, an electronically generated pitch or a sample.
+
+///
+
+The original text of Stockhausen's Klavierst&#252;ck IX is played on the keyboard. Each keystroke triggers either a piano sample, an electronically generated pitch or a sample.

@@ -1,0 +1,5 @@
+Auf dem Keyboard wird der Originaltext von Stockhausens Klavierstück IX gespielt. Jeder Tastenanschlag triggert entweder ein Klaviersample, eine elektronisch generierte Tonhöhe oder ein Sample.
+
+///
+
+Auf dem Keyboard wird der Originaltext von Stockhausens Klavierst&#252;ck IX gespielt. Jeder Tastenanschlag triggert entweder ein Klaviersample, eine elektronisch generierte Tonh&#246;he oder ein Sample.
