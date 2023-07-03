@@ -5,13 +5,15 @@
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper-project">
     <%- include('./partials/header.ejs', { database: database }) %>
-    <div class="proj-title">
-      <%= proj_database.title %>
-    </div>
-    <div class="proj-subtitle">
-      <%= proj_database.subtitle %>
+    <div class="proj-header">
+      <div class="proj-title">
+        <%= proj_database.title %>
+      </div>
+      <div class="proj-subtitle">
+        <%= proj_database.subtitle %>
+      </div>
     </div>
     <div class="flex-container">
       <div id="project-content">

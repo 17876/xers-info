@@ -5,10 +5,12 @@
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper-front">
     <%- include('./partials/header.ejs', { database: database }) %>
     <div id="main-content-div">
-      <%= database.shortabout %>
+      <div class="short-about">
+        <%- database.shortabout %>
+      </div>
       <div id="projects-content">
         <div class="projects-flex-container">
           <% for (var [key, value] of Object.entries(database.projects)) { %>

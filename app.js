@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 // middleware and static files
 // in the folde public all files will be accessable at frontend.
 app.use(express.static("public"));
-app.use(express.static("projects"));
+//app.use(express.static("projects"));
 
 // listen for requests
 app.listen(3000); // retuns an instance of the server

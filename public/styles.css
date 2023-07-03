@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap"); */
 
 body {
     font-family: "IBM Plex Mono", monospace;
@@ -42,6 +41,11 @@ h5 {
     margin: 0;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+}
 /*header styles*/
 
 .header {
@@ -55,6 +59,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 nav {
@@ -86,9 +91,9 @@ nav li {
 
 /* main content */
 
-.wrapper {
+.wrapper-front {
     width: 100%;
-    max-width: 1000px;
+    max-width: 930px;
     min-height: 100%;
 }
 
@@ -109,17 +114,6 @@ nav li {
     justify-content: space-between;
 }
 
-#projects-content {
-    display: flex;
-    width: 100%;
-    text-align: justify;
-    padding: 0;
-}
-
-.flex-gap {
-    flex: 0 1 300px;
-}
-
 #main-content-div {
     width: 100%;
     font-size: 12px;
@@ -127,30 +121,38 @@ nav li {
     text-align: justify;
 }
 
+.short-about {
+    margin-bottom: 10px;
+}
+
+#projects-content {
+    display: flex;
+    text-align: justify;
+    padding: 0;
+}
+
 .projects-flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 /*project thumbnails*/
 
-.project-thumbnail,
-.cv-thumbnail {
+.project-thumbnail {
     flex: 0 1 300px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-top: 10px;
+    overflow: hidden;
 }
 
-.project-thumbnail a,
-.cv-thumbnail a {
+.project-thumbnail a {
     position: relative;
     display: inline-block;
 }
 
-.project-thumbnail a img,
-.cv-thumbnail a img {
+.project-thumbnail a img {
     width: 100%;
     display: block;
     opacity: 1;
@@ -159,15 +161,13 @@ nav li {
     overflow: hidden;
 }
 
-.project-thumbnail-image-link,
-.cv-thumbnail-image-link {
+.project-thumbnail-image-link {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.project-thumbnail-overlay,
-.cv-thumbnail-overlay {
+.project-thumbnail-overlay {
     width: 85%;
     position: absolute;
     top: 50%;
@@ -180,8 +180,7 @@ nav li {
     padding: 5px;
 }
 
-.project-thumbnail-title,
-.cv-thumbnail-title {
+.project-thumbnail-title {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
@@ -192,13 +191,30 @@ nav li {
     margin: 0;
 }
 
-.project-thumbnail:hover img,
-.cv-thumbnail:hover img {
+.project-thumbnail:hover img {
     opacity: 0.8;
     transform: scale(1.08);
 }
 
 /*projects page styles*/
+
+.wrapper-project {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+}
+
+.project-header {
+    margin-bottom: 15px;
+}
+
+.proj-title {
+    font-size: 18px;
+}
+
+.proj-subtitle {
+    font-size: 12px;
+}
 
 #project-content {
     flex: 0 1 700px;
@@ -231,7 +247,7 @@ nav li {
 .youtube-title,
 .vimeo-title {
     font-size: 14px;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.25em 0 !important;
 }
 
 .gallery-wrapper {
@@ -241,7 +257,7 @@ nav li {
 
 .gallery-title {
     font-size: 14px;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.25em 0 !important;
 }
 
 .gallery-container {
@@ -280,15 +296,6 @@ nav li {
     margin: 10px 0 0 0;
 }
 
-.proj-title {
-    font-size: 18px;
-}
-
-.proj-subtitle {
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
 .proj-descritption {
     font-size: 12px;
     text-align: justify;
@@ -321,6 +328,60 @@ nav li {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.cv-thumbnail {
+    flex: 0 1 300px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.cv-thumbnail a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.cv-thumbnail a img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    border-radius: 8px;
+    transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
+    overflow: hidden;
+}
+
+.cv-thumbnail-image-link {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cv-thumbnail-overlay {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #4b4b4b;
+    background-color: rgba(233, 233, 233, 0.6);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cv-thumbnail-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cv-thumbnail:hover img {
+    opacity: 0.8;
+    transform: scale(1.08);
+}
+
 /*about-1*/
 
 .cv1 {
@@ -401,13 +462,19 @@ nav li {
     margin-top: 10px;
 }
 
-/*for screens less than 768px*/
+/*for screens less than 900px*/
+@media screen and (max-width: 932px) {
+    .projects-flex-container {
+        justify-content: space-evenly;
+    }
+}
 
 @media screen and (max-width: 768px) {
     nav ul {
         display: block;
         height: auto;
     }
+
     .cv2-table-row {
         display: block;
     }
@@ -424,5 +491,18 @@ nav li {
 
     .cv2-what {
         padding: 0 0 3em 0;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .project-thumbnail {
+        flex: 1 1 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cv-thumbnail {
+        flex: 1 1 300px;
+        margin-right: 0;
     }
 }
