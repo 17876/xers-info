@@ -17,11 +17,9 @@
     </div>
     <div class="flex-container">
       <div id="project-content">
-        <div id="main-content-div">
-          <%- include('./partials/proj-media.ejs', { proj_database: proj_database }) %>
-          <div class="proj-description">
-            <%- proj_database.description %>
-          </div>
+        <%- include('./partials/proj-media.ejs', { proj_database: proj_database }) %>
+        <div class="proj-description">
+          <%- proj_database.description %>
         </div>
       </div>
       <%- include('./partials/project-meta.ejs', { proj_database: proj_database }) %>

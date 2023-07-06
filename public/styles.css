@@ -5,6 +5,7 @@ body {
     font-size: 12px;
     margin-left: 10px;
     margin-top: 10px;
+    margin-right: 10px;
     height: 100vh;
     background: #f9f7f4;
 }
@@ -118,7 +119,6 @@ nav li {
     width: 100%;
     font-size: 12px;
     margin-top: 10px;
-    text-align: justify;
 }
 
 .short-about {
@@ -134,7 +134,7 @@ nav li {
 .projects-flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /*project thumbnails*/
@@ -142,7 +142,7 @@ nav li {
 .project-thumbnail {
     flex: 0 1 300px;
     height: auto;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-top: 10px;
     overflow: hidden;
 }
@@ -218,7 +218,8 @@ nav li {
 
 #project-content {
     flex: 0 1 700px;
-    text-align: justify;
+    margin-top: 10px;
+
     padding: 0;
 }
 
@@ -296,7 +297,7 @@ nav li {
     margin: 10px 0 0 0;
 }
 
-.proj-descritption {
+.proj-description {
     font-size: 12px;
     text-align: justify;
 }
@@ -450,6 +451,62 @@ nav li {
     margin-top: 10px;
 }
 
+.event {
+    margin: 0 0 20px 0;
+}
+
+.event .datetime {
+    margin: 0;
+}
+
+.event .date {
+    margin: 0;
+}
+
+.event .time {
+    margin: 0;
+}
+
+.event .venue {
+    margin: 0;
+}
+
+.event .title {
+    margin: 0;
+}
+
+.event .subtitle {
+    margin: 0;
+}
+
+.event .collab {
+    margin: 0;
+}
+
+.event .description {
+    margin: 0;
+}
+
+.event .extra {
+    margin: 0;
+}
+
+.event .link {
+    margin: 0;
+}
+
+.past {
+    color: gray;
+}
+
+.past a {
+    color: rgb(143, 143, 255);
+}
+
+.with-comma::after {
+    content: ",";
+}
+
 /*contact page*/
 .contact-title {
     font-size: 18px;
@@ -462,19 +519,15 @@ nav li {
     margin-top: 10px;
 }
 
-/*for screens less than 900px*/
-@media screen and (max-width: 932px) {
+/*for screens less than 932px*/
+
+@media screen and (max-width: 962px) {
     .projects-flex-container {
         justify-content: space-evenly;
     }
 }
 
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: block;
-        height: auto;
-    }
-
     .cv2-table-row {
         display: block;
     }
@@ -494,13 +547,20 @@ nav li {
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 652px) {
     .project-thumbnail {
         flex: 1 1 300px;
     }
 }
 
 @media screen and (max-width: 450px) {
+    nav ul {
+        display: block;
+        height: auto;
+    }
+    .project-thumbnail {
+        margin-right: 0;
+    }
     .cv-thumbnail {
         flex: 1 1 300px;
         margin-right: 0;
