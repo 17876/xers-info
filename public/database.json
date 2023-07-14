@@ -36,7 +36,7 @@
             "title": "Termine",
             "events": [
                 {
-                    "id": 57,
+                    "id": 999,
                     "past": 0,
                     "datetime": 0,
                     "venue": "",
@@ -49,7 +49,7 @@
                     "link": ""
                 },
                 {
-                    "id": 56,
+                    "id": 58,
                     "past": 0,
                     "datetime": {
                         "date": "10.12.2023",
@@ -63,6 +63,54 @@
                     "description": "",
                     "extra": 0,
                     "link": ""
+                },
+                {
+                    "id": 57,
+                    "past": 0,
+                    "datetime": {
+                        "date": "11.11.2023",
+                        "time": ""
+                    },
+                    "venue": "",
+                    "title": "Camp Kreuzberg /// Neue Version",
+                    "subtitle": "Ensemble, Audio, Publikum",
+                    "project-link": "/projects/camp-kreuzberg",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "ensemble mosaik",
+                                "link": "http://www.ensemble-mosaik.de/"
+                            }
+                        ]
+                    },
+                    "description": "",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 56,
+                    "past": 0,
+                    "datetime": {
+                        "date": "11.09.2023",
+                        "time": ""
+                    },
+                    "venue": "",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "Live Musik / Performance in Berlin, Ort und Uhrzeit werden noch bekannt gegeben.",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            }
+                        ]
+                    },
+                    "description": "",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
                 },
                 {
                     "id": 55,
@@ -90,7 +138,7 @@
                 },
                 {
                     "id": 54,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "11.07.2023",
                         "time": "19:30"
@@ -3365,7 +3413,7 @@
             "title": "Events",
             "events": [
                 {
-                    "id": 57,
+                    "id": 999,
                     "past": 0,
                     "datetime": 0,
                     "venue": "",
@@ -3378,7 +3426,7 @@
                     "link": ""
                 },
                 {
-                    "id": 56,
+                    "id": 58,
                     "past": 0,
                     "datetime": {
                         "date": "Dec 10th, 2023",
@@ -3392,6 +3440,54 @@
                     "description": "",
                     "extra": 0,
                     "link": ""
+                },
+                {
+                    "id": 57,
+                    "past": 0,
+                    "datetime": {
+                        "date": "Nov 11th, 2023",
+                        "time": ""
+                    },
+                    "venue": "",
+                    "title": "Camp Kreuzberg /// New version",
+                    "subtitle": "Ensemble, audio, audience",
+                    "project-link": "/projects/camp-kreuzberg",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "ensemble mosaik",
+                                "link": "http://www.ensemble-mosaik.de/"
+                            }
+                        ]
+                    },
+                    "description": "",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 56,
+                    "past": 0,
+                    "datetime": {
+                        "date": "Sep 11th, 2023",
+                        "time": ""
+                    },
+                    "venue": "",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "Live Music/Performance in Berlin, time and space will be announced soon.",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            }
+                        ]
+                    },
+                    "description": "",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
                 },
                 {
                     "id": 55,
@@ -3419,9 +3515,9 @@
                 },
                 {
                     "id": 54,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
-                        "date": "Jul, 11th, 2023",
+                        "date": "Jul 11th, 2023",
                         "time": "19:30"
                     },
                     "venue": "Basement of Großbeerenstr. 20, 10963 Berlin",
