@@ -69,9 +69,9 @@
                     "past": 0,
                     "datetime": {
                         "date": "11.11.2023",
-                        "time": ""
+                        "time": "19:00"
                     },
-                    "venue": "",
+                    "venue": "Kulturzentrum Faust, Hannover",
                     "title": "Camp Kreuzberg /// Neue Version",
                     "subtitle": "Ensemble, Audio, Publikum",
                     "project-link": "/projects/camp-kreuzberg",
@@ -3446,9 +3446,9 @@
                     "past": 0,
                     "datetime": {
                         "date": "Nov 11th, 2023",
-                        "time": ""
+                        "time": "19:00"
                     },
-                    "venue": "",
+                    "venue": "Kulturzentrum Faust, Hanover",
                     "title": "Camp Kreuzberg /// New version",
                     "subtitle": "Ensemble, audio, audience",
                     "project-link": "/projects/camp-kreuzberg",
