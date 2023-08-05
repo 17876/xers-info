@@ -516,10 +516,12 @@ nav li {
 }
 
 .sand-content {
-    width: 100%;
-    text-align: left;
+    flex: 0 1 700px;
+    text-align: justify;
     padding: 0;
     margin-top: 20px;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .sand-entry {
@@ -590,6 +592,10 @@ nav li {
 
     .cv2-what {
         padding: 0 0 3em 0;
+    }
+
+    .sand-content {
+        width: 100%;
     }
 }
 
