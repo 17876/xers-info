@@ -107,6 +107,15 @@ app.get("/:lang(de|en)/events", (req, res) => {
     });
 });
 
+app.get("/:lang(de|en)/sand", (req, res) => {
+    const language = req.params.lang;
+    let rawdata = fs.readFileSync("public/database.json");
+    let database = JSON.parse(rawdata);
+    res.render("sand", {
+        database: database[language],
+    });
+});
+
 app.get("/:lang(de|en)/contact", (req, res) => {
     const language = req.params.lang;
     let rawdata = fs.readFileSync("public/database.json");

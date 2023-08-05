@@ -47,6 +47,7 @@ h5 {
     max-width: 1000px;
     min-height: 100%;
 }
+
 /*header styles*/
 
 .header {
@@ -219,7 +220,6 @@ nav li {
 #project-content {
     flex: 0 1 700px;
     margin-top: 10px;
-
     padding: 0;
 }
 
@@ -428,6 +428,7 @@ nav li {
 }
 
 /*imprint page*/
+
 .imprint-title {
     font-size: 18px;
 }
@@ -440,6 +441,7 @@ nav li {
 }
 
 /*events page*/
+
 .events-title {
     font-size: 18px;
 }
@@ -505,6 +507,50 @@ nav li {
 
 .with-comma::after {
     content: ",";
+}
+
+/*sand page*/
+
+.sand-title {
+    font-size: 18px;
+}
+
+.sand-content {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sand-entry {
+    margin: 0 0 30px 0;
+}
+
+.sand-entry .title {
+    margin: 0 0 2px 0;
+    font-size: 14px;
+}
+
+.sand-entry .meta {
+    margin: 0 0 8px 0;
+    font-size: 11px;
+}
+
+.sand-entry .meta .datetime {
+    margin: 0;
+}
+
+.sand-entry .meta .date {
+    margin: 0;
+}
+
+.sand-entry .meta .time {
+    margin: 0;
+}
+
+.sand-entry .content {
+    margin: 0;
+    hyphens: auto;
 }
 
 /*contact page*/

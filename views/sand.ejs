@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `ANTON X - ${database.sand.title}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="sand-title">
+      <%- database.sand.title %>
+    </div>
+    <div class="flex-container">
+      <div class="sand-content">
+        <% for (var i = 0; i<database.sand.entries.length; i++) { 
+          let curEntry = database.sand.entries[i];
+          %>
+
+        <div class="sand-entry">
+          <% if (curEntry.title!="") { %>
+          <p class="title">
+            <%=curEntry.title%>
+          </p>
+          <% } %>
+
+          <% if (curEntry.datetime!=0) {%>
+          <p class="meta">
+
+            <% if (curEntry.datetime.date!="") {%>
+            <span class="date">
+              <%= curEntry.datetime.date %>
+            </span>
+            <% } %>
+
+            <% if (curEntry.datetime.time!="") {%>
+            <span class="time">
+              <%= curEntry.datetime.time %>
+            </span>
+            <% } %>
+          </p>
+          <% } %>
+
+
+          <% if (curEntry.htmlcontent!="") {%>
+          <p class="content">
+            <%- curEntry.htmlcontent %>
+          </p>
+          <% } %>
+
+
+
+        </div>
+        <% } %>
+
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>
