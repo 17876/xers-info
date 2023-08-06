@@ -10,16 +10,19 @@
     <div class="sand-title">
       <%- database.sand.title %>
     </div>
+    <div class="sand-description">
+      <%- database.sand.description %>
+    </div>
     <div class="flex-container">
       <div class="sand-content">
-        <% for (var i = 0; i<database.sand.entries.length; i++) { 
-          let curEntry = database.sand.entries[i];
+        <% for (var [key, value] of Object.entries(database.sand.entries)) {
+          let curEntry = value;
           %>
 
         <div class="sand-entry">
           <% if (curEntry.title!="") { %>
           <p class="title">
-            <%=curEntry.title%>
+            <a href="/<%= database.language + curEntry.src  %>"><%=curEntry.title%></a>
           </p>
           <% } %>
 

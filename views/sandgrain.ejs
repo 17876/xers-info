@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `ANTON X - Sand – ${sandgrain_database.title}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="flex-container">
+      <div class="sand-content">
+        <div class="sand-entry">
+
+          <% if (sandgrain_database.title!="") { %>
+          <p class="title">
+            <%=sandgrain_database.title%>
+          </p>
+          <% } %>
+
+          <% if (sandgrain_database.datetime!=0) {%>
+          <p class="meta">
+
+            <% if (sandgrain_database.datetime.date!="") {%>
+            <span class="date">
+              <%= sandgrain_database.datetime.date %>
+            </span>
+            <% } %>
+
+            <% if (sandgrain_database.datetime.time!="") {%>
+            <span class="time">
+              <%= sandgrain_database.datetime.time %>
+            </span>
+            <% } %>
+          </p>
+          <% } %>
+
+
+          <% if (sandgrain_database.htmlcontent!="") {%>
+          <p class="content">
+            <%- sandgrain_database.htmlcontent %>
+          </p>
+          <% } %>
+
+        </div>
+
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>

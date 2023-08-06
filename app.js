@@ -41,6 +41,18 @@ app.get("/:lang(de|en)/projects/:proj", (req, res) => {
     });
 });
 
+app.get("/:lang(de|en)/sand/:sandgrain", (req, res) => {
+    const language = req.params.lang;
+    const sand_grain = req.params.sandgrain;
+    let rawdata = fs.readFileSync("public/database.json");
+    let database = JSON.parse(rawdata);
+    res.render("sandgrain", {
+        language: language,
+        database: database[language],
+        sandgrain_database: database[language]["sand"]["entries"][sand_grain],
+    });
+});
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
