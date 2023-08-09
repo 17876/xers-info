@@ -5,7 +5,12 @@
   <% for (var i = 0; i < proj_database.project_meta.meta.length; i++) {
     if (proj_database.project_meta.meta[i].type=="link") { %>
   <p>
+    <% if (proj_database.project_meta.meta[i].src != 0) { %>
     <%=proj_database.project_meta.meta[i].name%>: <a href=<%=proj_database.project_meta.meta[i].src%>><%=proj_database.project_meta.meta[i].value%></a>
+    <% }
+    else  { %>
+    <%=proj_database.project_meta.meta[i].name%>: <%=proj_database.project_meta.meta[i].value%>
+    <% } %>
   </p>
   <% }
   else { %>
