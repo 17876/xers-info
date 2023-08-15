@@ -1486,18 +1486,22 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Improvisation, Performance"
                         },
                         {
-                            "type": "link",
-                            "name": "Mit",
-                            "value": "Maja von Kriegstein",
-                            "src": "https://majavonkriegstein.eu"
+                            "type": "link-list",
+                            "name": "Mit:",
+                            "links": [
+                                {
+                                    "text": "Maja von Kriegstein",
+                                    "link": "https://majavonkriegstein.eu"
+                                }
+                            ]
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Immer am 11. jedes Monats"
                         }
                     ]
@@ -1527,20 +1531,22 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Video"
                         },
                         {
-                            "type": "link",
-                            "name": "Mit",
-                            "value": "Vinicius Giusti",
-                            "src": "https://viniciusgiusti.com/"
-                        },
-                        {
-                            "type": "link",
-                            "name": "Mit",
-                            "value": "Awad Abazid",
-                            "src": 0
+                            "type": "link-list",
+                            "name": "Mit:",
+                            "links": [
+                                {
+                                    "text": "Vinicius Giusti",
+                                    "link": "https://viniciusgiusti.com"
+                                },
+                                {
+                                    "text": "Awad Abazid",
+                                    "link": 0
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1587,23 +1593,27 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Stimme, Improvisation, Performance, Audio, Live-Audio, Video"
                         },
                         {
-                            "type": "link",
-                            "name": "Mit",
-                            "value": "Alexey Kokhanov",
-                            "src": "https://kokhanov.com"
+                            "type": "link-list",
+                            "name": "Mit:",
+                            "links": [
+                                {
+                                    "text": "Alexey Kokhanov",
+                                    "link": "https://kokhanov.com"
+                                }
+                            ]
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 1h"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "15. Apr 2023"
                         }
                     ]
@@ -1628,17 +1638,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video, Live-Audio, Live-Audio"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "27'24''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "13. Nov 2022"
                         }
                     ]
@@ -1662,23 +1672,27 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Text"
                         },
                         {
                             "type": "language",
-                            "name": "Sprache",
+                            "name": "Sprache:",
                             "value": "Ru"
                         },
                         {
-                            "type": "link",
-                            "name": "Link",
-                            "value": "PDF",
-                            "src": "/projects/pseudoanarchy_of_demons/demons_v01_a5_no_bleed.pdf"
+                            "type": "link-list",
+                            "name": "Link:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/pseudoanarchy_of_demons/demons_v01_a5_no_bleed.pdf"
+                                }
+                            ]
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "27. Okt 2022"
                         }
                     ]
@@ -1707,31 +1721,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "2 Fl, 2 Kl, Schlzg, Klv+Kbd, Vln, Vla, Vc, Kb, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "15'08''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "22. Nov 2021"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/how_i_spent_my_summer/docs/leto_score_v18_legend.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/how_i_spent_my_summer/docs/leto_score_v18_legend.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1755,17 +1773,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "28'23''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "23. Jul 2021"
                         }
                     ]
@@ -1790,17 +1808,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "52'19''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "21. Jul 2021"
                         }
                     ]
@@ -1829,24 +1847,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video, Live-Audio, Live-Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Fl, Kl, Klv, Vln, Vc, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 51'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "8. Nov 2020"
                         }
                     ]
@@ -1871,24 +1889,28 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Transmedial"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "Variabel"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "1. Feb 2021"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/landscape_nc_045512_2/docs/landscape_nc_045512_2_score.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/landscape_nc_045512_2/docs/landscape_nc_045512_2_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1916,24 +1938,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video, Performance"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Bkl, Vc, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 17'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "1. Aug 2020"
                         }
                     ]
@@ -1978,18 +2000,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video, Skulptur"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "Loop"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "7. Dez 2019"
                         }
                     ]
@@ -2036,30 +2058,33 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Performance"
                         },
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "2 Performer*innen, Bfl, Bkl, Vln, Vla, Vc, FOH-Regie"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "20'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "23. Nov 2019"
                         },
-
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/i_love_you_too_my_love/docs/00_i_love_you_too_my_love_score_v03.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/i_love_you_too_my_love/docs/00_i_love_you_too_my_love_score_v03.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2213,22 +2238,22 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Performance, Audio, Video"
                         },
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Performer*in mit Piccolo-Flöte, FOH-Regie"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 60'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "27. Sep 2019"
                         },
 
@@ -2281,17 +2306,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Improvisation, Musiktheater"
                         },
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 60'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "13. Sep 2019"
                         }
                     ]
@@ -2320,31 +2345,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "SSax, Schlzg, Klv, E-Git, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 19'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "22. Sep 2018"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/mr_jock/docs/mr_jock_score_v14.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/mr_jock/docs/mr_jock_score_v14.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2372,31 +2401,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Eh, Kl (B), Klv, Git, Vln, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 18'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "25. Apr 2017"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/hidden_in_plain_sight/docs/00_hips_score_v17.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/hidden_in_plain_sight/docs/00_hips_score_v17.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2424,31 +2457,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Klavier, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Klv, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 12'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "21. Jun 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/music_for_piano/docs/music_for_piano_score_legende_150808.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/music_for_piano/docs/music_for_piano_score_legende_150808.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2471,24 +2508,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Geldschein"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Variabel"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "Variabel"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "25. Mär 2015"
                         }
                     ]
@@ -2550,31 +2587,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Vln, Key, KBTba, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 25'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "11. Jul 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/threesome/docs/threesome_score_full_v06.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/threesome/docs/threesome_score_full_v06.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2602,31 +2643,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio, Improvisation"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "4 Spieler*innen"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 30'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "19. Nov 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/violince/docs/violince_score_150907.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/violince/docs/violince_score_150907.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2654,24 +2699,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Keyboard, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Keyboard, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 13'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "28. Mai 2013"
                         }
                     ]
@@ -2700,18 +2745,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "10'34''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "17. Feb 2015"
                         }
                     ]
@@ -2740,18 +2785,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "13'06''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "19. Jan 2013"
                         }
                     ]
@@ -2780,18 +2825,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "3'32''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "10. Jan 2013"
                         }
                     ]
@@ -2820,31 +2865,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "2'50'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "17. Dez 2012"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/klavierstueck_i/docs/klavierstueck_i_score.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/klavierstueck_i/docs/klavierstueck_i_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2872,31 +2921,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Keyboard, Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Keyboard, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 40'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "14. Apr 2014"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/keyboardstueck_iii/docs/keyboardstueck_iii_score_ver_0_2.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/keyboardstueck_iii/docs/keyboardstueck_iii_score_ver_0_2.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -2920,24 +2973,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "11h 49'11'''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "8. Apr 2013"
                         }
                     ]
@@ -2972,24 +3025,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "je ca. 5'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "13. Dez 2012"
                         }
                     ]
@@ -3014,18 +3067,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Installation"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "Loop"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "21. Nov 2012"
                         }
                     ]
@@ -3050,31 +3103,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Keyboard, Audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Keyboard, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 14'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Jan 2013"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/keyboardsueck_i/docs/keyboardstueck_i_score_v01.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/keyboardsueck_i/docs/keyboardstueck_i_score_v01.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3097,31 +3154,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Kl, Pos, Schlzg, Klv, Akk, Vln, Vc, Kb"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 12'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "24. Mai 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/clear_moral_panic/docs/clear_moral_panic_score.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/clear_moral_panic/docs/clear_moral_panic_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3145,31 +3206,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble, Audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Fl, Kl, Fg, Hrn, Pos, Schlzg, Klv, Key, Vln, Vc, Kb, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 16'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "12. Mai 2012"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/blood_on_the_dancefloor/docs/blood_on_the_dance_floor_score.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/blood_on_the_dancefloor/docs/blood_on_the_dance_floor_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3197,18 +3262,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "8'37''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "1. Dez 2011"
                         }
                     ]
@@ -3232,31 +3297,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Duo"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Vln, Klv"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 10'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Dez 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/gehirn_im_tank/docs/GehirnImTank111219.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/gehirn_im_tank/docs/GehirnImTank111219.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3284,31 +3353,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Ensemble"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Kl (auch Basskl), Fg, Schlzg, Vla, Vc"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 8'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "12. Mär 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/boris_und_natascha/docs/boris_und_natascha_score_v01.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/boris_und_natascha/docs/boris_und_natascha_score_v01.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3331,31 +3404,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Duo"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Vln, Vc"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 13'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Apr 2010"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/480_und_60_schlaege/docs/480_und_60_schlaege_score.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/480_und_60_schlaege/docs/480_und_60_schlaege_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3379,31 +3456,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Kategorie",
+                            "name": "Kategorie:",
                             "value": "Orgel, Audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "Orgel, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 11'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "14. Okt 2010"
                         },
                         {
-                            "type": "link",
-                            "name": "Partitur",
-                            "value": "PDF",
-                            "src": "/projects/mein_kreuzspiel/docs/mein_kreuzspiel.pdf"
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/mein_kreuzspiel/docs/mein_kreuzspiel.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -4902,18 +4983,22 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Improvisation, performance"
                         },
                         {
-                            "type": "link",
-                            "name": "With",
-                            "value": "Maja von Kriegstein",
-                            "src": "https://majavonkriegstein.eu"
+                            "type": "link-list",
+                            "name": "With:",
+                            "links": [
+                                {
+                                    "text": "Maja von Kriegstein",
+                                    "link": "https://majavonkriegstein.eu"
+                                }
+                            ]
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Date:",
                             "value": "Always on 11th of each month"
                         }
                     ]
@@ -4943,20 +5028,22 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Video"
                         },
                         {
-                            "type": "link",
-                            "name": "With",
-                            "value": "Vinicius Giusti",
-                            "src": "https://viniciusgiusti.com/"
-                        },
-                        {
-                            "type": "link",
-                            "name": "With",
-                            "value": "Awad Abazid",
-                            "src": 0
+                            "type": "link-list",
+                            "name": "With:",
+                            "links": [
+                                {
+                                    "text": "Vinicius Giusti",
+                                    "link": "https://viniciusgiusti.com"
+                                },
+                                {
+                                    "text": "Awad Abazid",
+                                    "link": 0
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5003,23 +5090,27 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Voice, improvisation, performance, audio, live-audio, video"
                         },
                         {
-                            "type": "link",
-                            "name": "With",
-                            "value": "Alexey Kokhanov",
-                            "src": "https://kokhanov.com"
+                            "type": "link-list",
+                            "name": "With:",
+                            "links": [
+                                {
+                                    "text": "Alexey Kokhanov",
+                                    "link": "https://kokhanov.com"
+                                }
+                            ]
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 1h"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Apr 15th, 2023"
                         }
                     ]
@@ -5044,17 +5135,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, Video, Live-Audio, Live-Audio"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "27'24''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Nov 13th, 2022"
                         }
                     ]
@@ -5078,23 +5169,27 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Text"
                         },
                         {
                             "type": "language",
-                            "name": "Language",
+                            "name": "Language:",
                             "value": "Ru"
                         },
                         {
-                            "type": "link",
-                            "name": "Link",
-                            "value": "PDF",
-                            "src": "/projects/pseudoanarchy_of_demons/demons_v01_a5_no_bleed.pdf"
+                            "type": "link-list",
+                            "name": "Link:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/pseudoanarchy_of_demons/demons_v01_a5_no_bleed.pdf"
+                                }
+                            ]
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Oct 27th, 2022"
                         }
                     ]
@@ -5123,31 +5218,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "2 Fl, 2 Cl, Pecr, Pno+Key, Vln, Vla, Vc, Db, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "15'08''"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Nov 22nd, 2021"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/how_i_spent_my_summer/docs/leto_score_v18_legend.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/how_i_spent_my_summer/docs/leto_score_v18_legend.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5171,17 +5270,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "28'23''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jul 23rd, 2021"
                         }
                     ]
@@ -5206,17 +5305,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "52'19''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jul 21th, 2021"
                         }
                     ]
@@ -5245,24 +5344,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video, live audio, live video, audience"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Fl, Cl, Pno, Vln, Vc, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 51'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Nov 8th,   2020"
                         }
                     ]
@@ -5287,24 +5386,28 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Transmedial"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "Variable"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Feb 1st, 2021"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/landscape_nc_045512_2/docs/landscape_nc_045512_2_score.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/landscape_nc_045512_2/docs/landscape_nc_045512_2_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5332,24 +5435,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video, performance"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "B. Cl, Vc, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 17'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Aug 1st, 2020"
                         }
                     ]
@@ -5394,18 +5497,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video, sculpture"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "Loop"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Dez 7th, 2019"
                         }
                     ]
@@ -5452,30 +5555,33 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, performance"
                         },
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "2 performers, B. Fl, B.Kl, Vln, Vla, Vc, FOH"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "20'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Nov 23rd, 2019"
                         },
-
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/i_love_you_too_my_love/docs/00_i_love_you_too_my_love_score_v03.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/i_love_you_too_my_love/docs/00_i_love_you_too_my_love_score_v03.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5629,25 +5735,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Performance, audio, video"
                         },
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Performer with piccolo flute, FOH"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "ca. 60'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Sep 27th, 2019"
                         },
-
                         {
                             "type": "venue",
                             "name": "Venue",
@@ -5697,17 +5802,17 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Improvisation, music theatre"
                         },
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "ca. 60'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "13. Sep 2019"
                         }
                     ]
@@ -5736,19 +5841,19 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "SSax, perc, pno, e.guit, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "ca. 19'"
                         },
                         {
@@ -5757,10 +5862,14 @@
                             "value": "Sep 22nd, 2018"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/mr_jock/docs/mr_jock_score_v14.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/mr_jock/docs/mr_jock_score_v14.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5788,31 +5897,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "E.h., cl (b), pno, guit, vln, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "ca. 18'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Apr 25th, 2017"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/hidden_in_plain_sight/docs/00_hips_score_v17.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/hidden_in_plain_sight/docs/00_hips_score_v17.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5840,31 +5953,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Piano, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Pno, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 12'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jun 21st, 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/music_for_piano/docs/music_for_piano_score_legende_150808.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/music_for_piano/docs/music_for_piano_score_legende_150808.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5887,24 +6004,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Bank note"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "variable"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "variable"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Mar 25th, 2015"
                         }
                     ]
@@ -5966,31 +6083,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Vln, Key, CBTba, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 25'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jul 11th, 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/threesome/docs/threesome_score_full_v06.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/threesome/docs/threesome_score_full_v06.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6018,31 +6139,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio, improvisation"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "4 musicians"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 30'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Nov 19th, 2015"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/violince/docs/violince_score_150907.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/violince/docs/violince_score_150907.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6070,24 +6195,24 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Keyboard, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Keyboard, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 13'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Mai 28th, 2013"
                         }
                     ]
@@ -6116,18 +6241,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "10'34''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Feb 17th, 2015"
                         }
                     ]
@@ -6156,18 +6281,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "13'06''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jan 19th, 2013"
                         }
                     ]
@@ -6196,18 +6321,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "3'32''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jan 10th, 2013"
                         }
                     ]
@@ -6236,31 +6361,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "2'50'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Dez 17th, 2012"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/klavierstueck_i/docs/klavierstueck_i_score.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/klavierstueck_i/docs/klavierstueck_i_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6288,31 +6417,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Keyboard, audio, video"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Keyboard, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 40'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Apr 14th, 2014"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/keyboardstueck_iii/docs/keyboardstueck_iii_score_ver_0_2.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/keyboardstueck_iii/docs/keyboardstueck_iii_score_ver_0_2.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6336,18 +6469,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "11h 49'11'''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Apr 8th, 2013"
                         }
                     ]
@@ -6382,18 +6515,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, Video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "each approx. 5'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Dez 13th, 2012"
                         }
                     ]
@@ -6418,18 +6551,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Installation"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "Loop"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Nov 21st, 2012"
                         }
                     ]
@@ -6454,31 +6587,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Keyboard, audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Keyboard, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 14'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Jan 2013"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/keyboardsueck_i/docs/keyboardstueck_i_score_v01.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/keyboardsueck_i/docs/keyboardstueck_i_score_v01.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6501,31 +6638,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "cl, tbn, perc, pno, acc, vln, vc, cb"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Dauer",
+                            "name": "Dauer:",
                             "value": "ca. 12'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Mai 24th, 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/clear_moral_panic/docs/clear_moral_panic_score.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/clear_moral_panic/docs/clear_moral_panic_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6549,31 +6690,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble, audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Besetzung",
+                            "name": "Besetzung:",
                             "value": "fl, cl, bsn, hrn, tbn, perc, pno, key, vln, vc, cb, FOH"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 16'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Mai 12th, 2012"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/blood_on_the_dancefloor/docs/blood_on_the_dance_floor_score.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/blood_on_the_dancefloor/docs/blood_on_the_dance_floor_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6601,18 +6746,18 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Audio, video"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "8'37''"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Dez 1st, 2011"
                         }
                     ]
@@ -6636,31 +6781,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Duo"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Vln, Klv"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "ca. 10'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Dec 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/gehirn_im_tank/docs/GehirnImTank111219.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/gehirn_im_tank/docs/GehirnImTank111219.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6688,31 +6837,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Ensemble"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Cl (also bass cl.), bsn, perc, vla, vc"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 8'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Mär 12th, 2011"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/boris_und_natascha/docs/boris_und_natascha_score_v01.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/boris_und_natascha/docs/boris_und_natascha_score_v01.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6735,31 +6888,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Duo"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Vln, vc"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 13'"
                         },
                         {
                             "type": "date",
-                            "name": "Datum",
+                            "name": "Datum:",
                             "value": "Apr 2010"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/480_und_60_schlaege/docs/480_und_60_schlaege_score.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/480_und_60_schlaege/docs/480_und_60_schlaege_score.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -6783,31 +6940,35 @@
                     "meta": [
                         {
                             "type": "category",
-                            "name": "Category",
+                            "name": "Category:",
                             "value": "Organ, audio"
                         },
 
                         {
                             "type": "instrumentation",
-                            "name": "Instrumentation",
+                            "name": "Instrumentation:",
                             "value": "Organ, FOH-Regie"
                         },
 
                         {
                             "type": "duration",
-                            "name": "Duration",
+                            "name": "Duration:",
                             "value": "approx. 11'"
                         },
                         {
                             "type": "date",
-                            "name": "Date",
+                            "name": "Date:",
                             "value": "Okt 14th, 2010"
                         },
                         {
-                            "type": "link",
-                            "name": "Score",
-                            "value": "PDF",
-                            "src": "/projects/mein_kreuzspiel/docs/mein_kreuzspiel.pdf"
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/mein_kreuzspiel/docs/mein_kreuzspiel.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
