@@ -49,7 +49,7 @@
                     "link": ""
                 },
                 {
-                    "id": 59,
+                    "id": 61,
                     "past": 0,
                     "datetime": {
                         "date": "10.12.2023",
@@ -65,7 +65,7 @@
                     "link": ""
                 },
                 {
-                    "id": 58,
+                    "id": 60,
                     "past": 0,
                     "datetime": {
                         "date": "11.11.2023",
@@ -87,6 +87,58 @@
                     "description": "",
                     "extra": 0,
                     "link": ""
+                },
+                {
+                    "id": 59,
+                    "past": 0,
+                    "datetime": {
+                        "date": "11.11.2023",
+                        "time": "19:00"
+                    },
+                    "venue": "Kulturzentrum Faust, Hannover",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "Kooperation mit ensemble mosaik",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            },
+                            {
+                                "name": "ensemble mosaik",
+                                "link": "http://www.ensemble-mosaik.de/"
+                            }
+                        ]
+                    },
+                    "description": "Improvisierte Musik / Experimentelle Musik / Performance",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
+                },
+                {
+                    "id": 58,
+                    "past": 0,
+                    "datetime": {
+                        "date": "09.10.2023",
+                        "time": ""
+                    },
+                    "venue": "4bid Gallery, Amsterdam",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            }
+                        ]
+                    },
+                    "description": "Improvisierte Musik / Experimentelle Musik / Performance",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
                 },
                 {
                     "id": 57,
@@ -3557,7 +3609,7 @@
                     "link": ""
                 },
                 {
-                    "id": 58,
+                    "id": 61,
                     "past": 0,
                     "datetime": {
                         "date": "Dec 10th, 2023",
@@ -3573,7 +3625,7 @@
                     "link": ""
                 },
                 {
-                    "id": 57,
+                    "id": 60,
                     "past": 0,
                     "datetime": {
                         "date": "Nov 11th, 2023",
@@ -3595,6 +3647,58 @@
                     "description": "",
                     "extra": 0,
                     "link": ""
+                },
+                {
+                    "id": 59,
+                    "past": 0,
+                    "datetime": {
+                        "date": "Nov 11th, 2023",
+                        "time": "19:00"
+                    },
+                    "venue": "Kulturzentrum Faust, Hannover",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "Collaboration with ensemble mosaik",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            },
+                            {
+                                "name": "ensemble mosaik",
+                                "link": "http://www.ensemble-mosaik.de/"
+                            }
+                        ]
+                    },
+                    "description": "Improvised music / Experimental music / Performance",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
+                },
+                {
+                    "id": 58,
+                    "past": 0,
+                    "datetime": {
+                        "date": "Oct 9th, 2023",
+                        "time": ""
+                    },
+                    "venue": "4bid Gallery, Amsterdam",
+                    "title": "DETOX /// Money Laundering",
+                    "subtitle": "",
+                    "project-link": "/projects/money-laundering",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Maja von Kriegstein",
+                                "link": "https://majavonkriegstein.eu"
+                            }
+                        ]
+                    },
+                    "description": "Improvised music / Experimental music / Performance",
+                    "extra": 0,
+                    "link": "http://www.detox.wtf"
                 },
                 {
                     "id": 57,
