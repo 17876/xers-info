@@ -118,7 +118,7 @@
                 },
                 {
                     "id": 58,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "09.10.2023",
                         "time": ""
@@ -142,7 +142,7 @@
                 },
                 {
                     "id": 57,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "11.09.2023",
                         "time": "20:30"
@@ -170,7 +170,7 @@
                 },
                 {
                     "id": 56,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "10.09.2023",
                         "time": "20:30"
@@ -199,7 +199,7 @@
 
                 {
                     "id": 55,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "11.08.2023",
                         "time": ""
@@ -3678,7 +3678,7 @@
                 },
                 {
                     "id": 58,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Oct 9th, 2023",
                         "time": ""
@@ -3702,7 +3702,7 @@
                 },
                 {
                     "id": 57,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Sep 11th, 2023",
                         "time": "20:30"
@@ -3730,7 +3730,7 @@
                 },
                 {
                     "id": 56,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Sep 10th, 2023",
                         "time": "20:30"
@@ -3758,7 +3758,7 @@
                 },
                 {
                     "id": 55,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Aug 11th, 2023",
                         "time": ""
