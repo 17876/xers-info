@@ -66,7 +66,7 @@
                 },
                 {
                     "id": 60,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "11.11.2023",
                         "time": "19:00"
@@ -3626,7 +3626,7 @@
                 },
                 {
                     "id": 60,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Nov 11th, 2023",
                         "time": "19:00"
