@@ -36,6 +36,27 @@
             "title": "Termine",
             "events": [
                 {
+                    "id": 1999,
+                    "past": 0,
+                    "datetime": "Juni 2024",
+                    "venue": "",
+                    "title": "Neues Projekt",
+                    "subtitle": "Auftrag von Ensemble New Babylon",
+                    "project-link": "",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "In Arbeit",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
                     "id": 999,
                     "past": 0,
                     "datetime": 0,
@@ -50,7 +71,7 @@
                 },
                 {
                     "id": 61,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "10.12.2023",
                         "time": "17:00"
@@ -3596,6 +3617,27 @@
             "title": "Events",
             "events": [
                 {
+                    "id": 1999,
+                    "past": 0,
+                    "datetime": "June 2024",
+                    "venue": "",
+                    "title": "New Project",
+                    "subtitle": "Commission by Ensemble New Babylon",
+                    "project-link": "",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Work in progress",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
                     "id": 999,
                     "past": 0,
                     "datetime": 0,
@@ -3604,13 +3646,13 @@
                     "subtitle": "",
                     "project-link": "",
                     "collab": 0,
-                    "description": "In work",
+                    "description": "Work in progress",
                     "extra": 0,
                     "link": ""
                 },
                 {
                     "id": 61,
-                    "past": 0,
+                    "past": 1,
                     "datetime": {
                         "date": "Dec 10th, 2023",
                         "time": "17:00"
