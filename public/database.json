@@ -31,31 +31,10 @@
             "title": "Impressum",
             "text": "Angaben gem&#228;&#223; &#167; 5 TMG<br>Anton Vasilyev<br>Gro&#223;beerenstra&#223;e 20 10963 Berlin<br><br>Kontakt:<br>Telefon: + 49 157 51760796<br>E-Mail: x@xers.info<br><br>Redaktionell verantwortlich Anton Vasilyev<br><br>Verbraucherstreitbeilegung/Universalschlichtungsstelle Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>Quelle: https://www.e-recht24.de"
         },
-        "copyright": "&#169; Anton X 2023",
+        "copyright": "&#169; Anton X 2024",
         "events": {
             "title": "Termine",
             "events": [
-                {
-                    "id": 1999,
-                    "past": 0,
-                    "datetime": "Juni 2024",
-                    "venue": "",
-                    "title": "Neues Projekt",
-                    "subtitle": "Auftrag von Ensemble New Babylon",
-                    "project-link": "",
-                    "collab": {
-                        "text": "Mit:",
-                        "who": [
-                            {
-                                "name": "Ensemble New Babylon",
-                                "link": "https://www.ensemblenewbabylon.com"
-                            }
-                        ]
-                    },
-                    "description": "In Arbeit",
-                    "extra": 0,
-                    "link": ""
-                },
                 {
                     "id": 999,
                     "past": 0,
@@ -66,6 +45,69 @@
                     "project-link": "",
                     "collab": 0,
                     "description": "In Arbeit",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 64,
+                    "past": 0,
+                    "datetime": "23.06.2024 20:00",
+                    "venue": "Universität Oldenburg, Aula",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Auftrag von Ensemble New Babylon",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 63,
+                    "past": 0,
+                    "datetime": "15.06.2024 20:00",
+                    "venue": "Kulturbahnhof Vegesack, Bremen",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Auftrag von Ensemble New Babylon",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 62,
+                    "past": 0,
+                    "datetime": "14.06.2024 20:00",
+                    "venue": "Die Glocke Bremen, kleiner Saal",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "Mit:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Auftrag von Ensemble New Babylon, UA",
                     "extra": 0,
                     "link": ""
                 },
@@ -3612,31 +3654,10 @@
             "title": "Imprint",
             "text": "Angaben gem&#228;&#223; &#167; 5 TMG<br>Anton Vasilyev<br>Gro&#223;beerenstra&#223;e 20 10963 Berlin<br><br>Kontakt:<br>Telefon: + 49 157 51760796<br>E-Mail: x@xers.info<br><br>Redaktionell verantwortlich Anton Vasilyev<br><br>Verbraucherstreitbeilegung/Universalschlichtungsstelle Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>Quelle: https://www.e-recht24.de"
         },
-        "copyright": "&#169; Anton X 2023",
+        "copyright": "&#169; Anton X 2024",
         "events": {
             "title": "Events",
             "events": [
-                {
-                    "id": 1999,
-                    "past": 0,
-                    "datetime": "June 2024",
-                    "venue": "",
-                    "title": "New Project",
-                    "subtitle": "Commission by Ensemble New Babylon",
-                    "project-link": "",
-                    "collab": {
-                        "text": "With:",
-                        "who": [
-                            {
-                                "name": "Ensemble New Babylon",
-                                "link": "https://www.ensemblenewbabylon.com"
-                            }
-                        ]
-                    },
-                    "description": "Work in progress",
-                    "extra": 0,
-                    "link": ""
-                },
                 {
                     "id": 999,
                     "past": 0,
@@ -3647,6 +3668,69 @@
                     "project-link": "",
                     "collab": 0,
                     "description": "Work in progress",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 64,
+                    "past": 0,
+                    "datetime": "Jun 23rd 20:00",
+                    "venue": "Oldenburg University, Aula",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Commissioned by Ensemble New Babylon",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 63,
+                    "past": 0,
+                    "datetime": "Jub 15th 20:00",
+                    "venue": "Kulturbahnhof Vegesack, Bremen",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Commissioned by Ensemble New Babylon",
+                    "extra": 0,
+                    "link": ""
+                },
+                {
+                    "id": 62,
+                    "past": 0,
+                    "datetime": "Jun 14th 20:00",
+                    "venue": "Die Glocke Bremen, kleine Saal",
+                    "title": "Echo Chamber",
+                    "subtitle": "Ensemble, Audio",
+                    "project-link": "",
+                    "collab": {
+                        "text": "With:",
+                        "who": [
+                            {
+                                "name": "Ensemble New Babylon",
+                                "link": "https://www.ensemblenewbabylon.com"
+                            }
+                        ]
+                    },
+                    "description": "Commissioned by Ensemble New Babylon, Premiere",
                     "extra": 0,
                     "link": ""
                 },
