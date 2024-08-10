@@ -50,7 +50,7 @@
                 },
                 {
                     "id": 64,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "23.06.2024 20:00",
                     "venue": "Universität Oldenburg, Aula",
                     "title": "Echo Chamber",
@@ -71,7 +71,7 @@
                 },
                 {
                     "id": 63,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "15.06.2024 20:00",
                     "venue": "Kulturbahnhof Vegesack, Bremen",
                     "title": "Echo Chamber",
@@ -92,7 +92,7 @@
                 },
                 {
                     "id": 62,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "14.06.2024 20:00",
                     "venue": "Die Glocke Bremen, kleiner Saal",
                     "title": "Echo Chamber",
@@ -1585,7 +1585,7 @@
                 "img_src": "/projects/money_laundering/img/money_laundering_thumb.jpg",
                 "title": "Money Laundering",
                 "subtitle": "Improvisation, Performance",
-                "description": "DETOX ist die Zusammenarbeit des Komponisten und Medienk&#252;nstlers Anton X und der Musikerin und Performerin Maja vK.<br><br>Money laundering ist ein auf Dauer angelegtes Performance-Projekt, in dem die K&#252;nstler*innen von DETOX ihre eigene und die allgemeine Verstricktheit in globale Kapitalstr&#246;me reflektieren.<br>Es findet einmal im Monat in wechselnden Formaten statt.<br>98% Verzweiflung, 2% Witz.<br><br>Im erweiterten Raum von zeitgen&#246;ssischer Musik, Klangkunst, Performance und kritischem Denken f&#252;hren die K&#252;nstler*innen jeweils am 11. eines Monats in wechselnden Formaten und Kooperationen einen Geldwaschgang durch &#8211; ein gesellschaftskritisches Ritual, das zu 98% auf Verzweiflung und zu 2% auf Witz basiert.<br><br>Es ist eine Reflexion &#252;ber das eigene Privileg, &#252;ber Geld als Medium der Entfremdung, als Medium der Herrschaft und der Ungerechtigkeit. In diese Dynamik ist auch die Kunst verstrickt.<br><br>Das Projekt ist eingebettet in den Versuch, das gemeinsame Leben so wenig wie m&#246;glich von der Logik der Anonymit&#228;t und der Quantifizierbarkeit bestimmen zu lassen.<br><br>Dieser Versuch ist nicht im Sinne einer romantischen Utopie zu verstehen, sondern als t&#228;gliches Erkennen und Kultivieren kaum definierbarer vielf&#228;ltiger Bezogenheiten zwischen Menschen*.<br><br>Mehr Info: <a href=\"http://www.detox.wtf\">www.detox.wtf</a>",
+                "description": "DETOX ist die Zusammenarbeit des Komponisten und Medienk&#252;nstlers Anton X und der Musikerin und Performerin Maja vK.<br><br>Es ist eine Reflexion &#252;ber das eigene Privileg, &#252;ber Geld als Medium der Entfremdung, als Medium der Herrschaft und der Ungerechtigkeit. In diese Dynamik ist auch die Kunst verstrickt.<br><br>Das Projekt ist eingebettet in den Versuch, das gemeinsame Leben so wenig wie m&#246;glich von der Logik der Anonymit&#228;t und der Quantifizierbarkeit bestimmen zu lassen.<br><br>Dieser Versuch ist nicht im Sinne einer romantischen Utopie zu verstehen, sondern als t&#228;gliches Erkennen und Kultivieren kaum definierbarer vielf&#228;ltiger Bezogenheiten zwischen Menschen*.<br><br>Mehr Info: <a href=\"http://www.detox.wtf\">www.detox.wtf</a>",
                 "media": [
                     {
                         "type": "img",
@@ -1639,6 +1639,11 @@
                         "type": "youtube",
                         "title": "Habib",
                         "src": "https://www.youtube.com/embed/vFmYfkyjo40"
+                    },
+                    {
+                        "type": "youtube",
+                        "title": "Lyosha",
+                        "src": "https://www.youtube.com/embed/GgWI2t6ru3s"
                     }
                 ],
                 "project_meta": {
@@ -1660,6 +1665,10 @@
                                 {
                                     "text": "Awad Abazid",
                                     "link": 0
+                                },
+                                {
+                                    "text": "Alexey Kokhanov",
+                                    "link": "https://www.kokhanov.com/"
                                 }
                             ]
                         }
@@ -3673,7 +3682,7 @@
                 },
                 {
                     "id": 64,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "Jun 23rd 20:00",
                     "venue": "Oldenburg University, Aula",
                     "title": "Echo Chamber",
@@ -3694,7 +3703,7 @@
                 },
                 {
                     "id": 63,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "Jub 15th 20:00",
                     "venue": "Kulturbahnhof Vegesack, Bremen",
                     "title": "Echo Chamber",
@@ -3715,7 +3724,7 @@
                 },
                 {
                     "id": 62,
-                    "past": 0,
+                    "past": 1,
                     "datetime": "Jun 14th 20:00",
                     "venue": "Die Glocke Bremen,  kleiner Saal",
                     "title": "Echo Chamber",
@@ -5197,7 +5206,7 @@
                 "img_src": "/projects/money_laundering/img/money_laundering_thumb.jpg",
                 "title": "Money Laundering",
                 "subtitle": "Improvisation, performance",
-                "description": "DETOX is the collaboration of composer and media artist Anton X and musician and performer Maja vK.<br><br>Money laundering is a long-term performance project in which the artists of DETOX reflect on their own and the general entanglement in global capital flows. It takes place once a month in changing formats. 98% desperation, 2% wit.<br><br>In the expanded space of contemporary music, sound art, performance and critical thinking, the artists perform a money laundering on the 11th of each month in changing formats and collaborations &#8211; a socio-critical ritual that is 98% based on desperation and 2% on wit.<br><br>It is a reflection on one&#8217;s own privilege, on money as a medium of alienation, as a medium of domination and injustice &#8211; and on art, that is also entangled in this dynamic.<br>The project is embedded in the attempt to let the common life be determined as little as possible by the logic of anonymity and quantifiability.<br>This attempt is not to be understood in the sense of a romantic utopia, but as a daily recognition and cultivation of hardly definable multifaceted relations between people*.<br><br>More Info: <a href=\"http://www.detox.wtf\">www.detox.wtf</a>",
+                "description": "DETOX is the collaboration of composer and media artist Anton X and musician and performer Maja vK.<br><br>Money laundering is a long-term performance project in which the artists of DETOX reflect on their own and the general entanglement in global capital flows. It takes place once a month in changing formats. 98% desperation, 2% wit.<br><br>It is a reflection on one&#8217;s own privilege, on money as a medium of alienation, as a medium of domination and injustice &#8211; and on art, that is also entangled in this dynamic.<br>The project is embedded in the attempt to let the common life be determined as little as possible by the logic of anonymity and quantifiability.<br>This attempt is not to be understood in the sense of a romantic utopia, but as a daily recognition and cultivation of hardly definable multifaceted relations between people*.<br><br>More Info: <a href=\"http://www.detox.wtf\">www.detox.wtf</a>",
                 "media": [
                     {
                         "type": "img",
@@ -5251,6 +5260,11 @@
                         "type": "youtube",
                         "title": "Habib",
                         "src": "https://www.youtube.com/embed/vFmYfkyjo40"
+                    },
+                    {
+                        "type": "youtube",
+                        "title": "Lyosha",
+                        "src": "https://www.youtube.com/embed/GgWI2t6ru3s"
                     }
                 ],
                 "project_meta": {
@@ -5272,6 +5286,10 @@
                                 {
                                     "text": "Awad Abazid",
                                     "link": 0
+                                },
+                                {
+                                    "text": "Alexey Kokhanov",
+                                    "link": "https://www.kokhanov.com/"
                                 }
                             ]
                         }
