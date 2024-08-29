@@ -1579,8 +1579,68 @@
             "text": "Anton Vasilyev<br>x@xers.info<br>+49 157 517 607 96"
         },
         "projects": {
+            "echo-chamber": {
+                "id": 39,
+                "src": "/projects/echo-chamber",
+                "img_src": "/projects/echo_chamber/img/echo_chamber_thumbnail.jpg",
+                "title": "Echo Chamber",
+                "subtitle": "Ensemble, Audio",
+                "description": "Hind Rajab (2017/2018 &#8211; 29. Januar 2024) war ein sechsj&#228;hriges pal&#228;stinensisches M&#228;dchen aus dem Viertel Tel al-Hawa in Gaza-Stadt, das vom israelischen Milit&#228;r get&#246;tet wurde, nachdem es als einziges den Beschuss eines israelischen Panzers auf das Fahrzeug &#252;berlebt hatte, in dem es mit sechs Verwandten geflohen war.<br><br>Rajabs Familie war auf der Flucht aus dem Viertel Tel al-Hawa in Gaza-Stadt, als ein Panzer der israelischen Armee auf ihr Fahrzeug schoss und Rajabs Tante, Onkel und vier Cousins t&#246;tete. Die einzige andere &#220;berlebende, Rajabs 15-j&#228;hrige Cousine, rief in einem aufgezeichneten Telefongespr&#228;ch den Pal&#228;stinensischen Roten Halbmond (PRCS) an und bat um Nothilfe. Sie weinte und schrie, dass die israelischen Streitkr&#228;fte auf sie schossen, und verstummte, als auch sie get&#246;tet wurde.<br><br>Diese Musik basiert auf einem fast einmin&#252;tigen Ausschnitt aus dem Telefongespr&#228;ch zwischen Hind Rajab und der PRCS-Disponentin Rana al-Faqeh. In dieser Minute rezitierte Rana al-Faqeh die Er&#246;ffnungssure des Korans, die das M&#228;dchen wiederholte.<br><br>\"Echo Chamber\" besteht aus 11 Teilen, so wie der Dispatcher die Er&#246;ffnungssure in 11 Teile unterteilt hat (die im Original aus 7 &#256;y&#257;t besteht), um die S&#228;tze zu verk&#252;rzen. Jeder der Teile ist wiederum in 4 Abschnitte unterteilt: 1 - entsprechend dem Satz de&#1082; Disponent&#1096;&#1090;, 2 - der anschlie&#223;enden Pause, 3 - der Wiederholung des Satzes durch das M&#228;dchen und 4 - der folgenden Pause. Die zeitliche Struktur der Originalaufnahme ist auf die Gesamtform des St&#252;cks projiziert.<br><br>Die Tonh&#246;hen sind das Ergebnis einer Spektralanalyse des aufgezeichneten Telefonats.<br>&#8222;Echo Chamber&#8220; ist ein verlangsamtes Wiedergeben der Originalaufnahme, gespielt vom Ensemble.<br><br>///<br><br>Ensemble New Babylon<br><br>Isabelle Raphaelis - Fl&#246;te<br>Benjamin Fischer - Oboe<br>Nayoung Cheong - Klarinette<br>Samuel Stoll - Horn<br>Johannes von Buttlar - Schlagzeug, Audio<br>Mireia Vendrell del &#193;lamo - Klavier, Audio<br>Marijke Tjoelker - Violine<br>Hannah Craib - Viola<br>Lynda Anne Cortis - Violoncello<br><br>Anton Vasilyev - Komposition, Audio, Produktion<br><br>23. Juni 2024<br>Universit&#228;t Oldenburg<br><br>Auftragswerk des Ensemble New Babylon",
+                "media": [
+                    {
+                        "type": "img",
+                        "src": "/projects/echo_chamber/img/echo_chamber_post_01.jpg"
+                    },
+                    {
+                        "type": "img",
+                        "src": "/projects/echo_chamber/img/echo_chamber_post_02.jpg"
+                    },
+                    {
+                        "type": "youtube",
+                        "title": "Dokumentation",
+                        "src": "https://www.youtube.com/embed/v5hCGZf_huA"
+                    }
+                ],
+                "project_meta": {
+                    "title": "Projektinformation",
+                    "meta": [
+                        {
+                            "type": "category",
+                            "name": "Kategorie:",
+                            "value": "Ensemble, Audio"
+                        },
+
+                        {
+                            "type": "instrumentation",
+                            "name": "Besetzung:",
+                            "value": "Fl, Ob, Kl, Hrn, Schlzg, Klv, Vln, Vla, Vc, FOH-Regie"
+                        },
+
+                        {
+                            "type": "duration",
+                            "name": "Dauer:",
+                            "value": "ca. 75'"
+                        },
+                        {
+                            "type": "date",
+                            "name": "Datum:",
+                            "value": "14. Juni 2024"
+                        },
+                        {
+                            "type": "link-list",
+                            "name": "Partitur:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/echo_chamber/docs/Echo_Chamber_Score_20240516.pdf"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
             "money-laundering": {
-                "id": 999,
+                "id": 38,
                 "src": "/projects/money-laundering",
                 "img_src": "/projects/money_laundering/img/money_laundering_thumb.jpg",
                 "title": "Money Laundering",
@@ -5200,6 +5260,66 @@
             "text": "Anton Vasilyev<br>x@xers.info<br>+49 157 517 607 96"
         },
         "projects": {
+            "echo-chamber": {
+                "id": 39,
+                "src": "/projects/echo-chamber",
+                "img_src": "/projects/echo_chamber/img/echo_chamber_thumbnail.jpg",
+                "title": "Echo Chamber",
+                "subtitle": "Ensemble, Audio",
+                "description": "Hind Rajab (2017/2018 &#8211; 29 January 2024) was a six-year-old Palestinian girl from the Tel al-Hawa neighborhood in Gaza City who was killed by the Israeli military after being the sole survivor of Israeli tank fire on the vehicle in which she had fled with six relatives.<br><br>Rajab's family was fleeing the Tel al-Hawa neighborhood of Gaza City when an Israeli army tank shot at their vehicle, killing Rajab's aunt, uncle, and four cousins. The only other survivor at the time, Rajab's 15-year-old cousin, called the Palestinian Red Crescent Society (PRCS) for emergency aid in a recorded phone call, crying and screaming that Israeli forces were shooting at them amid the sound of gunfire before going silent when she was also killed.<br><br>This music is based on a nearly one-minute excerpt from the telephone conversation between Hind Rajab and PRCS dispatcher Rana al-Faqeh. During this minute, Rana al-Faqeh recited the opening surah of the Quran, which the girl repeated.<br><br>\"Echo Chamber\" consists of 11 parts, just as the dispatcher divided the opening surah into 11 parts (consisting originally of 7 &#257;yahs) to make the sentences shorter. Each of the parts is divided in turn into 4 sections: 1 - corresponding to the dispatcher's line, 2 - to the subsequent pause, 3 - to the girl's repetition of the line, and 4 - to the following pause. The temporal structure of the original recording is projected onto the form of the piece.<br><br>The pitches are the result of spectral analysis of the phone call recording.<br>\"Echo Chamber\" is a slowed-down playback of the original recording, performed by the ensemble.<br><br>///<br><br>Ensemble New Babylon<br><br>Isabelle Raphaelis &#8211; Flute<br>Benjamin Fischer &#8211; Oboe<br>Nayoung Cheong &#8211; Clarinet<br>Samuel Stoll &#8211; Horn<br>Johannes von Buttlar &#8211; Percussion, Audio<br>Mireia Vendrell del &#193;lamo &#8211; Piano, Audio<br>Marijke Tjoelker &#8211; Violin<br>Hannah Craib &#8211; Viola<br>Lynda Anne Cortis &#8211; Violoncello<br><br>Anton Vasilyev &#8211; Composition, Audio, Production<br><br>June 23, 2024<br>Universit&#228;t Oldenburg<br><br>Commissioned by Ensemble New Babylon",
+                "media": [
+                    {
+                        "type": "img",
+                        "src": "/projects/echo_chamber/img/echo_chamber_post_01.jpg"
+                    },
+                    {
+                        "type": "img",
+                        "src": "/projects/echo_chamber/img/echo_chamber_post_02.jpg"
+                    },
+                    {
+                        "type": "youtube",
+                        "title": "Documentation",
+                        "src": "https://www.youtube.com/embed/v5hCGZf_huA"
+                    }
+                ],
+                "project_meta": {
+                    "title": "Project information",
+                    "meta": [
+                        {
+                            "type": "category",
+                            "name": "Category:",
+                            "value": "Ensemble, Audio"
+                        },
+
+                        {
+                            "type": "instrumentation",
+                            "name": "Instrumentation:",
+                            "value": "Fl, Ob, Cl, Hrn, Perc, Pno, Vln, Vla, Vc, FOH"
+                        },
+
+                        {
+                            "type": "duration",
+                            "name": "Duration:",
+                            "value": "approx. 75'"
+                        },
+                        {
+                            "type": "date",
+                            "name": "Date:",
+                            "value": "June 14th, 2024"
+                        },
+                        {
+                            "type": "link-list",
+                            "name": "Score:",
+                            "links": [
+                                {
+                                    "text": "PDF",
+                                    "link": "/projects/echo_chamber/docs/Echo_Chamber_Score_20240516.pdf"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
             "money-laundering": {
                 "id": 999,
                 "src": "/projects/money-laundering",
@@ -5473,7 +5593,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Instrumentation:",
-                            "value": "2 Fl, 2 Cl, Pecr, Pno+Key, Vln, Vla, Vc, Db, FOH"
+                            "value": "2 Fl, 2 Cl, Perc, Pno+Key, Vln, Vla, Vc, Db, FOH"
                         },
 
                         {
@@ -6096,7 +6216,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Instrumentation:",
-                            "value": "SSax, perc, pno, e.guit, FOH"
+                            "value": "SSax, Perc, Pno, E.guit, FOH"
                         },
 
                         {
@@ -6152,7 +6272,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Instrumentation:",
-                            "value": "E.h., cl (b), pno, guit, vln, FOH"
+                            "value": "E.H., Cl (B), Pno, Guit, Vln, FOH"
                         },
 
                         {
@@ -6893,7 +7013,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Instrumentation:",
-                            "value": "cl, tbn, perc, pno, acc, vln, vc, cb"
+                            "value": "Cl, Tbn, Perc, Pno, Acc, Vln, Vc, Cb"
                         },
 
                         {
@@ -6945,7 +7065,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Besetzung:",
-                            "value": "fl, cl, bsn, hrn, tbn, perc, pno, key, vln, vc, cb, FOH"
+                            "value": "Fl, Cl, Bsn, Hrn, Tbn, Perc, Pno, Key, Vln, Vc, Cb, FOH"
                         },
 
                         {
@@ -7092,7 +7212,7 @@
                         {
                             "type": "instrumentation",
                             "name": "Instrumentation:",
-                            "value": "Cl (also bass cl.), bsn, perc, vla, vc"
+                            "value": "Cl (also Bass Cl.), Bsn, Perc, Vla, Vc"
                         },
 
                         {
