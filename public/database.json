@@ -1674,11 +1674,6 @@
                                     "link": "https://majavonkriegstein.eu"
                                 }
                             ]
-                        },
-                        {
-                            "type": "date",
-                            "name": "Datum:",
-                            "value": "Immer am 11. jedes Monats"
                         }
                     ]
                 }
@@ -5356,11 +5351,6 @@
                                     "link": "https://majavonkriegstein.eu"
                                 }
                             ]
-                        },
-                        {
-                            "type": "date",
-                            "name": "Date:",
-                            "value": "Always on 11th of each month"
                         }
                     ]
                 }
