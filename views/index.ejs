@@ -4,19 +4,14 @@
 <% let title = `${database.title} – Home`%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
-<body>
+<body class="m-0">
   <div class="wrapper-front">
-    <%- include('./partials/header.ejs', { database: database }) %>
+    <%- include('./partials/header.ejs', { database: database}) %>
     <div id="main-content-div">
-      <div class="short-about">
-        <%- database.shortabout %>
-      </div>
-      <div id="projects-content">
-        <div class="projects-flex-container">
-          <% for (var [key, value] of Object.entries(database.projects)) { %>
-          <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
-          <% } %>
-        </div>
+      <div id="front-page-content">
+        <% for (var [key, value] of Object.entries(database.front_page_blocks)) { %>
+        <%- include('./partials/front-page-block.ejs', {language: database.language, block: value}) %>
+        <% } %>
       </div>
     </div>
   </div>

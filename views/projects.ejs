@@ -1,0 +1,28 @@
+<!-- just copied from the old index.ejs to be the projects page, need to be chenged according to the new concept -->
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `${database.title} – Home`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper-front">
+    <%- include('./partials/header.ejs', { database: database }) %>
+    <div id="main-content-div">
+      <div class="short-about">
+        <%- database.shortabout %>
+      </div>
+      <div id="projects-content">
+        <div class="projects-flex-container">
+          <% for (var [key, value] of Object.entries(database.projects)) { %>
+          <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>
