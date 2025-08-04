@@ -144,12 +144,18 @@ nav li {
 }
 
 .front-page-block {
+    position: relative;
     height: auto;
     width: 100%;
     overflow: hidden;
 }
 
 .front-page-block-image-link {
+    width: 100%;
+    height: auto;
+}
+
+.front-page-block-image-link img {
     width: 100%;
     height: auto;
 }

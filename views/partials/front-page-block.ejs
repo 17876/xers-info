@@ -1,12 +1,40 @@
 <div class="front-page-block">
   <div class="front-page-block-image-link">
-    <a href="/<%= language + block.src  %>">
-      <%const duration = (Math.random() * 10 + 10).toFixed(2);%>
-      <img src="<%= block.img_src %>">
 
-      <div class=" front-page-block-overlay">
-        <p class="front-page-block-title"><%= block.title %></p>
-      </div>
-    </a>
+    <img src="<%= block.img_src %>">
+
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1287" style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+      <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+      <a href="https://your-flower-link.com">
+        <g class="hover-group">
+          <polygon class="st0" points="1367.63 800.07 1376.32 804.42 1377.77 813.11 1384.65 825.78 1384.65 838.09 1379.94 850.4 1379.94 857.64 1374.15 869.23 1373.42 906.52 1367.63 911.23 1359.66 911.23 1359.66 871.76 1357.13 861.99 1357.13 848.59 1348.44 838.09 1356.04 814.19 1360.75 800.07 1367.63 800.07" />
+          <polygon class="st0" points="1414.7 805.5 1427.74 813.83 1427.74 827.23 1434.98 840.62 1434.98 863.8 1428.46 869.95 1427.01 877.92 1419.77 882.63 1430.27 906.16 1424.84 911.23 1417.6 911.23 1403.84 909.42 1406.37 876.11 1396.6 861.26 1404.56 827.59 1406.37 814.92 1414.7 805.5" />
+        </g>
+      </a>
+
+    </svg>
+
+
+
+
   </div>
 </div>
+
+<style>
+  .st0 {
+    fill: transparent;
+    stroke: #231f20;
+    stroke-miterlimit: 20;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+
+
+
+  .hover-group:hover .st0 {
+    fill: rgba(255, 255, 0, 0.3);
+    /* Light yellow overlay */
+    stroke: orange;
+    stroke-width: 2;
+    cursor: pointer;
+  }
+</style>
