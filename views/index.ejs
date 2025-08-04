@@ -6,14 +6,14 @@
 
 <body class="m-0">
   <div class="wrapper-front">
-    <%- include('./partials/header.ejs', { database: database}) %>
-    <div id="main-content-div">
+    <div id="main-content-div" class="m-0">
       <div id="front-page-content">
         <% for (var [key, value] of Object.entries(database.front_page_blocks)) { %>
         <%- include('./partials/front-page-block.ejs', {language: database.language, block: value}) %>
         <% } %>
       </div>
     </div>
+    <%- include('./partials/header.ejs', { database: database}) %>
   </div>
   <%- include('./partials/footer.ejs', { database: database }) %>
   </div>

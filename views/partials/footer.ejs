@@ -1,4 +1,19 @@
 <div class="footer">
+  <div class="nav-lang-container">
+    <%- include('nav.ejs', { database: database }) %>
+    <div class="lang-menu">
+      <a href="javascript:void(0)" onclick="changeLanguage('de')">Deutsch</a> |
+      <a href="javascript:void(0)" onclick="changeLanguage('en')">English</a>
+    </div>
+  </div>
   <a href="/<%= database.language %>/imprint"><%- database.imprint.title %></a>
   <%- database.copyright -%>
 </div>
+
+<script>
+  function changeLanguage(lang) {
+    var currentPath = window.location.pathname;
+    var newPath = '/' + lang + currentPath.substring(3);
+    window.location.href = newPath;
+  }
+</script>

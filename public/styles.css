@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*extra classes*/
 
@@ -12,9 +12,11 @@
 }
 
 .photo-font {
-    font-family: "Jacques Francois Shadow", serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 /*main css*/
@@ -78,6 +80,7 @@ h5 {
 
 .nav-lang-container {
     display: flex;
+    height: 100px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -90,21 +93,23 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: block;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
     padding: 0;
     list-style-type: none;
-    height: 2em;
+    height: auto;
     margin: 0;
 }
 
 nav li {
-    flex: 1 1 0;
-    padding-right: 10px;
+    /* flex: 1 1 0; */
+    padding: 0 0 0 0;
+    height: 1.5em;
 }
 
 .lang-menu {
+    display: flex;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -163,11 +168,10 @@ nav li {
 }
 
 .front-page-block-title {
-    font-family: "Jacques Francois Shadow", serif;
+    font-optical-sizing: auto;
+    font-size: 1vw;
     font-weight: 400;
     font-style: normal;
-    font-size: 5vw;
-    font-weight: 500;
     margin: 0;
 }
 
@@ -205,6 +209,7 @@ nav li {
 
 .footer {
     width: 100%;
+    height: auto;
     margin-top: 40px;
     margin-bottom: 10px;
 }
