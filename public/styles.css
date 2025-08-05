@@ -11,15 +11,9 @@
     width: 100% !important;
 }
 
-.photo-font {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-
-/*main css*/
+/*********************************/
+/*         GENERAL CSS           */
+/*********************************/
 
 body {
     font-family: "IBM Plex Mono", monospace;
@@ -69,14 +63,18 @@ h5 {
     min-height: 100%;
 }
 
-/*header styles*/
+/*********************************/
+/*        HEADER STYLES          */
+/*********************************/
 
 .header {
     width: 100%;
     height: auto;
 }
 
-/*nav styles*/
+/*********************************/
+/*          NAV STYLES           */
+/*********************************/
 
 .nav-lang-container {
     display: flex;
@@ -115,11 +113,13 @@ nav li {
     list-style-type: none;
 }
 
-/* main content */
+/*********************************/
+/*        MAIN CONTENT           */
+/*********************************/
 
 .wrapper-front {
     width: 100%;
-    min-height: 100%;
+    height: auto;
 }
 
 .short-about {
@@ -138,9 +138,18 @@ nav li {
     margin-top: 10px;
 }
 
+/*********************************/
+/*     FRONT PAGE BLOCKS         */
+/*********************************/
+
 /* front page blocks */
 #front-page-content {
     padding: 0;
+}
+
+.front-page-block-scroll-hint {
+    width: 100%;
+    height: auto;
 }
 
 .front-page-block {
@@ -148,6 +157,11 @@ nav li {
     height: auto;
     width: 100%;
     overflow: hidden;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.front-page-block::-webkit-scrollbar {
+    display: none;
 }
 
 .front-page-block-image-link {
@@ -193,25 +207,45 @@ nav li {
     overflow: hidden;
 }
 
-/* .front-page-block:hover img {
-    opacity: 0.8;
-    transform: scale(1.08);
-} */
-
-/* .pulse-opacity {
-    animation: pulseOpacity 10s infinite alternate ease-in-out;
+#Layer_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 
-@keyframes pulseOpacity {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-} */
+.scroll-hint-wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    visibility: hidden;
+}
 
-/*footer*/
+.scroll-hint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    z-index: 10;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.scroll-hint.hidden {
+    opacity: 0;
+}
+
+/*********************************/
+/*            FOOTER             */
+/*********************************/
 
 .footer {
     width: 100%;
@@ -225,7 +259,9 @@ nav li {
     padding-bottom: 10px;
 }
 
-/*projects page*/
+/*********************************/
+/*        PORTFOLIO PAGE         */
+/*********************************/
 
 #projects-content {
     display: flex;
@@ -239,7 +275,9 @@ nav li {
     justify-content: flex-start;
 }
 
-/*project thumbnails*/
+/*********************************/
+/*      PORTFOLIO THUMBNAILS     */
+/*********************************/
 
 .project-thumbnail {
     flex: 0 1 300px;
@@ -298,7 +336,9 @@ nav li {
     transform: scale(1.08);
 }
 
-/*projects page styles*/
+/*********************************/
+/*        SINGLE PROJECT PAGE    */
+/*********************************/
 
 .wrapper-project {
     width: 100%;
@@ -417,7 +457,9 @@ nav li {
     height: auto;
 }
 
-/*about pages*/
+/*********************************/
+/*        ABOUT PAGES            */
+/*********************************/
 
 #cv-content {
     flex: 0 1 700px;
@@ -528,7 +570,9 @@ nav li {
     padding-bottom: 1em;
 }
 
-/*imprint page*/
+/*********************************/
+/*            IMPRINT            */
+/*********************************/
 
 .imprint-title {
     font-size: 18px;
@@ -541,7 +585,9 @@ nav li {
     margin-top: 10px;
 }
 
-/*events page*/
+/*********************************/
+/*           EVENTS PAGE         */
+/*********************************/
 
 .events-title {
     font-size: 18px;
@@ -610,7 +656,9 @@ nav li {
     content: ",";
 }
 
-/*sand page*/
+/*********************************/
+/*            SAND PAGE          */
+/*********************************/
 
 .sand-title {
     font-size: 18px;
@@ -661,7 +709,10 @@ nav li {
     hyphens: auto;
 }
 
-/*contact page*/
+/*********************************/
+/*            CONTACT            */
+/*********************************/
+
 .contact-title {
     font-size: 18px;
 }
@@ -673,13 +724,19 @@ nav li {
     margin-top: 10px;
 }
 
-/*for screens less than 932px*/
+/*****************************************/
+/*       SCREENS SMALLER THAN 963PX      */
+/*****************************************/
 
 @media screen and (max-width: 962px) {
     .projects-flex-container {
         justify-content: space-evenly;
     }
 }
+
+/*****************************************/
+/*       SCREENS SMALLER THAN 769PX      */
+/*****************************************/
 
 @media screen and (max-width: 768px) {
     .cv2-table-row {
@@ -705,22 +762,56 @@ nav li {
     }
 }
 
+/*****************************************/
+/*       SCREENS SMALLER THAN 653PX      */
+/*****************************************/
+
 @media screen and (max-width: 652px) {
     .project-thumbnail {
         flex: 1 1 300px;
     }
 }
 
+/*****************************************/
+/*       SCREENS SMALLER THAN 451PX      */
+/*****************************************/
+
 @media screen and (max-width: 450px) {
     nav ul {
         display: block;
         height: auto;
     }
+
     .project-thumbnail {
         margin-right: 0;
     }
+
     .cv-thumbnail {
         flex: 1 1 300px;
         margin-right: 0;
+    }
+
+    .front-page-block {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .front-page-block-image-link img {
+        width: auto;
+        height: 100vh;
+    }
+
+    #Layer_1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vh;
+    }
+
+    .scroll-hint-wrapper {
+        visibility: visible;
     }
 }

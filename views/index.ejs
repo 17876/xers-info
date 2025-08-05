@@ -8,15 +8,34 @@
   <div class="wrapper-front">
     <div id="main-content-div" class="m-0">
       <div id="front-page-content">
-        <% for (var [key, value] of Object.entries(database.front_page_blocks)) { %>
-        <%- include('./partials/front-page-block.ejs', {language: database.language, block: value}) %>
-        <% } %>
+        <div id="front-page-block-scroll-hint">
+          <div class="scroll-hint-wrapper">
+            <div class="scroll-hint">Swipe left or right to explore the image</div>
+          </div>
+          <% for (var [key, value] of Object.entries(database.front_page_blocks)) { %>
+          <%- include('./partials/front-page-block.ejs', {language: database.language, block: value}) %>
+          <% } %>
+        </div>
       </div>
     </div>
 
   </div>
   <%- include('./partials/footer.ejs', { database: database }) %>
   </div>
+  <script>
+    window.addEventListener("load", function() {
+      const img = document.querySelector(".front-page-block-image-link img");
+      const container = document.getElementById("front-page-block-scroll-hint");
+
+      // ensure image is loaded
+      const imageHeight = img.height;
+      const scaledHeight = imageHeight - 15;
+      container.style.height = scaledHeight + "px";
+    });
+  </script>
 </body>
+
+
+
 
 </html>

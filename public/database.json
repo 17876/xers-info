@@ -11,20 +11,6 @@
                 "img_src": "/front/img/front_photography.jpg",
                 "title": "Analog Photography",
                 "description": ""
-            },
-            "field_recordings": {
-                "id": 2,
-                "src": "/projects/echo-chamber",
-                "img_src": "/front/img/front_field_recordings.jpg",
-                "title": "Field Recordings",
-                "description": ""
-            },
-            "composed_stuff": {
-                "id": 3,
-                "src": "/projects/echo-chamber",
-                "img_src": "/front/img/front_composed.jpg",
-                "title": "Compositions",
-                "description": ""
             }
         },
         "about-page": "",
