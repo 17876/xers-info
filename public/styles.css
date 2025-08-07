@@ -147,7 +147,7 @@ nav li {
     padding: 0;
 }
 
-.front-page-block-scroll-hint {
+#front-page-block-scroll-hint {
     width: 100%;
     height: auto;
 }
@@ -241,6 +241,27 @@ nav li {
 
 .scroll-hint.hidden {
     opacity: 0;
+}
+
+svg a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.st0 {
+    fill: transparent;
+    stroke-width: 1;
+    stroke-miterlimit: 20;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.overlay-caption {
+    font-size: 24px;
+}
+
+.hover-group:hover .st0,
+.hover-group:hover text {
+    stroke-width: 2;
+    cursor: pointer;
 }
 
 /*********************************/

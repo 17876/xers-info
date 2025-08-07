@@ -18,24 +18,86 @@
         </div>
       </div>
     </div>
-
+    <!-- <div style="height: 1000px;"></div> -->
   </div>
   <%- include('./partials/footer.ejs', { database: database }) %>
   </div>
+  
   <script>
-    window.addEventListener("load", function() {
+    //resizes the front-page-block-scroll-hint container, so the scroll hint disapperas with the image exactly synchtoniously
+    function resizeFPBSHContainer() {
       const img = document.querySelector(".front-page-block-image-link img");
       const container = document.getElementById("front-page-block-scroll-hint");
-
-      // ensure image is loaded
+      const scrollHint = document.querySelector(".scroll-hint");
       const imageHeight = img.height;
-      const scaledHeight = imageHeight - 15;
-      container.style.height = scaledHeight + "px";
+      const scrollHintHeight = scrollHint.scrollHeight;
+      // console.log(scrollHintHeight);
+      const reducedHeight = imageHeight - scrollHintHeight;
+      container.style.height = reducedHeight + "px";
+    }
+
+    window.addEventListener("load", () => {
+      resizeFPBSHContainer();
+      window.addEventListener("resize", resizeFPBSHContainer);
     });
   </script>
+
+  <script>
+  window.addEventListener('load', () => {
+    const scrollWrapper = document.querySelector('.front-page-block');
+    const image = document.querySelector('.front-page-block-image-link img');
+    const hint = document.querySelector('.scroll-hint');
+    // Wait a short time to ensure image is loaded and dimensions are available
+    if (image.complete) {
+
+      centerImage();
+
+    } else {
+      image.onload = centerImage;
+    }
+
+    function centerImage() {
+
+      const scrollAmount = (image.scrollWidth - scrollWrapper.clientWidth) / 2;
+      scrollWrapper.scrollLeft = scrollAmount;
+    }
+
+    let scrollTimeout;
+
+    scrollWrapper.addEventListener('scroll', () => {
+      // Hide hint immediately on scroll
+      hint.classList.add('hidden');
+
+      // Clear any previous timeout
+      clearTimeout(scrollTimeout);
+
+      // Show it again after 1000ms of no scroll
+      scrollTimeout = setTimeout(() => {
+        hint.classList.remove('hidden');
+      }, 200);
+    });
+
+    // window.addEventListener('scroll', () => {
+    //   if (!isImageVisible()) {
+    //     // Hide hint completely (remove from layout)
+    //     hint.style.display = 'none';
+    //   } else {
+    //     // Show hint only if user is NOT scrolling horizontally
+    //     hint.style.display = 'block';
+
+    //   }
+    // });
+
+    // // Utility: check if image is visible in viewport vertically
+    // function isImageVisible() {
+    //   const rect = image.getBoundingClientRect();
+    //   // Check if any part of image is inside viewport vertically
+    //   return rect.bottom > 0 && rect.top < window.innerHeight;
+    // }
+  });
+</script>
+
+
 </body>
-
-
-
 
 </html>
