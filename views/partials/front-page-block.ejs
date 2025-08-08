@@ -22,8 +22,6 @@
   </div>
 </div>
 
-
-
 <style>
   <% for (var i=0; i<block.overlay_links.length; i++) {
     let overlay_link=block.overlay_links[i];%>
@@ -40,13 +38,10 @@
     {
     fill: <%=overlay_link.color+"4d"%>;
     stroke: <%=overlay_link.color%>;
-
       }
   
   .hover-group-link-<%=i%>:hover text {
     text-decoration: overline;
     }
-
-
   <%}%>
 </style>

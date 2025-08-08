@@ -8,7 +8,7 @@
   <div class="wrapper-front">
     <div id="main-content-div" class="m-0">
       <div id="front-page-content">
-        <div id="front-page-block-scroll-hint">
+        <div class="front-page-block-scroll-hint">
           <div class="scroll-hint-wrapper">
             <div class="scroll-hint">Swipe left or right to explore the image</div>
           </div>
@@ -27,7 +27,7 @@
     //resizes the front-page-block-scroll-hint container, so the scroll hint disapperas with the image exactly synchtoniously
     function resizeFPBSHContainer() {
       const img = document.querySelector(".front-page-block-image-link img");
-      const container = document.getElementById("front-page-block-scroll-hint");
+      const container = document.querySelector(".front-page-block-scroll-hint");
       const scrollHint = document.querySelector(".scroll-hint");
       const imageHeight = img.height;
       const scrollHintHeight = scrollHint.scrollHeight;

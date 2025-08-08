@@ -147,7 +147,7 @@ nav li {
     padding: 0;
 }
 
-#front-page-block-scroll-hint {
+.front-page-block-scroll-hint {
     width: 100%;
     height: auto;
 }
