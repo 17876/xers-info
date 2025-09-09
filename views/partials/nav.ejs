@@ -1,9 +1,23 @@
+<% for (var navBlockIdx = 0; navBlockIdx<database.nav.length; navBlockIdx++) {
+  const curNavBlock = database.nav[navBlockIdx];
+  const curNavBlockTitle = curNavBlock.title;
+  %>
+
+<div class="nav-block-container">
+
+<p class="nav-block-title"><%=curNavBlockTitle%></p>
 <nav>
-  <ul>
-    <li><a href="/<%= database.language %>"><%= database.nav[0] %></a></li>
-    <li><a href="/<%= database.language %>/about"><%= database.nav[1] %></a></li>
-    <li><a href="/<%= database.language %>/events"><%= database.nav[2] %></a></li>
-    <li><a href="/<%= database.language %>/sand"><%= database.nav[3] %></a></li>
-    <li><a href="/<%= database.language %>/contact"><%= database.nav[4] %></a></li>
-  </ul>
+<ul>
+    <% for (var linkIdx = 0; linkIdx<curNavBlock.links.length; linkIdx++) {
+        const curLink = curNavBlock.links[linkIdx];
+        const curStyle = curLink.css_class;
+      %>
+    <li>
+      <a href="/<%= database.language %><%=curLink.src%>"><span class="<%=curStyle%>"><%= curLink.title %></span></a>
+    </li>
+    <%}%>  
+    </ul>
 </nav>
+</div>
+
+<%}%>

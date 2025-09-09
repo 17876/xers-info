@@ -1,7 +1,68 @@
 {
     "de": {
         "language": "de",
-        "nav": ["Home", "About", "Termine", "Sand", "Kontakt"],
+        "nav": [
+            {
+                "title": "studio",
+                "links": [
+                    {
+                        "title": "home",
+                        "src": "/",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "about",
+                        "src": "/about",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "termine",
+                        "src": "/events",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "sand",
+                        "src": "/sand",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "contact!",
+                        "src": "/contact",
+                        "css_class": "yh"
+                    }
+                ]
+            },
+            {
+                "title": "categories",
+                "links": [
+                    {
+                        "title": "photography",
+                        "src": "/",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "composition",
+                        "src": "/",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "field recordings",
+                        "src": "/",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "film",
+                        "src": "/",
+                        "css_class": ""
+                    },
+                    {
+                        "title": "sound engeneering",
+                        "src": "/",
+                        "css_class": ""
+                    }
+                ]
+            }
+        ],
         "title": "ANTON *",
         "shortabout": "Anton X. Vasilyev ist eine Person mit alternierendem Namen, Komponist, Musiker, Filmemacher, Lyriker, Medienk&#252;nstler, Ingenieur und Tontechniker.",
         "front_page_blocks": {
@@ -77,7 +138,7 @@
             "title": "Impressum",
             "text": "Angaben gem&#228;&#223; &#167; 5 TMG<br>Anton Vasilyev<br>Gro&#223;beerenstra&#223;e 20 10963 Berlin<br><br>Kontakt:<br>Telefon: + 49 157 51760796<br>E-Mail: x@xers.info<br><br>Redaktionell verantwortlich Anton Vasilyev<br><br>Verbraucherstreitbeilegung/Universalschlichtungsstelle Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>Quelle: https://www.e-recht24.de"
         },
-        "copyright": "&#169; Anton X 2025",
+        "copyright": "&#169; Anton Vasilyev-Zarzhavskiy 2025",
         "events": {
             "title": "Termine",
             "events": [
