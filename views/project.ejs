@@ -13,20 +13,21 @@
         <%= proj_database.title %>
       </div>
       <div class="proj-subtitle">
-        <%= proj_database.subtitle %>
+        <%-proj_database.subtitle %>
       </div>
     </div>
-    <div class="flex-container">
+    <div class="proj-content-meta">
       <div id="project-content">
         <%- include('./partials/proj-media.ejs', { proj_database: proj_database }) %>
-        <div class="proj-description">
+        <div class="proj-meta">
           <%- proj_database.description %>
         </div>
       </div>
       <%- include('./partials/project-meta.ejs', { proj_database: proj_database }) %>
     </div>
-    <%- include('./partials/footer.ejs', { database: database }) %>
   </div>
+      <%- include('./partials/footer.ejs', { database: database }) %>
+
 </body>
 
 </html>

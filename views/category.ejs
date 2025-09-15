@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=<%= database.language %>>
+
+<% let title = `${database.title} – Home`%>
+<%- include('./partials/head.ejs', { title: title}) %>
+
+<body>
+  <div class="wrapper-category">
+    <div id="category-content-div">
+      <!-- <div class="short-about">
+        <%- database.shortabout %>
+      </div> -->
+      <div id="projects-thumbnails">
+        <div class="projects-flex-container">
+          <% for (var [key, value] of Object.entries(database.projects)) { 
+            if (value.categories.includes(category)) { %>
+            <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
+          <%  }
+           } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs', { database: database }) %>
+  </div>
+</body>
+
+</html>

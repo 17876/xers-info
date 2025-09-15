@@ -27,7 +27,13 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     height: 100vh;
-    background: #f9f7f4;
+    /* background: #f9f7f4; */
+    background: #fff8ef;
+}
+
+body a {
+    /* color: #000000; */
+    text-decoration-style: dotted;
 }
 
 h1 {
@@ -86,13 +92,15 @@ h5 {
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     padding-left: 10px;
 }
 
 .nav-blocks-container {
     display: flex;
     flex: 1 0 100px;
+    max-width: 500;
+    justify-content: flex-start;
 }
 
 .nav-block-container {
@@ -296,7 +304,7 @@ svg a {
 .footer {
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 10px;
 }
 
@@ -305,15 +313,27 @@ svg a {
     /* padding-bottom: 10px; */
 }
 
-.imprint {
+.copyright {
     margin-left: 10px;
+    margin-bottom: 100px;
 }
 
 /*********************************/
-/*        PORTFOLIO PAGE         */
+/*        CATEGORY PAGE          */
 /*********************************/
 
-#projects-content {
+.wrapper-category {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.category-content-div {
+    width: 100%;
+    font-size: 12px;
+}
+
+#projects-thumbnails {
     display: flex;
     text-align: justify;
     padding: 0;
@@ -322,7 +342,14 @@ svg a {
 .projects-flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+#projects-content {
+    display: flex;
+    text-align: justify;
+    padding: 0;
 }
 
 /*********************************/
@@ -330,25 +357,17 @@ svg a {
 /*********************************/
 
 .project-thumbnail {
-    flex: 0 1 300px;
+    /* border: 40px solid black; */
+    flex: 0 1 150px;
     height: auto;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 
 .project-thumbnail a {
     position: relative;
     display: inline-block;
-}
-
-.project-thumbnail a img {
-    width: 100%;
-    display: block;
-    opacity: 1;
-    border-radius: 8px;
-    transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-    overflow: hidden;
+    text-decoration: none;
 }
 
 .project-thumbnail-image-link {
@@ -357,7 +376,22 @@ svg a {
     overflow: hidden;
 }
 
-.project-thumbnail-overlay {
+.project-thumbnail-image-link img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    border-radius: 8px;
+    transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
+    /* filter: blur(3px);
+    transition: filter 0.5s ease;  */
+}
+
+.project-thumbnail-image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* .project-thumbnail-overlay {
     width: 85%;
     position: absolute;
     top: 50%;
@@ -368,15 +402,35 @@ svg a {
     background-color: rgba(233, 233, 233, 0.6);
     border-radius: 5px;
     padding: 5px;
+} */
+
+.project-thumbnail-meta {
+    /* color: #4b4b4b; */
+    /* color: #9f9f9f; */
+    padding-left: 0px;
+    margin-top: 3px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .project-thumbnail-title {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 12px;
+    color: #525252;
+
     margin: 0;
 }
+
+/* .separator {
+    border: none;
+    height: 0.5px;
+    background-color: #9f9f9f;
+    margin: 3px 0 3px 0;
+} */
+
 .project-thumbnail-subtitle {
-    font-size: 12px;
+    font-size: 10px;
+    color: #9f9f9f;
+
     font-weight: 400;
     margin: 0;
 }
@@ -384,6 +438,7 @@ svg a {
 .project-thumbnail:hover img {
     opacity: 0.8;
     transform: scale(1.08);
+    /* filter: none; */
 }
 
 /*********************************/
@@ -392,12 +447,21 @@ svg a {
 
 .wrapper-project {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1000px;
     min-height: 100%;
 }
 
-.project-header {
-    margin-bottom: 15px;
+.proj-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.proj-content-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .proj-title {
@@ -411,11 +475,13 @@ svg a {
 #project-content {
     flex: 0 1 700px;
     margin-top: 10px;
+    margin-right: 20px;
     padding: 0;
 }
 
 .iframe-container {
     position: relative;
+
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
@@ -423,6 +489,7 @@ svg a {
 
 .youtube-video,
 .vimeo-video {
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -499,6 +566,7 @@ svg a {
 
 .proj-media img {
     height: auto;
+    border-radius: 10px;
 }
 
 .proj-media img {
@@ -624,7 +692,7 @@ svg a {
 /*            IMPRINT            */
 /*********************************/
 
-.imprint-title {
+/* .imprint-title {
     font-size: 18px;
 }
 
@@ -633,7 +701,7 @@ svg a {
     text-align: left;
     padding: 0;
     margin-top: 10px;
-}
+} */
 
 /*********************************/
 /*           EVENTS PAGE         */

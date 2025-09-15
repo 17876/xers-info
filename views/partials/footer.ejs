@@ -4,12 +4,12 @@
             <%- include('nav.ejs', { database: database }) %>
         </div>
         <div class="lang-menu">
-            <a href="javascript:void(0)" onclick="changeLanguage('de')">Deutsch <a>|
-            <a href="javascript:void(0)" onclick="changeLanguage('en')"> English</a>
+            <a href="javascript:void(0)" onclick="changeLanguage('de')">der-die-das<a>|
+            <a href="javascript:void(0)" onclick="changeLanguage('en')"> the-the-the</a>
         </div>
     </div>
-    <div class="imprint">
-        <a href="/<%= database.language %>/imprint"><%- database.imprint.title %></a>
+    <div class="copyright">
+        <!-- <a href="/<%= database.language %>/imprint"><%- database.imprint.title %></a> -->
         <%- database.copyright -%>
     </div>
 </div>

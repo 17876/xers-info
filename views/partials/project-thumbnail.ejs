@@ -1,11 +1,16 @@
 <div class="project-thumbnail">
-  <div class="project-thumbnail-image-link">
-    <a href="/<%= language + project.src  %>">
-      <img src="<%= project.img_src %>" />
-      <div class="project-thumbnail-overlay">
-        <p class="project-thumbnail-title"><%= project.title %></p>
-        <p class="project-thumbnail-subtitle"><%= project.subtitle %></p>
-      </div>
-    </a>
-  </div>
+    <div class="project-thumbnail-image-link">
+        <a href="/<%= language + project.src  %>">
+            <div class="project-thumbnail-image-wrapper">
+                <img src="<%= project.img_src %>" />
+            </div>
+            <div class="project-thumbnail-meta">
+                <p class="project-thumbnail-title"><%= project.title %></p>
+                <!-- <hr class="separator"> -->
+                <p class="project-thumbnail-subtitle">
+                    <%- project.subtitle %>
+                </p>
+            </div>
+        </a>
+    </div>
 </div>

@@ -41,6 +41,18 @@ app.get("/:lang(de|en)/projects/:proj", (req, res) => {
     });
 });
 
+app.get("/:lang(de|en)/category=:cat", (req, res) => {
+    const language = req.params.lang;
+    const category = req.params.cat;
+    let rawdata = fs.readFileSync("public/database.json");
+    let database = JSON.parse(rawdata);
+    res.render("category", {
+        language: language,
+        database: database[language],
+        category: category,
+    });
+});
+
 app.get("/:lang(de|en)/sand/:sandgrain", (req, res) => {
     const language = req.params.lang;
     const sand_grain = req.params.sandgrain;
