@@ -23,7 +23,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 0, 0, 1);
+    /* background: rgba(255, 0, 0, 1); */
     mix-blend-mode: multiply;
     pointer-events: none;
     z-index: -1;
@@ -33,14 +33,21 @@ body {
     flex-direction: column;
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
-    margin-left: 10px;
+    /* margin-left: 10px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 10px; */
+
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px; */
+
+    margin: 0;
+
     height: 100vh;
     /* background: #f9f7f4; */
     /* background: #1b1818; */
     /* filter: grayscale(); */
-    background-image: url("/css/paper-background-1.jpg");
+    /* background-image: url("/css/paper-background-1.jpg"); */
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -90,6 +97,12 @@ h5 {
     min-height: 100%;
 }
 
+.layout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*********************************/
 /*        HEADER STYLES          */
 /*********************************/
@@ -108,7 +121,7 @@ h5 {
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     padding-left: 10px;
 }
 
@@ -319,9 +332,13 @@ svg a {
 
 .footer {
     width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    background: rgb(255, 0, 0);
+    /* height: auto; */
+    /* margin-top: 100px;
+    margin-bottom: 10px; */
+
+    flex: 0 0 20%; /* fixed height (percentage or px) */
+    overflow-y: auto; /* scrolls internally */
 }
 
 .footer a {
@@ -331,7 +348,7 @@ svg a {
 
 .copyright {
     margin-left: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 /*********************************/
@@ -344,16 +361,21 @@ svg a {
 } */
 
 .category-wrapper {
-    width: 70%;
-    height: auto;
+    width: 100%;
+    /* height: auto; */
     margin: auto;
-    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    flex: 0 0 80%; /* fixed height (percentage or px) */
+    overflow-y: auto;
 }
 
 .category-content {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     font-size: 12px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #projects-thumbnails {
