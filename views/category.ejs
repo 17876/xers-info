@@ -4,26 +4,30 @@
 <% let title = `${database.title} – Home`%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
-<body>
+<body class="h-100vh">
 <div class="layout">
   <div class="category-wrapper">
     <div class="category-content">
-      <!-- <div class="short-about">
-        <%- database.shortabout %>
-      </div> -->
       <div id="projects-thumbnails">
-          <% for (var [key, value] of Object.entries(database.projects)) { 
-            if (value.categories.includes(category)) { %>
+          <% let empty = true;
+          for (var [key, value] of Object.entries(database.projects)) { 
+            if (value.categories.includes(category)) { 
+              empty = false;
+              %>
             <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
           <%  }
-           } %>
+           } 
+           if (empty) {
+            %>
+            <p>Nothing's here yet.</p>
+          <%
+           } 
+           %>
       </div>
     </div>
   </div>
       <%- include('./partials/footer.ejs', { database: database }) %>
-
-  </div>
-
+</div>
 </body>
 
 </html>

@@ -7,6 +7,10 @@
     margin: 0 !important;
 }
 
+.h-100vh {
+    height: 100vh !important;
+}
+
 .w-full {
     width: 100% !important;
 }
@@ -42,8 +46,7 @@ body {
     padding-right: 10px; */
 
     margin: 0;
-
-    height: 100vh;
+    height: auto;
     /* background: #f9f7f4; */
     /* background: #1b1818; */
     /* filter: grayscale(); */
@@ -55,7 +58,7 @@ body {
 }
 
 body a {
-    /* color: #000000; */
+    color: #000000;
     text-decoration-style: dotted;
 }
 
@@ -121,7 +124,7 @@ h5 {
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 20px;
     padding-left: 10px;
 }
 
@@ -182,6 +185,8 @@ nav li a {
 .wrapper-front {
     width: 100%;
     height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .short-about {
@@ -197,7 +202,7 @@ nav li a {
 #main-content-div {
     width: 100%;
     font-size: 12px;
-    margin-top: 10px;
+    margin: 0px;
 }
 
 /*********************************/
@@ -234,6 +239,12 @@ nav li a {
 .front-page-block-image-link img {
     width: 100%;
     height: auto;
+
+    /* mask-image: linear-gradient(
+        to bottom,
+        white calc(100% - 5px),
+        transparent 100%
+    ); */
 }
 
 .front-page-block-overlay {
@@ -311,13 +322,14 @@ svg a {
 
 .st0 {
     fill: transparent;
-    stroke-width: 1;
+    stroke-width: 2;
     stroke-miterlimit: 20;
     transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
 .overlay-caption {
     font-size: 24px;
+    font-weight: 500;
 }
 
 .hover-group:hover .st0,
@@ -332,13 +344,17 @@ svg a {
 
 .footer {
     width: 100%;
-    background: rgb(255, 0, 0);
+    background: #aeadb3;
     /* height: auto; */
     /* margin-top: 100px;
     margin-bottom: 10px; */
-
     flex: 0 0 20%; /* fixed height (percentage or px) */
     overflow-y: auto; /* scrolls internally */
+    /* mask-image: linear-gradient(
+        to top,
+        white calc(100% - 5px),
+        transparent 100%
+    ); */
 }
 
 .footer a {
@@ -366,7 +382,6 @@ svg a {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-
     flex: 0 0 80%; /* fixed height (percentage or px) */
     overflow-y: auto;
 }
@@ -629,6 +644,67 @@ svg a {
 /*********************************/
 /*        ABOUT PAGES            */
 /*********************************/
+
+.about-wrapper {
+    width: 100%;
+    /* height: auto; */
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #ff0000;
+    flex: 0 0 80%; /* fixed height (percentage or px) */
+    overflow-y: auto;
+}
+
+.about-content {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: #a50000;
+}
+
+/*parent for abouts-flex, so abouts-flex becomes also a flex element */
+.abouts-flex-parent {
+    display: flex;
+}
+
+.abouts-flex {
+    flex: 0 1 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about1,
+.about2,
+.about3 {
+    height: fit-content;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 8px;
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
+    background-color: #ff0000;
+    position: relative;
+    padding: 0px 1px 1px 1px;
+    text-align: justify;
+}
+
+.about1 {
+    flex: 0 0 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.about2 {
+    flex: 0 0 200px;
+    margin-top: 150px;
+}
+
+.about3 {
+    flex: 0 0 300px;
+    margin-top: 100px;
+}
 
 #cv-content {
     flex: 0 1 700px;
@@ -904,6 +980,41 @@ svg a {
 }
 
 /*****************************************/
+/*       SCREENS SMALLER THAN 840PX      */
+/*****************************************/
+
+@media screen and (max-width: 839px) {
+    /*parent for abouts-flex, so abouts-flex becomes also a flex element */
+    .abouts-flex-parent {
+        display: block;
+        margin: auto;
+    }
+
+    .abouts-flex {
+        display: block;
+        margin: auto;
+    }
+
+    .about1,
+    .about2,
+    .about3 {
+        width: 300px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        height: fit-content;
+        /* border: 1px solid rgb(255, 255, 255); */
+        border-radius: 8px;
+        box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
+        background-color: #ff0000;
+        position: relative;
+        padding: 0px 1px 1px 1px;
+        text-align: justify;
+    }
+}
+
+/*****************************************/
 /*       SCREENS SMALLER THAN 769PX      */
 /*****************************************/
 
@@ -990,5 +1101,34 @@ svg a {
 
     .scroll-hint-wrapper {
         visibility: visible;
+    }
+
+    /*parent for abouts-flex, so abouts-flex becomes also a flex element */
+    .abouts-flex-parent {
+        display: block;
+        margin: auto;
+    }
+
+    .abouts-flex {
+        display: block;
+        margin: auto;
+    }
+
+    .about1,
+    .about2,
+    .about3 {
+        width: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        height: fit-content;
+        /* border: 1px solid rgb(255, 255, 255); */
+        border-radius: 8px;
+        box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
+        background-color: #ff0000;
+        position: relative;
+        padding: 0px 1px 1px 1px;
+        text-align: justify;
     }
 }

@@ -5,9 +5,25 @@
 <% let title = "ANTON X - About"%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
-<body>
-  <div class="wrapper">
+<body class="h-100vh">
+<div class="layout">
+  <div class="about-wrapper">
     <%- include('./partials/header.ejs', { database: database }) %>
+    <div class="about-content">
+      <div class="abouts-flex-parent">
+        <div class="abouts-flex">
+          <div class="about1">
+            <%- database.about1 %>
+          </div>
+          <div class="about2">
+            <%- database.about2 %>
+          </div>
+          <div class="about3">
+            <%- database.about3 %>
+          </div>
+        </div>
+      </div>
+<!--       
     <div class="flex-container">
       <div id="cv-content">
         <p><%- database['about-page'] %></p>
@@ -34,10 +50,10 @@
           </div>
         </div>
       </div>
+     -->
     </div>
   </div>
   <%- include('./partials/footer.ejs', { database: database }) %>
-  </div>
+</div>
 </body>
-
 </html>
