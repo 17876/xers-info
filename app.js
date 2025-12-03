@@ -1,10 +1,13 @@
 // const express is a function
 const express = require("express");
+const { ObjectId } = require("mongodb");
+const { connectToDb, getDb } = require("./db");
 const fs = require("fs");
 
 // express app
 // express() ist a function which creates an instance of the app
 const app = express();
+app.use(express.json());
 
 // register view engine
 // .set lets us configure some application settings
@@ -18,8 +21,20 @@ app.use(express.static("public"));
 //app.use(express.static("projects"));
 
 // listen for requests
-app.listen(3000); // retuns an instance of the server
+//app.listen(3000); // retuns an instance of the server
 // we can store in a constand but we dont have to
+
+// db connection
+let db;
+connectToDb((err) => {
+    if (!err) {
+        app.listen(3000, () => {
+            console.log("app listening on port 3000");
+        });
+        db = getDb();
+        console.log("connected to db");
+    }
+});
 
 // get requests
 app.get("/:lang(de|en)/", (req, res) => {
