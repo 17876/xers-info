@@ -1,7 +1,7 @@
 // const express is a function
 const express = require("express");
 const { ObjectId } = require("mongodb");
-const { connectToDb, getDb } = require("./db");
+const { connectToDb, getDb, makePipeline } = require("./db");
 const fs = require("fs");
 
 // express app
@@ -36,12 +36,103 @@ connectToDb((err) => {
     }
 });
 
-// get requests
 app.get("/:lang(de|en)/", (req, res) => {
     const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    res.render("index", { database: database[language] });
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    const pipelineIndex = makePipeline("index", language);
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            const siteConfig = result[0];
+            db.collection("pages")
+                .aggregate(pipelineIndex)
+                .toArray()
+                .then((result) => {
+                    const indexPage = result[0];
+                    res.status(200);
+                    res.render("index", {
+                        siteConfig: siteConfig,
+                        indexPage: indexPage,
+                    });
+                });
+        })
+        .catch(() => {
+            res.status(500).json({ error: "Could not fetch the documents" });
+        });
+});
+
+app.get("/:lang(de|en)/about", (req, res) => {
+    const language = req.params.lang;
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    const pipelineAbouts = makePipeline("about", language);
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            const siteConfig = result[0];
+            db.collection("about")
+                .aggregate(pipelineAbouts)
+                .toArray()
+                .then((result) => {
+                    const abouts = result[0];
+                    res.status(200);
+                    res.render("about", {
+                        siteConfig: siteConfig,
+                        aboutPage: abouts,
+                    });
+                });
+        })
+        .catch(() => {
+            res.status(500).json({ error: "Could not fetch the documents" });
+        });
+});
+
+app.get("/:lang(de|en)/events", (req, res) => {
+    const language = req.params.lang;
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    const pipelineEventsPage = makePipeline("eventsPage", language);
+    const pipelineEvent = makePipeline("event", language);
+    let siteConfig;
+    let pageConfig;
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            siteConfig = result[0];
+            db.collection("pages")
+                .aggregate(pipelineEventsPage)
+                .toArray()
+                .then((result) => {
+                    pageConfig = result[0];
+                })
+                .catch(() => {
+                    res.status(500).json({
+                        error: "Could not fetch pageConfig",
+                    });
+                });
+
+            db.collection("events")
+                .aggregate(pipelineEvent)
+                .toArray()
+                .then((result) => {
+                    const events = result;
+                    res.status(200);
+                    res.render("events", {
+                        siteConfig: siteConfig,
+                        pageConfig: pageConfig,
+                        events: events,
+                    });
+                })
+                .catch(() => {
+                    res.status(500).json({
+                        error: "Could not fetch events",
+                    });
+                });
+        })
+        .catch(() => {
+            res.status(500).json({ error: "Could not fetch siteConfig" });
+        });
 });
 
 app.get("/:lang(de|en)/projects/:proj", (req, res) => {
@@ -88,23 +179,23 @@ function shuffleArray(array) {
     return array;
 }
 
-app.get("/:lang(de|en)/about", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    let links = ["/about-1", "/about-2"];
-    let images = ["cv_img_01.jpg", "cv_img_02.jpg"];
+// app.get("/:lang(de|en)/about", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+//     let links = ["/about-1", "/about-2"];
+//     let images = ["cv_img_01.jpg", "cv_img_02.jpg"];
 
-    let linksShuffled = shuffleArray(links);
-    let imagesShuffled = shuffleArray(images);
+//     let linksShuffled = shuffleArray(links);
+//     let imagesShuffled = shuffleArray(images);
 
-    res.render("about", {
-        language: language,
-        database: database[language],
-        linksShuffled: linksShuffled,
-        imagesShuffled: imagesShuffled,
-    });
-});
+//     res.render("about", {
+//         language: language,
+//         database: database[language],
+//         linksShuffled: linksShuffled,
+//         imagesShuffled: imagesShuffled,
+//     });
+// });
 
 app.get("/:lang(de|en)/about-1", (req, res) => {
     const language = req.params.lang;
@@ -136,15 +227,15 @@ app.get("/:lang(de|en)/imprint", (req, res) => {
     });
 });
 
-app.get("/:lang(de|en)/events", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
+// app.get("/:lang(de|en)/events", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
 
-    res.render("events", {
-        database: database[language],
-    });
-});
+//     res.render("events", {
+//         database: database[language],
+//     });
+// });
 
 app.get("/:lang(de|en)/sand", (req, res) => {
     const language = req.params.lang;
@@ -167,5 +258,5 @@ app.get("/:lang(de|en)/contact", (req, res) => {
 
 app.get("/", (req, res) => {
     // now we render a view. renders index.ejs
-    res.redirect("/de");
+    res.redirect("/en");
 });

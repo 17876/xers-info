@@ -670,19 +670,32 @@ svg a {
     display: flex;
 }
 
-.abouts-flex {
-    flex: 0 1 1000px;
+.abouts-flex-1,
+.abouts-flex-2,
+.abouts-flex-3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.abouts-flex-1,
+.abouts-flex-3 {
+    flex: 0 1 1000px;
+}
+
+.abouts-flex-2 {
+    flex: 0 1 950px;
+}
+
 .about1,
 .about2,
 .about3,
-.about4 {
+.about4,
+.about5,
+.about6,
+.about7 {
     height: fit-content;
-    /* border: 1px solid rgb(255, 255, 255); */
+    border: 0.25px solid rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
     background-color: #ff0000;
@@ -708,9 +721,27 @@ svg a {
 }
 
 .about4 {
-    flex: 0 0 300px;
+    flex: 0 0 500px;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 80px;
+}
+
+.about5 {
+    flex: 0 0 300px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+.about6 {
+    flex: 0 0 300px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.about7 {
+    flex: 0 0 600px;
+    margin-top: 100px;
+    margin-left: 40px;
 }
 
 #cv-content {
@@ -843,6 +874,7 @@ svg a {
 
 .events-title {
     font-size: 18px;
+    margin-left: 10px;
 }
 
 .events {
@@ -850,6 +882,7 @@ svg a {
     text-align: left;
     padding: 0;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .event {

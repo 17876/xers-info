@@ -1,72 +1,48 @@
 <!DOCTYPE html>
-<html lang=<%= database.language %>>
+<html lang=<%= aboutPage.language %>>
 
-
-<% let title = "ANTON X - About"%>
-<%- include('./partials/head.ejs', { title: title}) %>
-
+<% let title = `${siteConfig.website_title_short} – ${aboutPage.title}` %>
+<%- include('./partials/head.ejs', {title: title}) %>
 <body class="h-100vh">
 <div class="layout">
   <div class="about-wrapper">
-    <%- include('./partials/header.ejs', { database: database }) %>
     <div class="about-content">
       <div class="abouts-flex-parent">
-        <div class="abouts-flex">
+        <div class="abouts-flex-1">
           <div class="about1">
-            <%- database.about1 %>
+            <%- aboutPage.about1 %>
           </div>
           <div class="about2">
-            <%- database.about2 %>
+            <%- aboutPage.about2 %>
           </div>
           <div class="about3">
-            <%- database.about3 %>
+            <%- aboutPage.about3 %>
           </div>
         </div>
       </div>
       <div class="abouts-flex-parent">
-        <div class="abouts-flex">
+        <div class="abouts-flex-2">
           <div class="about4">
-            <%- database.about1 %>
+            <%- aboutPage.about4 %>
           </div>
-          <div class="about2">
-            <%- database.about2 %>
-          </div>
-          <div class="about3">
-            <%- database.about3 %>
+          <div class="about5">
+            <%- aboutPage.about5 %>
           </div>
         </div>
       </div>
-<!--       
-    <div class="flex-container">
-      <div id="cv-content">
-        <p><%- database['about-page'] %></p>
-        <div class="cv-flex-container">
-          <div class="cv-thumbnail">
-            <div class="cv-thumbnail-image-link">
-              <a href="/<%= language + linksShuffled[0]  %>">
-                <img src=<%= "/about/img/" + imagesShuffled[0]%>>
-                <div class="cv-thumbnail-overlay">
-                  <p class="cv-thumbnail-title">Curriculum</p>
-                </div>
-              </a>
-            </div>
+      <div class="abouts-flex-parent">
+        <div class="abouts-flex-3">
+          <div class="about6">
+            <%- aboutPage.about6 %>
           </div>
-          <div class="cv-thumbnail">
-            <div class="cv-thumbnail-image-link">
-              <a href="/<%= language + linksShuffled[1]  %>">
-                <img src=<%= "/about/img/" + imagesShuffled[1]%>>
-                <div class="cv-thumbnail-overlay">
-                  <p class="cv-thumbnail-title">Vitae</p>
-                </div>
-              </a>
-            </div>
+          <div class="about7">
+            <%- aboutPage.about7 %>
           </div>
         </div>
       </div>
-     -->
     </div>
   </div>
-  <%- include('./partials/footer.ejs', { database: database }) %>
+  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 </div>
 </body>
 </html>

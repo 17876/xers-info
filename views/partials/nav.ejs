@@ -1,6 +1,6 @@
-<% for (var navBlockIdx = 0; navBlockIdx<database.nav.length; navBlockIdx++) {
-  const curNavBlock = database.nav[navBlockIdx];
-  const curNavBlockTitle = curNavBlock.title;
+<% for (var navBlockIdx = 0; navBlockIdx<nav.length; navBlockIdx++) {
+  const curNavBlock = nav[navBlockIdx];
+  const curNavBlockTitle = curNavBlock.title[language];
   %>
 
 <div class="nav-block-container">
@@ -13,7 +13,7 @@
         const curStyle = curLink.css_class;
       %>
     <li>
-      <a href="/<%= database.language %><%=curLink.src%>"><span class="<%=curStyle%>"><%= curLink.title %></span></a>
+      <a href="/<%= language %><%=curLink.src%>"><span class="<%=curStyle%>"><%= curLink.title %></span></a>
     </li>
     <%}%>  
     </ul>

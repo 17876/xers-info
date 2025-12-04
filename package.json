@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "ejs": "^3.1.9",
-        "express": "^4.18.2",
+        "express": "^4.22.1",
         "mongodb": "^7.0.0"
     }
 }

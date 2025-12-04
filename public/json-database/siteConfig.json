@@ -1,0 +1,125 @@
+{
+    "_id": "siteConfig",
+    "website_title": {
+        "en": "Anton Vasilyev-Zarzhevskiy",
+        "de": "Anton Vasilyev-Zarzhevskiy"
+    },
+    "website_title_short": {
+        "en": "AVZ",
+        "de": "AVZ"
+    },
+    "nav": [
+        {
+            "title": {
+                "en": "studio",
+                "de": "studio"
+            },
+            "links": [
+                {
+                    "title": {
+                        "en": "home",
+                        "de": "home"
+                    },
+                    "src": "/",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "about",
+                        "de": "about"
+                    },
+                    "src": "/about",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "events",
+                        "de": "termine"
+                    },
+                    "src": "/events",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "sand",
+                        "de": "sand"
+                    },
+                    "src": "/sand",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "contact",
+                        "de": "kontakt"
+                    },
+                    "src": "/contact",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "imprint",
+                        "de": "impressum"
+                    },
+                    "src": "/imprint",
+                    "css_class": ""
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "categories",
+                "de": "kategorien"
+            },
+            "links": [
+                {
+                    "title": {
+                        "en": "analog photography",
+                        "de": "analogfotographie"
+                    },
+                    "src": "/category=photography",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "composition",
+                        "de": "komposition"
+                    },
+                    "src": "/category=composition",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "text",
+                        "de": "text"
+                    },
+                    "src": "/category=text",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "field recordings",
+                        "de": "field recordings"
+                    },
+                    "src": "/",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "film",
+                        "de": "film"
+                    },
+                    "src": "/",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "sound engeneering",
+                        "de": "tontechnik"
+                    },
+                    "src": "/",
+                    "css_class": ""
+                }
+            ]
+        }
+    ]
+}
