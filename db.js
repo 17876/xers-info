@@ -19,7 +19,7 @@ module.exports = {
     },
     // returning this connection to the db. we use this value to communicate with the database.
     getDb: () => dbConnection,
-    makePipeline: (type, language) => {
+    makePipeline: (type, language, match = null) => {
         if (type == "siteConfig") {
             let pipeline = [
                 { $match: { _id: "siteConfig" } },
@@ -53,9 +53,9 @@ module.exports = {
                 },
             ];
             return pipeline;
-        } else if (type == "about") {
+        } else if (type == "aboutPage") {
             let pipeline = [
-                { $match: { _id: "about" } },
+                { $match: { _id: "aboutPage" } },
                 {
                     $project: {
                         language: language,
@@ -71,9 +71,9 @@ module.exports = {
                 },
             ];
             return pipeline;
-        } else if (type == "index") {
+        } else if (type == "indexPage") {
             let pipeline = [
-                { $match: { _id: "index" } },
+                { $match: { _id: "indexPage" } },
                 {
                     $project: {
                         front_overlay_nav: {
@@ -183,6 +183,195 @@ module.exports = {
                 {
                     $project: {
                         pageTitle: `$pageTitle.${language}`,
+                    },
+                },
+            ];
+            return pipeline;
+        } else if (type == "contactPage") {
+            let pipeline = [
+                { $match: { _id: "contactPage" } },
+                {
+                    $project: {
+                        pageTitle: `$pageTitle.${language}`,
+                        text: 1,
+                    },
+                },
+            ];
+            return pipeline;
+        } else if (type == "imprintPage") {
+            let pipeline = [
+                { $match: { _id: "imprintPage" } },
+                {
+                    $project: {
+                        pageTitle: `$pageTitle.${language}`,
+                        text: `$text.${language}`,
+                    },
+                },
+            ];
+            return pipeline;
+        } else if (type == "catPage") {
+            let pipeline = [
+                { $match: { _id: "catPage" } },
+                {
+                    $project: {
+                        pageTitle: `$pageTitle.${language}`,
+                    },
+                },
+            ];
+            return pipeline;
+        } else if (type == "project") {
+            matchObject = {};
+            if (match[0] == "cat") {
+                matchObject = { $match: { categories: match[1] } };
+            } else if (match[0] == "slug") {
+                matchObject = { $match: { slug: match[1] } };
+            }
+
+            let pipeline = [
+                matchObject,
+                {
+                    $project: {
+                        // unchanged
+                        src: 1,
+                        img_src: 1,
+                        title: 1,
+                        categories: 1,
+
+                        // simple multilingual fields
+                        subtitle: {
+                            $getField: { field: language, input: "$subtitle" },
+                        },
+                        description: {
+                            $getField: {
+                                field: language,
+                                input: "$description",
+                            },
+                        },
+
+                        media: {
+                            $map: {
+                                input: "$media",
+                                as: "m",
+                                in: {
+                                    type: "$$m.type",
+
+                                    // multilingual label
+                                    label: {
+                                        $cond: {
+                                            if: {
+                                                $eq: [
+                                                    { $type: "$$m.label" },
+                                                    "object",
+                                                ],
+                                            },
+                                            then: {
+                                                $getField: {
+                                                    field: language,
+                                                    input: "$$m.label",
+                                                },
+                                            },
+                                            else: "$$m.label",
+                                        },
+                                    },
+
+                                    // Now handle 3 possible types
+                                    src: {
+                                        $cond: {
+                                            if: {
+                                                $and: [
+                                                    {
+                                                        $ne: [
+                                                            "$$m.type",
+                                                            "gallery",
+                                                        ],
+                                                    },
+                                                    { $ne: ["$$m.src", null] },
+                                                ],
+                                            },
+                                            then: "$$m.src",
+                                            else: "$$REMOVE",
+                                        },
+                                    },
+
+                                    // Handle gallery.images[] (nested array)
+                                    images: {
+                                        $cond: {
+                                            if: {
+                                                $eq: ["$$m.type", "gallery"],
+                                            },
+                                            then: {
+                                                $map: {
+                                                    input: "$$m.images",
+                                                    as: "img",
+                                                    in: {
+                                                        src: "$$img.src",
+                                                        style: "$$img.style",
+                                                    },
+                                                },
+                                            },
+                                            else: "$$REMOVE",
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                        // meta section
+                        meta: {
+                            title: {
+                                $getField: {
+                                    field: language,
+                                    input: "$meta.title",
+                                },
+                            },
+                            items: {
+                                $map: {
+                                    input: "$meta.items",
+                                    as: "it",
+                                    in: {
+                                        type: "$$it.type",
+
+                                        label: {
+                                            $getField: {
+                                                field: language,
+                                                input: "$$it.label",
+                                            },
+                                        },
+
+                                        // value may be:
+                                        //     a string-object (en/de)
+                                        //     OR an array of objects containing text.en/de
+                                        value: {
+                                            $cond: [
+                                                { $isArray: "$$it.value" },
+                                                {
+                                                    // array case (e.g. link-list)
+                                                    $map: {
+                                                        input: "$$it.value",
+                                                        as: "val",
+                                                        in: {
+                                                            text: {
+                                                                $getField: {
+                                                                    field: language,
+                                                                    input: "$$val.text",
+                                                                },
+                                                            },
+                                                            src: "$$val.src",
+                                                        },
+                                                    },
+                                                },
+                                                {
+                                                    // simple object case (e.g. value.en)
+                                                    $getField: {
+                                                        field: language,
+                                                        input: "$$it.value",
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    },
+                                },
+                            },
+                        },
                     },
                 },
             ];

@@ -1765,7 +1765,7 @@
                 "src": "/projects/echo-chamber",
                 "img_src": "/projects/echo_chamber/img/echo_chamber_thumbnail.jpg",
                 "title": "Echo Chamber",
-                "subtitle": "Ensemble<br>Audio",
+                "subtitle": "Ensemble, Audio",
                 "description": "Hind Rajab war ein sechsj&#228;hriges M&#228;dchen aus Gaza. Sie wurde am 29. Januar 2024 vom israelischen Milit&#228;r get&#246;tet.<br><br>The Palestinian Red Crescent Society konnte Hind telefonisch erreichen und schickte einen Rettungswagen zum Ort des Geschehens. Doch auch die beiden Sanit&#228;ter wurden get&#246;tet.<br>Die Disponentin Rana al-Faqeh blieb etwa drei Stunden lang mit Hind am Telefon, bevor die Verbindung abbrach.<br><br>&#8222;Echo Chamber&#8220; basiert auf einem fast einmin&#252;tigen Ausschnitt aus dem Telefongespr&#228;ch zwischen Hind und Rana al-Faqeh. In dieser Minute rezitierte die Disponentin zusammen mit Hind die Er&#246;ffnungssure des Korans.<br><br>Die Tonh&#246;hen des St&#252;ckes sind Ergebnisse der spektralen Analyse der Gespr&#228;chsaufzeichnung.<br>Die zeitliche Struktur der Aufnahme wurde auf die zeitliche Struktur des St&#252;ckes projiziert. Die Musiker*innen spielen jedoch ohne feste Dauern.<br><br>Jeder Klang dauert so lange, wie die Auff&#252;hrenden brauchen, um einen Auszug aus einem anderen Teil des Telefonats f&#252;r sich stumm zu lesen. Dieses St&#252;ck kann weder mit Clicktrack noch mit Dirigenten gespielt werden.<br><br>&#8222;Echo Chamber&#8220; ist auf eine Art eine verlangsamte Wiedergabe der Originalaufnahme, gespielt vom Ensemble.<br><br>Die Pr&#228;senz der Musiker*innen auf der B&#252;hne, die die Zeit erschaffen &#8211; ein Versuch, das h&#246;rbar zu machen, was zum Schweigen gebracht wurde.<br><br>///<br><br>Ensemble New Babylon<br><br>Isabelle Raphaelis - Fl&#246;te<br>Benjamin Fischer - Oboe<br>Nayoung Cheong - Klarinette<br>Samuel Stoll - Horn<br>Johannes von Buttlar - Schlagzeug, Audio<br>Mireia Vendrell del &#193;lamo - Klavier, Audio<br>Marijke Tjoelker - Violine<br>Hannah Craib - Viola<br>Lynda Anne Cortis - Violoncello<br><br>Anton Vasilyev - Komposition, Audio, Produktion<br><br>23. Juni 2024<br>Universit&#228;t Oldenburg<br><br>Auftragswerk des Ensemble New Babylon",
                 "categories": ["composition"],
                 "media": [
@@ -1786,6 +1786,11 @@
                 "project_meta": {
                     "title": "Projektinformation",
                     "meta": [
+                        {
+                            "type": "category",
+                            "name": "Kategorie:",
+                            "value": "Ensemble, Audio"
+                        },
                         {
                             "type": "instrumentation",
                             "name": "Besetzung:",
@@ -1837,6 +1842,11 @@
                     "title": "Projektinformation",
                     "meta": [
                         {
+                            "type": "category",
+                            "name": "Category:",
+                            "value": "Improvisation, Performance"
+                        },
+                        {
                             "type": "link-list",
                             "name": "Mit:",
                             "links": [
@@ -1877,6 +1887,11 @@
                 "project_meta": {
                     "title": "Projektinformation",
                     "meta": [
+                        {
+                            "type": "category",
+                            "name": "Kategorie:",
+                            "value": "Video"
+                        },
                         {
                             "type": "link-list",
                             "name": "Mit:",
@@ -2070,6 +2085,11 @@
                 "project_meta": {
                     "title": "Projektinformation",
                     "meta": [
+                        {
+                            "type": "category",
+                            "name": "Kategorie:",
+                            "value": "Ensemble, Audio, Video"
+                        },
                         {
                             "type": "instrumentation",
                             "name": "Besetzung:",
@@ -5587,7 +5607,7 @@
                 }
             },
             "money-laundering": {
-                "id": 999,
+                "id": 38,
                 "src": "/projects/money-laundering",
                 "img_src": "/projects/money_laundering/img/money_laundering_thumb.jpg",
                 "title": "Money Laundering",

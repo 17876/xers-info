@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang=<%= database.lang %>>
+<html lang=<%= siteConfig.language %>>
 
-<% let title = `${database.title} - ${proj_database.title}`%>
+<% let title = `${siteConfig.website_title_short} – ${project.title}`;%>
 
-<%- include('./partials/head.ejs', { title: title}) %>
+<%- include('./partials/head.ejs', { title: title }) %>
 
 <body>
   <div class="wrapper-project">
-    <%- include('./partials/header.ejs', { database: database }) %>
     <div class="proj-header">
       <div class="proj-title">
-        <%= proj_database.title %>
+        <%= project.title %>
       </div>
       <div class="proj-subtitle">
-        <%-proj_database.subtitle %>
+        <%-project.subtitle %>
       </div>
     </div>
     <div class="proj-content-meta">
       <div id="project-content">
-        <%- include('./partials/proj-media.ejs', { proj_database: proj_database }) %>
+        <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
         <div class="proj-meta">
-          <%- proj_database.description %>
+          <%- project.description %>
         </div>
       </div>
-      <%- include('./partials/project-meta.ejs', { proj_database: proj_database }) %>
+      <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
     </div>
   </div>
-      <%- include('./partials/footer.ejs', { database: database }) %>
+  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 
 </body>
 

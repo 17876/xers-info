@@ -39,7 +39,7 @@ connectToDb((err) => {
 app.get("/:lang(de|en)/", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineIndex = makePipeline("index", language);
+    const pipelineIndex = makePipeline("indexPage", language);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
@@ -65,21 +65,21 @@ app.get("/:lang(de|en)/", (req, res) => {
 app.get("/:lang(de|en)/about", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineAbouts = makePipeline("about", language);
+    const pipelineAbouts = makePipeline("aboutPage", language);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
             const siteConfig = result[0];
-            db.collection("about")
+            db.collection("pages")
                 .aggregate(pipelineAbouts)
                 .toArray()
                 .then((result) => {
-                    const abouts = result[0];
+                    const aboutPage = result[0];
                     res.status(200);
                     res.render("about", {
                         siteConfig: siteConfig,
-                        aboutPage: abouts,
+                        aboutPage: aboutPage,
                     });
                 });
         })
@@ -135,49 +135,131 @@ app.get("/:lang(de|en)/events", (req, res) => {
         });
 });
 
-app.get("/:lang(de|en)/projects/:proj", (req, res) => {
+app.get("/:lang(de|en)/projects/:slug", (req, res) => {
     const language = req.params.lang;
-    const project = req.params.proj;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    res.render("project", {
-        language: language,
-        database: database[language],
-        proj_database: database[language]["projects"][project],
-    });
+    const slug = req.params.slug;
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    // const pipelineCatPage = makePipeline("catPage", language);
+    const pipelineProject = makePipeline("project", language, ["slug", slug]);
+    let siteConfig;
+    // let pageConfig;
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            siteConfig = result[0];
+            db.collection("projects")
+                .aggregate(pipelineProject)
+                .toArray()
+                .then((result) => {
+                    const project = result[0];
+                    res.status(200);
+                    res.render("project", {
+                        siteConfig: siteConfig,
+                        project: project,
+                    });
+                })
+                .catch((err) => {
+                    res.status(500).json({
+                        error: "Could not fetch project",
+                        details: err.message,
+                    });
+                });
+        })
+        .catch((err) => {
+            res.status(500).json({
+                error: "Could not fetch siteConfig",
+                details: err.message,
+            });
+        });
 });
+
+// app.get("/:lang(de|en)/projects/:proj", (req, res) => {
+//     const language = req.params.lang;
+//     const project = req.params.proj;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+//     res.render("project", {
+//         language: language,
+//         database: database[language],
+//         proj_database: database[language]["projects"][project],
+//     });
+// });
+
+// app.get("/:lang(de|en)/category=:cat", (req, res) => {
+//     const language = req.params.lang;
+//     const category = req.params.cat;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+//     res.render("category", {
+//         language: language,
+//         database: database[language],
+//         category: category,
+//     });
+// });
 
 app.get("/:lang(de|en)/category=:cat", (req, res) => {
     const language = req.params.lang;
     const category = req.params.cat;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    res.render("category", {
-        language: language,
-        database: database[language],
-        category: category,
-    });
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    // const pipelineCatPage = makePipeline("catPage", language);
+    const pipelineProject = makePipeline("project", language, [
+        "cat",
+        category,
+    ]);
+    let siteConfig;
+    // let pageConfig;
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            siteConfig = result[0];
+            db.collection("projects")
+                .aggregate(pipelineProject)
+                .toArray()
+                .then((result) => {
+                    const projects = result;
+                    res.status(200);
+                    res.render("category", {
+                        siteConfig: siteConfig,
+                        category: category,
+                        projects: projects,
+                    });
+                })
+                .catch((err) => {
+                    res.status(500).json({
+                        error: "Could not fetch projects",
+                        details: err.message,
+                    });
+                });
+        })
+        .catch((err) => {
+            res.status(500).json({
+                error: "Could not fetch siteConfig",
+                details: err.message,
+            });
+        });
 });
 
-app.get("/:lang(de|en)/sand/:sandgrain", (req, res) => {
-    const language = req.params.lang;
-    const sand_grain = req.params.sandgrain;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    res.render("sandgrain", {
-        language: language,
-        database: database[language],
-        sandgrain_database: database[language]["sand"]["entries"][sand_grain],
-    });
-});
+// app.get("/:lang(de|en)/sand/:sandgrain", (req, res) => {
+//     const language = req.params.lang;
+//     const sand_grain = req.params.sandgrain;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+//     res.render("sandgrain", {
+//         language: language,
+//         database: database[language],
+//         sandgrain_database: database[language]["sand"]["entries"][sand_grain],
+//     });
+// });
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
+// function shuffleArray(array) {
+//     for (let i = array.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [array[i], array[j]] = [array[j], array[i]];
+//     }
+//     return array;
+// }
 
 // app.get("/:lang(de|en)/about", (req, res) => {
 //     const language = req.params.lang;
@@ -197,35 +279,35 @@ function shuffleArray(array) {
 //     });
 // });
 
-app.get("/:lang(de|en)/about-1", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
+// app.get("/:lang(de|en)/about-1", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
 
-    res.render("about-1", {
-        database: database[language],
-    });
-});
+//     res.render("about-1", {
+//         database: database[language],
+//     });
+// });
 
-app.get("/:lang(de|en)/about-2", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
+// app.get("/:lang(de|en)/about-2", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
 
-    res.render("about-2", {
-        database: database[language],
-    });
-});
+//     res.render("about-2", {
+//         database: database[language],
+//     });
+// });
 
-app.get("/:lang(de|en)/imprint", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
+// app.get("/:lang(de|en)/imprint", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
 
-    res.render("imprint", {
-        database: database[language],
-    });
-});
+//     res.render("imprint", {
+//         database: database[language],
+//     });
+// });
 
 // app.get("/:lang(de|en)/events", (req, res) => {
 //     const language = req.params.lang;
@@ -237,24 +319,88 @@ app.get("/:lang(de|en)/imprint", (req, res) => {
 //     });
 // });
 
-app.get("/:lang(de|en)/sand", (req, res) => {
-    const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-    res.render("sand", {
-        database: database[language],
-    });
-});
+// app.get("/:lang(de|en)/sand", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+//     res.render("sand", {
+//         database: database[language],
+//     });
+// });
 
 app.get("/:lang(de|en)/contact", (req, res) => {
     const language = req.params.lang;
-    let rawdata = fs.readFileSync("public/database.json");
-    let database = JSON.parse(rawdata);
-
-    res.render("contact", {
-        database: database[language],
-    });
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    const pipelineContactPage = makePipeline("contactPage", language);
+    let siteConfig;
+    let pageConfig;
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            siteConfig = result[0];
+            db.collection("pages")
+                .aggregate(pipelineContactPage)
+                .toArray()
+                .then((result) => {
+                    pageConfig = result[0];
+                    res.render("contact", {
+                        siteConfig: siteConfig,
+                        pageConfig: pageConfig,
+                    });
+                })
+                .catch(() => {
+                    res.status(500).json({
+                        error: "Could not fetch pageConfig",
+                    });
+                });
+        })
+        .catch(() => {
+            res.status(500).json({ error: "Could not fetch siteConfig" });
+        });
 });
+
+app.get("/:lang(de|en)/imprint", (req, res) => {
+    const language = req.params.lang;
+    const pipelineSiteConfig = makePipeline("siteConfig", language);
+    const pipelineImprintPage = makePipeline("imprintPage", language);
+    let siteConfig;
+    let pageConfig;
+    db.collection("siteConfig")
+        .aggregate(pipelineSiteConfig)
+        .toArray()
+        .then((result) => {
+            siteConfig = result[0];
+            db.collection("pages")
+                .aggregate(pipelineImprintPage)
+                .toArray()
+                .then((result) => {
+                    pageConfig = result[0];
+                    res.render("imprint", {
+                        siteConfig: siteConfig,
+                        pageConfig: pageConfig,
+                    });
+                })
+                .catch(() => {
+                    res.status(500).json({
+                        error: "Could not fetch pageConfig",
+                    });
+                });
+        })
+        .catch(() => {
+            res.status(500).json({ error: "Could not fetch siteConfig" });
+        });
+});
+
+// app.get("/:lang(de|en)/contact", (req, res) => {
+//     const language = req.params.lang;
+//     let rawdata = fs.readFileSync("public/database.json");
+//     let database = JSON.parse(rawdata);
+
+//     res.render("contact", {
+//         database: database[language],
+//     });
+// });
 
 app.get("/", (req, res) => {
     // now we render a view. renders index.ejs

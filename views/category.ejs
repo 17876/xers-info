@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang=<%= database.language %>>
+<html lang=<%= siteConfig.language %>>
 
-<% let title = `${database.title} – Home`%>
-<%- include('./partials/head.ejs', { title: title}) %>
+<% let title = `${siteConfig.website_title_short} – ${category}`;%>
+<%- include('./partials/head.ejs', { title: title }) %>
 
 <body class="h-100vh">
 <div class="layout">
@@ -10,23 +10,19 @@
     <div class="category-content">
       <div id="projects-thumbnails">
           <% let empty = true;
-          for (var [key, value] of Object.entries(database.projects)) { 
-            if (value.categories.includes(category)) { 
-              empty = false;
-              %>
-            <%- include('./partials/project-thumbnail.ejs', {language: database.language, project: value}) %>
-          <%  }
-           } 
-           if (empty) {
-            %>
+          if (projects.length == 0) { %>
             <p>Nothing's here yet.</p>
-          <%
-           } 
-           %>
+          <% } 
+          else {
+            for (var i = 0; i<projects.length; i++) { %>
+              <%- include('./partials/project-thumbnail.ejs', {language: siteConfig.language, project: projects[i]}) %>
+            <% }
+          } %>
+
       </div>
     </div>
   </div>
-      <%- include('./partials/footer.ejs', { database: database }) %>
+        <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 </div>
 </body>
 

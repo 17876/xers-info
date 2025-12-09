@@ -1,26 +1,27 @@
 <div class="proj-media">
-  <% for (var i = 0; i < proj_database.media.length; i++) { 
-    if (proj_database.media[i].type=="youtube") { %>
+<%console.log(project_media);%>
+  <% for (var i = 0; i < project_media.length; i++) { 
+    if (project_media[i].type=="youtube") { %>
   <div class="youtube-wrapper">
-    <p class="youtube-title"><%- proj_database.media[i].title %></p>
+    <p class="youtube-title"><%- project_media[i].title %></p>
     <div class="iframe-container">
-      <iframe src=<%=proj_database.media[i].src %> frameborder="0" allowfullscreen class="youtube-video"></iframe>
+      <iframe src=<%=project_media[i].src %> frameborder="0" allowfullscreen class="youtube-video"></iframe>
     </div>
   </div>
   <% }
-  else if (proj_database.media[i].type=="vimeo") { %>
+  else if (project_media[i].type=="vimeo") { %>
   <div class="vimeo-wrapper">
-    <p class="vimeo-title"><%- proj_database.media[i].title %></p>
+    <p class="vimeo-title"><%- project_media[i].title %></p>
     <div class="iframe-container">
-      <iframe src=<%=proj_database.media[i].src %> width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen class="vimeo-video"></iframe>
+      <iframe src=<%=project_media[i].src %> width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen class="vimeo-video"></iframe>
     </div>
   </div>
   <% }
-    else if (proj_database.media[i].type=="img") { %>
-  <img src=<%=proj_database.media[i].src %>>
+    else if (project_media[i].type=="img") { %>
+  <img src=<%=project_media[i].src %>>
   <% }
-    else if (proj_database.media[i].type=="gallery") { %>
-  <%- include('gallery.ejs', { media: proj_database.media[i] }) %>
+    else if (project_media[i].type=="gallery") { %>
+  <%- include('gallery.ejs', { media: project_media[i] }) %>
   <% }
    } %>
 </div>

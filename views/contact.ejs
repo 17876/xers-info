@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang=<%= database.language %>>
+<html lang=<%= siteConfig.language %>>
 
-<% let title = `ANTON X - ${database.contact.title}`%>
+<% let title = `${siteConfig.website_title_short} – ${pageConfig.pageTitle}`%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
   <div class="wrapper">
-    <%- include('./partials/header.ejs', { database: database }) %>
     <div class="contact-title">
-      <%- database.contact.title %>
+      <%- pageConfig.pageTitle %>
     </div>
     <div class="flex-container">
       <div class="contact">
-        <%- database.contact.text %>
+        <%- pageConfig.text %>
       </div>
     </div>
-    <%- include('./partials/footer.ejs', { database: database }) %>
+    <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
 </body>
 
