@@ -174,61 +174,50 @@ app.get("/:lang(de|en)/projects/:slug", (req, res) => {
         });
 });
 
-// app.get("/:lang(de|en)/projects/:proj", (req, res) => {
-//     const language = req.params.lang;
-//     const project = req.params.proj;
-//     let rawdata = fs.readFileSync("public/database.json");
-//     let database = JSON.parse(rawdata);
-//     res.render("project", {
-//         language: language,
-//         database: database[language],
-//         proj_database: database[language]["projects"][project],
-//     });
-// });
-
-// app.get("/:lang(de|en)/category=:cat", (req, res) => {
-//     const language = req.params.lang;
-//     const category = req.params.cat;
-//     let rawdata = fs.readFileSync("public/database.json");
-//     let database = JSON.parse(rawdata);
-//     res.render("category", {
-//         language: language,
-//         database: database[language],
-//         category: category,
-//     });
-// });
-
 app.get("/:lang(de|en)/category=:cat", (req, res) => {
     const language = req.params.lang;
     const category = req.params.cat;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    // const pipelineCatPage = makePipeline("catPage", language);
+    const pipelineCatConfig = makePipeline("catConfig", language, category);
     const pipelineProject = makePipeline("project", language, [
         "cat",
         category,
     ]);
     let siteConfig;
-    // let pageConfig;
+    let catConfig;
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
             siteConfig = result[0];
-            db.collection("projects")
-                .aggregate(pipelineProject)
+            db.collection("categories")
+                .aggregate(pipelineCatConfig)
                 .toArray()
                 .then((result) => {
-                    const projects = result;
-                    res.status(200);
-                    res.render("category", {
-                        siteConfig: siteConfig,
-                        category: category,
-                        projects: projects,
-                    });
+                    catConfig = result[0];
+                    db.collection("projects")
+                        .aggregate(pipelineProject)
+                        .toArray()
+                        .then((result) => {
+                            const projects = result;
+                            res.status(200);
+                            res.render("category", {
+                                siteConfig: siteConfig,
+                                catConfig: catConfig,
+                                category: category,
+                                projects: projects,
+                            });
+                        })
+                        .catch((err) => {
+                            res.status(500).json({
+                                error: "Could not fetch projects",
+                                details: err.message,
+                            });
+                        });
                 })
                 .catch((err) => {
                     res.status(500).json({
-                        error: "Could not fetch projects",
+                        error: "Could not fetch catConfig",
                         details: err.message,
                     });
                 });

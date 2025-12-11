@@ -209,12 +209,12 @@ module.exports = {
                 },
             ];
             return pipeline;
-        } else if (type == "catPage") {
+        } else if (type == "catConfig") {
             let pipeline = [
-                { $match: { _id: "catPage" } },
+                { $match: { _id: match } },
                 {
                     $project: {
-                        pageTitle: `$pageTitle.${language}`,
+                        backgroundColor: 1,
                     },
                 },
             ];

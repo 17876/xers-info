@@ -27,15 +27,19 @@
       const scrollHint = document.querySelector(".scroll-hint");
       const imageHeight = img.height;
       const scrollHintHeight = scrollHint.scrollHeight;
-      // console.log(scrollHintHeight);
       const reducedHeight = imageHeight - scrollHintHeight;
       container.style.height = reducedHeight + "px";
     }
 
-    window.addEventListener("load", () => {
-      resizeFPBSHContainer();
-      window.addEventListener("resize", resizeFPBSHContainer);
-    });
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      window.addEventListener("load", () => {
+        resizeFPBSHContainer();
+        window.addEventListener("resize", resizeFPBSHContainer);
+      });
+    }
+
+
+
   </script>
 
   <script>
@@ -45,15 +49,12 @@
     const hint = document.querySelector('.scroll-hint');
     // Wait a short time to ensure image is loaded and dimensions are available
     if (image.complete) {
-
       centerImage();
-
     } else {
       image.onload = centerImage;
     }
 
     function centerImage() {
-
       const scrollAmount = (image.scrollWidth - scrollWrapper.clientWidth) / 2;
       scrollWrapper.scrollLeft = scrollAmount;
     }
@@ -92,8 +93,5 @@
     // }
   });
 </script>
-
-
 </body>
-
 </html>

@@ -1,11 +1,10 @@
 <% for (var navBlockIdx = 0; navBlockIdx<nav.length; navBlockIdx++) {
   const curNavBlock = nav[navBlockIdx];
-  const curNavBlockTitle = curNavBlock.title[language];
+  const curNavBlockTitle = curNavBlock.title;
   %>
 
 <div class="nav-block-container">
-
-<p class="nav-block-title"><%=curNavBlockTitle%></p>
+<p class="nav-block-title"><%= curNavBlockTitle %></p>
 <nav>
 <ul>
     <% for (var linkIdx = 0; linkIdx<curNavBlock.links.length; linkIdx++) {

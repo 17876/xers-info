@@ -1,0 +1,10 @@
+[
+    {
+        "_id": "composition",
+        "backgroundColor": "#ff00ea"
+    },
+    {
+        "_id": "text",
+        "backgroundColor": "#00dbff"
+    }
+]

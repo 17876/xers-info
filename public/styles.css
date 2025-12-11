@@ -124,7 +124,7 @@ h5 {
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 35px 20px 20px 20px;
     padding-left: 10px;
 }
 
@@ -201,6 +201,7 @@ nav li a {
 
 #main-content-div {
     width: 100%;
+    height: auto;
     font-size: 12px;
     margin: 0px;
 }
@@ -211,6 +212,7 @@ nav li a {
 
 /* front page blocks */
 #front-page-content {
+    height: auto;
     padding: 0;
 }
 
@@ -234,17 +236,12 @@ nav li a {
 .front-page-block-image-link {
     width: 100%;
     height: auto;
+    line-height: 0; /*to remove 3.5px after the svg layer!*/
 }
 
 .front-page-block-image-link img {
     width: 100%;
     height: auto;
-
-    /* mask-image: linear-gradient(
-        to bottom,
-        white calc(100% - 5px),
-        transparent 100%
-    ); */
 }
 
 .front-page-block-overlay {
@@ -344,17 +341,11 @@ svg a {
 
 .footer {
     width: 100%;
-    background: #aeadb3;
-    /* height: auto; */
-    /* margin-top: 100px;
-    margin-bottom: 10px; */
-    flex: 0 0 20%; /* fixed height (percentage or px) */
-    overflow-y: auto; /* scrolls internally */
-    /* mask-image: linear-gradient(
-        to top,
-        white calc(100% - 5px),
-        transparent 100%
-    ); */
+    max-height: 20%;
+    background: #ffffff;
+    flex: 0 0 20%;
+    overflow-y: auto;
+    border-top: 1.5px solid black;
 }
 
 .footer a {
@@ -376,13 +367,21 @@ svg a {
     width: 100%;
 } */
 
+/* .category-wrapper {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 0 0 80%; 
+    overflow-y: auto;
+} */
+
+/*for transparent footer*/
 .category-wrapper {
     width: 100%;
     /* height: auto; */
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    flex: 0 0 80%; /* fixed height (percentage or px) */
     overflow-y: auto;
 }
 
@@ -511,12 +510,28 @@ svg a {
 /*        SINGLE PROJECT PAGE    */
 /*********************************/
 
-.wrapper-project {
+/* .project-wrapper {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
     max-width: 1000px;
     min-height: 100%;
+} */
+
+.project-wrapper {
+    width: 100%;
+    /* height: auto; */
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 0 0 80%; /* fixed height (percentage or px) */
+    overflow-y: auto;
+}
+
+.project-content {
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    overflow: hidden;
 }
 
 .proj-header {
@@ -626,6 +641,10 @@ svg a {
     text-align: justify;
 }
 
+.proj-media {
+    width: 100%;
+}
+
 .proj-media * {
     margin-bottom: 1em;
 }
@@ -650,7 +669,7 @@ svg a {
     /* height: auto; */
     margin: auto;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     background-color: #ff0000;
     flex: 0 0 80%; /* fixed height (percentage or px) */
     overflow-y: auto;
@@ -660,6 +679,7 @@ svg a {
     width: 100%;
     min-height: 100%;
     margin: auto;
+    padding-bottom: 40px;
     font-size: 12px;
     overflow: hidden;
     background-color: #a50000;
@@ -1109,6 +1129,9 @@ svg a {
 
     .nav-block-container {
         margin-bottom: 40px;
+    }
+    #project-content {
+        margin-right: 0;
     }
 
     .project-thumbnail {

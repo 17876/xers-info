@@ -5,27 +5,32 @@
 
 <%- include('./partials/head.ejs', { title: title }) %>
 
-<body>
-  <div class="wrapper-project">
-    <div class="proj-header">
-      <div class="proj-title">
-        <%= project.title %>
-      </div>
-      <div class="proj-subtitle">
-        <%-project.subtitle %>
-      </div>
-    </div>
-    <div class="proj-content-meta">
-      <div id="project-content">
-        <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
-        <div class="proj-meta">
-          <%- project.description %>
+<body class="h-100vh">
+  <div class="layout">
+    <div class="project-wrapper">
+      <div class="project-content">
+        <div class="proj-header">
+          <div class="proj-title">
+            <%= project.title %>
+          </div>
+          <div class="proj-subtitle">
+            <%-project.subtitle %>
+          </div>
+        </div>
+        <div class="proj-content-meta">
+          <div id="project-content">
+            <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
+            <div class="proj-meta">
+              <%- project.description %>
+            </div>
+          </div>
+          <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
         </div>
       </div>
-      <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
     </div>
+
+    <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
-  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 
 </body>
 
