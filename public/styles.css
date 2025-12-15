@@ -101,7 +101,7 @@ h5 {
 }
 
 .layout {
-    height: 100%;
+    height: auto;
 }
 
 /*********************************/
@@ -111,69 +111,6 @@ h5 {
 .header {
     width: 100%;
     height: auto;
-}
-
-/*********************************/
-/*          NAV STYLES           */
-/*********************************/
-
-.nav-lang-container {
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 35px 20px 20px 20px;
-    padding-left: 10px;
-}
-
-.nav-blocks-container {
-    display: flex;
-    flex: 1 0 100px;
-    max-width: 500;
-    justify-content: flex-start;
-}
-
-.nav-block-container {
-    margin-right: 50px;
-    display: block;
-}
-
-.nav-block-title {
-    display: block;
-    margin: 0 0 1em 0;
-}
-
-nav {
-    justify-content: space-between;
-    flex: 1 0 100px;
-}
-
-nav ul {
-    display: block;
-    /* justify-content: flex-start; */
-    /* flex-wrap: wrap; */
-    padding: 0;
-    list-style-type: none;
-    height: auto;
-    margin: 0;
-}
-
-nav li {
-    /* flex: 1 1 0; */
-    padding: 0 0 0 0;
-    height: 1.5em;
-}
-
-nav li a {
-    /* flex: 1 1 0; */
-    padding: 0 0 0 0;
-}
-
-.lang-menu {
-    display: flex;
-    padding: 0;
-    margin-right: 10px;
-    list-style-type: none;
 }
 
 /*********************************/
@@ -232,17 +169,19 @@ nav li a {
 }
 
 .front-page-block-image-link {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     line-height: 0; /*to remove 3.5px after the svg layer!*/
 }
 
 .front-page-block-image-link img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* key line */
 }
 
-.front-page-block-overlay {
+/* .front-page-block-overlay {
     width: 85%;
     position: absolute;
     top: 50%;
@@ -250,10 +189,9 @@ nav li a {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #000000;
-    /* background-color: rgba(233, 233, 233, 0.6); */
     border-radius: 5px;
     padding: 5px;
-}
+} */
 
 .front-page-block-title {
     font-optical-sizing: auto;
@@ -280,7 +218,8 @@ nav li a {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* key line */
 }
 
 .scroll-hint-wrapper {
@@ -341,16 +280,91 @@ svg a {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    max-height: 20%;
+    height: 15vh;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3px);
-    overflow-y: auto;
+    overflow-y: scroll;
     border-top: 1.5px solid black;
+    pointer-events: auto;
+    z-index: 999;
 }
 
 .footer a {
     display: block;
     /* padding-bottom: 10px; */
+}
+
+/*  NAV STYLES */
+
+.scroll-nav-lang-container {
+    display: flex;
+    height: auto;
+    flex-flow: row;
+}
+
+.scroll-icon {
+    flex: 0 0 30px;
+    height: 50px;
+}
+
+.nav-lang-container {
+    display: flex;
+    flex: 1 0 400px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 35px 20px 20px 20px;
+    padding-left: 10px;
+}
+
+.nav-blocks-container {
+    display: flex;
+    flex: 1 0 100px;
+    max-width: 500;
+    justify-content: flex-start;
+}
+
+.nav-block-container {
+    margin-right: 50px;
+    display: block;
+}
+
+.nav-block-title {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+nav {
+    justify-content: space-between;
+    flex: 1 0 100px;
+}
+
+nav ul {
+    display: block;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    padding: 0;
+    list-style-type: none;
+    height: auto;
+    margin: 0;
+}
+
+nav li {
+    /* flex: 1 1 0; */
+    padding: 0 0 0 0;
+    height: 1.5em;
+}
+
+nav li a {
+    /* flex: 1 1 0; */
+    padding: 0 0 0 0;
+}
+
+.lang-menu {
+    display: flex;
+    padding: 0;
+    margin-right: 10px;
+    list-style-type: none;
 }
 
 .copyright {
@@ -677,7 +691,7 @@ svg a {
     width: 100%;
     min-height: 100%;
     margin: auto;
-    padding-bottom: 40px;
+    padding-bottom: 25vh;
     font-size: 12px;
     overflow: hidden;
     background-color: #a50000;
@@ -759,7 +773,7 @@ svg a {
 .about7 {
     flex: 0 0 600px;
     margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 #cv-content {
@@ -1038,38 +1052,38 @@ svg a {
 }
 
 /*****************************************/
-/*       SCREENS SMALLER THAN 840PX      */
+/*       SCREENS SMALLER THAN 946PX      */
 /*****************************************/
 
-@media screen and (max-width: 839px) {
-    /*parent for abouts-flex, so abouts-flex becomes also a flex element */
+@media screen and (max-width: 945px) {
     .abouts-flex-parent {
-        display: block;
+        width: 400px;
         margin: auto;
     }
 
-    .abouts-flex {
-        display: block;
-        margin: auto;
+    .abouts-flex-1,
+    .abouts-flex-2,
+    .abouts-flex-3 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .about1,
     .about2,
     .about3,
-    .about4 {
-        width: 300px;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
+    .about4,
+    .about5,
+    .about6,
+    .about7 {
+        box-sizing: border-box;
+        flex: 1 0 100px;
+        width: 100%;
+        padding: 10px;
         height: fit-content;
-        /* border: 1px solid rgb(255, 255, 255); */
-        border-radius: 8px;
-        box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
-        background-color: #ff0000;
-        position: relative;
-        padding: 0px 1px 1px 1px;
         text-align: justify;
+        margin: 0 0 30px 0;
     }
 }
 
@@ -1165,32 +1179,36 @@ svg a {
         visibility: visible;
     }
 
-    /*parent for abouts-flex, so abouts-flex becomes also a flex element */
+    .about-content {
+        padding-bottom: 20vh;
+    }
     .abouts-flex-parent {
-        display: block;
+        width: 100%;
         margin: auto;
     }
 
-    .abouts-flex {
-        display: block;
-        margin: auto;
+    .abouts-flex-1,
+    .abouts-flex-2,
+    .abouts-flex-3 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .about1,
     .about2,
-    .about3 {
-        width: auto;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 30px;
+    .about3,
+    .about4,
+    .about5,
+    .about6,
+    .about7 {
+        box-sizing: border-box;
+        flex: 1 0 100px;
+        width: 100%;
+        padding: 10px;
         height: fit-content;
-        /* border: 1px solid rgb(255, 255, 255); */
-        border-radius: 8px;
-        box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
-        background-color: #ff0000;
-        position: relative;
-        padding: 0px 1px 1px 1px;
         text-align: justify;
+        margin: 0 0 30px 0;
     }
 }

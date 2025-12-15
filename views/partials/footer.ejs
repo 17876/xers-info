@@ -1,16 +1,24 @@
 <div class="footer">
-    <div class="nav-lang-container">
-        <div class="nav-blocks-container">
-            <%- include('nav.ejs', { language: language, nav: siteConfig.nav }) %>
+    <div class="scroll-nav-lang-container">
+        <div class="scroll-icon">
+            <img src="footer/scroll-icon.png" alt="">
         </div>
-        <div class="lang-menu">
-            <a href="javascript:void(0)" onclick="changeLanguage('de')">der-die-das<a>|
-            <a href="javascript:void(0)" onclick="changeLanguage('en')"> the-the-the</a>
+
+        <div class="nav-lang-container">
+            <div class="nav-blocks-container">
+                <%- include('nav.ejs', { language: language, nav: siteConfig.nav }) %>
+            </div>
+            
+            <div class="lang-menu">
+                <a href="javascript:void(0)" onclick="changeLanguage('de')">der-die-das<a>|
+                <a href="javascript:void(0)" onclick="changeLanguage('en')"> the-the-the</a>
+            </div>
+
         </div>
     </div>
-    <div class="copyright">
-        <%- siteConfig.copyright %>
-    </div>
+        <div class="copyright">
+            <%- siteConfig.copyright %>
+        </div>
 </div>
 
 <script>

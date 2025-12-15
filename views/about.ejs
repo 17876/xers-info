@@ -3,8 +3,7 @@
 
 <% let title = `${siteConfig.website_title_short} – ${aboutPage.title}` %>
 <%- include('./partials/head.ejs', {title: title}) %>
-<body class="h-100vh">
-<div class="layout">
+<body>
   <div class="about-wrapper">
     <div class="about-content">
       <div class="abouts-flex-parent">
@@ -43,6 +42,5 @@
     </div>
   </div>
   <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
-</div>
 </body>
 </html>
