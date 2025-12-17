@@ -339,8 +339,8 @@ svg a {
 }
 
 .close-icon {
-    flex: 0 0 10px;
-    height: 50px;
+    flex: 0 0 15px;
+    height: auto;
     margin: 5px 0px 0px 5px;
 }
 
@@ -820,6 +820,28 @@ nav li a {
     flex: 0 0 600px;
     margin-top: 100px;
     margin-left: 0px;
+}
+
+.about-nav-overlay-path {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-nav-overlay {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.about-nav-overlay img {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+    object-fit: cover; /* key line */
 }
 
 #cv-content {
