@@ -85,6 +85,7 @@ module.exports = {
                                     input: "$front_overlay_nav.overlay_links",
                                     as: "item",
                                     in: {
+                                        id: "$$item.id",
                                         src: "$$item.src",
                                         color: "$$item.color",
                                         caption: `$$item.caption.${language}`,

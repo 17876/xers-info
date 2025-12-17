@@ -3,8 +3,7 @@
 <% let title = `${siteConfig.website_title} – Home`%>
 <%- include('./partials/head.ejs', { title: siteConfig.website_title}) %>
 <body class="m-0">
-  <div class="non-footer-overlay">
-  </div>
+
   <div class="wrapper-front">
     <div id="main-content-div" class="m-0">
       <div id="front-page-content">
@@ -16,10 +15,8 @@
         </div>
       </div>
     </div>
-    <!-- <div style="height: 1000px;"></div> -->
   </div>
-  <div class="footer-overlay">
-  </div>
+
   <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
   
@@ -47,6 +44,17 @@
   </script>
 
   <script>
+
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+
   window.addEventListener('load', () => {
     const scrollWrapper = document.querySelector('.front-page-block');
     const image = document.querySelector('.front-page-block-image-link img');
@@ -77,93 +85,6 @@
         hint.classList.remove('hidden');
       }, 200);
     });
-
-    // window.addEventListener('scroll', () => {
-    //   if (!isImageVisible()) {
-    //     // Hide hint completely (remove from layout)
-    //     hint.style.display = 'none';
-    //   } else {
-    //     // Show hint only if user is NOT scrolling horizontally
-    //     hint.style.display = 'block';
-
-    //   }
-    // });
-
-    // // Utility: check if image is visible in viewport vertically
-    // function isImageVisible() {
-    //   const rect = image.getBoundingClientRect();
-    //   // Check if any part of image is inside viewport vertically
-    //   return rect.bottom > 0 && rect.top < window.innerHeight;
-    // }
-
-// creatting two overlays: one over footer and one over the rest
-// we need it to manage the z-index and scrollability between overlay-links
-// on the front page and the footer
-  const footerOverlay = document.querySelector('.footer-overlay');
-  const nonFooterOverlay = document.querySelector('.non-footer-overlay');
-  const body = document.body;
-  const bodyWidth = document.body.scrollWidth;
-  const bodyHeight = document.body.scrollHeight;
-  
-  const footer = document.querySelector('.footer');
-
-// observing footer area
-  let width = 0;
-  let height = 0;
-  let footerArea = {top: 0, bottom: 0, left: 0, right: 0}
-  const footerObserver = new ResizeObserver((entries) => {
-    const entry = entries[0];
-    footerArea.top = entry.contentRect.top;
-    footerArea.bottom = entry.contentRect.bottom;
-    footerArea.left = entry.contentRect.left;
-    footerArea.right = entry.contentRect.right;
-    console.log(footerArea);
-  });
-  
-  footerObserver.observe(footer);
-
-
-
-
-//   document.addEventListener("mousemove", (e) => {
-//   const rect = { x: 100, y: 100, w: 200, h: 200 };
-//     if (
-//       e.clientX >= rect.x &&
-//       e.clientX <= rect.x + rect.w &&
-//       e.clientY >= rect.y &&
-//       e.clientY <= rect.y + rect.h
-//     ) {
-//       console.log("Mouse entered area");
-//     }
-// });
-
-  
-  // const observerFooter = new ResizeObserver(entries => {
-  //   for (const entry of entries) {
-  //     const { width, height } = entry.contentRect;
-  //     footerOverlay.style.width = width + "px";
-  //     footerOverlay.style.height = height + "px";
-      
-  //     nonFooterOverlay.style.width = width + "px";
-  //     nonFooterOverlay.style.height = bodyHeight - height + "px";
-
-  //   }
-  // });
-  // observerFooter.observe(footer);
-
-  // const content = document.getElementById('main-content-div');
-  // footerOverlay.addEventListener('mouseenter', () => {
-  //   content.style.pointerEvents = "none";
-  //   console.log('footer enter');
-  //   });
-
-  // footerOverlay.addEventListener('mouseleave', () => {
-  //   content.style.pointerEvents = "auto";
-
-  //   console.log('footer leave');
-  // });
-
-
   });
 
 </script>
