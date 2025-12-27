@@ -3,17 +3,19 @@
 <% let title = `${siteConfig.website_title} – Home`%>
 <%- include('./partials/head.ejs', { title: siteConfig.website_title}) %>
 <body class="m-0">
-  <div class="wrapper-front">
-    <div id="main-content-div" class="m-0">
-      <div id="front-page-content">
-        <div class="front-page-block-scroll-hint">
+  <div class="front-wrapper">
+      <div class="front-content">
+        <div class="front-nav-scroll-hint">
           <div class="scroll-hint-wrapper">
             <div class="scroll-hint">Swipe left or right to explore the image</div>
-          </div>          
-          <%- include('./partials/front-page-block.ejs', {language: siteConfig.language, front_overlay_nav: indexPage.front_overlay_nav}) %>
+          </div>
+          <div class="front-nav">
+            <div class="front-nav-image-link">
+              <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: indexPage.overlay_nav}) %>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   </div>
 
   <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
@@ -43,10 +45,9 @@
   </script>
 
   <script>
-
 // sliding footer
   const footer = document.getElementById("footer-front");
-  document.getElementById("nav-path").onclick = () => {
+  document.getElementById("footer-nav-path").onclick = () => {
     footer.classList.add("active");
   };
 
@@ -55,8 +56,8 @@
   };
 
   window.addEventListener('load', () => {
-    const scrollWrapper = document.querySelector('.front-page-block');
-    const image = document.querySelector('.front-page-block-image-link img');
+    const scrollWrapper = document.querySelector('.front-nav-image-link');
+    const image = document.querySelector('.front-nav-image-link img');
     const hint = document.querySelector('.scroll-hint');
     // Wait a short time to ensure image is loaded and dimensions are available
     if (image.complete) {

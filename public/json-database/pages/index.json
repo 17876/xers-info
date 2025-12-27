@@ -1,6 +1,6 @@
 {
     "_id": "indexPage",
-    "front_overlay_nav": {
+    "overlay_nav": {
         "img_src": "/front/img/P1000718-LR.jpg",
         "overlay_links": [
             {
@@ -19,6 +19,7 @@
                 ]
             },
             {
+                "id": "",
                 "src": "/category=field-recording",
                 "color": "#00ff00",
                 "caption": {
@@ -78,7 +79,7 @@
                 ]
             },
             {
-                "id": "nav-path",
+                "id": "footer-nav-path",
                 "src": "",
                 "color": "#ffff00",
                 "caption": {

@@ -60,6 +60,26 @@ module.exports = {
                     $project: {
                         language: language,
                         title: "$title",
+                        overlay_nav: {
+                            img_src: "$overlay_nav.img_src",
+                            offset_left: 1,
+                            description: "$overlay_nav.description",
+                            overlay_links: {
+                                $map: {
+                                    input: "$overlay_nav.overlay_links",
+                                    as: "item",
+                                    in: {
+                                        id: "$$item.id",
+                                        src: "$$item.src",
+                                        color: "$$item.color",
+                                        caption: `$$item.caption.${language}`,
+                                        caption_coordinates:
+                                            "$$item.caption_coordinates",
+                                        paths: "$$item.paths",
+                                    },
+                                },
+                            },
+                        },
                         about1: `$about1.${language}`,
                         about2: `$about2.${language}`,
                         about3: `$about3.${language}`,
@@ -76,13 +96,13 @@ module.exports = {
                 { $match: { _id: "indexPage" } },
                 {
                     $project: {
-                        front_overlay_nav: {
-                            img_src: "$front_overlay_nav.img_src",
-                            description: "$front_overlay_nav.description",
+                        overlay_nav: {
+                            img_src: "$overlay_nav.img_src",
+                            description: "$overlay_nav.description",
 
                             overlay_links: {
                                 $map: {
-                                    input: "$front_overlay_nav.overlay_links",
+                                    input: "$overlay_nav.overlay_links",
                                     as: "item",
                                     in: {
                                         id: "$$item.id",

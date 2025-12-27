@@ -62,23 +62,6 @@ body a {
     text-decoration-style: dotted;
 }
 
-.non-footer-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 9999;
-    visibility: hidden;
-}
-
-.footer-overlay {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    border-top: 1.5px solid rgba(255, 255, 255, 0);
-    z-index: 9999;
-    visibility: hidden;
-}
-
 h1 {
     font-size: 36px;
 }
@@ -134,13 +117,6 @@ h5 {
 /*        MAIN CONTENT           */
 /*********************************/
 
-.wrapper-front {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .short-about {
     margin-bottom: 10px;
 }
@@ -151,93 +127,25 @@ h5 {
     justify-content: space-between;
 }
 
-#main-content-div {
-    width: 100%;
-    height: auto;
-    font-size: 12px;
-    margin: 0px;
-}
-
 /*********************************/
 /*     FRONT PAGE BLOCKS         */
 /*********************************/
 
-/* front page blocks */
-#front-page-content {
+.front-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.front-content {
     height: auto;
     padding: 0;
 }
 
-.front-page-block-scroll-hint {
+.front-nav-scroll-hint {
     width: 100%;
     height: auto;
-}
-
-.front-page-block {
-    position: relative;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-}
-
-.front-page-block::-webkit-scrollbar {
-    display: none;
-}
-
-.front-page-block-image-link {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    line-height: 0; /*to remove 3.5px after the svg layer!*/
-}
-
-.front-page-block-image-link img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* key line */
-}
-
-/* .front-page-block-overlay {
-    width: 85%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000000;
-    border-radius: 5px;
-    padding: 5px;
-} */
-
-.front-page-block-title {
-    font-optical-sizing: auto;
-    font-size: 1vw;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-}
-
-.front-page-block a {
-    position: relative;
-}
-
-.front-page-block a img {
-    width: 100%;
-    display: block;
-    opacity: 1;
-    /* transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1); */
-    overflow: hidden;
-}
-
-#Layer_1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* key line */
-    z-index: 999;
 }
 
 .scroll-hint-wrapper {
@@ -266,6 +174,73 @@ h5 {
 
 .scroll-hint.hidden {
     opacity: 0;
+}
+
+.front-nav {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.front-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.front-nav-image-link {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 0; /*to remove 3.5px after the svg layer!*/
+}
+
+.front-nav-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* key line */
+}
+
+/* .front-page-block-overlay {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+    border-radius: 5px;
+    padding: 5px;
+} */
+
+/* .front-page-block-title {
+    font-optical-sizing: auto;
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+} */
+
+.front-nav a {
+    position: relative;
+}
+
+.front-nav a img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    /* transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1); */
+    overflow: hidden;
+}
+
+#Layer_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* key line */
+    z-index: 999;
 }
 
 svg a {
@@ -335,6 +310,7 @@ svg a {
 .close-nav-lang-container {
     display: flex;
     height: auto;
+    width: 100%;
     flex-flow: row;
 }
 
@@ -355,12 +331,15 @@ svg a {
 
 .nav-lang-container {
     display: flex;
+    box-sizing: border-box;
+    width: 100%;
     flex: 1 0 400px;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 35px 20px 20px 20px;
-    padding-left: 10px;
+    margin: 35px 0px 20px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav-blocks-container {
@@ -724,22 +703,35 @@ nav li a {
 /*        ABOUT PAGES            */
 /*********************************/
 
-.about-wrapper {
+/* .about-wrapper {
     width: 100%;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0px;
     background-color: #ff0000;
     overflow-y: auto;
+} */
+
+.about-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.about-content {
+/* .about-content {
     width: 100%;
     min-height: 100%;
     margin: auto;
     padding-bottom: 25vh;
     font-size: 12px;
     overflow: hidden;
+    background-color: #a50000;
+} */
+
+.about-content {
+    height: auto;
+    padding-bottom: 25vh;
     background-color: #a50000;
 }
 
@@ -822,25 +814,38 @@ nav li a {
     margin-left: 0px;
 }
 
-.about-nav-overlay-path {
+.about-nav {
     position: fixed;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.about-nav-overlay {
+/* .about-nav-image-link {
     position: fixed;
     width: 100%;
     height: auto;
     overflow: hidden;
     z-index: 9999;
+} */
+
+.about-nav-image-link {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 0; /*to remove 3.5px after the svg layer!*/
 }
 
-.about-nav-overlay img {
+/* .about-nav-image-link img {
     width: 100%;
     height: auto;
     opacity: 50%;
+    object-fit: cover;
+} */
+
+.about-nav-image-link img {
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* key line */
 }
 
@@ -1223,14 +1228,39 @@ nav li a {
         margin-right: 0;
     }
 
-    .front-page-block {
+    .front-nav {
+        position: relative;
         width: 100%;
         height: auto;
         overflow-x: auto;
         overflow-y: hidden;
     }
 
-    .front-page-block-image-link img {
+    .front-nav-image-link {
+        overflow: scroll;
+        position: relative;
+    }
+
+    .front-nav-image-link img {
+        position: relative;
+        width: auto;
+        height: 100vh;
+    }
+
+    .about-nav {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .about-nav-image-link {
+        overflow: visible;
+        position: fixed;
+    }
+
+    .about-nav-image-link img {
+        position: relative;
         width: auto;
         height: 100vh;
     }
@@ -1250,6 +1280,7 @@ nav li a {
     .about-content {
         padding-bottom: 20vh;
     }
+
     .abouts-flex-parent {
         width: 100%;
         margin: auto;
@@ -1277,6 +1308,6 @@ nav li a {
         padding: 10px;
         height: fit-content;
         text-align: justify;
-        margin: 0 0 30px 0;
+        margin: 0 0 100px 0;
     }
 }
