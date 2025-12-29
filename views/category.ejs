@@ -3,12 +3,15 @@
 
 <% let title = `${siteConfig.website_title_short} – ${category}`;%>
 <%- include('./partials/head.ejs', { title: title }) %>
-
-<body class="h-100vh">
-<div class="layout">
+<body>
   <div class="category-wrapper" style="background-color: <%= catConfig.backgroundColor %>">
+    <div class="category-nav">
+      <div class="category-nav-image-link">
+        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: catConfig.overlay_nav}) %>
+      </div>
+    </div>
     <div class="category-content">
-      <div id="projects-thumbnails">
+      <div class="projects-thumbnails">
           <% let empty = true;
           if (projects.length == 0) { %>
             <p>Nothing's here yet.</p>
@@ -18,12 +21,46 @@
               <%- include('./partials/project-thumbnail.ejs', {language: siteConfig.language, project: projects[i]}) %>
             <% }
           } %>
-
       </div>
-    </div>
+    </div>  
   </div>
         <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
-</div>
 </body>
-
 </html>
+
+<script>
+// center the image with navigation in the middle of the screen
+  if (window.matchMedia("(max-width: 450px)").matches) {
+    window.addEventListener('load', () => {
+      const categoryNavImageLink = document.querySelector('.category-nav-image-link');
+      const overlayImg = document.getElementById("overlay-img");
+      const w0 = overlayImg.naturalWidth;
+      const h0 = overlayImg.naturalHeight;
+      // screen size
+      const wS = window.innerWidth;
+      // const hS = window.innerHeight;
+      // window.innerHeight gives wrong size beccause of the adress bar etc. in the smartphone browser, so we go by the height of the element, which give the actual correct css value
+      const hS = categoryNavImageLink.offsetHeight;
+      // onscreen image size
+      const hP = hS;
+      const wP = (w0 / h0)*hP;
+
+      const origPosNorm = <%= catConfig.overlay_nav.positioning.orig_pos%>;
+      const screenPosNorm = <%= catConfig.overlay_nav.positioning.screen_pos%>;
+      // setting the left value
+      const left = - wP * origPosNorm + wS * screenPosNorm +  "px"; 
+      categoryNavImageLink.style.left = left;
+    }
+    )
+  }
+
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("footer-nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

@@ -3,7 +3,11 @@
     "title": "About",
     "overlay_nav": {
         "img_src": "/about/img/anton-overlay-full.png",
-        "offset_left": 0.55,
+        "positioning": {
+            "orig_pos": 0.55,
+            "screen_pos": 0.5,
+            "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
+        },
         "overlay_links": [
             {
                 "id": "footer-nav-path",

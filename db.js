@@ -62,7 +62,7 @@ module.exports = {
                         title: "$title",
                         overlay_nav: {
                             img_src: "$overlay_nav.img_src",
-                            offset_left: 1,
+                            positioning: 1,
                             description: "$overlay_nav.description",
                             overlay_links: {
                                 $map: {
@@ -236,6 +236,26 @@ module.exports = {
                 {
                     $project: {
                         backgroundColor: 1,
+                        overlay_nav: {
+                            img_src: "$overlay_nav.img_src",
+                            positioning: 1,
+                            description: "$overlay_nav.description",
+                            overlay_links: {
+                                $map: {
+                                    input: "$overlay_nav.overlay_links",
+                                    as: "item",
+                                    in: {
+                                        id: "$$item.id",
+                                        src: "$$item.src",
+                                        color: "$$item.color",
+                                        caption: `$$item.caption.${language}`,
+                                        caption_coordinates:
+                                            "$$item.caption_coordinates",
+                                        paths: "$$item.paths",
+                                    },
+                                },
+                            },
+                        },
                     },
                 },
             ];

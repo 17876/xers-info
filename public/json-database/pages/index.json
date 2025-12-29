@@ -50,7 +50,7 @@
             },
             {
                 "id": "",
-                "src": "/category=Text",
+                "src": "/category=text",
                 "color": "#00dbff",
                 "caption": {
                     "en": "Text",

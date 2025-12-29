@@ -1,10 +1,63 @@
 [
     {
         "_id": "composition",
-        "backgroundColor": "#ff00ea"
+        "backgroundColor": "#ff00ea",
+        "overlay_nav": {
+            "img_src": "/category/img/composition-overlay-full.png",
+            "positioning": {
+                "orig_pos": 0.437,
+                "screen_pos": 0.8,
+                "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
+            },
+            "overlay_links": [
+                {
+                    "id": "footer-nav-path",
+                    "src": "",
+                    "color": "#000000",
+                    "caption": {
+                        "en": "Menu",
+                        "de": "Menü"
+                    },
+                    "caption_coordinates": [820, 548],
+                    "paths": [
+                        {
+                            "points": "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26"
+                        }
+                    ]
+                }
+            ],
+            "description": ""
+        }
     },
+
     {
         "_id": "text",
-        "backgroundColor": "#00dbff"
+        "backgroundColor": "#00dbff",
+        "overlay_nav": {
+            "img_src": "/category/img/composition-overlay-full.png",
+            "positioning": {
+                "orig_pos": 0.437,
+                "screen_pos": 0.8,
+                "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
+            },
+            "overlay_links": [
+                {
+                    "id": "footer-nav-path",
+                    "src": "",
+                    "color": "#000000",
+                    "caption": {
+                        "en": "Menu",
+                        "de": "Menü"
+                    },
+                    "caption_coordinates": [820, 548],
+                    "paths": [
+                        {
+                            "points": "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26"
+                        }
+                    ]
+                }
+            ],
+            "description": ""
+        }
     }
 ]

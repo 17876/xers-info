@@ -61,14 +61,18 @@
       const h0 = overlayImg.naturalHeight;
       // screen size
       const wS = window.innerWidth;
-      const hS = window.innerHeight;
+      // const hS = window.innerHeight;
+      // window.innerHeight gives wrong size beccause of the adress bar etc. in the smartphone browser, so we go by the height of the element, which give the actual correct css value
+      const hS = aboutNavImageLink.offsetHeight;
+      // console.log(aboutNavImageLink.offsetHeight);
+      
       // onscreen image size
       const hP = hS;
       const wP = (w0 / h0)*hP;
-
-      const offsetLeft = <%= aboutPage.overlay_nav.offset_left%>;
+      const origPosNorm = <%= aboutPage.overlay_nav.positioning.orig_pos%>;
+      const screenPosNorm = <%= aboutPage.overlay_nav.positioning.screen_pos%>;
       // setting the left value
-      const left = - wP * offsetLeft + wS/2 +  "px"; 
+      const left = - wP * origPosNorm + wS * screenPosNorm +  "px"; 
       aboutNavImageLink.style.left = left;
     }
     )
