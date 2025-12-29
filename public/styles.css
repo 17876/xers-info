@@ -23,15 +23,14 @@
 /*********************************/
 /*         GENERAL CSS           */
 /*********************************/
-body::before {
+/* body::before {
     content: "";
     position: fixed;
     inset: 0;
-    /* background: rgba(255, 0, 0, 1); */
     mix-blend-mode: multiply;
     pointer-events: none;
     z-index: -1;
-}
+} */
 
 body {
     flex-direction: column;
@@ -134,8 +133,7 @@ h5 {
 .front-wrapper {
     width: 100%;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .front-content {
@@ -333,7 +331,7 @@ svg a {
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    flex: 1 0 400px;
+    flex: 1 0 300px;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
