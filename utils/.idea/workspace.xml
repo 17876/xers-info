@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f60735d8-50f9-40ae-bc43-27f09fc1ec11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db.js" beforeDir="false" afterPath="$PROJECT_DIR$/../db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/about/txt/about_de_v01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/about/txt/about_en_v00.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../public/about/txt/about_en_v00.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/about/txt/about_en_v01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comment.md" beforeDir="false" afterPath="$PROJECT_DIR$/../comment.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/partials/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../views/partials/front-page-block.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/partials/front-page-block.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../views/partials/proj-media.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/partials/proj-media.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../views/project.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../views/project.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "category-layout"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

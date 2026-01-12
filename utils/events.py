@@ -3,8 +3,8 @@ import json
 with open("../public/database.json", "r") as file:
     data = json.load(file)
 
-events_en = data['en']['events']['events'] # list of objects
-events_de = data['de']['events']['events'] # list of objects
+events_en = data['en']['events']['events']  #list of objects
+events_de = data['de']['events']['events']  #list of objects
 
 events = []
 

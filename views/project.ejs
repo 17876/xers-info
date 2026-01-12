@@ -6,29 +6,44 @@
 <%- include('./partials/head.ejs', { title: title }) %>
 
 <body class="h-100vh">
-    <div class="project-wrapper">
-      <div class="project-content">
-        <div class="proj-header">
-          <div class="proj-title">
-            <%= project.title %>
-          </div>
-          <div class="proj-subtitle">
-            <%-project.subtitle %>
-          </div>
-        </div>
-        <div class="proj-content-meta">
-          <div id="project-content">
-            <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
-            <div class="proj-meta">
-              <%- project.description %>
-            </div>
-          </div>
-          <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
-        </div>
+  <div class="project-wrapper" style="background-color: #fff">
+    <div class="project-nav">
+      <div class="project-nav-image-link">
+        <img id ="overlay-img" src=<%= project.icon_src %> />
       </div>
     </div>
-    <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
-
+    <div class="project-content">
+      <div class="proj-header">
+        <div class="proj-title">
+          <%= project.title %>
+        </div>
+        <div class="proj-subtitle">
+          <%-project.subtitle %>
+        </div>
+      </div>
+      <div class="proj-content-meta">
+        <div id="project-content">
+          <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
+          <div class="proj-meta">
+            <%- project.description %>
+          </div>
+        </div>
+        <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 </body>
-
 </html>
+
+<script>
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("overlay-img").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

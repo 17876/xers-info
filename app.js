@@ -24,6 +24,11 @@ app.use(express.static("public"));
 //app.listen(3000); // retuns an instance of the server
 // we can store in a constand but we dont have to
 
+app.use((req, res, next) => {
+    res.locals.currentYear = new Date().getFullYear();
+    next();
+});
+
 // db connection
 let db;
 connectToDb((err) => {

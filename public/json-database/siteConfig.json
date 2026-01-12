@@ -41,14 +41,6 @@
                 },
                 {
                     "title": {
-                        "en": "sand",
-                        "de": "sand"
-                    },
-                    "src": "/sand",
-                    "css_class": ""
-                },
-                {
-                    "title": {
                         "en": "contact",
                         "de": "kontakt"
                     },
@@ -122,5 +114,5 @@
             ]
         }
     ],
-    "copyright": "© Anton Vasilyev-Zarzhevskiy 2025"
+    "copyright": "© Anton Vasilyev-Zarzhevskiy"
 }

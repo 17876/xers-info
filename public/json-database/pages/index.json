@@ -20,7 +20,7 @@
             },
             {
                 "id": "",
-                "src": "/category=field-recording",
+                "src": "/category=field-recordings",
                 "color": "#00ff00",
                 "caption": {
                     "en": "Field Recordings",
@@ -83,8 +83,8 @@
                 "src": "",
                 "color": "#ffff00",
                 "caption": {
-                    "en": "Navigation",
-                    "de": "Navigation"
+                    "en": "Menu",
+                    "de": "Menü"
                 },
                 "caption_coordinates": [104, 494],
                 "paths": [

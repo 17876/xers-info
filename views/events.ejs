@@ -5,116 +5,136 @@
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
-  <div class="wrapper">
-    <div class="events-title">
-      <%- pageConfig.pageTitle %>
-    </div>
-    <div class="flex-container">
-      <div class="events">
-        <% for (var i = 0; i<events.length; i++) { 
-          let curEvent = events[i];
-          let curEventClass = "";
-          
-          if (curEvent.past==1) {
-            curEventClass = "event past"
-          }
-          else {
-            curEventClass = "event"
-          }%>
+  <div class="events-wrapper">
+    <div class="events-content">
+      <div class="events-header">
+        <div class="events-title">
+          <%- pageConfig.pageTitle %>
+        </div>
+        <div id="footer-nav-path" class="events-hamburger">
+          <img src="/events/img/hamburger_icon.png" alt="">
+        </div>
+      </div>
 
-        <div class="<%= curEventClass %>">
-          <% if (curEvent.datetime!=0) {%>
-          <p class="datetime">
+      <div class="events-flex-parent">
+        <div class="events">
+          <% for (var i = 0; i<events.length; i++) { 
+            let curEvent = events[i];
+            let curEventClass = "";
+            
+            if (curEvent.past==1) {
+              curEventClass = "event past"
+            }
+            else {
+              curEventClass = "event"
+            }%>
 
-            <% if (curEvent.datetime.date!="") {%>
-            <span class="date">
-              <%= curEvent.datetime.date %>
-            </span>
+          <div class="<%= curEventClass %>">
+            <% if (curEvent.datetime!=0) {%>
+            <p class="datetime">
+
+              <% if (curEvent.datetime.date!="") {%>
+              <span class="date">
+                <%= curEvent.datetime.date %>
+              </span>
+              <% } %>
+
+              <% if (curEvent.datetime.time!="") {%>
+              <span class="time">
+                <%= curEvent.datetime.time %>
+              </span>
+              <% } %>
+            </p>
             <% } %>
 
-            <% if (curEvent.datetime.time!="") {%>
-            <span class="time">
-              <%= curEvent.datetime.time %>
-            </span>
+            <% if (curEvent.venue!="") {%>
+            <p class="venue">
+              <%= curEvent.venue %>
+            </p>
             <% } %>
-          </p>
-          <% } %>
 
-          <% if (curEvent.venue!="") {%>
-          <p class="venue">
-            <%= curEvent.venue %>
-          </p>
-          <% } %>
+            <% if (curEvent.title!="") { %>
+            <p class="title">
+              <% if (curEvent['projectLink']!="") { 
+                let curLink = "/" + siteConfig.language + curEvent['projectLink'];
+                %>
+              <a href=<%= curLink %>><%=curEvent.title%></a>
+              <% }
+              else { %>
+              <%=curEvent.title%>
+            </p>
+            <% } 
+            } %>
 
-          <% if (curEvent.title!="") { %>
-          <p class="title">
-            <% if (curEvent['projectLink']!="") { 
-              let curLink = "/" + siteConfig.language + curEvent['projectLink'];
-              %>
-            <a href=<%= curLink %>><%=curEvent.title%></a>
-            <% }
-            else { %>
-            <%=curEvent.title%>
-          </p>
-          <% } 
+            <% if (curEvent.subtitle!="") {%>
+            <p class="subtitle">
+              <%= curEvent.subtitle %>
+            </p>
+            <% } %>
+
+            <% if (curEvent.collab!=0) {%>
+            <p class="collab">
+              <% if (curEvent.collab.text!='') {%>
+              <span><%=curEvent.collab.text%></span>
+              <% } 
+
+              for (var j = 0; j<curEvent.collab.who.length; j++) {
+                
+                let aclass = '';
+                if (j!=curEvent.collab.who.length-1) {
+                  aclass = 'with-comma';
+                  }
+
+                if (curEvent.collab.who[j].link!="") { %>
+              <span class=<%=aclass%>><a href=<%=curEvent.collab.who[j].link%>><%=curEvent.collab.who[j].name%></a></span>
+              <% }
+                  else { %>
+              <span class=<%=aclass%>><%=curEvent.collab.who[j].name%></span>
+              <% }
+              } %>
+            </p>
+            <% } %>
+
+            <% if (curEvent.description!="") {%>
+            <p class="description">
+              <%= curEvent.description %>
+            </p>
+            <% } %>
+
+            <% if (curEvent.extra!=0) {
+              for (var j = 0; j<curEvent.extra.length; j++) { %>
+            <p class="extra">
+              <%= curEvent.extra[j] %>
+            </p>
+            <% } 
           } %>
 
-          <% if (curEvent.subtitle!="") {%>
-          <p class="subtitle">
-            <%= curEvent.subtitle %>
-          </p>
-          <% } %>
+            <% if (curEvent.link!="") {%>
+            <p class="link">
+              <a href=<%= curEvent.link %>><%= curEvent.link %></a>
+            </p>
+            <% } %>
 
-          <% if (curEvent.collab!=0) {%>
-          <p class="collab">
-            <% if (curEvent.collab.text!='') {%>
-            <span><%=curEvent.collab.text%></span>
-            <% } 
-
-            for (var j = 0; j<curEvent.collab.who.length; j++) {
-              
-              let aclass = '';
-              if (j!=curEvent.collab.who.length-1) {
-                aclass = 'with-comma';
-                }
-
-              if (curEvent.collab.who[j].link!="") { %>
-            <span class=<%=aclass%>><a href=<%=curEvent.collab.who[j].link%>><%=curEvent.collab.who[j].name%></a></span>
-            <% }
-                else { %>
-            <span class=<%=aclass%>><%=curEvent.collab.who[j].name%></span>
-            <% }
-            } %>
-          </p>
-          <% } %>
-
-          <% if (curEvent.description!="") {%>
-          <p class="description">
-            <%= curEvent.description %>
-          </p>
-          <% } %>
-
-          <% if (curEvent.extra!=0) {
-            for (var j = 0; j<curEvent.extra.length; j++) { %>
-          <p class="extra">
-            <%= curEvent.extra[j] %>
-          </p>
-          <% } 
-        } %>
-
-          <% if (curEvent.link!="") {%>
-          <p class="link">
-            <a href=<%= curEvent.link %>><%= curEvent.link %></a>
-          </p>
+          </div>
           <% } %>
 
         </div>
-        <% } %>
-
       </div>
+    <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
     </div>
-  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
 </body>
-
 </html>
+
+<script>
+ 
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("footer-nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

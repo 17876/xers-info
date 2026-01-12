@@ -1,6 +1,7 @@
 # generating events for mongo db from old database.json
 import json
 
+
 def find_dict(list_of_dicts, key, value):
     """
     Returns the first dictionary in the list where dict[key] == value.
@@ -10,6 +11,7 @@ def find_dict(list_of_dicts, key, value):
         if d.get(key) == value:
             return d
     return None
+
 
 with open("../public/database.json", "r") as file:
     data = json.load(file)
@@ -129,6 +131,7 @@ for project_key in projects_en:
                     "slug": cur_slug,
                     "src": cur_project_en['src'],
                     "img_src": cur_project_en['img_src'],
+                    "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
                     "title": cur_project_en['title'],
                     "subtitle": {
                         "en": cur_project_en['subtitle'],
@@ -144,5 +147,5 @@ for project_key in projects_en:
     }
     projects.append(cur_project)
 
-with open("projects.json", "w") as f:
+with open("projects_.json", "w") as f:
     json.dump(projects, f, indent=4)

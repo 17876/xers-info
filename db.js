@@ -275,6 +275,7 @@ module.exports = {
                         // unchanged
                         src: 1,
                         img_src: 1,
+                        icon_src: 1,
                         title: 1,
                         categories: 1,
 
