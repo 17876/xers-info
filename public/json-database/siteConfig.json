@@ -68,7 +68,7 @@
                         "en": "analog photography",
                         "de": "analogfotographie"
                     },
-                    "src": "/category=photography",
+                    "src": "/category=analog-photography",
                     "css_class": ""
                 },
                 {
@@ -92,7 +92,7 @@
                         "en": "field recordings",
                         "de": "field recordings"
                     },
-                    "src": "/",
+                    "src": "/category=field-recordings",
                     "css_class": ""
                 },
                 {
@@ -100,7 +100,7 @@
                         "en": "film",
                         "de": "film"
                     },
-                    "src": "/",
+                    "src": "/category=film",
                     "css_class": ""
                 },
                 {
@@ -108,7 +108,7 @@
                         "en": "sound engeneering",
                         "de": "tontechnik"
                     },
-                    "src": "/",
+                    "src": "/category=sound-engeneering",
                     "css_class": ""
                 }
             ]

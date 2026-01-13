@@ -118,5 +118,35 @@
             ],
             "description": ""
         }
+    },
+    {
+        "_id": "film",
+        "backgroundColor": "#00dbff",
+        "overlay_nav": {
+            "img_src": "/category/img/film-overlay-full.png",
+            "positioning": {
+                "orig_pos": 0.488,
+                "screen_pos": 0.8,
+                "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
+            },
+            "overlay_links": [
+                {
+                    "id": "footer-nav-path",
+                    "src": "",
+                    "color": "#000000",
+                    "caption": {
+                        "en": "Menu",
+                        "de": "Menü"
+                    },
+                    "caption_coordinates": [900, 600],
+                    "paths": [
+                        {
+                            "points": "881.97 617.03 999.29 615.06 999.29 684.6 881.97 687.42 881.97 617.03"
+                        }
+                    ]
+                }
+            ],
+            "description": ""
+        }
     }
 ]

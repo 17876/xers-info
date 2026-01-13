@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang=<%= siteConfig.language %>>
 
-<% let title = `${siteConfig.website_title_short} – ${pageConfig.pageTitle}`;%>
-<%- include('./partials/head.ejs', {title: title}) %>
+<% let title = `${siteConfig.website_title_short} – ${pageConfig.pageTitle}`%>
+<%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
-  <div class="wrapper">
-    <div class="imprint-title">
-      <%- pageConfig.pageTitle %>
-    </div>
-    <div class="flex-container">
-      <div class="imprint">
-        <%- pageConfig.text %>
+  <div class="imprint-wrapper">
+    <div class="imprint-content">
+      <div class="imprint-header">
+        <div class="imprint-title">
+          <%- pageConfig.pageTitle %>
+        </div>
+        <div id="footer-nav-path" class="imprint-hamburger">
+          <img src="/events/img/hamburger_icon.png" alt="">
+        </div>
       </div>
+      <div class="imprint-flex-parent">
+        <div class="imprint">
+          <%- pageConfig.text %>
+        </div>
+      </div>
+      
     </div>
-      <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
+    <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
 </body>
-
 </html>
+
+<script>
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("footer-nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

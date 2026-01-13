@@ -5,17 +5,36 @@
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
-  <div class="wrapper">
-    <div class="contact-title">
-      <%- pageConfig.pageTitle %>
-    </div>
-    <div class="flex-container">
-      <div class="contact">
-        <%- pageConfig.text %>
+  <div class="contact-wrapper">
+    <div class="contact-content">
+      <div class="contact-header">
+        <div class="contact-title">
+          <%- pageConfig.pageTitle %>
+        </div>
+        <div id="footer-nav-path" class="contact-hamburger">
+          <img src="/events/img/hamburger_icon.png" alt="">
+        </div>
       </div>
+      <div class="contact-flex-parent">
+        <div class="contact">
+          <%- pageConfig.text %>
+        </div>
+      </div>
+      
     </div>
     <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
   </div>
 </body>
-
 </html>
+
+<script>
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("footer-nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

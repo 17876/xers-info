@@ -978,7 +978,10 @@ nav li a {
 }
 
 .events-header {
+    background-color: #fff;
     display: flex;
+    position: sticky;
+    top: 0;
 }
 
 .events-title {
@@ -988,11 +991,12 @@ nav li a {
 }
 
 .events-hamburger {
-    flex: 0 0 50px;
+    flex: 0 0 10px;
     height: 1.5em;
     width: auto;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 10px;
 }
 
 .events-hamburger img {
@@ -1076,6 +1080,124 @@ nav li a {
 }
 
 /*********************************/
+/*            CONTACT PAGE       */
+/*********************************/
+.contact-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+}
+
+.contact-content {
+    width: 100%;
+}
+
+.contact-header {
+    background-color: #fff;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.contact-title {
+    flex: 1 0 100px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.contact-hamburger {
+    flex: 0 0 10px;
+    height: 1.5em;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.contact-hamburger img {
+    height: 100%;
+    width: auto;
+}
+
+.contact-hamburger img:hover {
+    pointer-events: auto; /* only while hovering */
+    cursor: pointer;
+}
+
+.contact-flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact {
+    flex: 0 1 700px;
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*********************************/
+/*            IMPRINT PAGE       */
+/*********************************/
+
+.imprint-wrapper {
+    width: 100%;
+    min-height: 100%;
+}
+
+.imprint-content {
+    width: 100%;
+}
+
+.imprint-header {
+    background-color: #fff;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.imprint-title {
+    flex: 1 0 100px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.imprint-hamburger {
+    flex: 0 0 10px;
+    height: 1.5em;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.imprint-hamburger img {
+    height: 100%;
+    width: auto;
+}
+
+.imprint-hamburger img:hover {
+    pointer-events: auto; /* only while hovering */
+    cursor: pointer;
+}
+
+.imprint-flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.imprint {
+    flex: 0 1 700px;
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*********************************/
 /*            SAND PAGE          */
 /*********************************/
 
@@ -1126,21 +1248,6 @@ nav li a {
 .sand-entry .content {
     margin: 0;
     hyphens: auto;
-}
-
-/*********************************/
-/*            CONTACT            */
-/*********************************/
-
-.contact-title {
-    font-size: 18px;
-}
-
-.contact {
-    flex: 0 1 700px;
-    text-align: left;
-    padding: 0;
-    margin-top: 10px;
 }
 
 /*****************************************/
