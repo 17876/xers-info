@@ -105,10 +105,10 @@
                 },
                 {
                     "title": {
-                        "en": "sound engeneering",
+                        "en": "sound engineering",
                         "de": "tontechnik"
                     },
-                    "src": "/category=sound-engeneering",
+                    "src": "/sound-engineering",
                     "css_class": ""
                 }
             ]

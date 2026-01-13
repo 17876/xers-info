@@ -91,6 +91,44 @@ module.exports = {
                 },
             ];
             return pipeline;
+        } else if (type == "soundEngineeringPage") {
+            let pipeline = [
+                { $match: { _id: "soundEngineeringPage" } },
+                {
+                    $project: {
+                        language: language,
+                        title: `$title.${language}`,
+                        overlay_nav: {
+                            img_src: "$overlay_nav.img_src",
+                            positioning: 1,
+                            description: "$overlay_nav.description",
+                            overlay_links: {
+                                $map: {
+                                    input: "$overlay_nav.overlay_links",
+                                    as: "item",
+                                    in: {
+                                        id: "$$item.id",
+                                        src: "$$item.src",
+                                        color: "$$item.color",
+                                        caption: `$$item.caption.${language}`,
+                                        caption_coordinates:
+                                            "$$item.caption_coordinates",
+                                        paths: "$$item.paths",
+                                    },
+                                },
+                            },
+                        },
+                        about1: `$about1.${language}`,
+                        about2: `$about2.${language}`,
+                        about3: `$about3.${language}`,
+                        about4: `$about4.${language}`,
+                        about5: `$about5.${language}`,
+                        about6: `$about6.${language}`,
+                        about7: `$about7.${language}`,
+                    },
+                },
+            ];
+            return pipeline;
         } else if (type == "indexPage") {
             let pipeline = [
                 { $match: { _id: "indexPage" } },

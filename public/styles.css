@@ -948,6 +948,122 @@ nav li a {
     padding-bottom: 1em;
 }
 
+/*********************************************/
+/*        SOUND ENGINEERING PAGE             */
+/*********************************************/
+
+.sound-engineering-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.sound-engineering-content {
+    width: 100%;
+    height: auto;
+    padding-bottom: 25vh;
+    background-color: #000097;
+    color: #fff;
+}
+
+/*parent for abouts-flex, so abouts-flex becomes also a flex element */
+.sound-engineering-flex-parent {
+    display: flex;
+}
+
+.sound-engineering-flex-1,
+.sound-engineering-flex-2,
+.sound-engineering-flex-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sound-engineering-flex-1,
+.sound-engineering-flex-3 {
+    flex: 0 1 1000px;
+}
+
+.sound-engineering-flex-2 {
+    flex: 0 1 950px;
+}
+
+.sound-engineering-text1,
+.sound-engineering-text2,
+.sound-engineering-text3,
+.sound-engineering-text4,
+.sound-engineering-text5,
+.sound-engineering-text6,
+.sound-engineering-text7 {
+    height: fit-content;
+    border: 0.25px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
+    background-color: #0000ff;
+    position: relative;
+    padding: 0px 1px 1px 1px;
+    text-align: justify;
+}
+
+.sound-engineering-text1 {
+    flex: 0 0 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.sound-engineering-text2 {
+    flex: 0 0 200px;
+    margin-top: 150px;
+}
+
+.sound-engineering-text3 {
+    flex: 0 0 300px;
+    margin-top: 100px;
+}
+
+.sound-engineering-text4 {
+    flex: 0 0 500px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.sound-engineering-text5 {
+    flex: 0 0 300px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+.sound-engineering-text6 {
+    flex: 0 0 300px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.sound-engineering-text7 {
+    flex: 0 0 600px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+.sound-engineering-nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.sound-engineering-nav-image-link {
+    height: 100vh;
+    width: auto;
+    /* overflow: hidden; */
+    line-height: 0; /*to remove 3.5px after the svg layer!*/
+}
+
+.sound-engineering-nav-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* key line */
+}
+
 /*********************************/
 /*            IMPRINT            */
 /*********************************/

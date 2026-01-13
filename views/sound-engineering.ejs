@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=<%= soundEngineeringPage.language %>>
+<% let title = `${siteConfig.website_title_short} – ${soundEngineeringPage.title}` %>
+<%- include('./partials/head.ejs', {title: title}) %>
+<body>
+  <div class="sound-engineering-wrapper">
+    <div class="sound-engineering-nav">
+      <div class="sound-engineering-nav-image-link">
+        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: soundEngineeringPage.overlay_nav}) %>
+      </div>
+    </div>
+    <div class="sound-engineering-content">
+      <div class="sound-engineering-flex-parent">
+        <div class="sound-engineering-flex-1">
+          <div class="sound-engineering-text1">
+            <%- soundEngineeringPage.about1 %>
+          </div>
+          <div class="sound-engineering-text2">
+            <%- soundEngineeringPage.about2 %>
+            <script>
+            </script> 
+          </div>
+          <div class="sound-engineering-text3">
+            <%- soundEngineeringPage.about3 %>
+          </div>
+        </div>
+      </div>
+      <div class="sound-engineering-flex-parent">
+        <div class="sound-engineering-flex-2">
+          <div class="sound-engineering-text4">
+            <%- soundEngineeringPage.about4 %>
+          </div>
+          <div class="sound-engineering-text5">
+            <%- soundEngineeringPage.about5 %>
+          </div>
+        </div>
+      </div>
+      <div class="sound-engineering-flex-parent">
+        <div class="sound-engineering-flex-3">
+          <div class="sound-engineering-text6">
+            <%- soundEngineeringPage.about6 %>
+          </div>
+          <div class="sound-engineering-text7">
+            <%- soundEngineeringPage.about7 %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
+</body>
+</html>
+
+<script>
+// center the image with navigation in the middle of the screen
+  if (window.matchMedia("(max-width: 450px)").matches) {
+    window.addEventListener('load', () => {
+      const soundEngineeringNavImageLink = document.querySelector('.sound-engineering-nav-image-link');
+      const overlayImg = document.getElementById("overlay-img");
+      const w0 = overlayImg.naturalWidth;
+      const h0 = overlayImg.naturalHeight;
+      // screen size
+      const wS = window.innerWidth;
+      // const hS = window.innerHeight;
+      // window.innerHeight gives wrong size beccause of the adress bar etc. in the smartphone browser, so we go by the height of the element, which give the actual correct css value
+      const hS = soundEngineeringNavImageLink.offsetHeight;
+      // console.log(aboutNavImageLink.offsetHeight);
+      
+      // onscreen image size
+      const hP = hS;
+      const wP = (w0 / h0)*hP;
+      const origPosNorm = <%= soundEngineeringPage.overlay_nav.positioning.orig_pos%>;
+      const screenPosNorm = <%= soundEngineeringPage.overlay_nav.positioning.screen_pos%>;
+      // setting the left value
+      const left = - wP * origPosNorm + wS * screenPosNorm +  "px"; 
+      soundEngineeringNavImageLink.style.left = left;
+    }
+    )
+  }
+
+
+// sliding footer
+  const footer = document.getElementById("footer-front");
+  document.getElementById("footer-nav-path").onclick = () => {
+    footer.classList.add("active");
+  };
+
+  document.getElementById("footer-close-icon").onclick = () => {
+    footer.classList.remove("active");
+  };
+</script>

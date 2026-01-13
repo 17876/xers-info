@@ -94,6 +94,21 @@
                 ]
             },
             {
+                "id": "",
+                "src": "/sound-engineering",
+                "color": "#0000ff",
+                "caption": {
+                    "en": "Sound Engineering",
+                    "de": "Tontechnik"
+                },
+                "caption_coordinates": [1300, 227],
+                "paths": [
+                    {
+                        "points": "1331.07 265.64 1382.32 250.44 1419.95 256.91 1439.26 365.98 1341.29 352.29 1331.07 265.64"
+                    }
+                ]
+            },
+            {
                 "id": "footer-nav-path",
                 "src": "",
                 "color": "#ffff00",

@@ -1,0 +1,67 @@
+{
+    "_id": "soundEngineeringPage",
+    "title": {
+        "en": "Sound Engineering",
+        "de": "Tontechnik"
+    },
+    "overlay_nav": {
+        "img_src": "/sound-engineering/img/sound-engeneering-overlay-full.png",
+        "positioning": {
+            "orig_pos": 0.55,
+            "screen_pos": 0.5,
+            "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
+        },
+        "overlay_links": [
+            {
+                "id": "footer-nav-path",
+                "src": "",
+                "color": "#ffffff",
+                "caption": {
+                    "en": "Menu",
+                    "de": "Menü"
+                },
+                "caption_coordinates": [1300, 227],
+                "paths": [
+                    {
+                        "points": "1331.07 265.64 1382.32 250.44 1419.95 256.91 1439.26 365.98 1341.29 352.29 1331.07 265.64"
+                    }
+                ]
+            }
+        ],
+        "description": ""
+    },
+    "about1": {
+        "en": "Today is November 26th, 2025, and I refuse to write about myself in the third person. My name is Anton Vasilyev-Zarzhevskiy. I&#8217;m a composer, field recordist, analog photographer, performer and non-artist. I also work as a sound engineer, predominantly in the contemporary music and sound art scene.<br>I love time, and I hate empire.<br>I search for ways of making sounds and images &#8212; music, photography, and video &#8212; that oppose the imperial logic of alienation, constant expansion, and unlimited growth.",
+        "de": ""
+    },
+
+    "about2": {
+        "en": "Within the imperial condition, a piece of art is treated as an object that stands on its own: useless, or useful only within the framework of the system called &#8220;art.&#8221; These otherwise useless objects acquire value only when they are exhibited. I reject this logic.",
+        "de": ""
+    },
+
+    "about3": {
+        "en": "The commonly used notion of art is deeply rooted in the colonial rule. The extracting of objects from colonized communities by the imperial powers was a part of the broader destruction of those communities&#8217; worlds. Many of these objects had clear functions within their original contexts &#8211; such as household uses or spiritual purposes. Once removed, they were uprooted from their origins and stripped of their function. In the hands of the colonizers, these objects became functionless &#8212; in a sense, useless. Their only function became the demonstration of power of the colonizers a power sustained by the enforced dependence of colonized communities. This display of dominance was institutionalized in spaces designed specifically for that purpose: the museum.",
+        "de": ""
+    },
+
+    "about4": {
+        "en": "They say &#8220;look forward&#8221;, they say, &#8222;don&#8217;t look back.&#8221; Under the imperial condition we are compelled to generate &#8222;new&#8220;. The very idea of modernity &#8211; of looking forward, of discarding the past &#8211; is installed by the imperial rule as part of its logic of growth, expansion, and progress.<br>We perform exchanges between the so-called profane and the sublime; we place a pissoir in a museum; we record the sounds of our homes and everyday lives; we declare everything to be art. We extract objects from their original contexts and exhibit them. This is imperial logic.<br>I refuse to generate the &#8220;new.&#8221; I oppose the imperial idea of progress. Call me a lunatic, esoteric, or conservative &#8212; I don&#8217;t care, because I&#8217;m none of these.<br>I examine the mechanisms through which empire steals our time, forcing us to look forward and fetishize progress. In doing so, empire steals our past. It uproots us from our histories and our ancestors; it indoctrinates us; it teaches us to forget &#8212; making further acts of cultural erasure and genocide, possible.<br>I work with so-called time-based media: music, sound, analog photography, and video.",
+        "de": ""
+    },
+
+    "about5": {
+        "en": "In my compositional practice, I seek situations that foreground the physical presence of both performers and listeners. I approach the ensemble as a community and aim to challenge the alienating methods of composition dominating the contemporary music scene.<br>In my fieldwork, I attempt to recontextualize recording media &#8211; audio, video, and photography &#8211; transforming them from instruments that separate us from our past and the body politic, fetishize the recorded subject&#8212;into tools that resist this very logic.<br>I try to reclaim the time which was stolen from me.",
+        "de": ""
+    },
+
+    "about6": {
+        "en": "I studied composition at the University of Arts in Bremen.<br>Before that I studied at the Moscow Technical University Bauman.<br>Before that I went to school and played Balalaika.<br>Before that I was born in Cherepovets, 1984.",
+        "de": ""
+    },
+
+    "about7": {
+        "en": "My name is Anton Vasilyev-Zarzhevskiy. I was given only my father&#8217;s surname. I later reclaimed my maternal surname. I wanted to become a mathematician. Instead of that I became what I am now. Last year I decided to pursue a master&#8217;s degree in Mathematics. I live in Berlin.",
+        "de": ""
+    }
+}
