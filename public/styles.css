@@ -185,6 +185,13 @@ h5 {
     display: none;
 }
 
+/* .st0-link-8 {
+    filter: drop-shadow(0 0 5px rgb(255, 191, 0))
+        drop-shadow(0 0 15px rgb(255, 191, 0))
+        drop-shadow(0 0 30px rgb(255, 191, 0))
+        drop-shadow(0 0 60px rgb(255, 191, 0));
+} */
+
 .front-nav-image-link {
     height: 100vh;
     width: auto;
@@ -770,12 +777,12 @@ nav li a {
 .about6,
 .about7 {
     height: fit-content;
-    border: 0.25px solid rgb(255, 255, 255);
+    /* border: 0.25px solid rgb(255, 255, 255); */
     border-radius: 8px;
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
     background-color: #ff0000;
     position: relative;
-    padding: 0px 1px 1px 1px;
+    padding: 3px;
     text-align: justify;
 }
 
@@ -959,8 +966,7 @@ nav li a {
 
 .sound-engineering-content {
     width: 100%;
-    height: auto;
-    padding-bottom: 25vh;
+    min-height: 100vh;
     background-color: #000097;
     color: #fff;
 }
@@ -970,78 +976,31 @@ nav li a {
     display: flex;
 }
 
-.sound-engineering-flex-1,
-.sound-engineering-flex-2,
-.sound-engineering-flex-3 {
+.sound-engineering-flex-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.sound-engineering-flex-1,
-.sound-engineering-flex-3 {
+.sound-engineering-flex-1 {
     flex: 0 1 1000px;
 }
 
-.sound-engineering-flex-2 {
-    flex: 0 1 950px;
-}
-
-.sound-engineering-text1,
-.sound-engineering-text2,
-.sound-engineering-text3,
-.sound-engineering-text4,
-.sound-engineering-text5,
-.sound-engineering-text6,
-.sound-engineering-text7 {
+.sound-engineering-text1 {
     height: fit-content;
-    border: 0.25px solid rgb(255, 255, 255);
+    /* border: 0.25px solid rgb(255, 255, 255); */
     border-radius: 8px;
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
     background-color: #0000ff;
     position: relative;
-    padding: 0px 1px 1px 1px;
     text-align: justify;
 }
 
 .sound-engineering-text1 {
-    flex: 0 0 300px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.sound-engineering-text2 {
     flex: 0 0 200px;
-    margin-top: 150px;
-}
-
-.sound-engineering-text3 {
-    flex: 0 0 300px;
     margin-top: 100px;
-}
-
-.sound-engineering-text4 {
-    flex: 0 0 500px;
-    margin-top: 50px;
-    margin-left: 80px;
-}
-
-.sound-engineering-text5 {
-    flex: 0 0 300px;
-    margin-top: 100px;
-    margin-left: 0px;
-}
-
-.sound-engineering-text6 {
-    flex: 0 0 300px;
-    margin-top: 60px;
-    margin-left: 40px;
-}
-
-.sound-engineering-text7 {
-    flex: 0 0 600px;
-    margin-top: 100px;
-    margin-left: 0px;
+    margin-left: 300px;
+    padding: 3px;
 }
 
 .sound-engineering-nav {
@@ -1496,6 +1455,19 @@ nav li a {
         height: 100vh;
     }
 
+    #Layer_1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vh;
+    }
+
+    .scroll-hint-wrapper {
+        visibility: visible;
+    }
+
+    /*                 ABOUT PAGE             */
     .about-nav {
         width: 100%;
         height: auto;
@@ -1512,18 +1484,6 @@ nav li a {
         position: relative;
         width: auto;
         height: 100vh;
-    }
-
-    #Layer_1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: auto;
-        height: 100vh;
-    }
-
-    .scroll-hint-wrapper {
-        visibility: visible;
     }
 
     .about-content {
@@ -1560,7 +1520,52 @@ nav li a {
         margin: 0 0 100px 0;
     }
 
-    /*category page*/
+    /*                 SOUND ENGINEERING PAGE             */
+    .sound-engineering-nav {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .sound-engineering-nav-image-link {
+        overflow: visible;
+        position: fixed;
+    }
+
+    .sound-engineering-nav-image-link img {
+        position: relative;
+        width: auto;
+        height: 100vh;
+    }
+
+    .sound-engineering-content {
+        padding-bottom: 20vh;
+    }
+
+    .sound-engineering-flex-parent {
+        width: 100%;
+        margin: auto;
+    }
+
+    .sound-engineering-flex-1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sound-engineering-text1 {
+        box-sizing: border-box;
+        flex: 1 0 100px;
+        width: 100%;
+        padding: 10px;
+        height: fit-content;
+        text-align: justify;
+        margin: 0 0 100px 0;
+    }
+
+    /*                 CATEGORY PAGE             */
     .category-nav {
         width: 100%;
         height: auto;
@@ -1613,7 +1618,7 @@ nav li a {
         margin-top: 15px;
     }
 
-    /*single project page*/
+    /*                 SINGLE PROJECT PAGE             */
 
     .project-nav {
         position: fixed;

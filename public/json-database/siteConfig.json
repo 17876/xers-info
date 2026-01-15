@@ -97,10 +97,10 @@
                 },
                 {
                     "title": {
-                        "en": "film",
-                        "de": "film"
+                        "en": "video",
+                        "de": "video"
                     },
-                    "src": "/category=film",
+                    "src": "/category=video",
                     "css_class": ""
                 },
                 {
