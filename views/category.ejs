@@ -9,6 +9,12 @@
 %>
 <body>
   <div class="category-wrapper <%= curCatWrapperClass %>">
+
+    <button onclick="filterProjects('one')">one</button>
+    <button onclick="filterProjects('two')">two</button>
+    <button onclick="filterProjects('three')">three</button>
+    <button onclick="filterProjects('')">all</button>
+
     <div class="category-nav">
       <div class="category-nav-image-link">
         <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: catConfig.overlay_nav}) %>
@@ -67,4 +73,63 @@
   document.getElementById("footer-close-icon").onclick = () => {
     footer.classList.remove("active");
   };
+
+  async function filterProjects(tag) {
+    current_lang = "<%= siteConfig.language %>";
+    current_cat = "<%= catConfig._id %>";
+    const baseUrl = `/${current_lang}/category=${current_cat}`;    
+    const url = tag ? `${baseUrl}?tags=${encodeURIComponent(tag)}` : baseUrl;
+    const res = await fetch(url, {
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+    projects = await res.json();
+
+    container = document.querySelector(".projects-thumbnails");
+    container.innerHTML = "";
+
+    for (var i = 0; i<projects.length; i++) {
+      const curProject = projects[i];
+
+      const projectThumbnail = document.createElement("div");
+      projectThumbnail.className = "project-thumbnail";
+
+      const projectThumbnailImageLink = document.createElement("div");
+      projectThumbnailImageLink.className = "project-thumbnail-image-link";
+
+      const projectLink = document.createElement("a");
+      projectLink.href = `/${current_lang}${curProject.src}`;
+
+      const projectThumbnailImageWrapper = document.createElement("div");
+      projectThumbnailImageWrapper.className = "project-thumbnail-image-wrapper";
+
+      const projectImg = document.createElement("img");
+      projectImg.src = curProject.img_src;
+
+      projectThumbnailImageWrapper.appendChild(projectImg);
+      projectLink.appendChild(projectThumbnailImageWrapper);      
+      projectThumbnailImageLink.appendChild(projectLink);
+      projectThumbnail.appendChild(projectThumbnailImageLink);
+
+
+      const projectThumbnailMeta = document.createElement("div");
+      projectThumbnailMeta.className = "project-thumbnail-meta";
+
+      const projectTitle = document.createElement("p");
+      projectTitle.className = "project-thumbnail-title";
+      projectTitle.textContent = curProject.title;
+
+      const projectSubTitle = document.createElement("p");
+      projectSubTitle.className = "project-thumbnail-subtitle";
+      projectSubTitle.textContent = curProject.subtitle;
+
+      projectThumbnailMeta.appendChild(projectTitle);
+      projectThumbnailMeta.appendChild(projectSubTitle);
+
+      projectThumbnail.appendChild(projectThumbnailMeta);
+
+      container.appendChild(projectThumbnail);
+}
+  }
 </script>

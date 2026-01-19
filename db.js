@@ -19,7 +19,7 @@ module.exports = {
     },
     // returning this connection to the db. we use this value to communicate with the database.
     getDb: () => dbConnection,
-    makePipeline: (type, language, match = null) => {
+    makePipeline: (type, language, filter = null) => {
         if (type == "siteConfig") {
             let pipeline = [
                 { $match: { _id: "siteConfig" } },
@@ -269,7 +269,8 @@ module.exports = {
             return pipeline;
         } else if (type == "catConfig") {
             let pipeline = [
-                { $match: { _id: match } },
+                // { $match: { _id: filter } },
+                { $match: filter },
                 {
                     $project: {
                         backgroundColor: 1,
@@ -298,15 +299,8 @@ module.exports = {
             ];
             return pipeline;
         } else if (type == "project") {
-            matchObject = {};
-            if (match[0] == "cat") {
-                matchObject = { $match: { categories: match[1] } };
-            } else if (match[0] == "slug") {
-                matchObject = { $match: { slug: match[1] } };
-            }
-
             let pipeline = [
-                matchObject,
+                { $match: filter },
                 {
                     $project: {
                         // unchanged
@@ -315,6 +309,7 @@ module.exports = {
                         icon_src: 1,
                         title: 1,
                         categories: 1,
+                        tags: 1,
 
                         // simple multilingual fields
                         subtitle: {

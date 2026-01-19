@@ -93,7 +93,7 @@ app.get("/:lang(de|en)/sound-engineering", (req, res) => {
     const pipelineSiteConfig = makePipeline("siteConfig", language);
     const pipelineSoundEngineering = makePipeline(
         "soundEngineeringPage",
-        language
+        language,
     );
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
@@ -169,9 +169,11 @@ app.get("/:lang(de|en)/projects/:slug", (req, res) => {
     const slug = req.params.slug;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
     // const pipelineCatPage = makePipeline("catPage", language);
-    const pipelineProject = makePipeline("project", language, ["slug", slug]);
     let siteConfig;
     // let pageConfig;
+    const projectFilter = { slug: slug };
+    const pipelineProject = makePipeline("project", language, projectFilter);
+
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
@@ -207,13 +209,24 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
     const language = req.params.lang;
     const category = req.params.cat;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineCatConfig = makePipeline("catConfig", language, category);
-    const pipelineProject = makePipeline("project", language, [
-        "cat",
-        category,
-    ]);
+
     let siteConfig;
     let catConfig;
+
+    const { tags } = req.query;
+    // console.log(req.query);
+    let catFilter = { _id: category };
+    let projFilter = { categories: category };
+
+    const pipelineCatConfig = makePipeline("catConfig", language, catFilter);
+
+    // If tags are provided
+    if (tags) {
+        const tagsArray = tags.split(",");
+        projFilter.tags = { $in: tagsArray };
+    }
+    const pipelineProject = makePipeline("project", language, projFilter);
+
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
@@ -230,6 +243,15 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
                         .then((result) => {
                             const projects = result;
                             res.status(200);
+                            const wantsJSON =
+                                req.headers.accept?.includes(
+                                    "application/json",
+                                );
+
+                            if (wantsJSON) {
+                                return res.json(projects);
+                            }
+
                             res.render("category", {
                                 siteConfig: siteConfig,
                                 catConfig: catConfig,
