@@ -237,7 +237,7 @@ svg a {
     -webkit-tap-highlight-color: transparent;
 }
 
-.st0 {
+.overlay-path {
     fill: transparent;
     stroke-width: 2;
     stroke-miterlimit: 20;
@@ -249,36 +249,11 @@ svg a {
     font-weight: 500;
 }
 
-@keyframes jitter {
-    0% {
-        transform: translate(0, 0);
-    }
-    20% {
-        transform: translate(-1px, 1px);
-    }
-    40% {
-        transform: translate(1px, -1px);
-    }
-    60% {
-        transform: translate(-1px, -1px);
-    }
-    80% {
-        transform: translate(1px, 1px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-.hover-group {
-    animation: jitter 0.15s infinite;
-}
-
 .hover-group:hover {
     animation: none;
 }
 
-.hover-group:hover .st0,
+.hover-group:hover .overlay-path,
 .hover-group:hover text {
     animation: none;
     stroke-width: 2;
@@ -772,8 +747,23 @@ nav li a {
 .about-wrapper {
     width: 100%;
     height: auto;
-    /* margin-top: 0;
-    margin-bottom: 0; */
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
 }
 
 .about-content {
@@ -998,6 +988,23 @@ nav li a {
 .sound-engineering-wrapper {
     width: 100%;
     height: auto;
+
+    .overlay-path {
+        stroke: #ffffff;
+    }
+
+    .overlay-caption {
+        fill: #ffffff;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #ffffff4d;
+        stroke: #ffffff;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
 }
 
 .sound-engineering-content {

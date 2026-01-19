@@ -1,9 +1,8 @@
 [
     {
-        "_id": "composition",
-        "backgroundColor": "#ff00ea",
+        "_id": "music",
         "overlay_nav": {
-            "img_src": "/category/img/composition-overlay-full.png",
+            "img_src": "/category/img/music-overlay-full.png",
             "positioning": {
                 "orig_pos": 0.437,
                 "screen_pos": 0.8,
@@ -18,7 +17,7 @@
                         "en": "Menu",
                         "de": "Menü"
                     },
-                    "caption_coordinates": [820, 548],
+                    "caption_coordinates": [750, 625],
                     "paths": [
                         {
                             "points": "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26"
@@ -31,7 +30,6 @@
     },
     {
         "_id": "text",
-        "backgroundColor": "#00dbff",
         "overlay_nav": {
             "img_src": "/category/img/text-overlay-full.png",
             "positioning": {
@@ -61,7 +59,6 @@
     },
     {
         "_id": "analog-photography",
-        "backgroundColor": "#d2d2d2",
         "overlay_nav": {
             "img_src": "/category/img/photography-overlay-full.png",
             "positioning": {
@@ -91,7 +88,6 @@
     },
     {
         "_id": "field-recordings",
-        "backgroundColor": "#00dbff",
         "overlay_nav": {
             "img_src": "/category/img/field-recordings-overlay-full.png",
             "positioning": {
@@ -121,7 +117,6 @@
     },
     {
         "_id": "video",
-        "backgroundColor": "#ff6c00",
         "overlay_nav": {
             "img_src": "/category/img/video-overlay-full.png",
             "positioning": {
@@ -142,36 +137,6 @@
                     "paths": [
                         {
                             "points": "881.97 617.03 999.29 615.06 999.29 684.6 881.97 687.42 881.97 617.03"
-                        }
-                    ]
-                }
-            ],
-            "description": ""
-        }
-    },
-    {
-        "_id": "improvisation",
-        "backgroundColor": "#eaff00",
-        "overlay_nav": {
-            "img_src": "/category/img/improvisation-overlay-full.png",
-            "positioning": {
-                "orig_pos": 0.048,
-                "screen_pos": 0.5,
-                "comment": "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen"
-            },
-            "overlay_links": [
-                {
-                    "id": "footer-nav-path",
-                    "src": "",
-                    "color": "#000000",
-                    "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
-                    },
-                    "caption_coordinates": [50, 550],
-                    "paths": [
-                        {
-                            "points": "100.19 698.59 123.84 698.59 118.21 680 112.02 666.68 100.19 646.03 99.06 597.41 103.19 591.97 102.44 572.07 95.68 573.95 95.68 597.22 94.39 647.14 89.3 649.03 90.43 660.48 91.56 670.81 94.18 682.07 96.25 691.08 100.19 698.59"
                         }
                     ]
                 }

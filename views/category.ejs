@@ -3,8 +3,12 @@
 
 <% let title = `${siteConfig.website_title_short} – ${category}`;%>
 <%- include('./partials/head.ejs', { title: title }) %>
+<%
+  const curCatId = catConfig._id;
+  const curCatWrapperClass = `category-wrapper-${curCatId}`;
+%>
 <body>
-  <div class="category-wrapper" style="background-color: <%= catConfig.backgroundColor %>">
+  <div class="category-wrapper <%= curCatWrapperClass %>">
     <div class="category-nav">
       <div class="category-nav-image-link">
         <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: catConfig.overlay_nav}) %>

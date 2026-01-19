@@ -3,17 +3,17 @@
   <% for (var i = 0; i<overlay_nav.overlay_links.length; i++) {
     const overlay_link = overlay_nav.overlay_links[i];
     const curGroupId = overlay_link.id;
-    const curDynamicGroupClass = `hover-group-link-${i}`;
-    const curDynamicCaptionClass = `overlay-caption-link-${i}`;
+    const curDynamicGroupClass = `hover-group-${curGroupId}`;
+    const curDynamicCaptionClass = `overlay-caption-link-${curGroupId}`;
   if (overlay_link.src != "") { %>
     <a href="/<%= language %><%= overlay_link.src %>">
     <%}%>
       <g id="<%= curGroupId %>" class="hover-group <%= curDynamicGroupClass %>" >
         <% for (var j = 0; j<overlay_link.paths.length; j++) { 
           const curPath = overlay_link.paths[j];
-          const curDynamicPathClass = `st0-link-${i}`;
+          const curDynamicPathClass = `overlay-path-${curGroupId}`;
           %>
-        <polygon class="st0 <%= curDynamicPathClass %>" points="<%= curPath.points %>" />
+        <polygon class="overlay-path <%= curDynamicPathClass %>" points="<%= curPath.points %>" />
         <%}%>
         <text class="overlay-caption <%= curDynamicCaptionClass %>" x="<%= overlay_link.caption_coordinates[0] %>" y="<%= overlay_link.caption_coordinates[1] %>"><%= overlay_link.caption %></text>
       </g>
@@ -22,27 +22,3 @@
     <% }
   } %>
 </svg>
-
-<style>
-  <% for (var i=0; i<overlay_nav.overlay_links.length; i++) {
-    let overlay_link=overlay_nav.overlay_links[i];%>
-    
-  .st0-link-<%=i%> {
-      stroke: <%=overlay_link.color%>;
-      }
-  
-  .overlay-caption-link-<%=i%> {
-    fill: <%=overlay_link.color%>;
-      }
-
-  .hover-group-link-<%=i%>:hover .st0
-    {
-    fill: <%=overlay_link.color+"4d"%>;
-    stroke: <%=overlay_link.color%>;
-      }
-  
-  .hover-group-link-<%=i%>:hover text {
-    text-decoration: overline;
-    }
-  <%}%>
-</style>

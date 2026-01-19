@@ -145,7 +145,6 @@ module.exports = {
                                     in: {
                                         id: "$$item.id",
                                         src: "$$item.src",
-                                        color: "$$item.color",
                                         caption: `$$item.caption.${language}`,
                                         caption_coordinates:
                                             "$$item.caption_coordinates",

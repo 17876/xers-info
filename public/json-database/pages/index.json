@@ -4,14 +4,13 @@
         "img_src": "/front/img/P1000718-LR.jpg",
         "overlay_links": [
             {
-                "id": "",
-                "src": "/category=composition",
-                "color": "#ff6c00",
+                "id": "music",
+                "src": "/category=music",
                 "caption": {
-                    "en": "Composition",
-                    "de": "Komposition"
+                    "en": "Music",
+                    "de": "Musik"
                 },
-                "caption_coordinates": [650, 660],
+                "caption_coordinates": [750, 625],
                 "paths": [
                     {
                         "points": "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26"
@@ -19,9 +18,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "field-recordings",
                 "src": "/category=field-recordings",
-                "color": "#00ff00",
                 "caption": {
                     "en": "Field Recordings",
                     "de": "Field Recordings"
@@ -34,9 +32,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "about",
                 "src": "/about",
-                "color": "#FF0000",
                 "caption": {
                     "en": "About",
                     "de": "About"
@@ -49,9 +46,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "text",
                 "src": "/category=text",
-                "color": "#00dbff",
                 "caption": {
                     "en": "Text",
                     "de": "Text"
@@ -64,9 +60,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "analog-photography",
                 "src": "/category=analog-photography",
-                "color": "#d2d2d2",
                 "caption": {
                     "en": "Analog Photography",
                     "de": "Analogfotographie"
@@ -79,9 +74,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "video",
                 "src": "/category=video",
-                "color": "#ff6c00",
                 "caption": {
                     "en": "Video",
                     "de": "Video"
@@ -94,9 +88,8 @@
                 ]
             },
             {
-                "id": "",
+                "id": "sound-engineering",
                 "src": "/sound-engineering",
-                "color": "#0000ff",
                 "caption": {
                     "en": "Sound Engineering",
                     "de": "Tontechnik"
@@ -109,24 +102,8 @@
                 ]
             },
             {
-                "id": "",
-                "src": "/category=improvisation",
-                "color": "#eaff00",
-                "caption": {
-                    "en": "Improvisation",
-                    "de": "Improvisation"
-                },
-                "caption_coordinates": [50, 550],
-                "paths": [
-                    {
-                        "points": "100.19 698.59 123.84 698.59 118.21 680 112.02 666.68 100.19 646.03 99.06 597.41 103.19 591.97 102.44 572.07 95.68 573.95 95.68 597.22 94.39 647.14 89.3 649.03 90.43 660.48 91.56 670.81 94.18 682.07 96.25 691.08 100.19 698.59"
-                    }
-                ]
-            },
-            {
                 "id": "footer-nav-path",
                 "src": "",
-                "color": "#ffffff",
                 "caption": {
                     "en": "Menu",
                     "de": "Menü"

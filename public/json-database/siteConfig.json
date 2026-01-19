@@ -65,18 +65,26 @@
             "links": [
                 {
                     "title": {
-                        "en": "analog photography",
-                        "de": "analogfotographie"
+                        "en": "music",
+                        "de": "musik"
                     },
-                    "src": "/category=analog-photography",
+                    "src": "/category=music",
                     "css_class": ""
                 },
                 {
                     "title": {
-                        "en": "composition",
-                        "de": "komposition"
+                        "en": "video",
+                        "de": "video"
                     },
-                    "src": "/category=composition",
+                    "src": "/category=video",
+                    "css_class": ""
+                },
+                {
+                    "title": {
+                        "en": "analog photography",
+                        "de": "analogfotographie"
+                    },
+                    "src": "/category=analog-photography",
                     "css_class": ""
                 },
                 {
@@ -93,14 +101,6 @@
                         "de": "field recordings"
                     },
                     "src": "/category=field-recordings",
-                    "css_class": ""
-                },
-                {
-                    "title": {
-                        "en": "video",
-                        "de": "video"
-                    },
-                    "src": "/category=video",
                     "css_class": ""
                 },
                 {

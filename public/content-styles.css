@@ -1,0 +1,274 @@
+/*styles based on content, these class names are generated with js based on the name of the content, for example based on the name of a category*/
+
+:root {
+    --music-color: #ff00ea;
+    --music-color4d: #ff00ea4d;
+
+    --analog-photography-color: #d2d2d2;
+    --analog-photography-color4d: #d2d2d24d;
+
+    --field-recordings-color: #00ff00;
+    --field-recordings-color4d: #00ff004d;
+
+    --about-color: #ff0000;
+    --about-color4d: #ff00004d;
+
+    --text-color: #00dbff;
+    --text-color4d: #00dbff4d;
+
+    --video-color: #ff6c00;
+    --video-color4d: #ff6c004d;
+
+    --sound-engineering-color: #0000ff;
+    --sound-engineering-color4d: #0000ff4d;
+
+    --footer-nav-path-color: #ffffff;
+    --footer-nav-path-color4d: #ffffff4d;
+}
+
+/********************************************/
+/*            FRONT OVERLAY NAV             */
+/********************************************/
+
+/*music*/
+
+.overlay-path-music {
+    stroke: var(--music-color);
+}
+
+.overlay-caption-link-music {
+    fill: var(--music-color);
+}
+
+.hover-group-music:hover .overlay-path {
+    fill: var(--music-color4d);
+    stroke: var(--music-color);
+}
+
+.hover-group-music:hover text {
+    text-decoration: underline;
+}
+
+/*analog photography*/
+
+.overlay-path-analog-photography {
+    stroke: var(--analog-photography-color);
+}
+
+.overlay-caption-link-analog-photography {
+    fill: var(--analog-photography-color);
+}
+
+.hover-group-analog-photography:hover .overlay-path {
+    fill: var(--analog-photography-color4d);
+    stroke: var(--analog-photography-color);
+}
+
+.hover-group-analog-photography:hover text {
+    text-decoration: underline;
+}
+
+/*field recordings*/
+
+.overlay-path-field-recordings {
+    stroke: var(--field-recordings-color);
+}
+
+.overlay-caption-link-field-recordings {
+    fill: var(--field-recordings-color);
+}
+
+.hover-group-field-recordings:hover .overlay-path {
+    fill: var(--field-recordings-color4d);
+    stroke: var(--field-recordings-color);
+}
+
+.hover-group-field-recordings:hover text {
+    text-decoration: underline;
+}
+
+/*about*/
+
+.overlay-path-about {
+    stroke: var(--about-color);
+}
+
+.overlay-caption-link-about {
+    fill: var(--about-color);
+}
+
+.hover-group-about:hover .overlay-path {
+    fill: var(--about-color4d);
+    stroke: var(--about-color);
+}
+
+.hover-group-about:hover text {
+    text-decoration: underline;
+}
+
+/*text*/
+
+.overlay-path-text {
+    stroke: var(--text-color);
+}
+
+.overlay-caption-link-text {
+    fill: var(--text-color);
+}
+
+.hover-group-text:hover .overlay-path {
+    fill: var(--text-color4d);
+    stroke: var(--text-color);
+}
+
+.hover-group-text:hover text {
+    text-decoration: underline;
+}
+
+/*video*/
+
+.overlay-path-video {
+    stroke: var(--video-color);
+}
+
+.overlay-caption-link-video {
+    fill: var(--video-color);
+}
+
+.hover-group-video:hover .overlay-path {
+    fill: var(--video-color4d);
+    stroke: var(--video-color);
+}
+
+.hover-group-video:hover text {
+    text-decoration: underline;
+}
+
+/*sound engineering*/
+
+.overlay-path-sound-engineering {
+    stroke: var(--sound-engineering-color);
+}
+
+.overlay-caption-link-sound-engineering {
+    fill: var(--sound-engineering-color);
+}
+
+.hover-group-sound-engineering:hover .overlay-path {
+    fill: var(--sound-engineering-color4d);
+    stroke: var(--sound-engineering-color);
+}
+
+.hover-group-sound-engineering:hover text {
+    text-decoration: underline;
+}
+
+/*slide menu*/
+
+.overlay-path-footer-nav-path {
+    stroke: var(--footer-nav-path-color);
+}
+
+.overlay-caption-link-footer-nav-path {
+    fill: var(--footer-nav-path-color);
+}
+
+.hover-group-footer-nav-path:hover .overlay-path {
+    fill: var(--footer-nav-path-color4d);
+    stroke: var(--footer-nav-path-color);
+}
+
+.hover-group-footer-nav-path:hover text {
+    text-decoration: underline;
+}
+
+/*****************************************/
+/*            CATEGORY PAGES             */
+/*****************************************/
+
+.category-wrapper-music {
+    background-color: var(--music-color);
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+}
+
+/*video*/
+.category-wrapper-video {
+    background-color: var(--video-color);
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+}
+
+/*field recordings*/
+.category-wrapper-field-recordings {
+    background-color: var(--field-recordings-color);
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+}
+
+/*analog photography*/
+.category-wrapper-analog-photography {
+    background-color: var(--analog-photography-color);
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+}
