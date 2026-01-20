@@ -9,18 +9,15 @@
 %>
 <body>
   <div class="category-wrapper <%= curCatWrapperClass %>">
-
-    <button onclick="filterProjects('one')">one</button>
-    <button onclick="filterProjects('two')">two</button>
-    <button onclick="filterProjects('three')">three</button>
-    <button onclick="filterProjects('')">all</button>
-
     <div class="category-nav">
       <div class="category-nav-image-link">
         <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: catConfig.overlay_nav}) %>
       </div>
     </div>
     <div class="category-content">
+      <div class="tag-filters">
+
+      </div>
       <div class="projects-thumbnails">
           <% let empty = true;
           if (projects.length == 0) { %>
@@ -37,6 +34,8 @@
         <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
 </body>
 </html>
+
+
 
 <script>
 // center the image with navigation in the middle of the screen
@@ -74,18 +73,79 @@
     footer.classList.remove("active");
   };
 
-  async function filterProjects(tag) {
-    current_lang = "<%= siteConfig.language %>";
-    current_cat = "<%= catConfig._id %>";
+  //***************************************************************
+  //dealing with tags from the db
+  //***************************************************************
+  current_lang = "<%= siteConfig.language %>";
+  current_cat = "<%= catConfig._id %>";
+
+  const activeTags = new Set();  
+  
+  //loading tags from the db
+  document.addEventListener("DOMContentLoaded", () => {
+    loadTags();
+});
+
+  async function loadTags() {
+    //fetching all tags from the db
+    const url = `/${current_lang}/tags?category=${current_cat}`;
+    const res = await fetch(url);
+    const tags = await res.json(); //tags as objects after the translation, with the actual key (the actual tag for db look-up) and label for the button
+    const container = document.querySelector(".tag-filters");
+    container.innerHTML = "";
+    tags.forEach(tag => {
+      const btn = document.createElement("button");
+      btn.classList.add("tag-btn");
+      btn.dataset.tag = tag.key;
+      btn.textContent = tag.label;
+      btn.addEventListener("click", () => toggleTag(btn, tag.key));
+      container.appendChild(btn);
+    });
+    //creating reset button
+    if (tags.length) {
+      const resetBtn = document.createElement("button");
+      resetBtn.classList.add("tag-btn");
+      resetBtn.textContent = "reset";
+      container.appendChild(resetBtn);
+
+      resetBtn.addEventListener("click", () => {
+        // Clear state
+        activeTags.clear();
+        // Remove visual active state
+        document.querySelectorAll(".tag-btn").forEach(btn => {
+          btn.classList.remove("active");
+        });
+        // Reload all projects
+        filterProjects(activeTags);
+      });
+      }
+  }
+
+  // manages toggle mode of the buttons on/off
+  function toggleTag(btn, tag) {
+    if (activeTags.has(tag)) {
+      activeTags.delete(tag);
+      btn.classList.remove("active");
+    } else {
+      activeTags.add(tag);
+      btn.classList.add("active");
+    }
+    filterProjects(activeTags);
+  }
+
+  // filters projects based on tags
+  async function filterProjects(tagsSet) {
+    const tags = [...tagsSet];
     const baseUrl = `/${current_lang}/category=${current_cat}`;    
-    const url = tag ? `${baseUrl}?tags=${encodeURIComponent(tag)}` : baseUrl;
+    const url = tags.length ? `${baseUrl}?tags=${encodeURIComponent(tags.join(","))}` : baseUrl;
+    
     const res = await fetch(url, {
       headers: {
         "Accept": "application/json"
       }
     });
+    
     projects = await res.json();
-
     container = document.querySelector(".projects-thumbnails");
     container.innerHTML = "";
 
@@ -111,7 +171,6 @@
       projectLink.appendChild(projectThumbnailImageWrapper);      
       projectThumbnailImageLink.appendChild(projectLink);
       projectThumbnail.appendChild(projectThumbnailImageLink);
-
 
       const projectThumbnailMeta = document.createElement("div");
       projectThumbnailMeta.className = "project-thumbnail-meta";

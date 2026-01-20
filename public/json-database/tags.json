@@ -1,0 +1,30 @@
+[
+    {
+        "key": "audio",
+        "label": {
+            "en": "audio",
+            "de": "audio"
+        }
+    },
+    {
+        "key": "ensemble",
+        "label": {
+            "en": "ensemble",
+            "de": "ensemble"
+        }
+    },
+    {
+        "key": "improvisation",
+        "label": {
+            "en": "improvisation",
+            "de": "improvisation"
+        }
+    },
+    {
+        "key": "performance",
+        "label": {
+            "en": "performance",
+            "de": "performance"
+        }
+    }
+]

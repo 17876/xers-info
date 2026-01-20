@@ -205,6 +205,38 @@ app.get("/:lang(de|en)/projects/:slug", (req, res) => {
         });
 });
 
+// getting tags for the tags list on the page
+app.get("/:lang(de|en)/tags", async (req, res) => {
+    try {
+        const { category } = req.query;
+        const { lang } = req.params;
+
+        // or category if it's a single field
+        const filter = category ? { categories: category } : {};
+        const tagKeys = await db
+            .collection("projects")
+            .distinct("tags", filter);
+
+        const translations = await db
+            .collection("tags")
+            .find({ key: { $in: tagKeys } })
+            .toArray();
+
+        const tags = tagKeys.map((key) => {
+            const t = translations.find((tr) => tr.key === key);
+            return {
+                key,
+                label: t?.label?.[lang] || key,
+            };
+        });
+        //sorting by label
+        tags.sort((a, b) => a.label.localeCompare(b.label, lang));
+        res.json(tags);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 app.get("/:lang(de|en)/category=:cat", (req, res) => {
     const language = req.params.lang;
     const category = req.params.cat;
