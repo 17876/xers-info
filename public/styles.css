@@ -11,46 +11,16 @@
     height: 100vh !important;
 }
 
-.w-full {
-    width: 100% !important;
-}
-
-.yh {
-    display: inline;
-    background-color: orange;
-}
-
 /*********************************/
 /*         GENERAL CSS           */
 /*********************************/
-/* body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    z-index: -1;
-} */
-
 body {
     min-height: 100vh;
     flex-direction: column;
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
-    /* margin-left: 10px;
-    margin-top: 10px;
-    margin-right: 10px; */
-
-    /* padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px; */
-
     margin: 0;
     height: auto;
-    /* background: #f9f7f4; */
-    /* background: #1b1818; */
-    /* filter: grayscale(); */
-    /* background-image: url("/css/paper-background-1.jpg"); */
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -94,16 +64,6 @@ h5 {
     margin: 0;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 1000px;
-    min-height: 100%;
-}
-
-.layout {
-    height: auto;
-}
-
 /*********************************/
 /*        HEADER STYLES          */
 /*********************************/
@@ -111,14 +71,6 @@ h5 {
 .header {
     width: 100%;
     height: auto;
-}
-
-/*********************************/
-/*        MAIN CONTENT           */
-/*********************************/
-
-.short-about {
-    margin-bottom: 10px;
 }
 
 .flex-container {
@@ -185,13 +137,6 @@ h5 {
     display: none;
 }
 
-/* .st0-link-8 {
-    filter: drop-shadow(0 0 5px rgb(255, 191, 0))
-        drop-shadow(0 0 15px rgb(255, 191, 0))
-        drop-shadow(0 0 30px rgb(255, 191, 0))
-        drop-shadow(0 0 60px rgb(255, 191, 0));
-} */
-
 .front-nav-image-link {
     height: 100vh;
     width: auto;
@@ -214,14 +159,6 @@ h5 {
 .front-nav a {
     position: relative;
 }
-
-/* .front-nav a img {
-    width: 100%;
-    display: block;
-    opacity: 1; */
-/* transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1); */
-/* overflow: hidden;
-} */
 
 #Layer_1 {
     position: absolute;
@@ -267,19 +204,6 @@ svg a {
 /*            FOOTER             */
 /*********************************/
 
-.footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 15vh;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(3px);
-    overflow-y: scroll;
-    border-top: 1.5px solid black;
-    pointer-events: auto;
-    z-index: 9999;
-}
-
 #footer-front {
     position: fixed;
     bottom: 0px;
@@ -297,11 +221,6 @@ svg a {
 
 #footer-front.active {
     transform: translateY(0);
-}
-
-.footer a {
-    display: block;
-    /* padding-bottom: 10px; */
 }
 
 /*  NAV STYLES */
@@ -365,8 +284,6 @@ nav {
 
 nav ul {
     display: block;
-    /* justify-content: flex-start; */
-    /* flex-wrap: wrap; */
     padding: 0;
     list-style-type: none;
     height: auto;
@@ -405,11 +322,6 @@ nav li a {
     width: 100%;
     height: auto;
     min-height: 100vh;
-
-    /* margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    overflow-y: auto; */
 }
 
 /*tags buttons*/
@@ -429,13 +341,12 @@ nav li a {
 
 .category-wrapper .tag-filters {
     padding-top: 20px;
+    width: 60%;
 }
 
 .category-content {
     width: 80%;
     margin: auto;
-    /* font-size: 12px; */
-    /* overflow: hidden; */
 }
 
 .projects-flex-container {
@@ -485,7 +396,7 @@ nav li a {
     display: block;
     text-align: justify;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 50px;
     overflow: auto;
 }
 
@@ -502,14 +413,6 @@ nav li a {
     height: 100%;
 }
 
-/* .project-text-preview {
-    flex: 1 0 100px;
-    overflow: hidden;
-    color: #9f9f9f;
-    margin-left: 10px;
-    text-align: left;
-} */
-
 .project-thumbnail a {
     position: relative;
     text-decoration: none;
@@ -519,7 +422,6 @@ nav li a {
     overflow: hidden;
     height: 100%;
     border-radius: 8px;
-    /* border: 20px solid black; */
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.5);
     transition: box-shadow 1s cubic-bezier(0.08, 0.43, 0.24, 1); /* smooth effect */
 }
@@ -537,8 +439,6 @@ nav li a {
 }
 
 .project-thumbnail-meta {
-    /* color: #4b4b4b; */
-    /* color: #9f9f9f; */
     padding-left: 0px;
     margin-left: 40px;
     margin-top: 3px;
@@ -548,17 +448,9 @@ nav li a {
 
 .project-thumbnail-title {
     font-size: 12px;
-    /* color: #525252; */
     color: #000000;
     margin: 0;
 }
-
-/* .separator {
-    border: none;
-    height: 0.5px;
-    background-color: #9f9f9f;
-    margin: 3px 0 3px 0;
-} */
 
 .project-thumbnail-subtitle {
     font-size: 10px;
@@ -567,30 +459,9 @@ nav li a {
     margin: 0;
 }
 
-/* .project-thumbnail:hover img {
-    opacity: 0.8;
-    transform: scale(1.08);
-} */
-
 /*********************************/
 /*        SINGLE PROJECT PAGE    */
 /*********************************/
-
-/* .project-wrapper {
-    width: 100%;
-    margin-left: 30px;
-    max-width: 1000px;
-    min-height: 100%;
-} */
-
-/* .project-wrapper {
-    width: 100%;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    flex: 0 0 80%;
-    overflow-y: auto;
-} */
 
 .project-wrapper {
     width: 100%;
@@ -898,6 +769,7 @@ nav li a {
     object-fit: cover; /* key line */
 }
 
+/*the cv stuff is not used currently but maybe needed later for a cv as a table*/
 #cv-content {
     flex: 0 1 700px;
     text-align: left;
@@ -1093,21 +965,6 @@ nav li a {
 }
 
 /*********************************/
-/*            IMPRINT            */
-/*********************************/
-
-/* .imprint-title {
-    font-size: 18px;
-}
-
-.imprint {
-    flex: 0 1 700px;
-    text-align: left;
-    padding: 0;
-    margin-top: 10px;
-} */
-
-/*********************************/
 /*           EVENTS PAGE         */
 /*********************************/
 
@@ -1289,6 +1146,7 @@ nav li a {
 .imprint-wrapper {
     width: 100%;
     min-height: 100%;
+    max-width: 1000px;
 }
 
 .imprint-content {
@@ -1341,69 +1199,6 @@ nav li a {
     margin-left: 10px;
 }
 
-/*********************************/
-/*            SAND PAGE          */
-/*********************************/
-
-.sand-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.sand-description {
-    font-size: 12px;
-    margin-bottom: 40px;
-}
-
-.sand-content {
-    flex: 0 1 700px;
-    text-align: justify;
-    padding: 0;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-
-.sand-entry {
-    margin: 0 0 30px 0;
-}
-
-.sand-entry .title {
-    margin: 0 0 2px 0;
-    font-size: 14px;
-}
-
-.sand-entry .meta {
-    margin: 0 0 8px 0;
-    font-size: 11px;
-}
-
-.sand-entry .meta .datetime {
-    margin: 0;
-}
-
-.sand-entry .meta .date {
-    margin: 0;
-}
-
-.sand-entry .meta .time {
-    margin: 0;
-}
-
-.sand-entry .content {
-    margin: 0;
-    hyphens: auto;
-}
-
-/*****************************************/
-/*       SCREENS SMALLER THAN 963PX      */
-/*****************************************/
-
-@media screen and (max-width: 962px) {
-    .projects-flex-container {
-        justify-content: space-evenly;
-    }
-}
-
 /*****************************************/
 /*       SCREENS SMALLER THAN 946PX      */
 /*****************************************/
@@ -1443,7 +1238,7 @@ nav li a {
 /*****************************************/
 /*       SCREENS SMALLER THAN 769PX      */
 /*****************************************/
-
+/*the cv stuff is not used currently but maybe needed later for a cv as a table*/
 @media screen and (max-width: 768px) {
     .cv2-table-row {
         display: block;
@@ -1684,8 +1479,6 @@ nav li a {
     }
 
     .project-thumbnail-meta {
-        /* color: #4b4b4b; */
-        /* color: #9f9f9f; */
         padding-left: 0px;
         margin-left: 15px;
         margin-top: 15px;

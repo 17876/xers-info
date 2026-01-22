@@ -168,12 +168,9 @@ app.get("/:lang(de|en)/projects/:slug", (req, res) => {
     const language = req.params.lang;
     const slug = req.params.slug;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    // const pipelineCatPage = makePipeline("catPage", language);
     let siteConfig;
-    // let pageConfig;
     const projectFilter = { slug: slug };
     const pipelineProject = makePipeline("project", language, projectFilter);
-
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
@@ -217,12 +214,15 @@ app.get("/:lang(de|en)/tags", async (req, res) => {
             .collection("projects")
             .distinct("tags", filter);
 
+        //excluding tags which coincide with the category
+        const tagKeysExcl = tagKeys.filter((tag) => tag !== category);
+
         const translations = await db
             .collection("tags")
-            .find({ key: { $in: tagKeys } })
+            .find({ key: { $in: tagKeysExcl } })
             .toArray();
 
-        const tags = tagKeys.map((key) => {
+        const tags = tagKeysExcl.map((key) => {
             const t = translations.find((tr) => tr.key === key);
             return {
                 key,
@@ -258,59 +258,69 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
         projFilter.tags = { $in: tagsArray };
     }
     const pipelineProject = makePipeline("project", language, projFilter);
-
-    db.collection("siteConfig")
-        .aggregate(pipelineSiteConfig)
-        .toArray()
-        .then((result) => {
-            siteConfig = result[0];
-            db.collection("categories")
-                .aggregate(pipelineCatConfig)
-                .toArray()
-                .then((result) => {
-                    catConfig = result[0];
-                    db.collection("projects")
-                        .aggregate(pipelineProject)
-                        .toArray()
-                        .then((result) => {
-                            const projects = result;
-                            res.status(200);
-                            const wantsJSON =
-                                req.headers.accept?.includes(
-                                    "application/json",
-                                );
-
-                            if (wantsJSON) {
-                                return res.json(projects);
-                            }
-
-                            res.render("category", {
-                                siteConfig: siteConfig,
-                                catConfig: catConfig,
-                                category: category,
-                                projects: projects,
-                            });
-                        })
-                        .catch((err) => {
-                            res.status(500).json({
-                                error: "Could not fetch projects",
-                                details: err.message,
-                            });
-                        });
-                })
-                .catch((err) => {
-                    res.status(500).json({
-                        error: "Could not fetch catConfig",
-                        details: err.message,
-                    });
+    const wantsJSON = req.headers.accept?.includes("application/json");
+    //only projects with tags when using filter
+    if (wantsJSON) {
+        db.collection("projects")
+            .aggregate(pipelineProject)
+            .toArray()
+            .then((result) => {
+                const projects = result;
+                res.status(200);
+                res.json(projects);
+            })
+            .catch((err) => {
+                res.status(500).json({
+                    error: "Could not fetch projects",
+                    details: err.message,
                 });
-        })
-        .catch((err) => {
-            res.status(500).json({
-                error: "Could not fetch siteConfig",
-                details: err.message,
             });
-        });
+    } else {
+        db.collection("siteConfig")
+            .aggregate(pipelineSiteConfig)
+            .toArray()
+            .then((result) => {
+                siteConfig = result[0];
+                db.collection("categories")
+                    .aggregate(pipelineCatConfig)
+                    .toArray()
+                    .then((result) => {
+                        catConfig = result[0];
+                        db.collection("projects")
+                            .aggregate(pipelineProject)
+                            .toArray()
+                            .then((result) => {
+                                const projects = result;
+                                res.status(200);
+
+                                res.render("category", {
+                                    siteConfig: siteConfig,
+                                    catConfig: catConfig,
+                                    category: category,
+                                    projects: projects,
+                                });
+                            })
+                            .catch((err) => {
+                                res.status(500).json({
+                                    error: "Could not fetch projects",
+                                    details: err.message,
+                                });
+                            });
+                    })
+                    .catch((err) => {
+                        res.status(500).json({
+                            error: "Could not fetch catConfig",
+                            details: err.message,
+                        });
+                    });
+            })
+            .catch((err) => {
+                res.status(500).json({
+                    error: "Could not fetch siteConfig",
+                    details: err.message,
+                });
+            });
+    }
 });
 
 app.get("/:lang(de|en)/contact", (req, res) => {

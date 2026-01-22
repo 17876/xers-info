@@ -15,10 +15,9 @@
             {
                 "id": "footer-nav-path",
                 "src": "",
-                "color": "#ffffff",
                 "caption": {
-                    "en": "Menu",
-                    "de": "Menü"
+                    "en": "Take me anywhere",
+                    "de": "Woandershin"
                 },
                 "caption_coordinates": [1300, 227],
                 "paths": [

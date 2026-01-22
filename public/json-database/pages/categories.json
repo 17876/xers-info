@@ -12,12 +12,11 @@
                 {
                     "id": "footer-nav-path",
                     "src": "",
-                    "color": "#000000",
                     "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
+                        "en": "Take me anywhere",
+                        "de": "Woandershin"
                     },
-                    "caption_coordinates": [750, 625],
+                    "caption_coordinates": [750, 560],
                     "paths": [
                         {
                             "points": "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26"
@@ -41,10 +40,9 @@
                 {
                     "id": "footer-nav-path",
                     "src": "",
-                    "color": "#000000",
                     "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
+                        "en": "Take me anywhere",
+                        "de": "Woandershin"
                     },
                     "caption_coordinates": [889, 1002],
                     "paths": [
@@ -70,10 +68,9 @@
                 {
                     "id": "footer-nav-path",
                     "src": "",
-                    "color": "#000000",
                     "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
+                        "en": "Take me anywhere",
+                        "de": "Woandershin"
                     },
                     "caption_coordinates": [360, 786],
                     "paths": [
@@ -99,12 +96,11 @@
                 {
                     "id": "footer-nav-path",
                     "src": "",
-                    "color": "#000000",
                     "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
+                        "en": "Take me anywhere",
+                        "de": "Woandershin"
                     },
-                    "caption_coordinates": [1420, 765],
+                    "caption_coordinates": [1275, 765],
                     "paths": [
                         {
                             "points": "1389.34 797.06 1516.23 798.56 1501.59 899.17 1386.71 896.55 1389.34 797.06"
@@ -128,12 +124,11 @@
                 {
                     "id": "footer-nav-path",
                     "src": "",
-                    "color": "#000000",
                     "caption": {
-                        "en": "Menu",
-                        "de": "Menü"
+                        "en": "Take me anywhere",
+                        "de": "Woandershin"
                     },
-                    "caption_coordinates": [900, 600],
+                    "caption_coordinates": [850, 600],
                     "paths": [
                         {
                             "points": "881.97 617.03 999.29 615.06 999.29 684.6 881.97 687.42 881.97 617.03"

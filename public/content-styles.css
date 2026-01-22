@@ -163,7 +163,9 @@
     text-decoration: underline;
 }
 
-/*slide menu*/
+/************************************/
+/*            SLIDE MENU            */
+/************************************/
 
 .overlay-path-footer-nav-path {
     stroke: var(--footer-nav-path-color);
@@ -210,6 +212,28 @@
 /*video*/
 .category-wrapper-video {
     background-color: var(--video-color);
+
+    .overlay-path {
+        stroke: #000000;
+    }
+
+    .overlay-caption {
+        fill: #000000;
+    }
+
+    .hover-group:hover .overlay-path {
+        fill: #0000004d;
+        stroke: #000000;
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+}
+
+/*text*/
+.category-wrapper-text {
+    background-color: var(--text-color);
 
     .overlay-path {
         stroke: #000000;
