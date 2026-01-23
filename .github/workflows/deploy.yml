@@ -34,4 +34,5 @@ jobs:
                     cd /home/xers/xers-info
                     npm install --production
                     pm2 restart app.js
+                    NODE_ENV=production pm2 restart app.js --update-env
                   EOF

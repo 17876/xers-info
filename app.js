@@ -1,4 +1,7 @@
-// const express is a function
+if (process.env.NODE_ENV !== "production") {
+    require("dotenv").config();
+}
+
 const express = require("express");
 const { ObjectId } = require("mongodb");
 const { connectToDb, getDb, makePipeline } = require("./db");
@@ -37,6 +40,7 @@ connectToDb((err) => {
 });
 
 app.get("/:lang(de|en)/", (req, res) => {
+    console.log(process.env.NODE_ENV);
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
     const pipelineIndex = makePipeline("indexPage", language);
@@ -57,8 +61,9 @@ app.get("/:lang(de|en)/", (req, res) => {
                     });
                 });
         })
-        .catch(() => {
+        .catch((err) => {
             res.status(500).json({ error: "Could not fetch the documents" });
+            console.log(err);
         });
 });
 
@@ -134,28 +139,27 @@ app.get("/:lang(de|en)/events", (req, res) => {
                 .toArray()
                 .then((result) => {
                     pageConfig = result[0];
+                    db.collection("events")
+                        .aggregate(pipelineEvent)
+                        .toArray()
+                        .then((result) => {
+                            const events = result;
+                            res.status(200);
+                            res.render("events", {
+                                siteConfig: siteConfig,
+                                pageConfig: pageConfig,
+                                events: events,
+                            });
+                        })
+                        .catch(() => {
+                            res.status(500).json({
+                                error: "Could not fetch events",
+                            });
+                        });
                 })
                 .catch(() => {
                     res.status(500).json({
                         error: "Could not fetch pageConfig",
-                    });
-                });
-
-            db.collection("events")
-                .aggregate(pipelineEvent)
-                .toArray()
-                .then((result) => {
-                    const events = result;
-                    res.status(200);
-                    res.render("events", {
-                        siteConfig: siteConfig,
-                        pageConfig: pageConfig,
-                        events: events,
-                    });
-                })
-                .catch(() => {
-                    res.status(500).json({
-                        error: "Could not fetch events",
                     });
                 });
         })

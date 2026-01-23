@@ -1,7 +1,9 @@
 const { MongoClient } = require("mongodb");
 
 let dbConnection;
-let uri = "mongodb://localhost:27017/antonstudio";
+const uri = process.env.MONGODB_URI;
+const port = process.env.PORT || 3000;
+// let uri = "mongodb://localhost:27017/antonstudio";
 
 module.exports = {
     // for establishing connection to the db
