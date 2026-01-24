@@ -393,6 +393,7 @@ nav li a {
 
 .projects-thumbnails {
     width: 100%;
+
     display: block;
     text-align: justify;
     padding: 0;
@@ -995,6 +996,7 @@ nav li a {
     flex: 0 0 10px;
     height: 1.5em;
     width: auto;
+    padding-top: 6px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
@@ -1170,6 +1172,7 @@ nav li a {
     flex: 0 0 10px;
     height: 1.5em;
     width: auto;
+    padding-top: 6px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
@@ -1356,7 +1359,6 @@ nav li a {
 
     .abouts-flex-parent {
         width: 100%;
-        margin: auto;
     }
 
     .abouts-flex-1,
@@ -1364,6 +1366,8 @@ nav li a {
     .abouts-flex-3 {
         display: flex;
         width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -1422,11 +1426,11 @@ nav li a {
     .sound-engineering-text1 {
         box-sizing: border-box;
         flex: 1 0 100px;
-        width: 100%;
+        width: auto;
         padding: 10px;
         height: fit-content;
         text-align: justify;
-        margin: 0 0 100px 0;
+        margin: 200px 150px 0px 30px;
     }
 
     /*                 CATEGORY PAGE             */
@@ -1449,7 +1453,14 @@ nav li a {
     }
 
     .category-content {
+        width: 100%;
         padding-bottom: 20vh;
+    }
+
+    .category-wrapper .tag-filters {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projects-thumbnails {
@@ -1459,7 +1470,9 @@ nav li a {
     .project-thumbnail {
         flex-flow: column;
         height: auto;
-        width: 100%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project-thumbnail-image-link {

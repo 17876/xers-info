@@ -136,6 +136,7 @@ module.exports = {
                 { $match: { _id: "indexPage" } },
                 {
                     $project: {
+                        scroll_hint: `$scroll_hint.${language}`,
                         overlay_nav: {
                             img_src: "$overlay_nav.img_src",
                             description: "$overlay_nav.description",

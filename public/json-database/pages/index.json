@@ -1,5 +1,9 @@
 {
     "_id": "indexPage",
+    "scroll_hint": {
+        "en": "Swipe left or right to explore the studio",
+        "de": "Wische nach links oder rechts, um das Studio zu erkunden"
+    },
     "overlay_nav": {
         "img_src": "/front/img/P1000718-LR.jpg",
         "overlay_links": [
