@@ -4,21 +4,20 @@
 <% let title = `${siteConfig.website_title_short} – ${project.title}`;%>
 
 <%- include('./partials/head.ejs', { title: title }) %>
-
 <body class="h-100vh">
   <div class="project-wrapper" style="background-color: #fff">
-    <div class="project-nav">
-      <div class="project-nav-image-link">
-        <img id ="overlay-img" src=<%= project.icon_src %> />
-      </div>
-    </div>
     <div class="project-content">
       <div class="proj-header">
-        <div class="proj-title">
-          <%= project.title %>
+        <div class="proj-title-subtitle">
+          <div class="proj-title">
+            <%= project.title %>
+          </div>
+          <div class="proj-subtitle">
+            <%-project.subtitle %>
+          </div>
         </div>
-        <div class="proj-subtitle">
-          <%-project.subtitle %>
+        <div id="footer-nav-path" class="project-hamburger">
+          <img src="/css/img/hamburger_icon.png" alt="">
         </div>
       </div>
       <div class="proj-content-meta">
@@ -39,7 +38,7 @@
 <script>
 // sliding footer
   const footer = document.getElementById("footer-front");
-  document.getElementById("overlay-img").onclick = () => {
+  document.getElementById("footer-nav-path").onclick = () => {
     footer.classList.add("active");
   };
 

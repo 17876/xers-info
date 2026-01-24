@@ -1,2 +1,2 @@
-2026-01-24
-updated layout. fixed some css bugs. before replacing project logos with hamburger.
+adjusted layout for the project thumbnails: wider.
+single project page: replaced project logos with hamburger menu.
