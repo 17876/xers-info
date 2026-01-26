@@ -4,7 +4,6 @@
         "slug": "echo-chamber",
         "src": "/projects/echo-chamber",
         "img_src": "/projects/echo_chamber/img/echo_chamber_thumbnail.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Echo Chamber",
         "subtitle": {
             "en": "Ensemble, Audio",
@@ -110,7 +109,6 @@
         "slug": "money-laundering",
         "src": "/projects/money-laundering",
         "img_src": "/projects/money_laundering/img/money_laundering_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Money Laundering",
         "subtitle": {
             "en": "Improvisation, performance",
@@ -175,7 +173,6 @@
         "slug": "chronik-0",
         "src": "/projects/chronik-0",
         "img_src": "/projects/chronik_0/img/chronik_0_thumbnail_20230809.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Chronik 0",
         "subtitle": {
             "en": "Video",
@@ -268,7 +265,6 @@
         "slug": "simple-present",
         "src": "/projects/simple-present",
         "img_src": "/projects/simple_present/img/simple_present_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Simple Present",
         "subtitle": {
             "en": "Voice, improvisation, performance, audio, live-audio, video",
@@ -378,7 +374,6 @@
         "slug": "mama-rodina-lenin",
         "src": "/projects/mama-rodina-lenin",
         "img_src": "/projects/mama_rodina_lenin/img/mama_rodina_lenin_thumbnail.png",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Mum, Motherland, Lenin",
         "subtitle": {
             "en": "Audio, video, live audio, live video",
@@ -447,7 +442,6 @@
         "slug": "pseudoanarchy-of-demons",
         "src": "/projects/pseudoanarchy-of-demons",
         "img_src": "/projects/pseudoanarchy_of_demons/img/demons_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Pseudoanarchy of Demons",
         "subtitle": {
             "en": "Text",
@@ -529,7 +523,6 @@
         "slug": "kak-ya-provel-eto-leto",
         "src": "/projects/kak-ya-provel-eto-leto",
         "img_src": "/projects/how_i_spent_my_summer/img/how_i_spent_my_summer_post_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "How I spent my summer",
         "subtitle": {
             "en": "Ensemble, audio, video",
@@ -630,7 +623,6 @@
         "slug": "chronik-1",
         "src": "/projects/chronik-1",
         "img_src": "/projects/chronik_1/img/chronik_1_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Chronik 1",
         "subtitle": {
             "en": "Audio, video",
@@ -699,7 +691,6 @@
         "slug": "chetvertiy-dom",
         "src": "/projects/chetvertiy-dom",
         "img_src": "/projects/chetvertiy_dom/img/chetvertiy_dom_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Chetvertiy Dom",
         "subtitle": {
             "en": "Audio, video",
@@ -768,7 +759,6 @@
         "slug": "camp-kreuzberg",
         "src": "/projects/camp-kreuzberg",
         "img_src": "/projects/camp_kreuzberg/img/camp_kreuzberg_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Camp Kreuzberg",
         "subtitle": {
             "en": "Ensemble, audio, video, live audio, live video, audience",
@@ -853,7 +843,6 @@
         "slug": "landscape-nc-045512-2",
         "src": "/projects/landscape-nc-045512-2",
         "img_src": "/projects/landscape_nc_045512_2/img/nc_045512_2_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Landscape NC_045512.2",
         "subtitle": {
             "en": "Transmedial",
@@ -938,7 +927,6 @@
         "slug": "poem-11",
         "src": "/projects/poem-11",
         "img_src": "/projects/poem_11/img/poem_11_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Poem 11",
         "subtitle": {
             "en": "Ensemble, Audio, Video, Performance",
@@ -1023,7 +1011,6 @@
         "slug": "zuerst-die-koepfe",
         "src": "/projects/zuerst-die-koepfe",
         "img_src": "/projects/zuerst_die_koepfe/img/zuerst_die_koepfe_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Zuerst die K\u00f6pfe",
         "subtitle": {
             "en": "Installation, audio, video, sculpture",
@@ -1111,7 +1098,6 @@
         "slug": "i-love-you-too-my-love",
         "src": "/projects/i-love-you-too-my-love",
         "img_src": "/projects/i_love_you_too_my_love/img/i_love_you_too_my_love_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "I love you too my love",
         "subtitle": {
             "en": "Ensemble, audio, performance",
@@ -1232,7 +1218,6 @@
         "slug": "peep-show",
         "src": "/projects/peep-show",
         "img_src": "/projects/peep_show/img/peep_show_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "PEEP SHOW",
         "subtitle": {
             "en": "Audio, video, performance",
@@ -1461,7 +1446,6 @@
         "slug": "geldwaesche-2019",
         "src": "/projects/geldwaesche-2019",
         "img_src": "/projects/geldwaesche_2019/img/geldwaesche_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Geldw\u00e4sche",
         "subtitle": {
             "en": "Improvisation, music theatre",
@@ -1547,7 +1531,6 @@
         "slug": "mr-jock",
         "src": "/projects/mr-jock",
         "img_src": "/projects/mr_jock/img/mr_jock_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Mr Jock",
         "subtitle": {
             "en": "Ensemble, Audio, Video",
@@ -1648,7 +1631,6 @@
         "slug": "hidden-in-plain-sight",
         "src": "/projects/hidden-in-plain-sight",
         "img_src": "/projects/hidden_in_plain_sight/img/hips_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Hidden in plain sight",
         "subtitle": {
             "en": "Ensemble, audio, video",
@@ -1749,7 +1731,6 @@
         "slug": "music-for-piano",
         "src": "/projects/music-for-piano",
         "img_src": "/projects/music_for_piano/img/music_for_piano_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Music for Piano",
         "subtitle": {
             "en": "Piano, audio, video",
@@ -1850,7 +1831,6 @@
         "slug": "5-euro-piece",
         "src": "/projects/5-euro-piece",
         "img_src": "/projects/5_euro_piece/img/5europiece_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "5\u20ac-Piece",
         "subtitle": {
             "en": "Bank note",
@@ -1927,7 +1907,6 @@
         "slug": "threesome",
         "src": "/projects/threesome",
         "img_src": "/projects/threesome/img/threesome_tumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Threesome",
         "subtitle": {
             "en": "Ensemble, audio, video",
@@ -2061,7 +2040,6 @@
         "slug": "violince",
         "src": "/projects/violince",
         "img_src": "/projects/violince/img/violince_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Violince",
         "subtitle": {
             "en": "Ensemble, audio, improvisation",
@@ -2162,7 +2140,6 @@
         "slug": "keyboardstueck-ii",
         "src": "/projects/keyboardstueck-ii",
         "img_src": "/projects/keyboardstueck_ii/img/keyboardstueck_ii_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Keyboardst\u00fcck II",
         "subtitle": {
             "en": "Keyboard, audio, video",
@@ -2247,7 +2224,6 @@
         "slug": "gehoerbildung",
         "src": "/projects/gehoerbildung",
         "img_src": "/projects/gehoerbildung/img/gehoerbildung_thumbnail.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Ear Training",
         "subtitle": {
             "en": "video",
@@ -2321,7 +2297,6 @@
         "slug": "new-national-anthem-of-russia",
         "src": "/projects/new-national-anthem-of-russia",
         "img_src": "/projects/new_national_anthem_of_russia/img/new_national_anthem_of_russia_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "New National Anthem of Russia",
         "subtitle": {
             "en": "Video",
@@ -2395,7 +2370,6 @@
         "slug": "das-kapital-study",
         "src": "/projects/das-kapital-study",
         "img_src": "/projects/das_kapital_study/img/das_kapital_study_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Das Kapital Study",
         "subtitle": {
             "en": "Audio, Video",
@@ -2469,7 +2443,6 @@
         "slug": "klavierstueck-i",
         "src": "/projects/klavierstueck-i",
         "img_src": "/projects/klavierstueck_i/img/klavierstueck_i_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Klavierst\u00fcck I",
         "subtitle": {
             "en": "Audio, video",
@@ -2570,7 +2543,6 @@
         "slug": "keyboardstueck-iii",
         "src": "/projects/keyboardstueck-iii",
         "img_src": "/projects/keyboardstueck_iii/img/keyboardstueck_iii_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Klavierst\u00fcck III",
         "subtitle": {
             "en": "Keyboard, audio, video",
@@ -2671,7 +2643,6 @@
         "slug": "klavierstueck-iv",
         "src": "/projects/klavierstueck-iv",
         "img_src": "/projects/klavierstueck_iv/img/serialism_2_0_realisation_2_7_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Klavierst\u00fcck IV",
         "subtitle": {
             "en": "Audio, video",
@@ -2740,7 +2711,6 @@
         "slug": "serialism-2-0-realisation-2-7",
         "src": "/projects/serialism-2-0-realisation-2-7",
         "img_src": "/projects/serialism_2_0_realisation_2_3/img/serialism_2_0_realisation_2_3_thumb.png",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Serialismus 2.0 (Realisation 2.3)",
         "subtitle": {
             "en": "Audio, video",
@@ -2825,7 +2795,6 @@
         "slug": "serialism-2-0-realisation-1",
         "src": "/projects/serialism-2-0-realisation-1",
         "img_src": "/projects/serialism_2_0_realisation_1/img/serialism_2_0_realisation_1_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Serialismus 2.0 (Realisation 1)",
         "subtitle": {
             "en": "Installation",
@@ -2894,7 +2863,6 @@
         "slug": "keyboardstueck-i",
         "src": "/projects/keyboardstueck-i",
         "img_src": "/projects/keyboardsueck_i/img/keyboardstueck_i_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Keyboardst\u00fcck I",
         "subtitle": {
             "en": "Keyboard, audio",
@@ -2990,7 +2958,6 @@
         "slug": "clear-moral-panic",
         "src": "/projects/clear-moral-panic",
         "img_src": "/projects/clear_moral_panic/img/clear_moral_panic_thum.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Clear moral panic",
         "subtitle": {
             "en": "Ensemble",
@@ -3083,7 +3050,6 @@
         "slug": "blood-on-the-dancefloor",
         "src": "/projects/blood-on-the-dancefloor",
         "img_src": "/projects/blood_on_the_dancefloor/img/blood_on_the_dancefloor_thumb.png",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Blood on the dancefloor",
         "subtitle": {
             "en": "Ensemble, audio",
@@ -3179,7 +3145,6 @@
         "slug": "rendering-studies",
         "src": "/projects/rendering-studies",
         "img_src": "/projects/rendering_studies/img/rendering_studies_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Rendering Studies",
         "subtitle": {
             "en": "Audio, Video",
@@ -3253,7 +3218,6 @@
         "slug": "gehirn-im-tank",
         "src": "/projects/gehirn-im-tank",
         "img_src": "/projects/gehirn_im_tank/img/gehirn_im_tank_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Gehirn im Tank",
         "subtitle": {
             "en": "Duo",
@@ -3346,7 +3310,6 @@
         "slug": "boris-und-natascha",
         "src": "/projects/boris-und-natascha",
         "img_src": "/projects/boris_und_natascha/img/boris_und_natascha_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Boris und Natascha",
         "subtitle": {
             "en": "Ensemble",
@@ -3447,7 +3410,6 @@
         "slug": "480-und-60-schlaege",
         "src": "/projects/480-und-60-schlaege",
         "img_src": "/projects/480_und_60_schlaege/img/480_und_60_schlaege_thumb.jpg",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "480 und 60 Schl\u00e4ge",
         "subtitle": {
             "en": "Duo",
@@ -3540,7 +3502,6 @@
         "slug": "mein-kreuzspiel",
         "src": "/projects/mein-kreuzspiel",
         "img_src": "/projects/mein_kreuzspiel/img/mein_kreuzspiel_thumb.png",
-        "icon_src": "/projects/echo_chamber/img/echo_chamber_logo.png",
         "title": "Mein Kreuzspiel",
         "subtitle": {
             "en": "Organ, audio",

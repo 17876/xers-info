@@ -19,7 +19,6 @@
                     "en": "Take me anywhere",
                     "de": "Woandershin"
                 },
-                "caption_coordinates": [1300, 227],
                 "paths": [
                     {
                         "points": "1331.07 265.64 1382.32 250.44 1419.95 256.91 1439.26 365.98 1341.29 352.29 1331.07 265.64"
@@ -29,7 +28,7 @@
         ],
         "description": ""
     },
-    "about1": {
+    "text1": {
         "en": "I can do sound. I predominantly take gigs in the contemporary music, free improvisation, and sound art scenes. I am especially interested in projects that involve non-standard setups, both in sound and in people.<br>Please feel free to contact me, and we can go from there.",
         "de": "Ich mache Ton. Ich nehme &#252;berwiegend Gigs in den Bereichen Zeitgen&#246;ssische Musik, Freie Improvisation und Klangkunst an. Besonders interessieren mich Projekte mit ungew&#246;hnlichen Setups, sowohl klanglich als auch menschlich.<br>Nimm gerne Kontakt mit mir auf, dann schauen wir weiter."
     }

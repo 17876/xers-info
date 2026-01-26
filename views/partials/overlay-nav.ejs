@@ -5,6 +5,7 @@
     const curGroupId = overlay_link.id;
     const curDynamicGroupClass = `hover-group-${curGroupId}`;
     const curDynamicCaptionClass = `overlay-caption-link-${curGroupId}`;
+    const curDynamicCaptionLangClass = `overlay-caption-${language}`;
   if (overlay_link.src != "") { %>
     <a href="/<%= language %><%= overlay_link.src %>">
     <%}%>
@@ -15,7 +16,7 @@
           %>
         <polygon class="overlay-path <%= curDynamicPathClass %>" points="<%= curPath.points %>" />
         <%}%>
-        <text class="overlay-caption <%= curDynamicCaptionClass %>" x="<%= overlay_link.caption_coordinates[0] %>" y="<%= overlay_link.caption_coordinates[1] %>"><%= overlay_link.caption %></text>
+        <text class="overlay-caption <%= curDynamicCaptionLangClass %> <%= curDynamicCaptionClass %>" ><%= overlay_link.caption %></text>
       </g>
     <% if (overlay_link.src != "") {%>
     </a>

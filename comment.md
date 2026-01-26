@@ -1,2 +1,3 @@
-adjusted layout for the project thumbnails: wider.
-single project page: replaced project logos with hamburger menu.
+the caption coordinates are not being loaded from the database.
+they are saved in css, depending on language and screen size.
+updated the database.

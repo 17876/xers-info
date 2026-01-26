@@ -32,156 +32,255 @@
 
 /*music*/
 
-.overlay-path-music {
-    stroke: var(--music-color);
-}
+.front-wrapper {
+    .overlay-path-music {
+        stroke: var(--music-color);
+    }
 
-.overlay-caption-link-music {
-    fill: var(--music-color);
-}
+    .overlay-caption-link-music {
+        fill: var(--music-color);
+    }
 
-.hover-group-music:hover .overlay-path {
-    fill: var(--music-color4d);
-    stroke: var(--music-color);
-}
+    .hover-group-music:hover .overlay-path {
+        fill: var(--music-color4d);
+        stroke: var(--music-color);
+    }
 
-.hover-group-music:hover text {
-    text-decoration: underline;
-}
+    .hover-group-music:hover text {
+        text-decoration: underline;
+    }
 
-/*analog photography*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-music .overlay-caption-en {
+        transform: translate(750px, 560px);
+    }
 
-.overlay-path-analog-photography {
-    stroke: var(--analog-photography-color);
-}
+    .hover-group-music .overlay-caption-de {
+        transform: translate(750px, 560px);
+    }
 
-.overlay-caption-link-analog-photography {
-    fill: var(--analog-photography-color);
-}
+    /*analog photography*/
 
-.hover-group-analog-photography:hover .overlay-path {
-    fill: var(--analog-photography-color4d);
-    stroke: var(--analog-photography-color);
-}
+    .overlay-path-analog-photography {
+        stroke: var(--analog-photography-color);
+    }
 
-.hover-group-analog-photography:hover text {
-    text-decoration: underline;
-}
+    .overlay-caption-link-analog-photography {
+        fill: var(--analog-photography-color);
+    }
 
-/*field recordings*/
+    .hover-group-analog-photography:hover .overlay-path {
+        fill: var(--analog-photography-color4d);
+        stroke: var(--analog-photography-color);
+    }
 
-.overlay-path-field-recordings {
-    stroke: var(--field-recordings-color);
-}
+    .hover-group-analog-photography:hover text {
+        text-decoration: underline;
+    }
 
-.overlay-caption-link-field-recordings {
-    fill: var(--field-recordings-color);
-}
+    /*caption position (relative to full screen in px)*/
+    .hover-group-analog-photography .overlay-caption-en {
+        transform: translate(360px, 786px);
+    }
 
-.hover-group-field-recordings:hover .overlay-path {
-    fill: var(--field-recordings-color4d);
-    stroke: var(--field-recordings-color);
-}
+    .hover-group-analog-photography .overlay-caption-de {
+        transform: translate(360px, 786px);
+    }
 
-.hover-group-field-recordings:hover text {
-    text-decoration: underline;
-}
+    /*field recordings*/
 
-/*about*/
+    .overlay-path-field-recordings {
+        stroke: var(--field-recordings-color);
+    }
 
-.overlay-path-about {
-    stroke: var(--about-color);
-}
+    .overlay-caption-link-field-recordings {
+        fill: var(--field-recordings-color);
+    }
 
-.overlay-caption-link-about {
-    fill: var(--about-color);
-}
+    .hover-group-field-recordings:hover .overlay-path {
+        fill: var(--field-recordings-color4d);
+        stroke: var(--field-recordings-color);
+    }
 
-.hover-group-about:hover .overlay-path {
-    fill: var(--about-color4d);
-    stroke: var(--about-color);
-}
+    .hover-group-field-recordings:hover text {
+        text-decoration: underline;
+    }
 
-.hover-group-about:hover text {
-    text-decoration: underline;
-}
+    /*caption position (relative to full screen in px)*/
+    .hover-group-field-recordings .overlay-caption-en {
+        transform: translate(1275px, 765px);
+    }
 
-/*text*/
+    .hover-group-field-recordings .overlay-caption-de {
+        transform: translate(1275px, 765px);
+    }
 
-.overlay-path-text {
-    stroke: var(--text-color);
-}
+    /*about*/
 
-.overlay-caption-link-text {
-    fill: var(--text-color);
-}
+    .overlay-path-about {
+        stroke: var(--about-color);
+    }
 
-.hover-group-text:hover .overlay-path {
-    fill: var(--text-color4d);
-    stroke: var(--text-color);
-}
+    .overlay-caption-link-about {
+        fill: var(--about-color);
+    }
 
-.hover-group-text:hover text {
-    text-decoration: underline;
-}
+    .hover-group-about:hover .overlay-path {
+        fill: var(--about-color4d);
+        stroke: var(--about-color);
+    }
 
-/*video*/
+    .hover-group-about:hover text {
+        text-decoration: underline;
+    }
 
-.overlay-path-video {
-    stroke: var(--video-color);
-}
+    /*caption position (relative to full screen in px)*/
+    .hover-group-about .overlay-caption-en {
+        transform: translate(1060px, 693px);
+    }
 
-.overlay-caption-link-video {
-    fill: var(--video-color);
-}
+    .hover-group-about .overlay-caption-de {
+        transform: translate(1060px, 693px);
+    }
 
-.hover-group-video:hover .overlay-path {
-    fill: var(--video-color4d);
-    stroke: var(--video-color);
-}
+    /*text*/
 
-.hover-group-video:hover text {
-    text-decoration: underline;
-}
+    .overlay-path-text {
+        stroke: var(--text-color);
+    }
 
-/*sound engineering*/
+    .overlay-caption-link-text {
+        fill: var(--text-color);
+    }
 
-.overlay-path-sound-engineering {
-    stroke: var(--sound-engineering-color);
-}
+    .hover-group-text:hover .overlay-path {
+        fill: var(--text-color4d);
+        stroke: var(--text-color);
+    }
 
-.overlay-caption-link-sound-engineering {
-    fill: var(--sound-engineering-color);
-}
+    .hover-group-text:hover text {
+        text-decoration: underline;
+    }
 
-.hover-group-sound-engineering:hover .overlay-path {
-    fill: var(--sound-engineering-color4d);
-    stroke: var(--sound-engineering-color);
-}
+    /*caption position (relative to full screen in px)*/
+    .hover-group-text .overlay-caption-en {
+        transform: translate(889px, 1002px);
+    }
 
-.hover-group-sound-engineering:hover text {
-    text-decoration: underline;
+    .hover-group-text .overlay-caption-de {
+        transform: translate(889px, 1002px);
+    }
+
+    /*video*/
+
+    .overlay-path-video {
+        stroke: var(--video-color);
+    }
+
+    .overlay-caption-link-video {
+        fill: var(--video-color);
+    }
+
+    .hover-group-video:hover .overlay-path {
+        fill: var(--video-color4d);
+        stroke: var(--video-color);
+    }
+
+    .hover-group-video:hover text {
+        text-decoration: underline;
+    }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group-video .overlay-caption-en {
+        transform: translate(900px, 600px);
+    }
+
+    .hover-group-video .overlay-caption-de {
+        transform: translate(900px, 600px);
+    }
+
+    /*sound engineering*/
+
+    .overlay-path-sound-engineering {
+        stroke: var(--sound-engineering-color);
+    }
+
+    .overlay-caption-link-sound-engineering {
+        fill: var(--sound-engineering-color);
+    }
+
+    .hover-group-sound-engineering:hover .overlay-path {
+        fill: var(--sound-engineering-color4d);
+        stroke: var(--sound-engineering-color);
+    }
+
+    .hover-group-sound-engineering:hover text {
+        text-decoration: underline;
+    }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group-sound-engineering .overlay-caption-en {
+        transform: translate(1300px, 227px);
+    }
+
+    .hover-group-sound-engineering .overlay-caption-de {
+        transform: translate(1300px, 227px);
+    }
+
+    /*take me elseweher - the lamp*/
+
+    .overlay-path-footer-nav-path {
+        stroke: var(--footer-nav-path-color);
+    }
+
+    .overlay-caption-link-footer-nav-path {
+        fill: var(--footer-nav-path-color);
+    }
+
+    .hover-group-footer-nav-path:hover .overlay-path {
+        fill: var(--footer-nav-path-color4d);
+        stroke: var(--footer-nav-path-color);
+    }
+
+    .hover-group-footer-nav-path:hover text {
+        text-decoration: underline;
+    }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group-footer-nav-path .overlay-caption-en {
+        transform: translate(950px, 370px);
+    }
+
+    .hover-group-footer-nav-path .overlay-caption-de {
+        transform: translate(950px, 370px);
+    }
 }
 
 /************************************/
-/*            SLIDE MENU            */
+/*                PAGES             */
 /************************************/
+/*about page*/
+.about-wrapper {
+    /*caption position (relative to full screen in px)*/
+    .hover-group-footer-nav-path .overlay-caption-en {
+        transform: translate(1000px, 693px);
+    }
 
-.overlay-path-footer-nav-path {
-    stroke: var(--footer-nav-path-color);
+    .hover-group-footer-nav-path .overlay-caption-de {
+        transform: translate(1000px, 693px);
+    }
 }
 
-.overlay-caption-link-footer-nav-path {
-    fill: var(--footer-nav-path-color);
-}
+/*sound engineering page*/
+.sound-engineering-wrapper {
+    /*caption position (relative to full screen in px)*/
+    .hover-group-footer-nav-path .overlay-caption-en {
+        transform: translate(1300px, 227px);
+    }
 
-.hover-group-footer-nav-path:hover .overlay-path {
-    fill: var(--footer-nav-path-color4d);
-    stroke: var(--footer-nav-path-color);
-}
-
-.hover-group-footer-nav-path:hover text {
-    text-decoration: underline;
+    .hover-group-footer-nav-path .overlay-caption-de {
+        transform: translate(1300px, 227px);
+    }
 }
 
 /*****************************************/
@@ -207,6 +306,15 @@
     .hover-group-footer-nav-path:hover text {
         text-decoration: underline;
     }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group .overlay-caption-en {
+        transform: translate(760px, 560px);
+    }
+
+    .hover-group .overlay-caption-de {
+        transform: translate(780px, 560px);
+    }
 }
 
 /*video*/
@@ -228,6 +336,15 @@
 
     .hover-group-footer-nav-path:hover text {
         text-decoration: underline;
+    }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group .overlay-caption-en {
+        transform: translate(850px, 600px);
+    }
+
+    .hover-group .overlay-caption-de {
+        transform: translate(870px, 600px);
     }
 }
 
@@ -251,6 +368,15 @@
     .hover-group-footer-nav-path:hover text {
         text-decoration: underline;
     }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group .overlay-caption-en {
+        transform: translate(800px, 1000px);
+    }
+
+    .hover-group .overlay-caption-de {
+        transform: translate(890px, 1000px);
+    }
 }
 
 /*field recordings*/
@@ -273,6 +399,15 @@
     .hover-group-footer-nav-path:hover text {
         text-decoration: underline;
     }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group .overlay-caption-en {
+        transform: translate(1275px, 765px);
+    }
+
+    .hover-group .overlay-caption-de {
+        transform: translate(1350px, 765px);
+    }
 }
 
 /*analog photography*/
@@ -294,5 +429,195 @@
 
     .hover-group-footer-nav-path:hover text {
         text-decoration: underline;
+    }
+
+    /*caption position (relative to full screen in px)*/
+    .hover-group .overlay-caption-en {
+        transform: translate(360px, 786px);
+    }
+
+    .hover-group .overlay-caption-de {
+        transform: translate(360px, 786px);
+    }
+}
+
+/*****************************************/
+/*       SCREENS SMALLER THAN 451PX      */
+/*****************************************/
+
+@media screen and (max-width: 450px) {
+    /********************************************/
+    /*            FRONT OVERLAY NAV             */
+    /********************************************/
+
+    /*music*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-music .overlay-caption-en {
+        transform: translate(750px, 560px);
+    }
+
+    .hover-group-music .overlay-caption-de {
+        transform: translate(750px, 560px);
+    }
+
+    /*analog photography*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-analog-photography .overlay-caption-en {
+        transform: translate(360px, 786px);
+    }
+
+    .hover-group-analog-photography .overlay-caption-de {
+        transform: translate(360px, 786px);
+    }
+
+    /*field recordings*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-field-recordings .overlay-caption-en {
+        transform: translate(1275px, 765px);
+    }
+
+    .hover-group-field-recordings .overlay-caption-de {
+        transform: translate(1275px, 765px);
+    }
+
+    /*about*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-about .overlay-caption-en {
+        transform: translate(1060px, 693px);
+    }
+
+    .hover-group-about .overlay-caption-de {
+        transform: translate(1060px, 693px);
+    }
+
+    /*text*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-text .overlay-caption-en {
+        transform: translate(889px, 1002px);
+    }
+
+    .hover-group-text .overlay-caption-de {
+        transform: translate(889px, 1002px);
+    }
+
+    /*video*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-video .overlay-caption-en {
+        transform: translate(900px, 600px);
+    }
+
+    .hover-group-video .overlay-caption-de {
+        transform: translate(900px, 600px);
+    }
+
+    /*sound engineering*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-sound-engineering .overlay-caption-en {
+        transform: translate(1300px, 227px);
+    }
+
+    .hover-group-sound-engineering .overlay-caption-de {
+        transform: translate(1300px, 227px);
+    }
+
+    /*take me elseweher - the lamp*/
+    /*caption position (relative to full screen in px)*/
+    .hover-group-footer-nav-path .overlay-caption-en {
+        transform: translate(950px, 370px);
+    }
+
+    .hover-group-footer-nav-path .overlay-caption-de {
+        transform: translate(950px, 370px);
+    }
+
+    /************************************/
+    /*                PAGES             */
+    /************************************/
+    /*about page*/
+    .about-wrapper {
+        /*caption position (relative to full screen in px)*/
+        .hover-group-footer-nav-path .overlay-caption-en {
+            transform: translate(1000px, 693px);
+        }
+
+        .hover-group-footer-nav-path .overlay-caption-de {
+            transform: translate(1000px, 693px);
+        }
+    }
+
+    /*sound engineering page*/
+    .sound-engineering-wrapper {
+        /*caption position (relative to full screen in px)*/
+        .hover-group-footer-nav-path .overlay-caption-en {
+            transform: translate(1240px, 227px);
+        }
+
+        .hover-group-footer-nav-path .overlay-caption-de {
+            transform: translate(1300px, 227px);
+        }
+    }
+
+    /*****************************************/
+    /*            CATEGORY PAGES             */
+    /*****************************************/
+
+    /*music*/
+    .category-wrapper-music {
+        /*caption position (relative to full screen in px)*/
+        .hover-group .overlay-caption-en {
+            transform: translate(680px, 560px);
+        }
+
+        .hover-group .overlay-caption-de {
+            transform: translate(750px, 560px);
+        }
+    }
+
+    /*video*/
+    .category-wrapper-video {
+        /*caption position (relative to full screen in px)*/
+        .hover-group .overlay-caption-en {
+            transform: translate(800px, 600px);
+        }
+
+        .hover-group .overlay-caption-de {
+            transform: translate(870px, 600px);
+        }
+    }
+
+    /*text*/
+    .category-wrapper-text {
+        /*caption position (relative to full screen in px)*/
+        .hover-group .overlay-caption-en {
+            transform: translate(750px, 1000px);
+        }
+
+        .hover-group .overlay-caption-de {
+            transform: translate(820px, 1000px);
+        }
+    }
+
+    /*field recordings*/
+    .category-wrapper-field-recordings {
+        /*caption position (relative to full screen in px)*/
+        .hover-group .overlay-caption-en {
+            transform: translate(1275px, 765px);
+        }
+
+        .hover-group .overlay-caption-de {
+            transform: translate(1350px, 765px);
+        }
+    }
+
+    /*analog photography*/
+    .category-wrapper-analog-photography {
+        /*caption position (relative to full screen in px)*/
+        .hover-group .overlay-caption-en {
+            transform: translate(200px, 910px);
+        }
+
+        .hover-group .overlay-caption-de {
+            transform: translate(260px, 910px);
+        }
     }
 }
