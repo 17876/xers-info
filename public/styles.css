@@ -471,6 +471,10 @@ nav li a {
     min-height: 100vh;
 }
 
+.project-wrapper.cat-analog-photography {
+    max-width: 1200px;
+}
+
 .project-nav-content {
     display: flex;
 }
@@ -542,7 +546,6 @@ nav li a {
     height: 1.5em;
     width: auto;
     padding-top: 6px;
-
     margin-right: 10px;
 }
 
@@ -558,7 +561,7 @@ nav li a {
 }
 
 #project-content {
-    flex: 0 1 700px;
+    flex: 1 1 700px;
     margin-top: 10px;
     margin-right: 20px;
     padding: 0;
@@ -650,7 +653,7 @@ nav li a {
 }
 
 .proj-media * {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .proj-media img {
@@ -1392,6 +1395,7 @@ nav li a {
     .abouts-flex-3 {
         display: flex;
         width: 100%;
+        margin-top: 15px;
         padding-left: 15px;
         padding-right: 15px;
         flex-direction: column;

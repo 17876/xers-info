@@ -2,10 +2,16 @@
 <html lang=<%= siteConfig.language %>>
 
 <% let title = `${siteConfig.website_title_short} – ${project.title}`;%>
-
+<%
+  const curCategories = project.categories;
+  const classLine = [
+  "project-wrapper",
+  ...curCategories.map(cat => `cat-${cat}`)
+    ].join(" ");
+%>
 <%- include('./partials/head.ejs', { title: title }) %>
 <body class="h-100vh">
-  <div class="project-wrapper" style="background-color: #fff">
+  <div class="<%=classLine%>" style="background-color: #fff">
     <div class="project-content">
       <div class="proj-header">
         <div class="proj-title-subtitle">

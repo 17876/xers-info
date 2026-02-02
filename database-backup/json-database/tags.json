@@ -110,5 +110,40 @@
             "en": "algorithm",
             "de": "algorithmus"
         }
+    },
+    {
+        "key": "protest",
+        "label": {
+            "en": "Protest",
+            "de": "Demonstration"
+        }
+    },
+    {
+        "key": "palestine",
+        "label": {
+            "en": "Palestine",
+            "de": "Palästina"
+        }
+    },
+    {
+        "key": "anti-colonial",
+        "label": {
+            "en": "Anti-Colonial",
+            "de": "Antikolonial"
+        }
+    },
+    {
+        "key": "personal",
+        "label": {
+            "en": "Personal",
+            "de": "Persönlich"
+        }
+    },
+    {
+        "key": "past",
+        "label": {
+            "en": "Past",
+            "de": "Vergangenheit"
+        }
     }
 ]

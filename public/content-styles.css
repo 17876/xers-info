@@ -442,6 +442,27 @@
 }
 
 /*****************************************/
+/*            SINGLE PROJECT PAGES       */
+/*****************************************/
+.cat-analog-photography .proj-media img {
+    display: block;
+    max-width: 65vh;
+    max-height: 65vh;
+    height: auto;
+    width: auto;
+    margin: auto;
+    border-radius: 0px;
+}
+
+.cat-analog-photography .proj-media .image-mount {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    background: #d2d2d2;
+    border: 15px solid black;
+}
+
+/*****************************************/
 /*       SCREENS SMALLER THAN 451PX      */
 /*****************************************/
 
@@ -619,5 +640,25 @@
         .hover-group .overlay-caption-de {
             transform: translate(260px, 910px);
         }
+    }
+
+    /*****************************************/
+    /*            SINGLE PROJECT PAGES       */
+    /*****************************************/
+    .cat-analog-photography .proj-media img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: 0px;
+    }
+
+    .cat-analog-photography .proj-media .image-mount {
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        width: 100%;
+        background: #d2d2d2;
+        border: 5px solid black;
     }
 }

@@ -1,5 +1,165 @@
 [
     {
+        "_id": 41,
+        "slug": "1867",
+        "src": "/projects/1867",
+        "img_src": "/projects/1867/img/1867_thumbnail.jpg",
+        "title": "1867",
+        "subtitle": {
+            "en": "Analog photography",
+            "de": "Analogfotographie"
+        },
+        "categories": ["analog-photography"],
+        "tags": ["personal", "past", "anti-colonial"],
+        "description": {
+            "en": "I took these photos nearly 25 years ago. I forgot about them. The last time I was at home, I found the still sealed film in a drawer of my grandfather&#8217;s desk. It was a color Kodak. I took it to the photo shop &#8220;Contrast&#8221; on Lenin Street. They developed it. I printed it on black-and-white paper. This is home.",
+            "de": "Ich habe diese Fotos vor fast 25 Jahren aufgenommen. Ich hatte sie vergessen. Als ich das letzte Mal zu Hause war, fand ich den noch versiegelten Film in einer Schublade im Schreibtisch meines Gro&#223;vaters. Es war ein Farbfilm von Kodak. Ich brachte ihn in das Fotogesch&#228;ft &#8222;Kontrast&#8220; in der Lenin-Stra&#223;e. Dort wurde er entwickelt. Ich habe die Bilder auf Schwarzwei&#223;papier abgezogen. Das ist Zuhause."
+        },
+        "media": [
+            {
+                "type": "img",
+                "label": "",
+                "src": "/projects/1867/img/1867_post_01.jpg"
+            },
+            {
+                "type": "img",
+                "label": "",
+                "src": "/projects/1867/img/1867_post_02.jpg"
+            },
+            {
+                "type": "img",
+                "label": "",
+                "src": "/projects/1867/img/1867_post_03.jpg"
+            }
+        ],
+        "meta": {
+            "title": {
+                "en": "Project information",
+                "de": "Projektinformation"
+            },
+            "items": [
+                {
+                    "type": "category",
+                    "label": {
+                        "en": "Category:",
+                        "de": "Kategorie:"
+                    },
+                    "value": {
+                        "en": "Analog photography",
+                        "de": "Analogfotographie"
+                    }
+                },
+                {
+                    "type": "media",
+                    "label": {
+                        "en": "Media:",
+                        "de": "Medium:"
+                    },
+                    "value": {
+                        "en": "Baryta photographic paper, 17,8×24 cm",
+                        "de": "Baryt-Fotopapier, 17,8×24 cm"
+                    }
+                },
+                {
+                    "type": "date",
+                    "label": {
+                        "en": "Date:",
+                        "de": "Datum:"
+                    },
+                    "value": {
+                        "en": "unknown",
+                        "de": "unbekannt"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "_id": 40,
+        "slug": "all-eyes-on-gaza-202509",
+        "src": "/projects/all-eyes-on-gaza-202509",
+        "img_src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_thumbnail.jpg",
+        "title": "All Eyes On Gaza / 2025-09-27",
+        "subtitle": {
+            "en": "Analog photography",
+            "de": "Analogfotographie"
+        },
+        "categories": ["analog-photography"],
+        "tags": ["protest", "palestine", "anti-colonial"],
+        "description": {
+            "en": "2025-09-27<br>Berlin<br>Protest \"All Eyes On Gaza\" ",
+            "de": "2025-09-27<br>Berlin<br>Demonstration \"All Eyes On Gaza\" "
+        },
+        "media": [
+            {
+                "type": "img",
+                "label": "Berlin<br>Karl-Liebknecht-Str.<br>52&#176;31&#8217;10.841&#8217;&#8217;N<br>13&#176;24&#8217;14.09&#8217;&#8217;E",
+                "src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_01.jpg"
+            },
+            {
+                "type": "img",
+                "label": "Berlin<br>Neptunbrunnen Alexanderplatz<br>52&#176;31&#8217;10.974&#8217;&#8217;N<br>13&#176;24&#8217;20.084&#8217;&#8217;E",
+                "src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_02.jpg"
+            },
+            {
+                "type": "img",
+                "label": "Berlin<br>Neptunbrunnen Alexanderplatz<br>52&#176;31&#8217;10.974&#8217;&#8217;N<br>13&#176;24&#8217;20.084&#8217;&#8217;E",
+                "src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_03.jpg"
+            },
+            {
+                "type": "img",
+                "label": "Berlin<br>Neptunbrunnen Alexanderplatz<br>52&#176;31&#8217;10.974&#8217;&#8217;N<br>13&#176;24&#8217;20.084&#8217;&#8217;E",
+                "src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_04.jpg"
+            },
+            {
+                "type": "img",
+                "label": "Berlin<br>Neptunbrunnen Alexanderplatz<br>52&#176;31&#8217;10.974&#8217;&#8217;N<br>13&#176;24&#8217;20.084&#8217;&#8217;E",
+                "src": "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_05.jpg"
+            }
+        ],
+        "meta": {
+            "title": {
+                "en": "Project information",
+                "de": "Projektinformation"
+            },
+            "items": [
+                {
+                    "type": "category",
+                    "label": {
+                        "en": "Category:",
+                        "de": "Kategorie:"
+                    },
+                    "value": {
+                        "en": "Analog photography",
+                        "de": "Analogfotographie"
+                    }
+                },
+                {
+                    "type": "media",
+                    "label": {
+                        "en": "Media:",
+                        "de": "Medium:"
+                    },
+                    "value": {
+                        "en": "RC photographic paper, 10,5×14,8 cm",
+                        "de": "RC-Fotopapier, 10,5×14,8 cm"
+                    }
+                },
+                {
+                    "type": "date",
+                    "label": {
+                        "en": "Date:",
+                        "de": "Datum:"
+                    },
+                    "value": {
+                        "en": "September 27th, 2025",
+                        "de": "27. September 2025"
+                    }
+                }
+            ]
+        }
+    },
+    {
         "_id": 39,
         "slug": "echo-chamber",
         "src": "/projects/echo-chamber",
