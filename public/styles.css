@@ -11,6 +11,15 @@
     height: 100vh !important;
 }
 
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 /*********************************/
 /*         GENERAL CSS           */
 /*********************************/
@@ -632,20 +641,40 @@ nav li a {
     border-radius: 8px;
 }
 
-#project-meta {
+.project-meta {
     flex: 0 0 250px;
     text-align: left;
     padding: 0;
     font-size: 12px;
+    margin-top: 10px;
 }
 
-#project-meta p {
-    margin: 10px 0 0 0;
+/* for the title */
+.project-meta p {
+    margin: 0 0 0.5em 0;
+}
+
+.inline-wrapper {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* so p and span stay in one line */
+.inline-wrapper p {
+    display: inline;
+}
+
+.inline-wrapper span {
+    display: inline;
 }
 
 .proj-description {
     font-size: 12px;
     text-align: justify;
+}
+
+.proj-description p {
+    margin-block-end: 0.75em;
 }
 
 .proj-media {

@@ -1,5 +1,6 @@
 const { MongoClient } = require("mongodb");
 
+let client;
 let dbConnection;
 const uri = process.env.MONGODB_URI;
 const port = process.env.PORT || 3000;
@@ -7,9 +8,23 @@ const port = process.env.PORT || 3000;
 module.exports = {
     // for establishing connection to the db
     // argument to the function is callback. we pass as an argument another function cb. and this is the function we want to run after the connection is established.
+    //version woth promise
+    // connectToDb: () => {
+    //     return MongoClient.connect(uri)
+    //         .then((connectedClient) => {
+    //             client = connectedClient;
+    //             dbConnection = client.db();
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         });
+    // },
+
+    //version with callback
     connectToDb: (cb) => {
         MongoClient.connect(uri)
-            .then((client) => {
+            .then((connectedClient) => {
+                client = connectedClient;
                 dbConnection = client.db();
                 return cb();
             })
@@ -20,6 +35,21 @@ module.exports = {
     },
     // returning this connection to the db. we use this value to communicate with the database.
     getDb: () => dbConnection,
+    getClient: () => client,
+    closeDb: (cb) => {
+        if (client) {
+            client
+                .close()
+                .then(() => {
+                    client = null;
+                    dbConnection = null;
+                    cb();
+                })
+                .catch((err) => cb(err));
+        } else {
+            cb();
+        }
+    },
     makePipeline: (type, language, filter = null) => {
         if (type == "siteConfig") {
             let pipeline = [
@@ -398,45 +428,23 @@ module.exports = {
                                     input: "$meta.items",
                                     as: "it",
                                     in: {
-                                        type: "$$it.type",
-
                                         label: {
                                             $getField: {
                                                 field: language,
                                                 input: "$$it.label",
                                             },
                                         },
-
-                                        // value may be:
-                                        //     a string-object (en/de)
-                                        //     OR an array of objects containing text.en/de
                                         value: {
-                                            $cond: [
-                                                { $isArray: "$$it.value" },
-                                                {
-                                                    // array case (e.g. link-list)
-                                                    $map: {
-                                                        input: "$$it.value",
-                                                        as: "val",
-                                                        in: {
-                                                            text: {
-                                                                $getField: {
-                                                                    field: language,
-                                                                    input: "$$val.text",
-                                                                },
-                                                            },
-                                                            src: "$$val.src",
-                                                        },
-                                                    },
-                                                },
-                                                {
-                                                    // simple object case (e.g. value.en)
+                                            $map: {
+                                                input: "$$it.value",
+                                                as: "val",
+                                                in: {
                                                     $getField: {
                                                         field: language,
-                                                        input: "$$it.value",
+                                                        input: "$$val",
                                                     },
                                                 },
-                                            ],
+                                            },
                                         },
                                     },
                                 },

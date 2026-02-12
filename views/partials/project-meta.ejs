@@ -1,35 +1,31 @@
-<div id="project-meta">
-  <p>
-    <b><%=project_meta.title%>:</b>
-  </p>
-
+<div class="project-meta">
+  <%-project_meta.title%>
   <% for (var i = 0; i < project_meta.items.length; i++) {
-  if (project_meta.items[i].type=="link-list") {%>
-  <p>
+  if (project_meta.items[i]) {%>
     <% if (project_meta.items[i].label!=0) {%>
-    <span><%=project_meta.items[i].label%></span>
+    <div class="inline-wrapper">
+    <span><%-project_meta.items[i].label%></span>
     <% } 
 
       for (var j = 0; j<project_meta.items[i].value.length; j++) {
-
         let aclass = '';
         if (j!=project_meta.items[i].value.length-1) {
           aclass = 'with-comma';
           }
 
-        if (project_meta.items[i].value[j].src!=0) { %>
-    <span class=<%=aclass%>><a href=<%=project_meta.items[i].value[j].src%>><%=project_meta.items[i].value[j].text%></a></span>
+        if (project_meta.items[i].value[j]) { %>
+    <span class=<%=aclass%>><%-project_meta.items[i].value[j]%></span>
+      </div>
     <% }
           else { %>
-    <span class=<%=aclass%>><%=project_meta.items[i].value[j].text%></span>
+          div class="inline-wrapper">
+    <span class=<%=aclass%>><%-project_meta.items[i].value[j]%></span>
+    </div>
     <% }
       } %>
-  </p>
   <% }
   else { %>
-  <p>
-    <%=project_meta.items[i].label%> <%=project_meta.items[i].value%>
-  </p>
+    <%-project_meta.items[i].label%> <%-project_meta.items[i].value%>
   <% } 
     }%>
 </div>

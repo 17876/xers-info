@@ -29,6 +29,7 @@ app.use((req, res, next) => {
 
 // db connection
 let db;
+//version with callback
 connectToDb((err) => {
     if (!err) {
         app.listen(3000, () => {
@@ -38,6 +39,17 @@ connectToDb((err) => {
         console.log("connected to db");
     }
 });
+
+//version with promise
+// connectToDb()
+//     .then(() => {
+//         app.listen(3000, () => {
+//             console.log("app listening on port 3000");
+//         });
+//         db = getDb();
+//         console.log("connected to db");
+//     })
+//     .catch((err) => console.log(err));
 
 app.get("/:lang(de|en)/", (req, res) => {
     console.log(process.env.NODE_ENV);
