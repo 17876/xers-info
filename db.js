@@ -5,6 +5,11 @@ let dbConnection;
 const uri = process.env.MONGODB_URI;
 const port = process.env.PORT || 3000;
 
+// adds language to local links to projects
+function localizeLinks(html, lang) {
+    return html.replace(/href="\/(?!https?)([^"]+)"/g, `href="/${lang}/$1"`);
+}
+
 module.exports = {
     // for establishing connection to the db
     // argument to the function is callback. we pass as an argument another function cb. and this is the function we want to run after the connection is established.
@@ -111,13 +116,16 @@ module.exports = {
                                 },
                             },
                         },
-                        about1: `$about1.${language}`,
-                        about2: `$about2.${language}`,
-                        about3: `$about3.${language}`,
-                        about4: `$about4.${language}`,
-                        about5: `$about5.${language}`,
-                        about6: `$about6.${language}`,
-                        about7: `$about7.${language}`,
+                        text_blocks: {
+                            $map: {
+                                input: "$text_blocks",
+                                as: "item",
+                                in: {
+                                    label: "$$item.label",
+                                    value: `$$item.value.${language}`,
+                                },
+                            },
+                        },
                     },
                 },
             ];
@@ -149,7 +157,16 @@ module.exports = {
                                 },
                             },
                         },
-                        text1: `$text1.${language}`,
+                        text_blocks: {
+                            $map: {
+                                input: "$text_blocks",
+                                as: "item",
+                                in: {
+                                    label: "$$item.label",
+                                    value: `$$item.value.${language}`,
+                                },
+                            },
+                        },
                     },
                 },
             ];
@@ -189,11 +206,10 @@ module.exports = {
                     $project: {
                         past: 1,
                         title: 1,
-                        projectLink: 1,
-
+                        subtitle: 1,
                         datetime: {
                             $cond: {
-                                if: { $ne: ["$datetime", 0] },
+                                if: { $ne: ["$datetime", null] },
                                 then: {
                                     date: {
                                         $getField: {
@@ -218,20 +234,20 @@ module.exports = {
                                         },
                                     },
                                 },
-                                else: 0,
+                                else: null,
                             },
                         },
 
                         venue: {
                             $cond: {
-                                if: { $ne: ["$venue", 0] },
+                                if: { $ne: ["$venue", null] },
                                 then: {
                                     $getField: {
                                         field: language,
                                         input: "$venue",
                                     },
                                 },
-                                else: 0,
+                                else: null,
                             },
                         },
 
@@ -241,22 +257,21 @@ module.exports = {
 
                         collab: {
                             $cond: {
-                                if: { $ne: ["$collab", 0] },
+                                if: { $ne: ["$collab", null] },
                                 then: {
-                                    text: {
+                                    label: {
                                         $getField: {
                                             field: language,
-                                            input: "$collab.text",
+                                            input: "$collab.label",
                                         },
                                     },
-                                    who: "$collab.who",
+                                    value: "$collab.value",
                                 },
-                                else: 0,
+                                else: null,
                             },
                         },
                         description: `$description.${language}`,
                         extra: `$extra.${language}`,
-                        link: 1,
                     },
                 },
             ];
@@ -266,7 +281,7 @@ module.exports = {
                 { $match: { _id: "eventsPage" } },
                 {
                     $project: {
-                        pageTitle: `$pageTitle.${language}`,
+                        title: `$title.${language}`,
                     },
                 },
             ];
@@ -276,8 +291,17 @@ module.exports = {
                 { $match: { _id: "contactPage" } },
                 {
                     $project: {
-                        pageTitle: `$pageTitle.${language}`,
-                        text: 1,
+                        title: `$title.${language}`,
+                        text_blocks: {
+                            $map: {
+                                input: "$text_blocks",
+                                as: "item",
+                                in: {
+                                    label: "$$item.label",
+                                    value: `$$item.value.${language}`,
+                                },
+                            },
+                        },
                     },
                 },
             ];
@@ -287,8 +311,17 @@ module.exports = {
                 { $match: { _id: "imprintPage" } },
                 {
                     $project: {
-                        pageTitle: `$pageTitle.${language}`,
-                        text: `$text.${language}`,
+                        title: `$title.${language}`,
+                        text_blocks: {
+                            $map: {
+                                input: "$text_blocks",
+                                as: "item",
+                                in: {
+                                    label: "$$item.label",
+                                    value: `$$item.value.${language}`,
+                                },
+                            },
+                        },
                     },
                 },
             ];

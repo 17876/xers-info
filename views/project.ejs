@@ -12,7 +12,7 @@
 <%- include('./partials/head.ejs', { title: title }) %>
 <body class="h-100vh">
   <div class="<%=classLine%>" style="background-color: #fff">
-    <div class="project-content">
+    <div class="proj-content">
       <div class="proj-header">
         <div class="proj-title-subtitle">
           <div class="proj-title">
@@ -22,13 +22,13 @@
             <%-project.subtitle %>
           </div>
         </div>
-        <div id="footer-nav-path" class="project-hamburger">
+        <div id="footer-nav-path" class="proj-hamburger">
           <img src="/css/img/hamburger_icon.png" alt="">
         </div>
       </div>
-      <div class="proj-content-meta">
-        <div id="project-content">
-          <%- include('./partials/proj-media.ejs', { project_media: project.media }) %>
+      <div class="proj-article-meta">
+        <div class="proj-article">
+          <%- include('./partials/project-media.ejs', { project_media: project.media }) %>
           <div class="proj-description">
             <%- project.description %>
           </div>

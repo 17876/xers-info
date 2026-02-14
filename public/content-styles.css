@@ -462,6 +462,10 @@
     border: 15px solid black;
 }
 
+.cat-analog-photography .proj-article {
+    flex: 1 1 700px;
+}
+
 /*****************************************/
 /*       SCREENS SMALLER THAN 451PX      */
 /*****************************************/

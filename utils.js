@@ -1,6 +1,11 @@
 const { marked } = require("marked");
 const sanitizeHtml = require("sanitize-html");
 
+//adds language to local links
+function localizeLinks(html, lang) {
+    return html.replace(/href="\/(?!https?)([^"]+)"/g, `href="/${lang}/$1"`);
+}
+
 //replaces tabs with &nbsp; and adds two spaces after each line
 function preprocessMarkdown(text) {
     return text
@@ -23,10 +28,10 @@ function preprocessMarkdown(text) {
         .join("\n");
 }
 
-function safeMarkdown(text) {
+function safeMarkdown(text, lang) {
     // Convert markdown to HTML
     const preprocessed = preprocessMarkdown(text);
-    const rawHtml = marked.parse(preprocessed);
+    const rawHtml = marked.parse(preprocessed.trim()).trim();
 
     // Sanitize the HTML
     return sanitizeHtml(rawHtml, {
@@ -58,20 +63,43 @@ function applyMarkdownFields(obj, fields) {
 
 //example: applyToPath(project, ["description", "*"])
 function applyToPath(current, pathParts) {
+    //console.log("*********************************************");
+    //console.log("\n\n");
     if (!current) return;
 
     const part = pathParts[0];
+    if (!part) return;
+    //console.log("pathParts", pathParts);
+    //console.log("current", current);
 
     // Handle arrays
     if (part.endsWith("[]")) {
         const key = part.replace("[]", "");
         const array = current[key];
-        if (Array.isArray(array)) {
+        //console.log(part);
+        if (!Array.isArray(array)) return;
+        //the field is an array, doesn't go to further fields
+        if (pathParts.length === 1) {
+            //console.log("array of strings");
+            //current[key] = array.map((item) => safeMarkdown(item));
+            current[key] = current[key].map((item) =>
+                typeof item === "string" ? safeMarkdown(item) : item,
+            );
+            // for (const item of array) {
+            //     if (typeof item === "string") {
+            //         current[key] = safeMarkdown(item);
+            //     }
+            // }
+            return;
+        } else {
+            //console.log("not array of strings");
+            // elements of the array are objects and have fields
+            //applyToPath(current[key], pathParts.slice(1));
             for (const item of array) {
                 applyToPath(item, pathParts.slice(1));
             }
+            return;
         }
-        return;
     }
 
     // Handle wildcard '*'
@@ -123,4 +151,5 @@ function applyToPath(current, pathParts) {
 
 module.exports = {
     applyMarkdownFields: applyMarkdownFields,
+    localizeLinks: localizeLinks,
 };

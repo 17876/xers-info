@@ -1,12 +1,14 @@
-updated photo projects.
-updated css: the projects got css class based on its categories.
-single photo projects have different layout.
+#### 2026-02-14
 
-#### 2026-02-04
+pages collection is updatable via pajes.js and sync-database.js
+all pages objects are unified
+so we can use only one pipeline for all pages
+think of mongoose
 
-no commit:
-corrected class for the description div in project.ejs
-updated description for 1867
-labels for single photos?
-add the story about the cemetery and my portrait to the text
-make the text shorter, link to the full version?
+todo
+
+- [ ] unify the pipelines for th pages
+- [ ] make categories and other collections updatable vie sync-database.js
+- [ ] check all pages and projects on desktop
+- [ ] check all pages and projects on mobile
+- [ ] clean structure: database-backup to deprecated

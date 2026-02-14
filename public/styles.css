@@ -518,7 +518,7 @@ nav li a {
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
-.project-content {
+.proj-content {
     width: auto;
     margin-left: 10px;
     font-size: 12px;
@@ -550,7 +550,7 @@ nav li a {
     font-size: 12px;
 }
 
-.project-hamburger {
+.proj-hamburger {
     flex: 0 0 10px;
     height: 1.5em;
     width: auto;
@@ -558,19 +558,19 @@ nav li a {
     margin-right: 10px;
 }
 
-.project-hamburger img {
+.proj-hamburger img {
     height: 100%;
     width: auto;
 }
 
-.proj-content-meta {
+.proj-article-meta {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-#project-content {
-    flex: 1 1 700px;
+.proj-article {
+    flex: 0 1 700px;
     margin-top: 10px;
     margin-right: 20px;
     padding: 0;
@@ -641,16 +641,17 @@ nav li a {
     border-radius: 8px;
 }
 
-.project-meta {
+.proj-meta {
     flex: 0 0 250px;
     text-align: left;
     padding: 0;
     font-size: 12px;
     margin-top: 10px;
+    word-break: break-word;
 }
 
 /* for the title */
-.project-meta p {
+.proj-meta p {
     margin: 0 0 0.5em 0;
 }
 
@@ -1260,6 +1261,10 @@ nav li a {
     margin-left: 10px;
 }
 
+.imprint p {
+    margin-bottom: 0.75em;
+}
+
 /*****************************************/
 /*       SCREENS SMALLER THAN 946PX      */
 /*****************************************/
@@ -1300,7 +1305,7 @@ nav li a {
 /*       SCREENS SMALLER THAN 769PX      */
 /*****************************************/
 /*the cv stuff is not used currently but maybe needed later for a cv as a table*/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .cv2-table-row {
         display: block;
     }
@@ -1322,17 +1327,17 @@ nav li a {
     .sand-content {
         width: 100%;
     }
-}
+} */
 
 /*****************************************/
 /*       SCREENS SMALLER THAN 653PX      */
 /*****************************************/
 
-@media screen and (max-width: 652px) {
+/* @media screen and (max-width: 652px) {
     .project-thumbnail {
         flex: 1 1 300px;
     }
-}
+} */
 
 /*****************************************/
 /*       SCREENS SMALLER THAN 451PX      */

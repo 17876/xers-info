@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const { ObjectId } = require("mongodb");
 const { connectToDb, getDb, makePipeline } = require("./db");
+const { localizeLinks } = require("./utils");
 const fs = require("fs");
 
 // express app
@@ -161,11 +162,12 @@ app.get("/:lang(de|en)/events", (req, res) => {
                                 siteConfig: siteConfig,
                                 pageConfig: pageConfig,
                                 events: events,
+                                localizeLinks: localizeLinks,
                             });
                         })
-                        .catch(() => {
+                        .catch((err) => {
                             res.status(500).json({
-                                error: "Could not fetch events",
+                                error: err,
                             });
                         });
                 })

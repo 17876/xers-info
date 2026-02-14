@@ -1,6 +1,6 @@
 # generating events for mongo db from old database.json
 import json
-with open("../public/database.json", "r") as file:
+with open("../deprecated/database.json", "r") as file:
     data = json.load(file)
 
 events_en = data['en']['events']['events']  #list of objects
@@ -13,54 +13,88 @@ for i in range(len(events_en)):
     cur_event_de = events_de[i]
     # dealing with collab
     cur_collab = {}
-    if cur_event_en['collab'] !=0:
-        cur_text = {
+    if cur_event_en['collab']:
+        cur_label = {
                     "en": cur_event_en['collab']['text'],
                     "de": cur_event_de['collab']['text']
                     }
-        cur_who = []
+        cur_value = []
         for i in range(len(cur_event_de['collab']['who'])):
-            cur_who.append(
-                {
-                "name": cur_event_en['collab']['who'][i]['name'],
-                "link": cur_event_en['collab']['who'][i]['link']
-                } 
-            )
+            cur_value.append(f"[{cur_event_en['collab']['who'][i]['name']}]({cur_event_en['collab']['who'][i]['link']})")
+            
         cur_collab = {
-            "text": cur_text,
-            "who": cur_who
+            "label": cur_label,
+            "value": cur_value
         }
     else:
-        cur_collab = 0
-        
-    cur_event = {
-                    "_id": cur_event_en['id'],
-                    "past": cur_event_en['past'],
-                    "datetime": {
+        cur_collab = None
+    
+    cur_id = cur_event_en['id']
+    cur_past = cur_event_en['past']
+
+    cur_datetime = {}
+    if cur_event_en['datetime']:
+        cur_datetime = {
                         "en": cur_event_en['datetime'],
                         "de":cur_event_de['datetime']
-                    },
-                    "venue": {
+                    }
+    else:
+        cur_datetime = None
+    
+    cur_venue = {}
+    if cur_event_en['venue']:
+        cur_venue = {
                         "en": cur_event_en['venue'],
                         "de":cur_event_de['venue']
-                    },
-                    "title": cur_event_en['title'],
-                    "subtitle": {
+                    }
+    else:
+        cur_venue = None
+
+    cut_title = ""
+    if cur_event_en['project-link'] != "":
+        cut_title = f"[{cur_event_en['title']}]({cur_event_en['project-link']})"
+    else:
+        cut_title = cur_event_en['title']
+    
+    cur_subtitle = {}
+    if cur_event_en['subtitle']:
+        cur_subtitle = {
                         "en": cur_event_en['subtitle'],
                         "de":cur_event_de['subtitle']
-                    },
-                    "projectLink": cur_event_en['project-link'],
-                    "collab": cur_collab,
-                    "description": {
+                    }
+    else:
+        cur_subtitle = None
+    
+    cur_description = {}
+    if cur_event_en['description']:
+        cur_description = {
                         "en": cur_event_en['description'],
                         "de":cur_event_de['description']
-                    },
-                    "extra": {
+                    }
+    else:
+        cur_description = None
+
+    cur_extra = {}
+    if cur_event_en['extra']:
+        cur_extra = {
                         "en": cur_event_en['extra'],
                         "de":cur_event_de['extra']
-                     },
-                    "link": cur_event_en['link']
+                    }
+    else:
+        cur_extra = None
+    
+    cur_event = {
+                    "_id": cur_id,
+                    "past": cur_past,
+                    "title": cut_title,
+                    "subtitle": cur_subtitle,
+                    "datetime": cur_datetime,
+                    "venue": cur_venue,
+                    "collab": cur_collab,
+                    "description": cur_description,
+                    "extra": cur_extra
     }
+
     events.append(cur_event)
 
 with open("events.json", "w") as f:
