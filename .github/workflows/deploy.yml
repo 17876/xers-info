@@ -32,8 +32,8 @@ jobs:
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
                     cd /home/xers/xers-info
-                    /home/xers/.nvm/versions/node/v24.13.0/bin/npm install --production
-                    /home/xers/.nvm/versions/node/v24.13.0/bin/pm2 kill
-                    /home/xers/.nvm/versions/node/v24.13.0/bin/pm2 start app.js
-                    NODE_ENV=production /home/xers/.nvm/versions/node/v24.13.0/bin/pm2 restart app.js --update-env
+                    npm install --production
+                    pm2 kill
+                    pm2 start app.js
+                    NODE_ENV=production pm2 restart app.js --update-env
                   EOF
