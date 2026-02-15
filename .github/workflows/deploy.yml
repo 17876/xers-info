@@ -13,17 +13,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
-            - name: Use Node.js 24
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 24
-                  cache: "npm"
-
-            - name: Check Node and npm versions
-              run: |
-                  node -v
-                  npm -v
-
             - name: Setup SSH
               run: |
                   mkdir -p ~/.ssh
@@ -42,34 +31,10 @@ jobs:
               run: |
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
-                    APP_DIR="/home/xers/xers-info"
-                    NODE_VERSION="24"
-
-                    cd $APP_DIR
-
-                    echo "===== LOADING NVM ====="
-                    export NVM_DIR="$HOME/.nvm"
-                    source "$NVM_DIR/nvm.sh"
-
-                    nvm install $NODE_VERSION
-                    nvm use $NODE_VERSION
-
-                    echo "Node version: $(node -v)"
-                    echo "NPM version: $(npm -v)"
-
-                    NODE_BIN=$(which node)
-                    NPM_BIN=$(which npm)
-                    PM2_BIN=$(which pm2)
-
-                    echo "Node: $NODE_BIN"
-                    echo "NPM: $NPM_BIN"
-                    echo "PM2: $PM2_BIN"
-
-                    $NPM_BIN ci --omit=dev
-                    $NODE_BIN sync-database.js
-
-
-                    NODE_ENV=production node sync-database.js
-                    NODE_ENV=production pm2 start app.js
+                    cd /home/xers/xers-info
+                    npm install --production
+                    pm2 kill
+                    pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
+                    node sync-database.js
                   EOF
