@@ -31,10 +31,10 @@ jobs:
               run: |
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
-                    nvm use 20
                     cd /home/xers/xers-info
-                    npm install --production
                     pm2 kill
+                    nvm use 24
+                    npm install --production
                     NODE_ENV=production node sync-database.js
                     NODE_ENV=production pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
