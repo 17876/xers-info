@@ -57,11 +57,18 @@ jobs:
                     echo "Node version: $(node -v)"
                     echo "NPM version: $(npm -v)"
 
-                    echo "pm2 kill **********************************"
-                    pm2 kill
-                    echo "npm ci --omit=dev **********************************"
-                    npm ci --omit=dev
-                    echo "node sync-database.js ***********************************"
+                    NODE_BIN=$(which node)
+                    NPM_BIN=$(which npm)
+                    PM2_BIN=$(which pm2)
+
+                    echo "Node: $NODE_BIN"
+                    echo "NPM: $NPM_BIN"
+                    echo "PM2: $PM2_BIN"
+
+                    $NPM_BIN ci --omit=dev
+                    $NODE_BIN sync-database.js
+
+
                     NODE_ENV=production node sync-database.js
                     NODE_ENV=production pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
