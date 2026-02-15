@@ -39,7 +39,7 @@ jobs:
                     cd /home/xers/xers-info
                     echo "pm2 kill **********************************"
                     pm2 kill
-                    echo "npm install --production **********************************
+                    echo "npm install --production **********************************"
                     npm install --production
                     echo "node sync-database.js **********************************"
                     NODE_ENV=production node sync-database.js
