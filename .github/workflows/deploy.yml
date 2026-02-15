@@ -42,11 +42,25 @@ jobs:
               run: |
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
-                    cd /home/xers/xers-info
+                    APP_DIR="/home/xers/xers-info"
+                    NODE_VERSION="24"
+
+                    cd $APP_DIR
+
+                    echo "===== LOADING NVM ====="
+                    export NVM_DIR="$HOME/.nvm"
+                    source "$NVM_DIR/nvm.sh"
+
+                    nvm install $NODE_VERSION
+                    nvm use $NODE_VERSION
+
+                    echo "Node version: $(node -v)"
+                    echo "NPM version: $(npm -v)"
+
                     echo "pm2 kill **********************************"
                     pm2 kill
-                    echo "npm install --production **********************************"
-                    npm install --production
+                    echo "npm ci --omit=dev **********************************"
+                    npm ci --omit=dev
                     echo "node sync-database.js ***********************************"
                     NODE_ENV=production node sync-database.js
                     NODE_ENV=production pm2 start app.js
