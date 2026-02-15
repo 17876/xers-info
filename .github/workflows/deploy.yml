@@ -36,5 +36,4 @@ jobs:
                     pm2 kill
                     pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
-                    node sync-database.js
                   EOF
