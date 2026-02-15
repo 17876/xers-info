@@ -43,6 +43,8 @@ jobs:
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
                     cd /home/xers/xers-info
+                    echo "nvm use 24 **********************************"
+                    nvm use 24
                     echo "pm2 kill **********************************"
                     pm2 kill
                     echo "npm install --production **********************************"
