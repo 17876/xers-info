@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang=<%= aboutPage.language %>>
-<% let title = `${siteConfig.website_title_short} – ${aboutPage.title}` %>
+<html lang=<%= page.language %>>
+<% let title = `${siteConfig.website_title_short} – ${page.title}` %>
 <%- include('./partials/head.ejs', {title: title}) %>
 <body>
   <div class="about-wrapper">
     <div class="about-nav">
       <div class="about-nav-image-link">
-        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: aboutPage.overlay_nav}) %>
+        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: page.overlay_nav}) %>
       </div>
     </div>
     <div class="about-content">
       <div class="abouts-flex-parent">
         <div class="abouts-flex-1">
           <div class="about1">
-            <%- aboutPage.text_blocks[0].value%>
+            <%- page.text_blocks[0].value%>
           </div>
           <div class="about2">
-            <%- aboutPage.text_blocks[1].value %>
+            <%- page.text_blocks[1].value %>
           </div>
           <div class="about3">
-            <%- aboutPage.text_blocks[2].value %>
+            <%- page.text_blocks[2].value %>
           </div>
         </div>
       </div>
       <div class="abouts-flex-parent">
         <div class="abouts-flex-2">
           <div class="about4">
-            <%- aboutPage.text_blocks[3].value %>
+            <%- page.text_blocks[3].value %>
           </div>
           <div class="about5">
-            <%- aboutPage.text_blocks[4].value %>
+            <%- page.text_blocks[4].value %>
           </div>
         </div>
       </div>
       <div class="abouts-flex-parent">
         <div class="abouts-flex-3">
           <div class="about6">
-            <%- aboutPage.text_blocks[5].value %>
+            <%- page.text_blocks[5].value %>
           </div>
           <div class="about7">
-            <%- aboutPage.text_blocks[6].value %>
+            <%- page.text_blocks[6].value %>
           </div>
         </div>
       </div>
@@ -67,8 +67,8 @@
       // onscreen image size
       const hP = hS;
       const wP = (w0 / h0)*hP;
-      const origPosNorm = <%= aboutPage.overlay_nav.positioning.orig_pos%>;
-      const screenPosNorm = <%= aboutPage.overlay_nav.positioning.screen_pos%>;
+      const origPosNorm = <%= page.overlay_nav.positioning.orig_pos%>;
+      const screenPosNorm = <%= page.overlay_nav.positioning.screen_pos%>;
       // setting the left value
       const left = - wP * origPosNorm + wS * screenPosNorm +  "px"; 
       aboutNavImageLink.style.left = left;

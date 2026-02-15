@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=<%= siteConfig.language %>>
 
-<% let title = `${siteConfig.website_title_short} – ${pageConfig.title}`%>
+<% let title = `${siteConfig.website_title_short} – ${page.title}`%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
@@ -9,7 +9,7 @@
     <div class="imprint-content">
       <div class="imprint-header">
         <div class="imprint-title">
-          <%- pageConfig.title %>
+          <%- page.title %>
         </div>
         <div id="footer-nav-path" class="imprint-hamburger">
           <img src="/events/img/hamburger_icon.png" alt="">
@@ -17,7 +17,7 @@
       </div>
       <div class="imprint-flex-parent">
         <div class="imprint">
-          <%- pageConfig.text_blocks[0].value %>
+          <%- page.text_blocks[0].value %>
         </div>
       </div>
       

@@ -52,11 +52,11 @@
 
     /*caption position (relative to full screen in px)*/
     .hover-group-music .overlay-caption-en {
-        transform: translate(750px, 560px);
+        transform: translate(750px, 620px);
     }
 
     .hover-group-music .overlay-caption-de {
-        transform: translate(750px, 560px);
+        transform: translate(750px, 620px);
     }
 
     /*analog photography*/

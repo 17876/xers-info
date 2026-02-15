@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang=<%= soundEngineeringPage.language %>>
-<% let title = `${siteConfig.website_title_short} – ${soundEngineeringPage.title}` %>
+<html lang=<%= page.language %>>
+<% let title = `${siteConfig.website_title_short} – ${page.title}` %>
 <%- include('./partials/head.ejs', {title: title}) %>
 <body>
   <div class="sound-engineering-wrapper">
     <div class="sound-engineering-nav">
       <div class="sound-engineering-nav-image-link">
-        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: soundEngineeringPage.overlay_nav}) %>
+        <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: page.overlay_nav}) %>
       </div>
     </div>
     <div class="sound-engineering-content">
       <div class="sound-engineering-flex-parent">
         <div class="sound-engineering-flex-1">
           <div class="sound-engineering-text1">
-            <%- soundEngineeringPage.text_blocks[0].value %>
+            <%- page.text_blocks[0].value %>
           </div>
         </div>
       </div>
@@ -41,8 +41,8 @@
       // onscreen image size
       const hP = hS;
       const wP = (w0 / h0)*hP;
-      const origPosNorm = <%= soundEngineeringPage.overlay_nav.positioning.orig_pos%>;
-      const screenPosNorm = <%= soundEngineeringPage.overlay_nav.positioning.screen_pos%>;
+      const origPosNorm = <%= page.overlay_nav.positioning.orig_pos%>;
+      const screenPosNorm = <%= page.overlay_nav.positioning.screen_pos%>;
       // setting the left value
       const left = - wP * origPosNorm + wS * screenPosNorm +  "px"; 
       soundEngineeringNavImageLink.style.left = left;

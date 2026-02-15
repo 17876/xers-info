@@ -1,5 +1,5 @@
 pages = {
-    markdownFields: ["title.*", "text_blocks[].label", "text_blocks[].value.*"],
+    markdownFields: ["text_blocks[].label", "text_blocks[].value.*"],
     collection: [
         {
             _id: "aboutPage",
@@ -20,7 +20,7 @@ pages = {
                 overlay_links: [
                     {
                         id: "footer-nav-path",
-                        src: "",
+                        src: "", // important that it's not null, for sliding footer
                         caption: {
                             en: "Take me anywhere",
                             de: "Woandershin",
@@ -32,7 +32,7 @@ pages = {
                         ],
                     },
                 ],
-                description: "",
+                description: null,
             },
             text_blocks: [
                 {
@@ -178,6 +178,7 @@ Quelle:
             },
             overlay_nav: {
                 img_src: "/front/img/P1000718-LR.jpg",
+                positioning: null,
                 overlay_links: [
                     {
                         id: "music",
@@ -284,7 +285,7 @@ Quelle:
                         ],
                     },
                 ],
-                description: "",
+                description: null,
             },
             text_blocks: null,
         },
@@ -320,7 +321,7 @@ Quelle:
                         ],
                     },
                 ],
-                description: "",
+                description: null,
             },
 
             text_blocks: [

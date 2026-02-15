@@ -4,12 +4,18 @@ if (process.env.NODE_ENV !== "production") {
 
 const projects = require("./data/projects");
 const events = require("./data/events");
-const imprint = require("./data/pages");
+const pages = require("./data/pages");
+const categories = require("./data/categories");
+const siteConfig = require("./data/site-config");
+const tags = require("./data/tags");
 
 const collections = {
     projects,
     events,
     pages,
+    categories,
+    siteConfig,
+    tags,
 };
 
 const uri = process.env.MONGODB_URI;

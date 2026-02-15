@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=<%= siteConfig.language %>>
 
-<% let title = `${siteConfig.website_title_short} – ${pageConfig.pageTitle}`%>
+<% let title = `${siteConfig.website_title_short} – ${page.pageTitle}`%>
 <%- include('./partials/head.ejs', { title: title}) %>
 
 <body>
@@ -9,7 +9,7 @@
     <div class="contact-content">
       <div class="contact-header">
         <div class="contact-title">
-          <%- pageConfig.title %>
+          <%- page.title %>
         </div>
         <div id="footer-nav-path" class="contact-hamburger">
           <img src="/events/img/hamburger_icon.png" alt="">
@@ -17,7 +17,7 @@
       </div>
       <div class="contact-flex-parent">
         <div class="contact">
-          <%- pageConfig.text_blocks[0].value %>
+          <%- page.text_blocks[0].value %>
         </div>
       </div>
       

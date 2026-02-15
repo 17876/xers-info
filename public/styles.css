@@ -521,6 +521,7 @@ nav li a {
 .proj-content {
     width: auto;
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 12px;
     overflow: hidden;
     padding-bottom: 2em;
@@ -555,7 +556,7 @@ nav li a {
     height: 1.5em;
     width: auto;
     padding-top: 6px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .proj-hamburger img {
@@ -1600,6 +1601,10 @@ nav li a {
         padding-right: 8px;
         font-size: 12px;
         overflow: hidden;
+    }
+
+    .proj-article {
+        margin-right: 0;
     }
 
     .project-hamburger {

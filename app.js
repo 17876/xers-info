@@ -56,21 +56,22 @@ app.get("/:lang(de|en)/", (req, res) => {
     console.log(process.env.NODE_ENV);
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineIndex = makePipeline("indexPage", language);
+    const pageFilter = { slug: "index" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
             const siteConfig = result[0];
             db.collection("pages")
-                .aggregate(pipelineIndex)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    const indexPage = result[0];
+                    const page = result[0];
                     res.status(200);
                     res.render("index", {
                         siteConfig: siteConfig,
-                        indexPage: indexPage,
+                        page: page,
                     });
                 });
         })
@@ -83,21 +84,23 @@ app.get("/:lang(de|en)/", (req, res) => {
 app.get("/:lang(de|en)/about", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineAbouts = makePipeline("aboutPage", language);
+    const pageFilter = { slug: "about" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
+    console.log(pipelinePage);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
             const siteConfig = result[0];
             db.collection("pages")
-                .aggregate(pipelineAbouts)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    const aboutPage = result[0];
+                    const page = result[0];
                     res.status(200);
                     res.render("about", {
                         siteConfig: siteConfig,
-                        aboutPage: aboutPage,
+                        page: page,
                     });
                 });
         })
@@ -109,24 +112,22 @@ app.get("/:lang(de|en)/about", (req, res) => {
 app.get("/:lang(de|en)/sound-engineering", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineSoundEngineering = makePipeline(
-        "soundEngineeringPage",
-        language,
-    );
+    const pageFilter = { slug: "sound-engineering" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
             const siteConfig = result[0];
             db.collection("pages")
-                .aggregate(pipelineSoundEngineering)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    const soundEngineeringPage = result[0];
+                    const page = result[0];
                     res.status(200);
                     res.render("sound-engineering", {
                         siteConfig: siteConfig,
-                        soundEngineeringPage: soundEngineeringPage,
+                        page: page,
                     });
                 });
         })
@@ -138,20 +139,19 @@ app.get("/:lang(de|en)/sound-engineering", (req, res) => {
 app.get("/:lang(de|en)/events", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineEventsPage = makePipeline("eventsPage", language);
+    const pageFilter = { slug: "events" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
     const pipelineEvent = makePipeline("event", language);
-    let siteConfig;
-    let pageConfig;
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
-            siteConfig = result[0];
+            const siteConfig = result[0];
             db.collection("pages")
-                .aggregate(pipelineEventsPage)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    pageConfig = result[0];
+                    const page = result[0];
                     db.collection("events")
                         .aggregate(pipelineEvent)
                         .toArray()
@@ -160,7 +160,7 @@ app.get("/:lang(de|en)/events", (req, res) => {
                             res.status(200);
                             res.render("events", {
                                 siteConfig: siteConfig,
-                                pageConfig: pageConfig,
+                                page: page,
                                 events: events,
                                 localizeLinks: localizeLinks,
                             });
@@ -344,64 +344,63 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
 app.get("/:lang(de|en)/contact", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineContactPage = makePipeline("contactPage", language);
-    let siteConfig;
-    let pageConfig;
+    const pageFilter = { slug: "contact" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
-            siteConfig = result[0];
+            const siteConfig = result[0];
+            console.log(result);
             db.collection("pages")
-                .aggregate(pipelineContactPage)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    pageConfig = result[0];
+                    const page = result[0];
                     res.render("contact", {
                         siteConfig: siteConfig,
-                        pageConfig: pageConfig,
+                        page: page,
                     });
                 })
                 .catch(() => {
                     res.status(500).json({
-                        error: "Could not fetch pageConfig",
+                        error: "Could not render",
                     });
                 });
         })
         .catch(() => {
-            res.status(500).json({ error: "Could not fetch siteConfig" });
+            res.status(500).json({ error: "Could not fetch page" });
         });
 });
 
 app.get("/:lang(de|en)/imprint", (req, res) => {
     const language = req.params.lang;
     const pipelineSiteConfig = makePipeline("siteConfig", language);
-    const pipelineImprintPage = makePipeline("imprintPage", language);
-    let siteConfig;
-    let pageConfig;
+    const pageFilter = { slug: "imprint" };
+    const pipelinePage = makePipeline("page", language, pageFilter);
     db.collection("siteConfig")
         .aggregate(pipelineSiteConfig)
         .toArray()
         .then((result) => {
-            siteConfig = result[0];
+            const siteConfig = result[0];
             db.collection("pages")
-                .aggregate(pipelineImprintPage)
+                .aggregate(pipelinePage)
                 .toArray()
                 .then((result) => {
-                    pageConfig = result[0];
+                    const page = result[0];
                     res.render("imprint", {
                         siteConfig: siteConfig,
-                        pageConfig: pageConfig,
+                        page: page,
                     });
                 })
                 .catch(() => {
                     res.status(500).json({
-                        error: "Could not fetch pageConfig",
+                        error: "Could not render",
                     });
                 });
         })
         .catch(() => {
-            res.status(500).json({ error: "Could not fetch siteConfig" });
+            res.status(500).json({ error: "Could not fetch page" });
         });
 });
 

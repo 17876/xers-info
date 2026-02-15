@@ -1,0 +1,146 @@
+categories = {
+    markdownFields: [],
+    collection: [
+        {
+            _id: "music",
+            overlay_nav: {
+                img_src: "/category/img/music-overlay-full.png",
+                positioning: {
+                    orig_pos: 0.437,
+                    screen_pos: 0.8,
+                    comment:
+                        "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen",
+                },
+                overlay_links: [
+                    {
+                        id: "footer-nav-path",
+                        src: "", // important that it's not null, for sliding footer
+                        caption: {
+                            en: "Take me anywhere",
+                            de: "Woandershin",
+                        },
+                        paths: [
+                            {
+                                points: "788.3 719.26 881.97 725.64 844.8 659.38 847.81 597.81 852.31 591.9 853.83 573.03 838.49 572.69 838.23 591.34 839.64 599.78 834.23 660.09 788.3 719.26",
+                            },
+                        ],
+                    },
+                ],
+                description: null,
+            },
+        },
+        {
+            _id: "text",
+            overlay_nav: {
+                img_src: "/category/img/text-overlay-full.png",
+                positioning: {
+                    orig_pos: 0.474,
+                    screen_pos: 0.8,
+                    comment:
+                        "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen",
+                },
+                overlay_links: [
+                    {
+                        id: "footer-nav-path",
+                        src: "", // important that it's not null, for sliding footer
+                        caption: {
+                            en: "Take me anywhere",
+                            de: "Woandershin",
+                        },
+                        paths: [
+                            {
+                                points: "866.77 914.28 903.37 879.37 908.25 875.05 910.31 874.12 914.63 878.43 924.2 868.48 926.46 865.48 932.09 863.42 934.34 866.8 937.53 868.3 939.22 873.55 942.41 876.18 940.53 880.83 939.97 884.81 930.59 891.2 954.99 918.04 956.3 922.36 954.99 927.61 916.7 963.09 908.06 963.84 901.12 958.58 893.04 950.7 882.53 939.44 876.9 935.5 871.08 932.87 866.77 930.24 865.83 923.11 866.77 914.28",
+                            },
+                        ],
+                    },
+                ],
+                description: null,
+            },
+        },
+        {
+            _id: "analog-photography",
+            overlay_nav: {
+                img_src: "/category/img/photography-overlay-full.png",
+                positioning: {
+                    orig_pos: 0.184,
+                    screen_pos: 0.8,
+                    comment:
+                        "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen",
+                },
+                overlay_links: [
+                    {
+                        id: "footer-nav-path",
+                        src: "", // important that it's not null, for sliding footer
+                        caption: {
+                            en: "Take me anywhere",
+                            de: "Woandershin",
+                        },
+                        paths: [
+                            {
+                                points: "337.62 604.38 367.65 604.01 386.8 605.88 390.93 689.6 393.18 707.62 386.42 707.62 385.3 716.63 384.92 723.76 388.68 725.64 387.55 730.14 365.4 730.14 357.52 733.52 351.51 731.27 337.62 727.52 337.62 720.76 332.74 715.88 332.74 709.5 338.75 708.75 338 703.87 325.23 702.36 327.86 733.52 333.87 739.15 337.25 747.79 334.24 753.8 328.99 757.55 328.24 766.56 318.1 766.56 322.98 821.75 333.12 819.87 442.25 828.71 442.74 837.14 387.18 864.92 264.42 851.03 264.19 843.57 308.71 828.13 306.09 766.18 298.95 765.43 297.08 726.77 300.45 726.02 297.83 622.78 303.46 620.52 310.59 623.15 312.84 685.47 335.37 686.22 337.62 604.38",
+                            },
+                        ],
+                    },
+                ],
+                description: null,
+            },
+        },
+        {
+            _id: "field-recordings",
+            overlay_nav: {
+                img_src: "/category/img/field-recordings-overlay-full.png",
+                positioning: {
+                    orig_pos: 0.761,
+                    screen_pos: 0.8,
+                    comment:
+                        "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen",
+                },
+                overlay_links: [
+                    {
+                        id: "footer-nav-path",
+                        src: "", // important that it's not null, for sliding footer
+                        caption: {
+                            en: "Take me anywhere",
+                            de: "Woandershin",
+                        },
+                        paths: [
+                            {
+                                points: "1389.34 797.06 1516.23 798.56 1501.59 899.17 1386.71 896.55 1389.34 797.06",
+                            },
+                        ],
+                    },
+                ],
+                description: null,
+            },
+        },
+        {
+            _id: "video",
+            overlay_nav: {
+                img_src: "/category/img/video-overlay-full.png",
+                positioning: {
+                    orig_pos: 0.488,
+                    screen_pos: 0.8,
+                    comment:
+                        "orig_pos is normalized x-position of the nav element in the image, screen_pos is normalized x-position of this nav element on the screen",
+                },
+                overlay_links: [
+                    {
+                        id: "footer-nav-path",
+                        src: "", // important that it's not null, for sliding footer
+                        caption: {
+                            en: "Take me anywhere",
+                            de: "Woandershin",
+                        },
+                        paths: [
+                            {
+                                points: "881.97 617.03 999.29 615.06 999.29 684.6 881.97 687.42 881.97 617.03",
+                            },
+                        ],
+                    },
+                ],
+                description: null,
+            },
+        },
+    ],
+};
+module.exports = categories;

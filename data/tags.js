@@ -1,0 +1,153 @@
+tags = {
+    markdownFields: [],
+    collection: [
+        {
+            key: "audio",
+            label: {
+                en: "audio",
+                de: "audio",
+            },
+        },
+        {
+            key: "ensemble",
+            label: {
+                en: "ensemble",
+                de: "ensemble",
+            },
+        },
+        {
+            key: "improvisation",
+            label: {
+                en: "improvisation",
+                de: "improvisation",
+            },
+        },
+        {
+            key: "performance",
+            label: {
+                en: "performance",
+                de: "performance",
+            },
+        },
+        {
+            key: "fixed media",
+            label: {
+                en: "fixed media",
+                de: "fixed media",
+            },
+        },
+        {
+            key: "poetry",
+            label: {
+                en: "poetry",
+                de: "poetry",
+            },
+        },
+        {
+            key: "field recording",
+            label: {
+                en: "field recording",
+                de: "field recording",
+            },
+        },
+        {
+            key: "participation",
+            label: {
+                en: "participation",
+                de: "partizipation",
+            },
+        },
+        {
+            key: "score",
+            label: {
+                en: "score",
+                de: "partitur",
+            },
+        },
+        {
+            key: "installation",
+            label: {
+                en: "installation",
+                de: "installation",
+            },
+        },
+        {
+            key: "music theatre",
+            label: {
+                en: "music theatre",
+                de: "musiktheater",
+            },
+        },
+        {
+            key: "3 instruments",
+            label: {
+                en: "3 instruments",
+                de: "3 instrumente",
+            },
+        },
+        {
+            key: "2 instruments",
+            label: {
+                en: "2 instruments",
+                de: "2 instrumente",
+            },
+        },
+        {
+            key: "1 instrument",
+            label: {
+                en: "1 instrument",
+                de: "1 instrument",
+            },
+        },
+        {
+            key: "ensemble",
+            label: {
+                en: "ensemble",
+                de: "ensemble",
+            },
+        },
+        {
+            key: "algorithm",
+            label: {
+                en: "algorithm",
+                de: "algorithmus",
+            },
+        },
+        {
+            key: "protest",
+            label: {
+                en: "Protest",
+                de: "Demonstration",
+            },
+        },
+        {
+            key: "palestine",
+            label: {
+                en: "Palestine",
+                de: "Palästina",
+            },
+        },
+        {
+            key: "anti-colonial",
+            label: {
+                en: "Anti-Colonial",
+                de: "Antikolonial",
+            },
+        },
+        {
+            key: "personal",
+            label: {
+                en: "Personal",
+                de: "Persönlich",
+            },
+        },
+        {
+            key: "past",
+            label: {
+                en: "Past",
+                de: "Vergangenheit",
+            },
+        },
+    ],
+};
+module.exports = tags;

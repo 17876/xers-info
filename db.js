@@ -89,58 +89,25 @@ module.exports = {
                 },
             ];
             return pipeline;
-        } else if (type == "aboutPage") {
+        } else if (type == "page") {
             let pipeline = [
-                { $match: { _id: "aboutPage" } },
+                { $match: filter },
                 {
                     $project: {
+                        _id: 1,
+                        slug: 1,
                         language: language,
-                        title: "$title",
-                        overlay_nav: {
-                            img_src: "$overlay_nav.img_src",
-                            positioning: 1,
-                            description: "$overlay_nav.description",
-                            overlay_links: {
-                                $map: {
-                                    input: "$overlay_nav.overlay_links",
-                                    as: "item",
-                                    in: {
-                                        id: "$$item.id",
-                                        src: "$$item.src",
-                                        color: "$$item.color",
-                                        caption: `$$item.caption.${language}`,
-                                        caption_coordinates:
-                                            "$$item.caption_coordinates",
-                                        paths: "$$item.paths",
-                                    },
-                                },
+                        scroll_hint: {
+                            $cond: {
+                                if: { $ne: ["$scroll_hint", null] },
+                                then: `$scroll_hint.${language}`,
+                                else: null,
                             },
                         },
-                        text_blocks: {
-                            $map: {
-                                input: "$text_blocks",
-                                as: "item",
-                                in: {
-                                    label: "$$item.label",
-                                    value: `$$item.value.${language}`,
-                                },
-                            },
-                        },
-                    },
-                },
-            ];
-            return pipeline;
-        } else if (type == "soundEngineeringPage") {
-            let pipeline = [
-                { $match: { _id: "soundEngineeringPage" } },
-                {
-                    $project: {
-                        language: language,
                         title: `$title.${language}`,
                         overlay_nav: {
                             img_src: "$overlay_nav.img_src",
                             positioning: 1,
-                            description: "$overlay_nav.description",
                             overlay_links: {
                                 $map: {
                                     input: "$overlay_nav.overlay_links",
@@ -156,6 +123,7 @@ module.exports = {
                                     },
                                 },
                             },
+                            description: "$overlay_nav.description",
                         },
                         text_blocks: {
                             $map: {
@@ -164,35 +132,6 @@ module.exports = {
                                 in: {
                                     label: "$$item.label",
                                     value: `$$item.value.${language}`,
-                                },
-                            },
-                        },
-                    },
-                },
-            ];
-            return pipeline;
-        } else if (type == "indexPage") {
-            let pipeline = [
-                { $match: { _id: "indexPage" } },
-                {
-                    $project: {
-                        scroll_hint: `$scroll_hint.${language}`,
-                        overlay_nav: {
-                            img_src: "$overlay_nav.img_src",
-                            description: "$overlay_nav.description",
-
-                            overlay_links: {
-                                $map: {
-                                    input: "$overlay_nav.overlay_links",
-                                    as: "item",
-                                    in: {
-                                        id: "$$item.id",
-                                        src: "$$item.src",
-                                        caption: `$$item.caption.${language}`,
-                                        caption_coordinates:
-                                            "$$item.caption_coordinates",
-                                        paths: "$$item.paths",
-                                    },
                                 },
                             },
                         },
@@ -272,56 +211,6 @@ module.exports = {
                         },
                         description: `$description.${language}`,
                         extra: `$extra.${language}`,
-                    },
-                },
-            ];
-            return pipeline;
-        } else if (type == "eventsPage") {
-            let pipeline = [
-                { $match: { _id: "eventsPage" } },
-                {
-                    $project: {
-                        title: `$title.${language}`,
-                    },
-                },
-            ];
-            return pipeline;
-        } else if (type == "contactPage") {
-            let pipeline = [
-                { $match: { _id: "contactPage" } },
-                {
-                    $project: {
-                        title: `$title.${language}`,
-                        text_blocks: {
-                            $map: {
-                                input: "$text_blocks",
-                                as: "item",
-                                in: {
-                                    label: "$$item.label",
-                                    value: `$$item.value.${language}`,
-                                },
-                            },
-                        },
-                    },
-                },
-            ];
-            return pipeline;
-        } else if (type == "imprintPage") {
-            let pipeline = [
-                { $match: { _id: "imprintPage" } },
-                {
-                    $project: {
-                        title: `$title.${language}`,
-                        text_blocks: {
-                            $map: {
-                                input: "$text_blocks",
-                                as: "item",
-                                in: {
-                                    label: "$$item.label",
-                                    value: `$$item.value.${language}`,
-                                },
-                            },
-                        },
                     },
                 },
             ];

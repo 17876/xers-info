@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=<%= siteConfig.language %>>
 
-<% let title = `${siteConfig.website_title_short} – ${pageConfig.title}`;%>
+<% let title = `${siteConfig.website_title_short} – ${page.title}`;%>
 <%- include('./partials/head.ejs', {title: title}) %>
 
 <body>
@@ -10,7 +10,7 @@
       
       <div class="events-header">
         <div class="events-title">
-          <%- pageConfig.title %>
+          <%- page.title %>
         </div>
         <div id="footer-nav-path" class="events-hamburger">
           <img src="/events/img/hamburger_icon.png" alt="">
