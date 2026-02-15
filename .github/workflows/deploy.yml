@@ -13,6 +13,11 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
+            - name: Use Node.js 24
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 24
+
             - name: Setup SSH
               run: |
                   mkdir -p ~/.ssh
@@ -32,13 +37,11 @@ jobs:
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
                     cd /home/xers/xers-info
-                    echo "pm2 kill *****************"
+                    echo "pm2 kill **********************************"
                     pm2 kill
-                    echo "nvm use 24 *****************"
-                    nvm use 24
-                    echo "npm install --production *****************"
+                    echo "npm install --production **********************************
                     npm install --production
-                    echo "node sync-database.js *****************"
+                    echo "node sync-database.js **********************************"
                     NODE_ENV=production node sync-database.js
                     NODE_ENV=production pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
