@@ -31,6 +31,7 @@ jobs:
               run: |
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
+                    nvm use 20
                     cd /home/xers/xers-info
                     npm install --production
                     pm2 kill
