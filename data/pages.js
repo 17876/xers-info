@@ -140,9 +140,9 @@ Telefon: +49 157 517 607 96
 E-Mail: anton[at]anton.studio
 
 **Umsatzsteuer-ID**
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE452893734.
+Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE452893734.
 
-**Verbraucherstreitbeilegung/Universalschlichtungsstelle**
+**Verbraucherstreitbeilegung / Universalschlichtungsstelle**
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
 
@@ -157,9 +157,9 @@ Telefon: +49 157 517 607 96
 E-Mail: anton[at]anton.studio
 
 **Umsatzsteuer-ID**
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE452893734.
+Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE452893734.
 
-**Verbraucherstreitbeilegung/Universalschlichtungsstelle**
+**Verbraucherstreitbeilegung / Universalschlichtungsstelle**
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
 

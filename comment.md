@@ -19,3 +19,16 @@ todo
 commit
 
 - all collections are updatable via sync-database.js
+- also after a long suffering, reinstalled the vultr server, cleaned up the node installations, installed everything anew
+- documented the process in obsidian
+
+todo
+
+- [ ] make database update automatic when deploying
+
+#### 2026-02-16
+
+commit
+
+corrected css for imprint page (too long lines)
+trying to make db updatable on deploy

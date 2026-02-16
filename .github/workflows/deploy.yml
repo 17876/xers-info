@@ -32,7 +32,8 @@ jobs:
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
                     cd /home/xers/xers-info
-                    npm install --production
+                    npm install --omit=dev
+                    node sync-database.js
                     pm2 kill
                     pm2 start app.js
                     NODE_ENV=production pm2 restart app.js --update-env
