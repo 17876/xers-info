@@ -31,6 +31,7 @@ jobs:
               run: |
                   ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
                     pwd
+                    source ~/.bashrc
                     cd /home/xers/xers-info
                     npm install --production
                     node sync-database.js
