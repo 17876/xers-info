@@ -34,7 +34,7 @@ jobs:
                     source ~/.bashrc
                     cd /home/xers/xers-info
                     npm install --production
-                    node sync-database.js
+                    node sync-database.js --production
                     pm2 kill
                     NODE_ENV=production pm2 start app.js --update-env
                     NODE_ENV=production pm2 restart app.js --update-env
