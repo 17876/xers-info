@@ -446,11 +446,13 @@
 /*****************************************/
 .cat-analog-photography .proj-media img {
     display: block;
-    max-width: 65vh;
-    max-height: 65vh;
+    max-width: 75vh;
+    max-height: 75vh;
     height: auto;
     width: auto;
     margin: auto;
+    /* border: 15px solid black; */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 0px;
 }
 
@@ -458,8 +460,9 @@
     display: grid;
     place-items: center;
     height: 80vh;
-    background: #d2d2d2;
-    border: 15px solid black;
+    background: #ffffff;
+    /* background-image: url("/css/img/mount.jpg"); */
+    border: 15px solid rgb(38, 38, 38);
 }
 
 .cat-analog-photography .proj-article {
@@ -655,6 +658,7 @@
         height: auto;
         margin: auto;
         border-radius: 0px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     }
 
     .cat-analog-photography .proj-media .image-mount {
@@ -663,6 +667,6 @@
         height: auto;
         width: 100%;
         background: #d2d2d2;
-        border: 5px solid black;
+        border: 0px solid black;
     }
 }

@@ -408,3 +408,7 @@ app.get("/", (req, res) => {
     // now we render a view. renders index.ejs
     res.redirect("/en");
 });
+
+app.get("/audio", (req, res) => {
+    res.render("audio-player");
+});

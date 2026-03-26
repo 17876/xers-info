@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/audio.css" />
+</head>
+<body>
+    <div class="player">
+  <button id="playBtn">Play</button>
+  <input type="range" id="progress" value="0" min="0" max="100">
+  <span id="currentTime">0:00</span>
+  <span>/</span>
+  <span id="duration">0:00</span>
+</div>
+
+<audio id="audio" src="/audio.mp3"></audio>
+
+</body>
+</html>
+
+
+<script>
+const audio = document.getElementById("audio");
+const playBtn = document.getElementById("playBtn");
+const progress = document.getElementById("progress");
+const currentTimeEl = document.getElementById("currentTime");
+const durationEl = document.getElementById("duration");
+
+// Play / Pause
+playBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    playBtn.textContent = "Pause";
+  } else {
+    audio.pause();
+    playBtn.textContent = "Play";
+  }
+});
+
+// Update duration when loaded
+audio.addEventListener("loadedmetadata", () => {
+  durationEl.textContent = formatTime(audio.duration);
+});
+
+// Update progress bar
+audio.addEventListener("timeupdate", () => {
+  progress.value = (audio.currentTime / audio.duration) * 100;
+  currentTimeEl.textContent = formatTime(audio.currentTime);
+});
+
+// Seek
+progress.addEventListener("input", () => {
+  audio.currentTime = (progress.value / 100) * audio.duration;
+});
+
+// Format time
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time % 60).toString().padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
+</script>

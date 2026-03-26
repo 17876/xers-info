@@ -1,0 +1,9 @@
+.player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+}
+input[type="range"] {
+    flex: 1;
+}
