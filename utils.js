@@ -69,8 +69,8 @@ function applyToPath(current, pathParts) {
 
     const part = pathParts[0];
     if (!part) return;
-    //console.log("pathParts", pathParts);
-    //console.log("current", current);
+    // console.log("pathParts", pathParts);
+    // console.log("current", current);
 
     // Handle arrays
     if (part.endsWith("[]")) {

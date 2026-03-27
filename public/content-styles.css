@@ -446,24 +446,36 @@
 /*****************************************/
 .cat-analog-photography .proj-media img {
     display: block;
-    max-width: 65vh;
-    max-height: 65vh;
-    height: auto;
+    max-width: 95vh;
+    max-height: 95vh;
+    /* height: 100%; */
     width: auto;
     margin: auto;
+    /* border: 15px solid black; */
     border-radius: 0px;
+    /* border: 10px solid rgb(38, 38, 38); */
 }
 
 .cat-analog-photography .proj-media .image-mount {
-    display: grid;
-    place-items: center;
-    height: 80vh;
-    background: #d2d2d2;
-    border: 15px solid black;
+    height: auto;
+    width: fit-content;
+    background: #ffffff;
+    margin: 0px auto 0px auto;
+    border: 15px solid rgb(40, 40, 40);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.cat-analog-photography .proj-media .image-mount-label {
+    margin-bottom: 150px;
+}
+
+.cat-analog-photography .proj-media > :last-child {
+    margin-bottom: 50px;
 }
 
 .cat-analog-photography .proj-article {
-    flex: 1 1 700px;
+    flex: 0 1 95vh;
 }
 
 /*****************************************/

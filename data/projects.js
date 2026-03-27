@@ -1,6 +1,7 @@
 projects = {
     markdownFields: [
         "description.*",
+        // "title.*",
         "subtitle.*",
         "meta.title.*",
         "meta.items[].label.*",
@@ -9,10 +10,13 @@ projects = {
     collection: [
         {
             _id: 41,
-            slug: "1867",
-            src: "/projects/1867",
-            img_src: "/projects/1867/img/1867_thumbnail.jpg",
-            title: "1867",
+            slug: "im_a_bad_jew",
+            src: "/projects/im_a_bad_jew",
+            img_src: "/projects/im_a_bad_jew/img/im_a_bad_jew_thumbnail.jpg",
+            title: {
+                en: "I’m a bad Jew",
+                de: "Ich bin ein schlechter Jude",
+            },
             subtitle: {
                 en: "Analog photography",
                 de: "Analogfotographie",
@@ -20,33 +24,190 @@ projects = {
             categories: ["analog-photography"],
             tags: ["personal", "past", "anti-colonial"],
             description: {
-                en: `Someone told me to wait. I got in line and found myself at the end. In front of me stood a blue, slightly leaning, and almost rotten wooden fence, behind which, in a pine grove, stood my grandfather’s GAZ-69A.
+                en: `More than twenty-five years had passed since this roll of film last saw the light — until I found it in the mothball-scented drawer of my grandfather’s desk.
 
-The pine grove had to wait the longest. It had been waiting for its near-complete felling for 25 years. The cause was inevitable gentrification, which had reached our village, along with the appearance of the new neighbor Zhenya on his quad bike. Next in line was the GAZ-69A. Its engine had blown from the inside after I forgot to drain the radiator for the winter.
+I came to Cherepovets for my Granny’s funeral. A year earlier, my father had died. I didn’t go then: I was so afraid that I fell ill. I convinced myself they wouldn’t let me board the plane because COVID had not yet been fully normalised. The cold passed, but the wound carved by the fear did not. When I received a message from my mother saying that her mother had died, I bought a ticket. On that trip, I found peace with myself after my father’s death.
 
-The fence, however, didn’t have to wait long: it was quickly demolished and consigned to the mercy of fire. In its place, another fence was built–made of the then-popular metal mesh stretched over square metal posts. If you shook one end of this mesh, waves ran along it, producing a characteristic sound. I will never forget the sound of those mesh waves. As children, we used to lounge on it like on a vertically suspended hammock, and it creaked in a strange way. On the side of the grove that hadn’t yet been cleared, the mesh was attached to a metal garage where we kept the already-busted GAZ-69A. The garage resonated, making everything sound even better. The garage is still waiting.`,
+I stepped into the empty apartment. As a child, I often stayed with Granny. When I came down with pneumonia, I lived here for two months. Now there was only emptiness filled with memory. The ticking clock, the creaking dresser, the lower cabinet door that could neither be opened nor closed because of the pressure of Dreiser’s collected works on the shelf above — everything radiated time.
 
-                de: `Jemand sagte mir, ich solle warten. Ich stellte mich an und fand mich am Ende der Schlange wieder. Vor mir stand ein blauer, leicht schiefer und fast verrotteter Holzzaun, und hinter dem, in einem Kiefernwäldchen, der GAZ-69A meines Großvaters stand.
+I came here with a purpose. I wanted to feel this frozen space, abandoned by time; to find objects that held particular value for me, objects filled with secret meaning, objects that had absorbed my time and were therefore full of my life.
 
-Das Kiefernwäldchen musste am längsten warten. Es wartete seit 25 Jahren auf seine nahezu vollständige Abholzung. Ursache war die unvermeidliche Gentrifizierung, die unser Dorf erreicht hatte – zusammen mit dem Auftauchen des neuen Nachbarn Zhenja auf seinem Quad. Als Nächstes in der Schlange war der GAZ-69A. Sein Motor war von innen geplatzt, nachdem ich vergessen hatte, vor dem Winter das Wasser aus dem Kühler abzulassen.
+The room was long and narrow: on the left, a bed with a radiola at its head; then an armchair where Granny would sit and talk to me, repeating story after story in her struggle against loneliness, as if trying to keep me there a little longer. In the end, I would leave. Behind the bed stood a mirror brought from Nazi Germany as a trophy, now superstitiously covered with a white bed sheet. Along the right wall stood a long wardrobe, and behind it a desk. The two walls converged at a window, which closed off the room and opened onto Metallurgov-Street.
 
-Der Zaun hingegen musste nicht lange warten: Er wurde schnell abgerissen und dem Feuer überlassen. An seiner Stelle entstand ein anderer Zaun – aus dem damals beliebten Metallgitter, gespannt über quadratische Metallpfosten. Wenn man an einem Ende dieses Gitters rüttelte, liefen Wellen hindurch und erzeugten einen charakteristischen Klang. Ich werde den Klang dieser Gitterwellen nie vergessen. Als Kinder lagen wir darauf herum wie auf einer senkrecht aufgehängten Hängematte, und er knarrte auf seltsame Weise. Auf der Seite des Wäldchens, das noch nicht gerodet war, war das Gitter an einer Metallgarage befestigt, in der wir den bereits kaputten GAZ-69A aufbewahrten. Die Garage resonierte und machte alles noch klangvoller. Die Garage wartet immer noch.`,
+I walked to the end of the room and sat down at the desk. Above it hung a portrait of Vysotsky with a guitar. As I rummaged through the drawers, I felt an incredible, almost childlike joy — as if I had found a treasure. I hurried to the photo studio „Contrast“ on Lenin Street and left the film to be developed.
+
+
+###### *
+
+
+Furhad gave me a Zenit camera, a developing tank, and photographic chemicals. With that gift, he set in motion the search for my past.
+
+My grandmother had a colleague from the construction trust who practiced photography professionally. I don’t remember how it happened, but somehow my father got everything necessary for black-and-white photography from her and taught me how to develop and print. Or perhaps we learned together — I don’t remember exactly. There were books and trips to the shop „Goluboy Ekran” („Blue Screen“ in Russian) for photographic paper and chemicals.
+
+At some point, I abandoned all of it. I forgot. We forget out of idleness, out of the seeming insignificance of an event, or out of pain. Sometimes we forget because we are forced to. And the longer I live, the less time remains for me, and the more time belongs to the past. What is forgotten grows.
+
+The Zenit camera became an invitation from oblivion into the present. I imagine it as a kind of pump with which I can draw time from the past into the present, constantly replenishing the supply of life I have left. As if it were immortality.
+
+There are only a few successful frames on the film, and I can only partially reconstruct the circumstances in which they were taken.
+
+Aunt Fira – my grandfather’s sister – came from Moscow to our dacha. Apparently, we spent some time in the village and then went back together to Moscow to visit the grave of their parents – my great-grandparents, about whom I know almost nothing. Their surname was Zarzhevskiy. A Jewish surname was of little help in the USSR, so my grandfather changed it to Zarzhavskiy — with an „a” — and changed his nationality in his Soviet passport to Ukrainian. In the photograph the original surname, Zarzhevskiy, is engraved on the gravestones of my great-grandparents.
+
+My father’s family name is Vasilyev; I know little about it as well. As is customary in Russia, a child is given only the father’s surname. My mother did not change hers after marriage — she remained Zarzhavskaya. The simple surname Vasilyev causes difficulties for non-Russian speakers in Germany, both in spelling and pronunciation. For a long time, I was embarrassed and tried writing „Wassiljew” to correct the sound somewhat, otherwise it was always „Fazilief”. Now I have stopped being ashamed and stopped adjusting. I even complicated matters by adding Zarzhevskiy as a second surname – with an „e”. Vasilyev-Zarzhevskiy.
+
+I am a descendant of people who survived Stalin’s purges. Now I speak more often about my Jewish roots. Now I live in Germany. More than that, I am its citizen. My Granny used to repeat, „Oh come on, they’re completely different people there now”. My illusions collapsed when I realised that here they are not completely „completely different people”, and that the German narrative still contains antisemitic mechanisms, instrumentalising Jewishness to maintain power – as before, only now with the opposite sign. During the Nazi dictatorship, Jews were not considered as individuals by the Nazis; instead only the projection of Jews through the Nazi lens was considered. Today’s German projection is simple: a „good Jew” is above all a Zionist, a figure who confirms the fairy tale about the „good German“, the fairy tale of how Germany successfully overcame fascism, cleansed itself of fascism, and built a liberal democracy. And if you are not that kind of Jew in Germany, you are a bad Jew. And I am a bad Jew.
+
+I am a witness to how Germany supports genocide, occupation, and apartheid in Palestine, instrumentalising Jewishness to preserve its power and imperial ambitions. And I am even glad that my Granny is no longer alive to witness all this.
+
+This photographic project is an act of personal resistance, an act of refusing enforced oblivion and a notion of progress that destroys time. It is an act of reconnecting with roots and an attempt to reclaim a past stolen by the imperial rule.`,
+
+                de: `
+Mehr als fünfundzwanzig Jahre waren vergangen, seit diese Filmrolle zuletzt das Licht gesehen hatte, bis ich sie in der nach Mottenkugeln riechenden Schublade im Schreibtisch meines Großvaters fand.
+
+Ich kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Vater gestorben. Damals fuhr ich nicht hin: Ich hatte solche Angst, dass ich krank wurde. Ich redete mir ein, man würde mich nicht ins Flugzeug lassen, weil COVID noch nicht vollständig normalisiert war. Die Erkältung ging vorbei, doch die Wunde, die die Angst hinterlassen hatte, blieb. Als ich von meiner Mutter die Nachricht vom Tod ihrer Mutter erhielt, kaufte ich sofort ein Ticket. Auf dieser Reise fand ich nach dem Tod meines Vaters Frieden mit mir selbst.
+
+Ich betrat die leere Wohnung. Als Kind war ich oft bei der Oma. Als ich an einer Lungenentzündung erkrankte, lebte ich zwei Monate hier. Jetzt war da nur Leere, erfüllt von Erinnerung. Die tickende Uhr, die knarrende Kommode, die untere Schranktür, die sich wegen des Drucks von Dreisers gesammelten Werken im Regal darüber weder öffnen noch schließen ließ – alles strahlte Zeit aus.
+
+Ich kam mit einem Ziel hierher. Ich wollte diesen eingefrorenen, von der Zeit verlassenen Raum spüren; Gegenstände finden, die für mich einen besonderen Wert hatten, Dinge voller geheimer Bedeutung, Dinge, die meine Zeit absorbiert hatten und deshalb von meinem Leben erfüllt waren.
+
+Das Zimmer war lang und schmal: links ein Bett mit einer Radiola am Kopfende; dann ein Sessel, in dem meine Großmutter saß und mit mir sprach, immer wieder dieselben Geschichten erzählend in ihrem Kampf gegen die Einsamkeit, als wollte sie mich noch ein wenig länger bei sich behalten. Am Ende ging ich doch. Hinter dem Bett stand ein Spiegel, als Trophäe aus Nazideutschland mitgebracht, nun abergläubisch mit einem weißen Bettlaken verhängt. An der rechten Wand stand ein langer Kleiderschrank, dahinter ein Schreibtisch. Die beiden Wände liefen auf ein Fenster zu, das den Raum abschloss und auf die Metallurgov-Straße hinausging.
+
+Ich ging ans Ende des Zimmers und setzte mich an den Schreibtisch. Über ihm hing ein Porträt von Wyssozki mit einer Gitarre. Als ich in den Schubladen wühlte, verspürte ich eine unglaubliche, fast kindliche Freude – als hätte ich einen Schatz gefunden. Ich eilte zum Fotostudio „Kontrast“ in der Lenin-Straße und gab den Film zur Entwicklung ab.
+
+
+###### *
+
+
+Furhad schenkte mir eine Zenit-Kamera, einen Entwicklungstank und Fotochemikalien. Mit diesem Geschenk setzte er die Suche nach meiner Vergangenheit in Gang.
+
+Meine Großmutter hatte eine Kollegin aus dem Baukombinat, die Fotografie professionell betrieb. Ich erinnere mich nicht genau, wie es geschah, aber irgendwie bekam mein Vater von ihr alles Notwendige für die Schwarzweißfotografie und brachte mir das Entwickeln und Vergrößern bei. Oder vielleicht lernten wir es gemeinsam – ich weiß es nicht mehr genau. Es gab Bücher und Fahrten in das Geschäft „Goluboj Ekran“ („Blauer Bildschirm“ auf Russisch), um Fotopapier und Chemikalien zu kaufen.
+
+Irgendwann ließ ich das alles hinter mir. Ich vergaß. Man vergisst aus Trägheit, aus der scheinbaren Bedeutungslosigkeit eines Ereignisses oder aus Schmerz. Manchmal vergisst man, weil man dazu gezwungen wird. Und je länger ich lebe, desto weniger Zeit bleibt mir, und desto mehr Zeit gehört der Vergangenheit. Das Vergessene wächst.
+
+Die Zenit-Kamera wurde zu einer Einladung aus dem Vergessen in die Gegenwart. Ich stelle sie mir wie eine Art Pumpe vor, mit der ich Zeit aus der Vergangenheit in die Gegenwart umpumpen kann, um die Zeit, die mir noch bleibt, immer wieder aufzufüllen. Als wäre es Unsterblichkeit.
+
+Auf dem Film sind nur wenige gelungene Aufnahmen, und ich kann die Umstände, unter denen sie entstanden sind, nur teilweise rekonstruieren.
+
+Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Datscha. Offenbar verbrachten wir im Dorf einige Zeit und fuhren dann nach Moskau zurück, um das Grab ihrer Eltern – meiner Urgroßmutter und meines Urgroßvaters –, über die ich fast nichts weiß –, zu besuchen. Ihr Nachname war Zarzhevskiy. Ein jüdischer Nachname war in der UdSSR wenig hilfreich, daher änderte mein Großvater ihn zu Zarzhavskiy – mit einem „a“ – und ließ in seinem sowjetischen Pass seine Nationalität in Ukrainer ändern. Der ursprüngliche Name, Zarzhevskiy, ist auf den Grabsteinen auf dem Foto eingraviert.
+
+Der Familienname meines Vaters ist Vasilyev; auch darüber weiß ich wenig. Wie in Russland üblich trägt ein Kind nur den Namen des Vaters. Meine Mutter änderte ihren Namen nach der Heirat nicht – sie blieb Zarzhavskaya. Der einfache Name Vasilyev bereitet nicht-russischsprachigen Menschen in Deutschland Schwierigkeiten, sowohl in der Schreibweise als auch in der Aussprache. Lange Zeit schämte ich mich und schrieb „Wassiljew“, um den Klang etwas zu korrigieren, sonst wurde er stets „Fasilief“ ausgesprochen. Inzwischen habe ich aufgehört, mich zu schämen und mich anzupassen. Ich habe es sogar komplizierter gemacht und Zarzhevsky als zweiten Nachnamen hinzugefügt. Mit einem „e“. Vasilyev-Zarzhevskiy.
+
+Ich bin ein Nachfahre von Menschen, die Stalins Säuberungen überlebten. Heute spreche ich häufiger über meine jüdischen Wurzeln. Heute lebe ich in Deutschland. Mehr noch: Ich bin sein Staatsangehöriger. Meine Großmutter pflegte zu sagen: „Ach was, das sind heute ganz andere Menschen dort“. Meine Illusionen zerbrachen, als ich erkannte, dass es hier nicht ganz „ganz andere Menschen“ sind und dass das deutsche Narrativ weiterhin antisemitische Mechanismen enthält, die Jüdischsein instrumentalisieren, um Macht zu sichern – wie früher, nur mit umgekehrtem Vorzeichen.  Während der NS-Diktatur wurden Juden von den Nazis nicht als Individuen betrachtet; stattdessen wurde nur die Projektion der Juden durch die Nazi-Linse wahrgenommen.
+Die heutige deutsche Projektion ist einfach: Ein „guter Jude“ ist vor allem ein Zionist, eine Figur, die das Märchen vom „guten Deutschen“ bestätigt – das Märchen davon, wie Deutschland den Faschismus erfolgreich überwunden, sich vom Faschismus gereinigt und eine liberale Demokratie aufgebaut hat. Und wenn du in Deutschland kein solcher Jude bist, dann bist du ein „schlechter Jude“. Und ich bin ein schlechter Jude.
+
+Ich bin Zeuge, wie Deutschland Völkermord, Besatzung und Apartheid in Palästina unterstützt und dabei Jüdischsein instrumentalisiert, um seine Macht und imperialen Ambitionen zu bewahren. Und ich bin sogar froh, dass meine Oma all das nicht mehr erleben muss.
+
+Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigerung gegenüber dem erzwungenen Vergessen und einer Fortschrittsidee, die Zeit zerstört. Es ist ein Akt der Rückverbindung mit Wurzeln und ein Versuch, eine von imperialer Herrschaft geraubte Vergangenheit zurückzuholen.`,
             },
             media: [
                 {
                     type: "img",
-                    label: "",
-                    src: "/projects/1867/img/1867_post_01.jpg",
+                    label: "Test",
+                    src: "/projects/im_a_bad_jew/img/01_pol-deda.jpg",
                 },
                 {
                     type: "img",
                     label: "",
-                    src: "/projects/1867/img/1867_post_02.jpg",
+                    src: "/projects/im_a_bad_jew/img/02_me_and_ded.jpg",
                 },
                 {
                     type: "img",
                     label: "",
-                    src: "/projects/1867/img/1867_post_03.jpg",
+                    src: "/projects/im_a_bad_jew/img/03_ded_and_tom.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/04_tom-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/05_tom-2.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/06_dom_gusevykh.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/07_dom.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/08_tom-3.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/09_t_fira_and_ded-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/10_t_fira_and_ded-2.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/11_t_fira_and_me-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/12_t_fira_and_me-2.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/13_me_and_ded_in_moscow.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/14_cemetery-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/16.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/17.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/18.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/19.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/20.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/21.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/22.jpg",
+                },
+                {
+                    type: "img",
+                    label: "",
+                    src: "/projects/im_a_bad_jew/img/23.jpg",
                 },
             ],
             meta: {
@@ -100,7 +261,10 @@ Der Zaun hingegen musste nicht lange warten: Er wurde schnell abgerissen und dem
             src: "/projects/all-eyes-on-gaza-202509",
             img_src:
                 "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_thumbnail.jpg",
-            title: "All Eyes On Gaza / 2025-09-27",
+            title: {
+                en: "All Eyes On Gaza / 2025-09-27",
+                de: "All Eyes On Gaza / 2025-09-27",
+            },
             subtitle: {
                 en: "Analog photography",
                 de: "Analogfotographie",
@@ -207,7 +371,10 @@ Demonstration "All Eyes On Gaza"`,
             slug: "echo-chamber",
             src: "/projects/echo-chamber",
             img_src: "/projects/echo_chamber/img/echo_chamber_thumbnail.jpg",
-            title: "Echo Chamber",
+            title: {
+                en: "Echo Chamber",
+                de: "Echo Chamber",
+            },
             subtitle: {
                 en: "Ensemble, Audio",
                 de: "Ensemble, Audio",
@@ -215,7 +382,7 @@ Demonstration "All Eyes On Gaza"`,
             categories: ["music"],
             tags: ["ensemble", "audio", "score"],
             description: {
-                en: `Hind Rajab was a six-year-old girl from Gaza, killed on January 29th 2024 by the Israli military after being the sole survivor of Israli tank fire on the vehicle in which she had fled with her aunt, uncle, and four cousins.
+                en: `Hind Rajab was a six-year-old girl from Gaza, killed on January 29th 2024 by the Israeli military after being the sole survivor of Israeli tank fire on the vehicle in which she had fled with her aunt, uncle, and four cousins.
 
 The Palestinian Red Crescent Society was able to reach Hind on the phone and send an ambulance to the site of the incident, but both paramedics were also killed.
 The dispatcher Rana al-Faqeh spent about three hours on the phone with Hind before the connection was lost.
@@ -382,7 +549,10 @@ Auftragswerk des Ensemble New Babylon`,
             src: "/projects/money-laundering",
             img_src:
                 "/projects/money_laundering/img/money_laundering_thumb.jpg",
-            title: "Money Laundering",
+            title: {
+                en: "Money Laundering",
+                de: "Money Laundering",
+            },
             subtitle: {
                 en: "Improvisation, performance",
                 de: "Improvisation, Performance",
@@ -464,7 +634,10 @@ More Info: [www.detox.wtf](http://www.detox.wtf)`,
             slug: "chronik-0",
             src: "/projects/chronik-0",
             img_src: "/projects/chronik_0/img/chronik_0_thumbnail_20230809.jpg",
-            title: "Chronik 0",
+            title: {
+                en: "Chronik 0",
+                de: "Chronik 0",
+            },
             subtitle: {
                 en: "Video",
                 de: "Video",
@@ -631,7 +804,10 @@ Gibt mehr
             slug: "simple-present",
             src: "/projects/simple-present",
             img_src: "/projects/simple_present/img/simple_present_thumb.jpg",
-            title: "Simple Present",
+            title: {
+                en: "Simple Present",
+                de: "Simple Present",
+            },
             subtitle: {
                 en: "Voice, improvisation, performance, audio, live-audio, video",
                 de: "Stimme, Improvisation, Performance, Audio, Live-Audio, Video",
@@ -764,7 +940,10 @@ Gefördert durch initiative neue musik berlin e.V. `,
             src: "/projects/mama-rodina-lenin",
             img_src:
                 "/projects/mama_rodina_lenin/img/mama_rodina_lenin_thumbnail.png",
-            title: "Mum, Motherland, Lenin",
+            title: {
+                en: "Mum, Motherland, Lenin",
+                de: "Mama, Vaterland, Lenin",
+            },
             subtitle: {
                 en: "Audio, video, live audio, live video",
                 de: "Audio, Video, Live-Audio, Live-Video",
@@ -937,7 +1116,10 @@ Auf YouTube – ohne
             slug: "pseudoanarchy-of-demons",
             src: "/projects/pseudoanarchy-of-demons",
             img_src: "/projects/pseudoanarchy_of_demons/img/demons_thumb.jpg",
-            title: "Pseudoanarchy of Demons",
+            title: {
+                en: "Pseudoanarchy of Demons",
+                de: "Pseudoanarchy of Demons",
+            },
             subtitle: {
                 en: "Text",
                 de: "Text",
@@ -1018,7 +1200,10 @@ Auf YouTube – ohne
             src: "/projects/kak-ya-provel-eto-leto",
             img_src:
                 "/projects/how_i_spent_my_summer/img/how_i_spent_my_summer_post_thumb.jpg",
-            title: "How I spent my summer",
+            title: {
+                en: "How I spent my summer",
+                de: "How I spent my summer",
+            },
             subtitle: {
                 en: "Ensemble, audio, video",
                 de: "Ensemble, Audio, Video",
@@ -1125,7 +1310,10 @@ Gefördert durch Aksenov Family Foundation`,
             slug: "chronik-1",
             src: "/projec ts/chronik-1",
             img_src: "/projects/chronik_1/img/chronik_1_thumb.jpg",
-            title: "Chronik 1",
+            title: {
+                en: "Chronik 1",
+                de: "Chronik 1",
+            },
             subtitle: {
                 en: "Audio, video",
                 de: "Audio, Video",
@@ -1200,7 +1388,10 @@ Aufnahme: 06.07.2021, 07:26 (GMT +3)`,
             slug: "chetvertiy-dom",
             src: "/projects/chetvertiy-dom",
             img_src: "/projects/chetvertiy_dom/img/chetvertiy_dom_thumb.jpg",
-            title: "Chetvertiy Dom",
+            title: {
+                en: "Chetvertiy Dom",
+                de: "Chetvertiy Dom",
+            },
             subtitle: {
                 en: "Audio, video",
                 de: "Audio, Video",
@@ -1446,7 +1637,10 @@ RIP`,
             slug: "camp-kreuzberg",
             src: "/projects/camp-kreuzberg",
             img_src: "/projects/camp_kreuzberg/img/camp_kreuzberg_thumb.jpg",
-            title: "Camp Kreuzberg",
+            title: {
+                en: "Camp Kreuzberg",
+                de: "Camp Kreuzberg",
+            },
             subtitle: {
                 en: "Ensemble, audio, video, audience",
                 de: "Ensemble, Audio, Video, Publikum",
@@ -1579,7 +1773,10 @@ Kompositionsauftrag der Klangwerkstattt Berlin.`,
             src: "/projects/landscape-nc-045512-2",
             img_src:
                 "/projects/landscape_nc_045512_2/img/nc_045512_2_thumb.jpg",
-            title: "Landscape NC_045512.2",
+            title: {
+                en: "Landscape NC_045512.2",
+                de: "Landscape NC_045512.2",
+            },
             subtitle: {
                 en: "Transmedial",
                 de: "Transmedial",
@@ -1684,7 +1881,10 @@ Genaue Angaben:
             slug: "poem-11",
             src: "/projects/poem-11",
             img_src: "/projects/poem_11/img/poem_11_thumb.jpg",
-            title: "Poem 11",
+            title: {
+                en: "Poem 11",
+                de: "Poem 11",
+            },
             subtitle: {
                 en: "Ensemble, Audio, Video, Performance",
                 de: "Ensemble, Audio, Video, Performance",
@@ -1842,7 +2042,10 @@ Kompositionsauftrag des ensemble mosaik im Rahmen des Projektes UpToThree/Augmen
             src: "/projects/zuerst-die-koepfe",
             img_src:
                 "/projects/zuerst_die_koepfe/img/zuerst_die_koepfe_thumb.jpg",
-            title: "Zuerst die K\u00f6pfe",
+            title: {
+                en: "Zuerst die Köpfe",
+                de: "Zuerst die Köpfe",
+            },
             subtitle: {
                 en: "Installation, audio, video, sculpture",
                 de: "Installation, Audio, Video, Skulptur",
@@ -1937,7 +2140,10 @@ Auftragswerk von Gisela Nauck für 5. Diskurs: Musikalische Zeitfragen.`,
             src: "/projects/i-love-you-too-my-love",
             img_src:
                 "/projects/i_love_you_too_my_love/img/i_love_you_too_my_love_thumb.jpg",
-            title: "I love you too my love",
+            title: {
+                en: "I love you too my love",
+                de: "I love you too my love",
+            },
             subtitle: {
                 en: "Ensemble, audio, performance",
                 de: "Ensemble, Audio, Performance",
@@ -2069,7 +2275,10 @@ Kompositionsauftrag von Ensemble New Babylon finanziert durch die Ernst von Siem
             slug: "peep-show",
             src: "/projects/peep-show",
             img_src: "/projects/peep_show/img/peep_show_thumb.jpg",
-            title: "PEEP SHOW",
+            title: {
+                en: "PEEP SHOW",
+                de: "PEEP SHOW",
+            },
             subtitle: {
                 en: "Audio, video, performance",
                 de: "Audio, Video, Performance",
@@ -2322,7 +2531,10 @@ Die Arbeit erforscht und befragt die Verhältnisse zwischen den Objekten aus uns
             slug: "geldwaesche-2019",
             src: "/projects/geldwaesche-2019",
             img_src: "/projects/geldwaesche_2019/img/geldwaesche_thumb.jpg",
-            title: "Geldw\u00e4sche",
+            title: {
+                en: "Geldwäsche",
+                de: "Geldwäsche",
+            },
             subtitle: {
                 en: "Improvisation, music theatre",
                 de: "Improvisation, Musiktheater",
@@ -2434,7 +2646,10 @@ Wieland Möller – Drumset, Percussion`,
             slug: "mr-jock",
             src: "/projects/mr-jock",
             img_src: "/projects/mr_jock/img/mr_jock_thumb.jpg",
-            title: "Mr Jock",
+            title: {
+                en: "Mr Jock",
+                de: "Mr Jock",
+            },
             subtitle: {
                 en: "Ensemble, Audio, Video",
                 de: "Ensemble, Audio, Video",
@@ -2558,7 +2773,10 @@ Kompositionsauftrag von Neues Kollektiv München.`,
             slug: "hidden-in-plain-sight",
             src: "/projects/hidden-in-plain-sight",
             img_src: "/projects/hidden_in_plain_sight/img/hips_thumb.jpg",
-            title: "Hidden in plain sight",
+            title: {
+                en: "Hidden in plain sight",
+                de: "Hidden in plain sight",
+            },
             subtitle: {
                 en: "Ensemble, audio, video",
                 de: "Ensemble, Audio, Video",
@@ -2680,7 +2898,10 @@ Kompositionsauftrag von realtime. Forum Neue Musik und Ensemble New Babylon.`,
             slug: "music-for-piano",
             src: "/projects/music-for-piano",
             img_src: "/projects/music_for_piano/img/music_for_piano_thumb.jpg",
-            title: "Music for Piano",
+            title: {
+                en: "Music for Piano",
+                de: "Music for Piano",
+            },
             subtitle: {
                 en: "Piano, audio, video",
                 de: "Klavier, Audio, Video",
@@ -2784,7 +3005,10 @@ John Cage`,
             slug: "5-euro-piece",
             src: "/projects/5-euro-piece",
             img_src: "/projects/5_euro_piece/img/5europiece_thumb.jpg",
-            title: "5\u20ac-Piece",
+            title: {
+                en: "5€-Piece",
+                de: "5€-Piece",
+            },
             subtitle: {
                 en: "Bank note",
                 de: "Geldschein",
@@ -2864,7 +3088,10 @@ John Cage`,
             slug: "threesome",
             src: "/projects/threesome",
             img_src: "/projects/threesome/img/threesome_tumb.jpg",
-            title: "Threesome",
+            title: {
+                en: "Threesome",
+                de: "Threesome",
+            },
             subtitle: {
                 en: "Ensemble, audio, video",
                 de: "Ensemble, Audio, Video",
@@ -2997,7 +3224,10 @@ John Cage`,
             slug: "violince",
             src: "/projects/violince",
             img_src: "/projects/violince/img/violince_thumb.jpg",
-            title: "Violince",
+            title: {
+                en: "Violince",
+                de: "Violince",
+            },
             subtitle: {
                 en: "Ensemble, audio, improvisation",
                 de: "Ensemble, Audio, Improvisation",
@@ -3106,7 +3336,10 @@ Kompositionsauftrag von KLANK.`,
             src: "/projects/keyboardstueck-ii",
             img_src:
                 "/projects/keyboardstueck_ii/img/keyboardstueck_ii_thumb.jpg",
-            title: "Keyboardst\u00fcck II",
+            title: {
+                en: "Keyboardstück II",
+                de: "Keyboardstück II",
+            },
             subtitle: {
                 en: "Keyboard, audio, video",
                 de: "Keyboard, Audio, Video",
@@ -3312,7 +3545,10 @@ Bremen, 31. Mai 2013`,
             slug: "gehoerbildung",
             src: "/projects/gehoerbildung",
             img_src: "/projects/gehoerbildung/img/gehoerbildung_thumbnail.jpg",
-            title: "Ear Training",
+            title: {
+                en: "Ear Training",
+                de: "Gehörbildung",
+            },
             subtitle: {
                 en: "video",
                 de: "Video",
@@ -3389,7 +3625,10 @@ Bremen, 31. Mai 2013`,
             src: "/projects/new-national-anthem-of-russia",
             img_src:
                 "/projects/new_national_anthem_of_russia/img/new_national_anthem_of_russia_thumb.jpg",
-            title: "New National Anthem of Russia",
+            title: {
+                en: "New National Anthem of Russia",
+                de: "New National Anthem of Russia",
+            },
             subtitle: {
                 en: "Video",
                 de: "Video",
@@ -3472,7 +3711,10 @@ Die ASCII-Werte aller anderen Wörter werden in Akkorde übersetzt.`,
             src: "/projects/das-kapital-study",
             img_src:
                 "/projects/das_kapital_study/img/das_kapital_study_thumb.jpg",
-            title: "Das Kapital Study",
+            title: {
+                en: "Das Kapital Study",
+                de: "Das Kapital Study",
+            },
             subtitle: {
                 en: "Audio, Video",
                 de: "Audio, Video",
@@ -3558,7 +3800,10 @@ Die Impulse, die vom linken und rechten Kanal kommen, stehen für die Wörter Ar
             slug: "klavierstueck-i",
             src: "/projects/klavierstueck-i",
             img_src: "/projects/klavierstueck_i/img/klavierstueck_i_thumb.jpg",
-            title: "Klavierst\u00fcck I",
+            title: {
+                en: "Klavierstück I",
+                de: "Klavierstück I",
+            },
             subtitle: {
                 en: "Audio, video",
                 de: "Audio, Video",
@@ -3669,7 +3914,10 @@ dapd`,
             src: "/projects/keyboardstueck-iii",
             img_src:
                 "/projects/keyboardstueck_iii/img/keyboardstueck_iii_thumb.jpg",
-            title: "Klavierst\u00fcck III",
+            title: {
+                en: "Klavierstück III",
+                de: "Klavierstück III",
+            },
             subtitle: {
                 en: "Keyboard, audio, video",
                 de: "Keyboard, Audio, Video",
@@ -3770,7 +4018,10 @@ dapd`,
             src: "/projects/klavierstueck-iv",
             img_src:
                 "/projects/klavierstueck_iv/img/serialism_2_0_realisation_2_7_thumb.jpg",
-            title: "Klavierst\u00fcck IV",
+            title: {
+                en: "Klavierstück IV",
+                de: "Klavierstück IV",
+            },
             subtitle: {
                 en: "Audio, video",
                 de: "Audio, Video",
@@ -3842,7 +4093,10 @@ dapd`,
             src: "/projects/serialism-2-0-realisation-2-7",
             img_src:
                 "/projects/serialism_2_0_realisation_2_3/img/serialism_2_0_realisation_2_3_thumb.png",
-            title: "Serialismus 2.0 (Realisation 2.3)",
+            title: {
+                en: "Serialism 2.0 (Realisation 2.3)",
+                de: "Serialismus 2.0 (Realisation 2.3)",
+            },
             subtitle: {
                 en: "Audio, video",
                 de: "Audio, Video",
@@ -3930,7 +4184,10 @@ dapd`,
             src: "/projects/serialism-2-0-realisation-1",
             img_src:
                 "/projects/serialism_2_0_realisation_1/img/serialism_2_0_realisation_1_thumb.jpg",
-            title: "Serialismus 2.0 (Realisation 1)",
+            title: {
+                en: "Serialism 2.0 (Realisation 1)",
+                de: "Serialismus 2.0 (Realisation 1)",
+            },
             subtitle: {
                 en: "Installation",
                 de: "Installation",
@@ -4001,7 +4258,10 @@ dapd`,
             slug: "keyboardstueck-i",
             src: "/projects/keyboardstueck-i",
             img_src: "/projects/keyboardsueck_i/img/keyboardstueck_i_thumb.jpg",
-            title: "Keyboardst\u00fcck I",
+            title: {
+                en: "Keyboardstück I",
+                de: "Keyboardstück I",
+            },
             subtitle: {
                 en: "Keyboard, audio",
                 de: "Keyboard, Audio",
@@ -4097,7 +4357,10 @@ dapd`,
             src: "/projects/clear-moral-panic",
             img_src:
                 "/projects/clear_moral_panic/img/clear_moral_panic_thum.jpg",
-            title: "Clear moral panic",
+            title: {
+                en: "Clear moral panic",
+                de: "Clear moral panic",
+            },
             subtitle: {
                 en: "Ensemble",
                 de: "Ensemble",
@@ -4202,7 +4465,10 @@ Das neue Gesetz wurde als Ergebnis einer "reinen moralischen Panik" bezeichnet. 
             src: "/projects/blood-on-the-dancefloor",
             img_src:
                 "/projects/blood_on_the_dancefloor/img/blood_on_the_dancefloor_thumb.png",
-            title: "Blood on the dancefloor",
+            title: {
+                en: "Blood on the dancefloor",
+                de: "Blood on the dancefloor",
+            },
             subtitle: {
                 en: "Ensemble, audio",
                 de: "Ensemble, Audio",
@@ -4306,7 +4572,10 @@ Das Stück thematisiert die Fusion der akustisch profanen und kulturellen Räume
             src: "/projects/rendering-studies",
             img_src:
                 "/projects/rendering_studies/img/rendering_studies_thumb.jpg",
-            title: "Rendering Studies",
+            title: {
+                en: "Rendering Studies",
+                de: "Rendering Studies",
+            },
             subtitle: {
                 en: "Audio, Video",
                 de: "Audio, Video",
@@ -4382,7 +4651,10 @@ Das Stück thematisiert die Fusion der akustisch profanen und kulturellen Räume
             slug: "gehirn-im-tank",
             src: "/projects/gehirn-im-tank",
             img_src: "/projects/gehirn_im_tank/img/gehirn_im_tank_thumb.jpg",
-            title: "Gehirn im Tank",
+            title: {
+                en: "Brain in a Vat",
+                de: "Gehirn im Tank",
+            },
             subtitle: {
                 en: "Duo",
                 de: "Duo",
@@ -4479,7 +4751,10 @@ Das Stück thematisiert die Fusion der akustisch profanen und kulturellen Räume
             src: "/projects/boris-und-natascha",
             img_src:
                 "/projects/boris_und_natascha/img/boris_und_natascha_thumb.jpg",
-            title: "Boris und Natascha",
+            title: {
+                en: "Boris and Natasha",
+                de: "Boris und Natascha",
+            },
             subtitle: {
                 en: "Ensemble",
                 de: "Ensemble",
@@ -4584,7 +4859,10 @@ Bild: Avdei Ter-Oganian, Radikaler Abstraktionismus`,
             src: "/projects/480-und-60-schlaege",
             img_src:
                 "/projects/480_und_60_schlaege/img/480_und_60_schlaege_thumb.jpg",
-            title: "480 und 60 Schl\u00e4ge",
+            title: {
+                en: "480 und 60 Beats",
+                de: "480 und 60 Schläge",
+            },
             subtitle: {
                 en: "Duo",
                 de: "Duo",
@@ -4676,7 +4954,10 @@ Bild: Avdei Ter-Oganian, Radikaler Abstraktionismus`,
             slug: "mein-kreuzspiel",
             src: "/projects/mein-kreuzspiel",
             img_src: "/projects/mein_kreuzspiel/img/mein_kreuzspiel_thumb.png",
-            title: "Mein Kreuzspiel",
+            title: {
+                en: "Mein Kreuzspiel",
+                de: "Mein Kreuzspiel",
+            },
             subtitle: {
                 en: "Organ, audio",
                 de: "Orgel, Audio",

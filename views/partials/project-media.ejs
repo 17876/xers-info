@@ -17,9 +17,13 @@
   </div>
   <% }
     else if (project_media[i].type=="img") { %>
-    <div class="image-mount">
-  <img src=<%=project_media[i].src %>>
-  </div>
+    <div class="image-mount-label">
+      <div class="image-mount">
+        <img src=<%=project_media[i].src %>>
+      </div>
+      <%=project_media[i].label %>
+    </div>
+
   <% }
     else if (project_media[i].type=="gallery") { %>
   <%- include('gallery.ejs', { media: project_media[i] }) %>

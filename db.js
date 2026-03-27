@@ -251,11 +251,12 @@ module.exports = {
                 { $match: filter },
                 {
                     $project: {
-                        // unchanged
                         src: 1,
                         img_src: 1,
                         icon_src: 1,
-                        title: 1,
+                        title: {
+                            $getField: { field: language, input: "$title" },
+                        },
                         categories: 1,
                         tags: 1,
 
