@@ -1153,7 +1153,7 @@ Karl-Liebknecht-Str.
         {
             _id: 32,
             slug: "chronik-1",
-            src: "/projec ts/chronik-1",
+            src: "/projects/chronik-1",
             img_src: "/projects/chronik_1/img/chronik_1_thumb.jpg",
             title: {
                 en: "Chronik 1",
