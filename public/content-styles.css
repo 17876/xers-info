@@ -677,7 +677,7 @@
     /*****************************************/
     /*            SINGLE PROJECT PAGES       */
     /*****************************************/
-    .cat-analog-photography .proj-media img {
+    .cat-analog-photography .image-mount img {
         display: block;
         width: 100%;
         height: auto;
@@ -685,7 +685,7 @@
         border-radius: 0px;
     }
 
-    .cat-analog-photography .proj-media .image-mount {
+    .cat-analog-photography .image-mount {
         box-sizing: border-box;
         display: block;
         height: auto;
