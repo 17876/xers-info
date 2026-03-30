@@ -2,7 +2,6 @@ projects = {
     markdownFields: [
         "content[].label.*",
         "content[].value.*",
-        "subtitle.*",
         "meta.title.*",
         "meta.items[].label.*",
         "meta.items[].value[].*",
@@ -22,7 +21,7 @@ projects = {
                 de: "Analogfotographie",
             },
             categories: ["analog-photography"],
-            tags: ["personal", "past", "anti-colonial"],
+            tags: ["personal", "past", "anti-colonial", "palestine"],
             content: [
                 {
                     type: "text",

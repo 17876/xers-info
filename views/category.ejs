@@ -14,10 +14,12 @@
         <%- include('./partials/overlay-nav.ejs', {language: siteConfig.language, overlay_nav: catConfig.overlay_nav}) %>
       </div>
     </div>
+    
     <div class="category-content">
       <div class="tag-filters">
 
       </div>
+      
       <div class="projects-thumbnails">
           <% let empty = true;
           if (projects.length == 0) { %>
@@ -29,6 +31,7 @@
             <% }
           } %>
       </div>
+    
     </div>  
   </div>
         <%- include('./partials/footer.ejs', { language: siteConfig.language, siteConfig: siteConfig }) %>
