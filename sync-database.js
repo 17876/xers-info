@@ -21,7 +21,7 @@ const collections = {
 const uri = process.env.MONGODB_URI;
 
 const { MongoClient } = require("mongodb");
-//for version with promise
+// for version with promise
 // const { connectToDb, getDb, getClient, closeDb } = require("./db");
 
 const { applyMarkdownFields } = require("./utils");

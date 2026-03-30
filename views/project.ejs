@@ -28,10 +28,49 @@
       </div>
       <div class="proj-article-meta">
         <div class="proj-article">
-          <%- include('./partials/project-media.ejs', { project_media: project.media }) %>
-          <div class="proj-description">
-            <%- project.description %>
+        <% for (const cur_block of project.content) {
+          if (cur_block.type=="img") { %>
+            <div class="image-mount-label">
+              <div class="image-mount">
+                <img src=<%=cur_block.src %> >
+              </div>
+            <%-cur_block.label %>
+            </div>
+        
+        <% } else if (cur_block.type=="gallery") { %>
+            <%- include('./partials/gallery.ejs', { block: cur_block }) %>
+        
+        <% } else if (cur_block.type=="youtube") { %>
+          <div class="youtube-wrapper">
+            <div class="youtube-title">
+              <%- cur_block.label %>
+            </div>
+            <div class="iframe-container">
+              <iframe src=<%=cur_block.src %> frameborder="0" allowfullscreen class="youtube-video"></iframe>
+            </div>
           </div>
+        
+        <% } else if (cur_block.type=="vimeo") { %>
+          <div class="vimeo-wrapper">
+            <div class="vimeo-title">
+              <%- project_media[i].title %>
+            </div>
+            <div class="iframe-container">
+              <iframe src=<%=cur_block.src %> width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen class="vimeo-video"></iframe>
+            </div>
+          </div>
+  <% } else if (cur_block.type=="text") { %>
+          <div class="project-text">
+            <%- cur_block.value %>
+          </div>
+  <% } else if (cur_block.type=="spacer") { 
+          const classLine = `height: ${cur_block.spaceValue};`;
+    %>
+          <div style="<%=classLine %>" >
+          </div>
+  <% } 
+        }
+  %>  
         </div>
         <%- include('./partials/project-meta.ejs', { project_meta: project.meta }) %>
       </div>
@@ -44,8 +83,15 @@
 <script>
 // sliding footer
   const footer = document.getElementById("footer-front");
+  let footer_visible = false;
   document.getElementById("footer-nav-path").onclick = () => {
+    if (!footer_visible) {
     footer.classList.add("active");
+    footer_visible = true;
+    } else {
+      footer.classList.remove("active");
+      footer_visible = false;
+    }
   };
 
   document.getElementById("footer-close-icon").onclick = () => {

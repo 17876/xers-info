@@ -444,7 +444,8 @@
 /*****************************************/
 /*            SINGLE PROJECT PAGES       */
 /*****************************************/
-.cat-analog-photography .proj-media img {
+/*analog photography*/
+.cat-analog-photography .image-mount img {
     display: block;
     max-width: 95vh;
     max-height: 95vh;
@@ -456,7 +457,7 @@
     /* border: 10px solid rgb(38, 38, 38); */
 }
 
-.cat-analog-photography .proj-media .image-mount {
+.cat-analog-photography .image-mount {
     height: auto;
     width: fit-content;
     background: #ffffff;
@@ -466,13 +467,28 @@
     border-radius: 2px;
 }
 
-.cat-analog-photography .proj-media .image-mount-label {
-    margin-bottom: 150px;
+.image-mount-label {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
-.cat-analog-photography .proj-media > :last-child {
+/* .image-mount-label p {
+    display: inline;
+    background-color: #ffffff;
+} */
+
+/* .cat-analog-photography .image-mount-label {
+    margin-bottom: 2em;
+} */
+/* 
+.cat-analog-photography .proj-article > :last-child {
     margin-bottom: 50px;
-}
+} */
+
+/* .cat-analog-photography .proj-article > * {
+    margin-bottom: 0;
+} */
 
 .cat-analog-photography .proj-article {
     flex: 0 1 95vh;

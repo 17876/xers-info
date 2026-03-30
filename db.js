@@ -260,58 +260,83 @@ module.exports = {
                         categories: 1,
                         tags: 1,
 
-                        // simple multilingual fields
                         subtitle: {
                             $getField: { field: language, input: "$subtitle" },
                         },
-                        description: {
-                            $getField: {
-                                field: language,
-                                input: "$description",
-                            },
-                        },
 
-                        media: {
+                        content: {
                             $map: {
-                                input: "$media",
-                                as: "m",
+                                input: "$content",
+                                as: "block",
                                 in: {
-                                    type: "$$m.type",
-
-                                    // multilingual label
+                                    type: "$$block.type",
                                     label: {
                                         $cond: {
                                             if: {
-                                                $eq: [
-                                                    { $type: "$$m.label" },
-                                                    "object",
+                                                $in: [
+                                                    "$$block.type",
+                                                    [
+                                                        "img",
+                                                        "youtube",
+                                                        "gallery",
+                                                    ],
                                                 ],
                                             },
                                             then: {
                                                 $getField: {
                                                     field: language,
-                                                    input: "$$m.label",
+                                                    input: "$$block.label",
                                                 },
                                             },
-                                            else: "$$m.label",
+                                            else: "$$REMOVE",
                                         },
                                     },
-
-                                    // Now handle 3 possible types
+                                    value: {
+                                        $cond: {
+                                            if: {
+                                                $in: ["$$block.type", ["text"]],
+                                            },
+                                            then: {
+                                                $getField: {
+                                                    field: language,
+                                                    input: "$$block.value",
+                                                },
+                                            },
+                                            else: "$$REMOVE",
+                                        },
+                                    },
+                                    spaceValue: {
+                                        $cond: {
+                                            if: {
+                                                $in: [
+                                                    "$$block.type",
+                                                    ["spacer"],
+                                                ],
+                                            },
+                                            then: "$$block.spaceValue",
+                                            else: "$$REMOVE",
+                                        },
+                                    },
+                                    // now handle 3 possible types
                                     src: {
                                         $cond: {
                                             if: {
                                                 $and: [
                                                     {
                                                         $ne: [
-                                                            "$$m.type",
+                                                            "$$block.type",
                                                             "gallery",
                                                         ],
                                                     },
-                                                    { $ne: ["$$m.src", null] },
+                                                    {
+                                                        $ne: [
+                                                            "$$block.src",
+                                                            null,
+                                                        ],
+                                                    },
                                                 ],
                                             },
-                                            then: "$$m.src",
+                                            then: "$$block.src",
                                             else: "$$REMOVE",
                                         },
                                     },
@@ -320,11 +345,14 @@ module.exports = {
                                     images: {
                                         $cond: {
                                             if: {
-                                                $eq: ["$$m.type", "gallery"],
+                                                $eq: [
+                                                    "$$block.type",
+                                                    "gallery",
+                                                ],
                                             },
                                             then: {
                                                 $map: {
-                                                    input: "$$m.images",
+                                                    input: "$$block.images",
                                                     as: "img",
                                                     in: {
                                                         src: "$$img.src",

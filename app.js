@@ -275,6 +275,7 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
         const tagsArray = tags.split(",");
         projFilter.tags = { $in: tagsArray };
     }
+
     const pipelineProject = makePipeline("project", language, projFilter);
     const wantsJSON = req.headers.accept?.includes("application/json");
     //only projects with tags when using filter
@@ -310,7 +311,6 @@ app.get("/:lang(de|en)/category=:cat", (req, res) => {
                             .then((result) => {
                                 const projects = result;
                                 res.status(200);
-
                                 res.render("category", {
                                     siteConfig: siteConfig,
                                     catConfig: catConfig,

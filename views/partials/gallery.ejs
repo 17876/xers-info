@@ -1,11 +1,12 @@
 <div class="gallery-wrapper">
-  <p class="gallery-title"><%- media.title %></p>
+  <div class="gallery-title">
+    <%- block.label %>
+  </div>
   <div class="flex-container">
     <div class="gallery-container">
-
-      <% for (var j = 0; j< media.images.length; j++) { %>
-      <a href="<%=media.images[j].src%>" target="_blank">
-        <img src="<%=media.images[j].src %>" style="<%=media.images[j].style %>">
+      <% for (var j = 0; j< block.images.length; j++) { %>
+      <a href="<%=block.images[j].src%>" target="_blank">
+        <img src="<%=block.images[j].src %>" style="<%=block.images[j].style %>">
       </a>
       <% } %>
     </div>

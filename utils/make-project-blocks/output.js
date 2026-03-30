@@ -1,7 +1,6 @@
 projects = {
     markdownFields: [
-        "content[].label.*",
-        "content[].value.*",
+        "description.*",
         "subtitle.*",
         "meta.title.*",
         "meta.items[].label.*",
@@ -25,266 +24,187 @@ projects = {
             tags: ["personal", "past", "anti-colonial"],
             content: [
                 {
-                    type: "text",
-                    value: {
-                        en: `More than twenty-five years had passed since this roll of film last saw the light — until I found it in the mothball-scented drawer of my grandfather’s desk.
-
-I came to Cherepovets for my Granny’s funeral. A year earlier, my father had died. I didn’t go then: I was so afraid that I fell ill. I convinced myself they wouldn’t let me board the plane because COVID had not yet been fully normalised. The cold passed, but the wound carved by the fear did not. When I received a message from my mother saying that her mother had died, I bought a ticket. On that trip, I found peace with myself after my father’s death.`,
-
-                        de: `Mehr als fünfundzwanzig Jahre waren vergangen, seit diese Filmrolle zuletzt das Licht gesehen hatte, bis ich sie in der nach Mottenkugeln riechenden Schublade im Schreibtisch meines Großvaters fand.
-
-Ich kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Vater gestorben. Damals fuhr ich nicht hin: Ich hatte solche Angst, dass ich krank wurde. Ich redete mir ein, man würde mich nicht ins Flugzeug lassen, weil COVID noch nicht vollständig normalisiert war. Die Erkältung ging vorbei, doch die Wunde, die die Angst hinterlassen hatte, blieb. Als ich von meiner Mutter die Nachricht vom Tod ihrer Mutter erhielt, kaufte ich sofort ein Ticket. Auf dieser Reise fand ich nach dem Tod meines Vaters Frieden mit mir selbst.`,
-                    },
-                },
-                {
                     type: "img",
                     label: {
-                        en: "More than a half of my Grandfather",
-                        de: "Mehr als eine Hälfte meines Opas",
+                        en: "Test",
+                        de: "Test",
                     },
                     src: "/projects/im_a_bad_jew/img/01_pol-deda.jpg",
                 },
                 {
-                    type: "text",
-                    value: {
-                        en: `I stepped into the empty apartment. As a child, I often stayed with Granny. When I came down with pneumonia, I lived here for two months. Now there was only emptiness filled with memory. The ticking clock, the creaking dresser, the lower cabinet door that could neither be opened nor closed because of the pressure of Dreiser’s collected works on the shelf above — everything radiated time.`,
-                        de: `Ich betrat die leere Wohnung. Als Kind war ich oft bei der Oma. Als ich an einer Lungenentzündung erkrankte, lebte ich zwei Monate hier. Jetzt war da nur Leere, erfüllt von Erinnerung. Die tickende Uhr, die knarrende Kommode, die untere Schranktür, die sich wegen des Drucks von Dreisers gesammelten Werken im Regal darüber weder öffnen noch schließen ließ – alles strahlte Zeit aus.`,
-                    },
-                },
-                {
                     type: "img",
                     label: {
-                        en: "Frame 16",
-                        de: "Aufnahme 16",
-                    },
-                    src: "/projects/im_a_bad_jew/img/16.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "Frame 17",
-                        de: "Aufnahme 17",
-                    },
-                    src: "/projects/im_a_bad_jew/img/17.jpg",
-                },
-                {
-                    type: "text",
-                    value: {
-                        en: `I came here with a purpose. I wanted to feel this frozen space, abandoned by time; to find objects that held particular value for me, objects filled with secret meaning, objects that had absorbed my time and were therefore full of my life.
-
-The room was long and narrow: on the left, a bed with a radiola at its head; then an armchair where Granny would sit and talk to me, repeating story after story in her struggle against loneliness, as if trying to keep me there a little longer. In the end, I would leave. Behind the bed stood a mirror brought from Nazi Germany as a trophy, now superstitiously covered with a white bed sheet. Along the right wall stood a long wardrobe, and behind it a desk. The two walls converged at a window, which closed off the room and opened onto Metallurgov-Street.
-
-I walked to the end of the room and sat down at the desk. Above it hung a portrait of Vysotsky with a guitar. As I rummaged through the drawers, I felt an incredible, almost childlike joy — as if I had found a treasure. I hurried to the photo studio „Contrast“ on Lenin Street and left the film to be developed.`,
-                        de: `Ich kam mit einem Ziel hierher. Ich wollte diesen eingefrorenen, von der Zeit verlassenen Raum spüren; Gegenstände finden, die für mich einen besonderen Wert hatten, Dinge voller geheimer Bedeutung, Dinge, die meine Zeit absorbiert hatten und deshalb von meinem Leben erfüllt waren.
-
-Das Zimmer war lang und schmal: links ein Bett mit einer Radiola am Kopfende; dann ein Sessel, in dem meine Großmutter saß und mit mir sprach, immer wieder dieselben Geschichten erzählend in ihrem Kampf gegen die Einsamkeit, als wollte sie mich noch ein wenig länger bei sich behalten. Am Ende ging ich doch. Hinter dem Bett stand ein Spiegel, als Trophäe aus Nazideutschland mitgebracht, nun abergläubisch mit einem weißen Bettlaken verhängt. An der rechten Wand stand ein langer Kleiderschrank, dahinter ein Schreibtisch. Die beiden Wände liefen auf ein Fenster zu, das den Raum abschloss und auf die Metallurgov-Straße hinausging.
-
-Ich ging ans Ende des Zimmers und setzte mich an den Schreibtisch. Über ihm hing ein Porträt von Wyssozki mit einer Gitarre. Als ich in den Schubladen wühlte, verspürte ich eine unglaubliche, fast kindliche Freude – als hätte ich einen Schatz gefunden. Ich eilte zum Fotostudio „Kontrast“ in der Lenin-Straße und gab den Film zur Entwicklung ab.`,
-                    },
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "Our house, frame 7",
-                        de: "Unser Haus, Aufnahme 7",
-                    },
-                    src: "/projects/im_a_bad_jew/img/07_dom.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "Our neighbours’ house behind the apple tree, frame 6",
-                        de: "Das Haus unserer Nachbarn hinter dem Apfelbaum, Aufnahme 6",
-                    },
-                    src: "/projects/im_a_bad_jew/img/06_dom_gusevykh.jpg",
-                },
-                {
-                    type: "text",
-                    value: {
-                        en: `
-                        \\***
-
-                        Furhad gave me a Zenit camera, a developing tank, and photographic chemicals. With that gift, he set in motion the search for my past.
-
-My grandmother had a colleague from the construction trust who practiced photography professionally. I don’t remember how it happened, but somehow my father got everything necessary for black-and-white photography from her and taught me how to develop and print. Or perhaps we learned together — I don’t remember exactly. There were books and trips to the shop „Goluboy Ekran” („Blue Screen“ in Russian) for photographic paper and chemicals.
-
-At some point, I abandoned all of it. I forgot. We forget out of idleness, out of the seeming insignificance of an event, or out of pain. Sometimes we forget because we are forced to. And the longer I live, the less time remains for me, and the more time belongs to the past. What is forgotten grows.
-
-The Zenit camera became an invitation from oblivion into the present. I imagine it as a kind of pump with which I can draw time from the past into the present, constantly replenishing the supply of life I have left. As if it were immortality.
-
-There are only a few successful frames on the film, and I can only partially reconstruct the circumstances in which they were taken.
-
-Aunt Fira – my grandfather’s sister – came from Moscow to our dacha. Apparently, we spent some time in the village and then went back together to Moscow to visit the grave of their parents – my great-grandparents, about whom I know almost nothing. Their surname was Zarzhevskiy. A Jewish surname was of little help in the USSR, so my grandfather changed it to Zarzhavskiy — with an „a” — and changed his nationality in his Soviet passport to Ukrainian. In the photograph the original surname, Zarzhevskiy, is engraved on the gravestones of my great-grandparents.`,
-                        de: `\\***
-                        Furhad schenkte mir eine Zenit-Kamera, einen Entwicklungstank und Fotochemikalien. Mit diesem Geschenk setzte er die Suche nach meiner Vergangenheit in Gang.
-
-Meine Großmutter hatte eine Kollegin aus dem Baukombinat, die Fotografie professionell betrieb. Ich erinnere mich nicht genau, wie es geschah, aber irgendwie bekam mein Vater von ihr alles Notwendige für die Schwarzweißfotografie und brachte mir das Entwickeln und Vergrößern bei. Oder vielleicht lernten wir es gemeinsam – ich weiß es nicht mehr genau. Es gab Bücher und Fahrten in das Geschäft „Goluboj Ekran“ („Blauer Bildschirm“ auf Russisch), um Fotopapier und Chemikalien zu kaufen.
-
-Irgendwann ließ ich das alles hinter mir. Ich vergaß. Man vergisst aus Trägheit, aus der scheinbaren Bedeutungslosigkeit eines Ereignisses oder aus Schmerz. Manchmal vergisst man, weil man dazu gezwungen wird. Und je länger ich lebe, desto weniger Zeit bleibt mir, und desto mehr Zeit gehört der Vergangenheit. Das Vergessene wächst.
-
-Die Zenit-Kamera wurde zu einer Einladung aus dem Vergessen in die Gegenwart. Ich stelle sie mir wie eine Art Pumpe vor, mit der ich Zeit aus der Vergangenheit in die Gegenwart umpumpen kann, um die Zeit, die mir noch bleibt, immer wieder aufzufüllen. Als wäre es Unsterblichkeit.
-
-Auf dem Film sind nur wenige gelungene Aufnahmen, und ich kann die Umstände, unter denen sie entstanden sind, nur teilweise rekonstruieren.
-
-Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Datscha. Offenbar verbrachten wir im Dorf einige Zeit und fuhren dann nach Moskau zurück, um das Grab ihrer Eltern – meiner Urgroßmutter und meines Urgroßvaters –, über die ich fast nichts weiß –, zu besuchen. Ihr Nachname war Zarzhevskiy. Ein jüdischer Nachname war in der UdSSR wenig hilfreich, daher änderte mein Großvater ihn zu Zarzhavskiy – mit einem „a“ – und ließ in seinem sowjetischen Pass seine Nationalität in Ukrainer ändern. Der ursprüngliche Name, Zarzhevskiy, ist auf den Grabsteinen auf dem Foto eingraviert.`,
-                    },
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "Me and my Grandfather at our Dacha, frame 2",
-                        de: "Ich und mein Opa in unserer Datscha, Aufnahme 2",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/02_me_and_ded.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Aunt Fira and my Grandfather in Moscow, frame 9",
-                        de: "Tante Fira und mein Opa in Moskau, Aufnahme 9",
-                    },
-                    src: "/projects/im_a_bad_jew/img/09_t_fira_and_ded-1.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "Aunt Fira and my Grandfather in Moscow, frame 10",
-                        de: "Tante Fira und mein Opa in Moskau, Aufnahme 10",
-                    },
-                    src: "/projects/im_a_bad_jew/img/10_t_fira_and_ded-2.jpg",
-                },
-
-                {
-                    type: "img",
-                    label: {
-                        en: "The grave of my great-grandparents, frame 14",
-                        de: "Das Grab meine Urgroßeltern, Aufnahme 14",
-                    },
-                    src: "/projects/im_a_bad_jew/img/14_cemetery-1.jpg",
-                },
-                {
-                    type: "text",
-                    value: {
-                        en: `My father’s family name is Vasilyev; I know little about it as well. As is customary in Russia, a child is given only the father’s surname. My mother did not change hers after marriage — she remained Zarzhavskaya. The simple surname Vasilyev causes difficulties for non-Russian speakers in Germany, both in spelling and pronunciation. For a long time, I was embarrassed and tried writing „Wassiljew” to correct the sound somewhat, otherwise it was always „Fazilief”. Now I have stopped being ashamed and stopped adjusting. I even complicated matters by adding Zarzhevskiy as a second surname – with an „e” – Vasilyev-Zarzhevskiy.
-
-I am a descendant of people who survived Stalin’s purges. Now I speak more often about my Jewish roots. Now I live in Germany. More than that, I am its citizen. My Granny used to repeat, „Oh come on, they’re completely different people there now”. My illusions collapsed when I realised that here they are not completely „completely different people”, and that the German narrative still contains antisemitic mechanisms, instrumentalising Jewishness to maintain power – as before, only now with the opposite sign. During the Nazi dictatorship, Jews were not considered as individuals by the Nazis; instead only the projection of Jews through the Nazi lens was considered. Today’s German projection is simple: a „good Jew” is above all a Zionist, a figure who confirms the fairy tale about the „good German“, the fairy tale of how Germany successfully overcame fascism, cleansed itself of fascism, and built a liberal democracy. And if you are not that kind of Jew in Germany, you are a bad Jew. And I am a bad Jew.
-
-I am a witness to how Germany supports genocide, occupation, and apartheid in Palestine, instrumentalising Jewishness to preserve its power and imperial ambitions. And I am even glad that my Granny is no longer alive to witness all this.
-
-This photographic project is an act of personal resistance, an act of refusing enforced oblivion and a notion of progress that destroys time. It is an act of reconnecting with roots and an attempt to reclaim a past stolen by the imperial rule.`,
-                        de: `Der Familienname meines Vaters ist Vasilyev; auch darüber weiß ich wenig. Wie in Russland üblich trägt ein Kind nur den Namen des Vaters. Meine Mutter änderte ihren Namen nach der Heirat nicht – sie blieb Zarzhavskaya. Der einfache Name Vasilyev bereitet nicht-russischsprachigen Menschen in Deutschland Schwierigkeiten, sowohl in der Schreibweise als auch in der Aussprache. Lange Zeit schämte ich mich und schrieb „Wassiljew“, um den Klang etwas zu korrigieren, sonst wurde er stets „Fasilief“ ausgesprochen. Inzwischen habe ich aufgehört, mich zu schämen und mich anzupassen. Ich habe es sogar komplizierter gemacht und Zarzhevsky als zweiten Nachnamen hinzugefügt. Mit einem „e“. Vasilyev-Zarzhevskiy.
-
-Ich bin ein Nachfahre von Menschen, die Stalins Säuberungen überlebten. Heute spreche ich häufiger über meine jüdischen Wurzeln. Heute lebe ich in Deutschland. Mehr noch: Ich bin sein Staatsangehöriger. Meine Großmutter pflegte zu sagen: „Ach was, das sind heute ganz andere Menschen dort“. Meine Illusionen zerbrachen, als ich erkannte, dass es hier nicht ganz „ganz andere Menschen“ sind und dass das deutsche Narrativ weiterhin antisemitische Mechanismen enthält, die Jüdischsein instrumentalisieren, um Macht zu sichern – wie früher, nur mit umgekehrtem Vorzeichen.  Während der NS-Diktatur wurden Juden von den Nazis nicht als Individuen betrachtet; stattdessen wurde nur die Projektion der Juden durch die Nazi-Linse wahrgenommen.
-Die heutige deutsche Projektion ist einfach: Ein „guter Jude“ ist vor allem ein Zionist, eine Figur, die das Märchen vom „guten Deutschen“ bestätigt – das Märchen davon, wie Deutschland den Faschismus erfolgreich überwunden, sich vom Faschismus gereinigt und eine liberale Demokratie aufgebaut hat. Und wenn du in Deutschland kein solcher Jude bist, dann bist du ein „schlechter Jude“. Und ich bin ein schlechter Jude.
-
-Ich bin Zeuge, wie Deutschland Völkermord, Besatzung und Apartheid in Palästina unterstützt und dabei Jüdischsein instrumentalisiert, um seine Macht und imperialen Ambitionen zu bewahren. Und ich bin sogar froh, dass meine Oma all das nicht mehr erleben muss.
-
-Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigerung gegenüber dem erzwungenen Vergessen und einer Fortschrittsidee, die Zeit zerstört. Es ist ein Akt der Rückverbindung mit Wurzeln und ein Versuch, eine von imperialer Herrschaft geraubte Vergangenheit zurückzuholen.`,
-                    },
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: "My Grandfather and Tom, frame 3",
-                        de: "Mein Opa und Tom, Aufnahme 3",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/03_ded_and_tom.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Tom, frame 4",
-                        de: "Tom, Aufnahme 4",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/04_tom-1.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Tom, frame 5",
-                        de: "Tom, Aufnahme 5",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/05_tom-2.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Tom, frame 8",
-                        de: "Tom, Aufnahme 8",
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/06_dom_gusevykh.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/07_dom.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/08_tom-3.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Aunt Fira and me, frame 11",
-                        de: "Tante Fira und ich, Aufnahme 11",
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/09_t_fira_and_ded-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/10_t_fira_and_ded-2.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/11_t_fira_and_me-1.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Aunt Fira and me, frame 12",
-                        de: "Tante Fira und ich, Aufnahme 12",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/12_t_fira_and_me-2.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Me and my Grandfather in Moscow, frame 13",
-                        de: "Ich und mein Opa in Moskau, Aufnahme 13",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/13_me_and_ded_in_moscow.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "The grave of my great-grandparents, frame 18",
-                        de: "Das Grab meine Urgroßeltern, Aufnahme 18",
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/14_cemetery-1.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/16.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
+                    },
+                    src: "/projects/im_a_bad_jew/img/17.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/18.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "The grave of my great-grandparents, frame 19",
-                        de: "Das Grab meine Urgroßeltern, Aufnahme 19",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/19.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "My relatives, frame 20",
-                        de: "Meine Verwandten, Aufnahme 20",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/20.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "My relatives, frame 21",
-                        de: "Meine Verwandten, Aufnahme 21",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/21.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Aunt Fira (?), frame 22",
-                        de: "Tante Fira (?), Aufnahme 22",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/22.jpg",
                 },
                 {
                     type: "img",
                     label: {
-                        en: "Aunt Fira, frame 23",
-                        de: "Tante Fira, Aufnahme 23",
+                        en: "",
+                        de: "",
                     },
                     src: "/projects/im_a_bad_jew/img/23.jpg",
+                },
+                {
+                    type: "text",
+                    value: {
+                        en: "More than twenty-five years had passed since this roll of film last saw the light — until I found it in the mothball-scented drawer of my grandfather’s desk.\n\nI came to Cherepovets for my Granny’s funeral. A year earlier, my father had died. I didn’t go then: I was so afraid that I fell ill. I convinced myself they wouldn’t let me board the plane because COVID had not yet been fully normalised. The cold passed, but the wound carved by the fear did not. When I received a message from my mother saying that her mother had died, I bought a ticket. On that trip, I found peace with myself after my father’s death.\n\nI stepped into the empty apartment. As a child, I often stayed with Granny. When I came down with pneumonia, I lived here for two months. Now there was only emptiness filled with memory. The ticking clock, the creaking dresser, the lower cabinet door that could neither be opened nor closed because of the pressure of Dreiser’s collected works on the shelf above — everything radiated time.\n\nI came here with a purpose. I wanted to feel this frozen space, abandoned by time; to find objects that held particular value for me, objects filled with secret meaning, objects that had absorbed my time and were therefore full of my life.\n\nThe room was long and narrow: on the left, a bed with a radiola at its head; then an armchair where Granny would sit and talk to me, repeating story after story in her struggle against loneliness, as if trying to keep me there a little longer. In the end, I would leave. Behind the bed stood a mirror brought from Nazi Germany as a trophy, now superstitiously covered with a white bed sheet. Along the right wall stood a long wardrobe, and behind it a desk. The two walls converged at a window, which closed off the room and opened onto Metallurgov-Street.\n\nI walked to the end of the room and sat down at the desk. Above it hung a portrait of Vysotsky with a guitar. As I rummaged through the drawers, I felt an incredible, almost childlike joy — as if I had found a treasure. I hurried to the photo studio „Contrast“ on Lenin Street and left the film to be developed.\n\n\n###### *\n\n\nFurhad gave me a Zenit camera, a developing tank, and photographic chemicals. With that gift, he set in motion the search for my past.\n\nMy grandmother had a colleague from the construction trust who practiced photography professionally. I don’t remember how it happened, but somehow my father got everything necessary for black-and-white photography from her and taught me how to develop and print. Or perhaps we learned together — I don’t remember exactly. There were books and trips to the shop „Goluboy Ekran” („Blue Screen“ in Russian) for photographic paper and chemicals.\n\nAt some point, I abandoned all of it. I forgot. We forget out of idleness, out of the seeming insignificance of an event, or out of pain. Sometimes we forget because we are forced to. And the longer I live, the less time remains for me, and the more time belongs to the past. What is forgotten grows.\n\nThe Zenit camera became an invitation from oblivion into the present. I imagine it as a kind of pump with which I can draw time from the past into the present, constantly replenishing the supply of life I have left. As if it were immortality.\n\nThere are only a few successful frames on the film, and I can only partially reconstruct the circumstances in which they were taken.\n\nAunt Fira – my grandfather’s sister – came from Moscow to our dacha. Apparently, we spent some time in the village and then went back together to Moscow to visit the grave of their parents – my great-grandparents, about whom I know almost nothing. Their surname was Zarzhevskiy. A Jewish surname was of little help in the USSR, so my grandfather changed it to Zarzhavskiy — with an „a” — and changed his nationality in his Soviet passport to Ukrainian. In the photograph the original surname, Zarzhevskiy, is engraved on the gravestones of my great-grandparents.\n\nMy father’s family name is Vasilyev; I know little about it as well. As is customary in Russia, a child is given only the father’s surname. My mother did not change hers after marriage — she remained Zarzhavskaya. The simple surname Vasilyev causes difficulties for non-Russian speakers in Germany, both in spelling and pronunciation. For a long time, I was embarrassed and tried writing „Wassiljew” to correct the sound somewhat, otherwise it was always „Fazilief”. Now I have stopped being ashamed and stopped adjusting. I even complicated matters by adding Zarzhevskiy as a second surname – with an „e”. Vasilyev-Zarzhevskiy.\n\nI am a descendant of people who survived Stalin’s purges. Now I speak more often about my Jewish roots. Now I live in Germany. More than that, I am its citizen. My Granny used to repeat, „Oh come on, they’re completely different people there now”. My illusions collapsed when I realised that here they are not completely „completely different people”, and that the German narrative still contains antisemitic mechanisms, instrumentalising Jewishness to maintain power – as before, only now with the opposite sign. During the Nazi dictatorship, Jews were not considered as individuals by the Nazis; instead only the projection of Jews through the Nazi lens was considered. Today’s German projection is simple: a „good Jew” is above all a Zionist, a figure who confirms the fairy tale about the „good German“, the fairy tale of how Germany successfully overcame fascism, cleansed itself of fascism, and built a liberal democracy. And if you are not that kind of Jew in Germany, you are a bad Jew. And I am a bad Jew.\n\nI am a witness to how Germany supports genocide, occupation, and apartheid in Palestine, instrumentalising Jewishness to preserve its power and imperial ambitions. And I am even glad that my Granny is no longer alive to witness all this.\n\nThis photographic project is an act of personal resistance, an act of refusing enforced oblivion and a notion of progress that destroys time. It is an act of reconnecting with roots and an attempt to reclaim a past stolen by the imperial rule.",
+                        de: "\nMehr als fünfundzwanzig Jahre waren vergangen, seit diese Filmrolle zuletzt das Licht gesehen hatte, bis ich sie in der nach Mottenkugeln riechenden Schublade im Schreibtisch meines Großvaters fand.\n\nIch kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Vater gestorben. Damals fuhr ich nicht hin: Ich hatte solche Angst, dass ich krank wurde. Ich redete mir ein, man würde mich nicht ins Flugzeug lassen, weil COVID noch nicht vollständig normalisiert war. Die Erkältung ging vorbei, doch die Wunde, die die Angst hinterlassen hatte, blieb. Als ich von meiner Mutter die Nachricht vom Tod ihrer Mutter erhielt, kaufte ich sofort ein Ticket. Auf dieser Reise fand ich nach dem Tod meines Vaters Frieden mit mir selbst.\n\nIch betrat die leere Wohnung. Als Kind war ich oft bei der Oma. Als ich an einer Lungenentzündung erkrankte, lebte ich zwei Monate hier. Jetzt war da nur Leere, erfüllt von Erinnerung. Die tickende Uhr, die knarrende Kommode, die untere Schranktür, die sich wegen des Drucks von Dreisers gesammelten Werken im Regal darüber weder öffnen noch schließen ließ – alles strahlte Zeit aus.\n\nIch kam mit einem Ziel hierher. Ich wollte diesen eingefrorenen, von der Zeit verlassenen Raum spüren; Gegenstände finden, die für mich einen besonderen Wert hatten, Dinge voller geheimer Bedeutung, Dinge, die meine Zeit absorbiert hatten und deshalb von meinem Leben erfüllt waren.\n\nDas Zimmer war lang und schmal: links ein Bett mit einer Radiola am Kopfende; dann ein Sessel, in dem meine Großmutter saß und mit mir sprach, immer wieder dieselben Geschichten erzählend in ihrem Kampf gegen die Einsamkeit, als wollte sie mich noch ein wenig länger bei sich behalten. Am Ende ging ich doch. Hinter dem Bett stand ein Spiegel, als Trophäe aus Nazideutschland mitgebracht, nun abergläubisch mit einem weißen Bettlaken verhängt. An der rechten Wand stand ein langer Kleiderschrank, dahinter ein Schreibtisch. Die beiden Wände liefen auf ein Fenster zu, das den Raum abschloss und auf die Metallurgov-Straße hinausging.\n\nIch ging ans Ende des Zimmers und setzte mich an den Schreibtisch. Über ihm hing ein Porträt von Wyssozki mit einer Gitarre. Als ich in den Schubladen wühlte, verspürte ich eine unglaubliche, fast kindliche Freude – als hätte ich einen Schatz gefunden. Ich eilte zum Fotostudio „Kontrast“ in der Lenin-Straße und gab den Film zur Entwicklung ab.\n\n\n###### *\n\n\nFurhad schenkte mir eine Zenit-Kamera, einen Entwicklungstank und Fotochemikalien. Mit diesem Geschenk setzte er die Suche nach meiner Vergangenheit in Gang.\n\nMeine Großmutter hatte eine Kollegin aus dem Baukombinat, die Fotografie professionell betrieb. Ich erinnere mich nicht genau, wie es geschah, aber irgendwie bekam mein Vater von ihr alles Notwendige für die Schwarzweißfotografie und brachte mir das Entwickeln und Vergrößern bei. Oder vielleicht lernten wir es gemeinsam – ich weiß es nicht mehr genau. Es gab Bücher und Fahrten in das Geschäft „Goluboj Ekran“ („Blauer Bildschirm“ auf Russisch), um Fotopapier und Chemikalien zu kaufen.\n\nIrgendwann ließ ich das alles hinter mir. Ich vergaß. Man vergisst aus Trägheit, aus der scheinbaren Bedeutungslosigkeit eines Ereignisses oder aus Schmerz. Manchmal vergisst man, weil man dazu gezwungen wird. Und je länger ich lebe, desto weniger Zeit bleibt mir, und desto mehr Zeit gehört der Vergangenheit. Das Vergessene wächst.\n\nDie Zenit-Kamera wurde zu einer Einladung aus dem Vergessen in die Gegenwart. Ich stelle sie mir wie eine Art Pumpe vor, mit der ich Zeit aus der Vergangenheit in die Gegenwart umpumpen kann, um die Zeit, die mir noch bleibt, immer wieder aufzufüllen. Als wäre es Unsterblichkeit.\n\nAuf dem Film sind nur wenige gelungene Aufnahmen, und ich kann die Umstände, unter denen sie entstanden sind, nur teilweise rekonstruieren.\n\nTante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Datscha. Offenbar verbrachten wir im Dorf einige Zeit und fuhren dann nach Moskau zurück, um das Grab ihrer Eltern – meiner Urgroßmutter und meines Urgroßvaters –, über die ich fast nichts weiß –, zu besuchen. Ihr Nachname war Zarzhevskiy. Ein jüdischer Nachname war in der UdSSR wenig hilfreich, daher änderte mein Großvater ihn zu Zarzhavskiy – mit einem „a“ – und ließ in seinem sowjetischen Pass seine Nationalität in Ukrainer ändern. Der ursprüngliche Name, Zarzhevskiy, ist auf den Grabsteinen auf dem Foto eingraviert.\n\nDer Familienname meines Vaters ist Vasilyev; auch darüber weiß ich wenig. Wie in Russland üblich trägt ein Kind nur den Namen des Vaters. Meine Mutter änderte ihren Namen nach der Heirat nicht – sie blieb Zarzhavskaya. Der einfache Name Vasilyev bereitet nicht-russischsprachigen Menschen in Deutschland Schwierigkeiten, sowohl in der Schreibweise als auch in der Aussprache. Lange Zeit schämte ich mich und schrieb „Wassiljew“, um den Klang etwas zu korrigieren, sonst wurde er stets „Fasilief“ ausgesprochen. Inzwischen habe ich aufgehört, mich zu schämen und mich anzupassen. Ich habe es sogar komplizierter gemacht und Zarzhevsky als zweiten Nachnamen hinzugefügt. Mit einem „e“. Vasilyev-Zarzhevskiy.\n\nIch bin ein Nachfahre von Menschen, die Stalins Säuberungen überlebten. Heute spreche ich häufiger über meine jüdischen Wurzeln. Heute lebe ich in Deutschland. Mehr noch: Ich bin sein Staatsangehöriger. Meine Großmutter pflegte zu sagen: „Ach was, das sind heute ganz andere Menschen dort“. Meine Illusionen zerbrachen, als ich erkannte, dass es hier nicht ganz „ganz andere Menschen“ sind und dass das deutsche Narrativ weiterhin antisemitische Mechanismen enthält, die Jüdischsein instrumentalisieren, um Macht zu sichern – wie früher, nur mit umgekehrtem Vorzeichen.  Während der NS-Diktatur wurden Juden von den Nazis nicht als Individuen betrachtet; stattdessen wurde nur die Projektion der Juden durch die Nazi-Linse wahrgenommen.\nDie heutige deutsche Projektion ist einfach: Ein „guter Jude“ ist vor allem ein Zionist, eine Figur, die das Märchen vom „guten Deutschen“ bestätigt – das Märchen davon, wie Deutschland den Faschismus erfolgreich überwunden, sich vom Faschismus gereinigt und eine liberale Demokratie aufgebaut hat. Und wenn du in Deutschland kein solcher Jude bist, dann bist du ein „schlechter Jude“. Und ich bin ein schlechter Jude.\n\nIch bin Zeuge, wie Deutschland Völkermord, Besatzung und Apartheid in Palästina unterstützt und dabei Jüdischsein instrumentalisiert, um seine Macht und imperialen Ambitionen zu bewahren. Und ich bin sogar froh, dass meine Oma all das nicht mehr erleben muss.\n\nDieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigerung gegenüber dem erzwungenen Vergessen und einer Fortschrittsidee, die Zeit zerstört. Es ist ein Akt der Rückverbindung mit Wurzeln und ein Versuch, eine von imperialer Herrschaft geraubte Vergangenheit zurückzuholen.",
+                    },
                 },
             ],
             meta: {
@@ -350,89 +270,51 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
             tags: ["protest", "palestine", "anti-colonial"],
             content: [
                 {
+                    type: "img",
+                    label: {
+                        en: "Berlin\n                        Karl-Liebknecht-Str.\n                        52°31’10.841’’N\n                        13°24’14.09’’E",
+                        de: "Berlin\n                        Karl-Liebknecht-Str.\n                        52°31’10.841’’N\n                        13°24’14.09’’E",
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_01.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                        de: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_02.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                        de: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_03.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                        de: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_04.jpg",
+                },
+                {
+                    type: "img",
+                    label: {
+                        en: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                        de: "Berlin\n                        Neptunbrunnen Alexanderplatz\n                        52°31’10.974’’N\n                        13°24’20.084’’E",
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/all_eyes_on_gaza_202509_post_05.jpg",
+                },
+                {
                     type: "text",
                     value: {
-                        en: `2025-09-27
-Berlin
-Protest "All Eyes On Gaza" `,
-                        de: `2025-09-27
-Berlin
-Demonstration "All Eyes On Gaza" `,
+                        en: '2025-09-27\nBerlin\nProtest "All Eyes On Gaza"',
+                        de: '2025-09-27\nBerlin\nDemonstration "All Eyes On Gaza"',
                     },
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                        de: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/23a.jpg",
-                },
-                {
-                    type: "spacer",
-                    spaceValue: "5em",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                        de: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/28a.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                        de: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/29a.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                        de: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/30a.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Karl-Liebknecht-Str.
-52°31’10.841’’N
-13°24’14.09’’E`,
-                        de: `Berlin
-Karl-Liebknecht-Str.
-52°31’10.841’’N
-13°24’14.09’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/31a.jpg",
                 },
             ],
             meta: {
