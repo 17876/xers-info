@@ -41,7 +41,7 @@ Ich kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Va
                         en: "More than a half of my Grandfather",
                         de: "Mehr als eine Hälfte meines Opas",
                     },
-                    src: "/projects/im_a_bad_jew/img/01_pol-deda.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_01_pol-deda.jpg",
                 },
                 {
                     type: "text",
@@ -56,7 +56,7 @@ Ich kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Va
                         en: "Frame 16",
                         de: "Aufnahme 16",
                     },
-                    src: "/projects/im_a_bad_jew/img/16.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_16.jpg",
                 },
                 {
                     type: "img",
@@ -64,7 +64,7 @@ Ich kam zur Beerdigung meiner Oma nach Tscherepovets. Ein Jahr zuvor war mein Va
                         en: "Frame 17",
                         de: "Aufnahme 17",
                     },
-                    src: "/projects/im_a_bad_jew/img/17.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_17.jpg",
                 },
                 {
                     type: "text",
@@ -87,7 +87,7 @@ Ich ging ans Ende des Zimmers und setzte mich an den Schreibtisch. Über ihm hin
                         en: "Our house, frame 7",
                         de: "Unser Haus, Aufnahme 7",
                     },
-                    src: "/projects/im_a_bad_jew/img/07_dom.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_07_dom.jpg",
                 },
                 {
                     type: "img",
@@ -95,7 +95,7 @@ Ich ging ans Ende des Zimmers und setzte mich an den Schreibtisch. Über ihm hin
                         en: "Our neighbours’ house behind the apple tree, frame 6",
                         de: "Das Haus unserer Nachbarn hinter dem Apfelbaum, Aufnahme 6",
                     },
-                    src: "/projects/im_a_bad_jew/img/06_dom_gusevykh.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_06_dom_gusevykh.jpg",
                 },
                 {
                     type: "text",
@@ -134,7 +134,7 @@ Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Da
                         en: "Me and my Grandfather at our Dacha, frame 2",
                         de: "Ich und mein Opa in unserer Datscha, Aufnahme 2",
                     },
-                    src: "/projects/im_a_bad_jew/img/02_me_and_ded.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_02_me_and_ded.jpg",
                 },
                 {
                     type: "img",
@@ -142,7 +142,7 @@ Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Da
                         en: "Aunt Fira and my Grandfather in Moscow, frame 9",
                         de: "Tante Fira und mein Opa in Moskau, Aufnahme 9",
                     },
-                    src: "/projects/im_a_bad_jew/img/09_t_fira_and_ded-1.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_09_t_fira_and_ded-1.jpg",
                 },
                 {
                     type: "img",
@@ -150,7 +150,7 @@ Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Da
                         en: "Aunt Fira and my Grandfather in Moscow, frame 10",
                         de: "Tante Fira und mein Opa in Moskau, Aufnahme 10",
                     },
-                    src: "/projects/im_a_bad_jew/img/10_t_fira_and_ded-2.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_10_t_fira_and_ded-2.jpg",
                 },
 
                 {
@@ -159,7 +159,7 @@ Tante Fira – die Schwester meines Großvaters – kam aus Moskau zu unserer Da
                         en: "The grave of my great-grandparents, frame 14",
                         de: "Das Grab meine Urgroßeltern, Aufnahme 14",
                     },
-                    src: "/projects/im_a_bad_jew/img/14_cemetery-1.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_14_cemetery-1.jpg",
                 },
                 {
                     type: "text",
@@ -187,7 +187,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "My Grandfather and Tom, frame 3",
                         de: "Mein Opa und Tom, Aufnahme 3",
                     },
-                    src: "/projects/im_a_bad_jew/img/03_ded_and_tom.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_03_ded_and_tom.jpg",
                 },
                 {
                     type: "img",
@@ -195,7 +195,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Tom, frame 4",
                         de: "Tom, Aufnahme 4",
                     },
-                    src: "/projects/im_a_bad_jew/img/04_tom-1.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_04_tom-1.jpg",
                 },
                 {
                     type: "img",
@@ -203,7 +203,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Tom, frame 5",
                         de: "Tom, Aufnahme 5",
                     },
-                    src: "/projects/im_a_bad_jew/img/05_tom-2.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_05_tom-2.jpg",
                 },
                 {
                     type: "img",
@@ -211,7 +211,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Tom, frame 8",
                         de: "Tom, Aufnahme 8",
                     },
-                    src: "/projects/im_a_bad_jew/img/08_tom-3.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_08_tom-3.jpg",
                 },
                 {
                     type: "img",
@@ -219,7 +219,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Aunt Fira and me, frame 11",
                         de: "Tante Fira und ich, Aufnahme 11",
                     },
-                    src: "/projects/im_a_bad_jew/img/11_t_fira_and_me-1.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_11_t_fira_and_me-1.jpg",
                 },
                 {
                     type: "img",
@@ -227,7 +227,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Aunt Fira and me, frame 12",
                         de: "Tante Fira und ich, Aufnahme 12",
                     },
-                    src: "/projects/im_a_bad_jew/img/12_t_fira_and_me-2.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_12_t_fira_and_me-2.jpg",
                 },
                 {
                     type: "img",
@@ -235,7 +235,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Me and my Grandfather in Moscow, frame 13",
                         de: "Ich und mein Opa in Moskau, Aufnahme 13",
                     },
-                    src: "/projects/im_a_bad_jew/img/13_me_and_ded_in_moscow.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_13_me_and_ded_in_moscow.jpg",
                 },
                 {
                     type: "img",
@@ -243,7 +243,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "The grave of my great-grandparents, frame 18",
                         de: "Das Grab meine Urgroßeltern, Aufnahme 18",
                     },
-                    src: "/projects/im_a_bad_jew/img/18.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_18.jpg",
                 },
                 {
                     type: "img",
@@ -251,7 +251,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "The grave of my great-grandparents, frame 19",
                         de: "Das Grab meine Urgroßeltern, Aufnahme 19",
                     },
-                    src: "/projects/im_a_bad_jew/img/19.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_19.jpg",
                 },
                 {
                     type: "img",
@@ -259,7 +259,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "My relatives, frame 20",
                         de: "Meine Verwandten, Aufnahme 20",
                     },
-                    src: "/projects/im_a_bad_jew/img/20.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_20.jpg",
                 },
                 {
                     type: "img",
@@ -267,7 +267,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "My relatives, frame 21",
                         de: "Meine Verwandten, Aufnahme 21",
                     },
-                    src: "/projects/im_a_bad_jew/img/21.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_21.jpg",
                 },
                 {
                     type: "img",
@@ -275,7 +275,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Aunt Fira (?), frame 22",
                         de: "Tante Fira (?), Aufnahme 22",
                     },
-                    src: "/projects/im_a_bad_jew/img/22.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_22.jpg",
                 },
                 {
                     type: "img",
@@ -283,7 +283,7 @@ Dieses fotografische Projekt ist ein Akt persönlichen Widerstands, eine Weigeru
                         en: "Aunt Fira, frame 23",
                         de: "Tante Fira, Aufnahme 23",
                     },
-                    src: "/projects/im_a_bad_jew/img/23.jpg",
+                    src: "/projects/im_a_bad_jew/img/1867_frame_23.jpg",
                 },
             ],
             meta: {
@@ -371,11 +371,22 @@ Neptunbrunnen Alexanderplatz
 52°31’10.974’’N
 13°24’20.084’’E`,
                     },
-                    src: "/projects/all_eyes_on_gaza_202509/img/23a.jpg",
+                    src: "/projects/all_eyes_on_gaza_202509/img/ytle6-251002-1_frame_23a.jpg",
                 },
+
                 {
-                    type: "spacer",
-                    spaceValue: "5em",
+                    type: "img",
+                    label: {
+                        en: `Berlin
+Neptunbrunnen Alexanderplatz
+52°31’10.974’’N
+13°24’20.084’’E`,
+                        de: `Berlin
+Neptunbrunnen Alexanderplatz
+52°31’10.974’’N
+13°24’20.084’’E`,
+                    },
+                    src: "/projects/all_eyes_on_gaza_202509/img/ytle6-251002-1_frame_28a.jpg",
                 },
                 {
                     type: "img",
@@ -389,7 +400,7 @@ Neptunbrunnen Alexanderplatz
 52°31’10.974’’N
 13°24’20.084’’E`,
                     },
-                    src: "/projects/all_eyes_on_gaza_202509/img/28a.jpg",
+                    src: "/projects/all_eyes_on_gaza_202509/img/ytle6-251002-1_frame_29a.jpg",
                 },
                 {
                     type: "img",
@@ -403,21 +414,7 @@ Neptunbrunnen Alexanderplatz
 52°31’10.974’’N
 13°24’20.084’’E`,
                     },
-                    src: "/projects/all_eyes_on_gaza_202509/img/29a.jpg",
-                },
-                {
-                    type: "img",
-                    label: {
-                        en: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                        de: `Berlin
-Neptunbrunnen Alexanderplatz
-52°31’10.974’’N
-13°24’20.084’’E`,
-                    },
-                    src: "/projects/all_eyes_on_gaza_202509/img/30a.jpg",
+                    src: "/projects/all_eyes_on_gaza_202509/img/ytle6-251002-1_frame_30a.jpg",
                 },
                 {
                     type: "img",
@@ -431,7 +428,7 @@ Karl-Liebknecht-Str.
 52°31’10.841’’N
 13°24’14.09’’E`,
                     },
-                    src: "/projects/all_eyes_on_gaza_202509/img/31a.jpg",
+                    src: "/projects/all_eyes_on_gaza_202509/img/ytle6-251002-1_frame_31a.jpg",
                 },
             ],
             meta: {
