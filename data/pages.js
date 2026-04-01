@@ -38,8 +38,8 @@ pages = {
                 {
                     label: "about1",
                     value: {
-                        en: "Today is January 14th, 2026, and I refuse to write about myself in the third person. My name is Anton Vasilyev-Zarzhevskiy. I&#8217;m a composer, field recordist, analog photographer, performer and non-artist. I also work as a sound engineer, predominantly in the contemporary music and sound art scenes.<br>I love time, and I hate empire.<br>I search for ways of making sounds and images &#8212; music, photography, and video &#8212; that oppose the imperial logic of alienation, constant expansion, and unlimited growth.",
-                        de: "Heute ist der 14. Januar 2026, und ich weigere mich, &#252;ber mich selbst in der dritten Person zu schreiben. Mein Name ist Anton Vasilyev-Zarzhevskiy. Ich bin Komponist, Field-Recordist, Analogfotograf, Performer und Nicht-K&#252;nstler. Au&#223;erdem arbeite ich als Toningenieur, vorwiegend in den Szenen der zeitgen&#246;ssischen Musik und Klangkunst.<br>Ich liebe Zeit, und ich hasse das Imperium.<br>Ich suche nach Wegen, Kl&#228;nge und Bilder zu schaffen &#8212; Musik, Fotografie und Video &#8212; die sich der imperialen Logik von Entfremdung, st&#228;ndiger Expansion und unbegrenztem Wachstum widersetzen.",
+                        en: "Today is April 1st, 2026, and I refuse to write about myself in the third person. My name is Anton Vasilyev-Zarzhevskiy. I&#8217;m a composer, field recordist, analog photographer, performer and non-artist. I also work as a sound engineer, predominantly in the contemporary music and sound art scenes.<br>I love time, and I hate empire.<br>I search for ways of making sounds and images &#8212; music, photography, and video &#8212; that oppose the imperial logic of alienation, constant expansion, and unlimited growth.",
+                        de: "Heute ist der 1. April 2026, und ich weigere mich, &#252;ber mich selbst in der dritten Person zu schreiben. Mein Name ist Anton Vasilyev-Zarzhevskiy. Ich bin Komponist, Field-Recordist, Analogfotograf, Performer und Nicht-K&#252;nstler. Au&#223;erdem arbeite ich als Toningenieur, vorwiegend in den Szenen der zeitgen&#246;ssischen Musik und Klangkunst.<br>Ich liebe Zeit, und ich hasse das Imperium.<br>Ich suche nach Wegen, Kl&#228;nge und Bilder zu schaffen &#8212; Musik, Fotografie und Video &#8212; die sich der imperialen Logik von Entfremdung, st&#228;ndiger Expansion und unbegrenztem Wachstum widersetzen.",
                     },
                 },
                 {
@@ -80,8 +80,8 @@ pages = {
                 {
                     label: "about7",
                     value: {
-                        en: "I was given only my father&#8217;s surname. I later reclaimed my maternal surname. I wanted to become a mathematician. Instead of that I became what I am now. Last year I decided to pursue a master&#8217;s degree in Mathematics. I live in Berlin.",
-                        de: "Ich erhielt nur den Nachnamen meines Vaters. Sp&#228;ter eignete ich mir meinen m&#252;tterlichen Nachnamen an. Ich wollte Mathematiker werden. Stattdessen wurde ich das, was ich heute bin. Im 2024 entschied ich mich, einen Masterstudiengang in Mathematik aufzunehmen. Ich lebe in Berlin.",
+                        en: `I was given only my father’s surname. I later reclaimed my maternal surname. I wanted to become a mathematician. Instead of that I became what I am now. In 2024 I decided to pursue a master’s degree in Mathematics. In 2025 I had a mental breakdown. I no longer pursue a master’s degree in Mathematics. I live in Berlin.`,
+                        de: `Ich erhielt nur den Nachnamen meines Vaters. Später eignete ich mir meinen mütterlichen Nachnamen an. Ich wollte Mathematiker werden. Stattdessen wurde ich das, was ich heute bin. Im 2024 entschied ich mich, einen Masterstudiengang in Mathematik aufzunehmen. Im 2025 hatte ich einen Nervenzusammenbruch. Ich verfolge keinen Master in Mathematik mehr. Ich lebe in Berlin.`,
                     },
                 },
             ],

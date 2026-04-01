@@ -116,8 +116,8 @@ tags = {
         {
             key: "protest",
             label: {
-                en: "Protest",
-                de: "Demonstration",
+                en: "protest",
+                de: "demonstration",
             },
         },
         {
@@ -130,22 +130,22 @@ tags = {
         {
             key: "anti-colonial",
             label: {
-                en: "Anti-Colonial",
-                de: "Antikolonial",
+                en: "anti-Colonial",
+                de: "antikolonial",
             },
         },
         {
             key: "personal",
             label: {
-                en: "Personal",
-                de: "Persönlich",
+                en: "personal",
+                de: "persönlich",
             },
         },
         {
             key: "past",
             label: {
-                en: "Past",
-                de: "Vergangenheit",
+                en: "past",
+                de: "vergangenheit",
             },
         },
     ],
