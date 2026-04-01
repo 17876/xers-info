@@ -130,7 +130,7 @@ tags = {
         {
             key: "anti-colonial",
             label: {
-                en: "anti-Colonial",
+                en: "anti-colonial",
                 de: "antikolonial",
             },
         },
