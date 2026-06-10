@@ -27,7 +27,7 @@ events = {
         {
             _id: 66,
             past: 0,
-            title: "[I’m a bad Jew(/projects/im_a_bad_jew",
+            title: "[I’m a bad Jew](/projects/im_a_bad_jew)",
             subtitle: {
                 en: "Analog Photography",
                 de: "Analogfotografie",
@@ -43,8 +43,8 @@ events = {
                 },
             },
             venue: {
-                en: "tba",
-                de: "tba",
+                en: "Venue: tba",
+                de: "Ort: tba",
             },
             collab: {
                 label: {
