@@ -25,6 +25,72 @@ events = {
             extra: null,
         },
         {
+            _id: 66,
+            past: 0,
+            title: "[I’m a bad Jew(/projects/im_a_bad_jew",
+            subtitle: {
+                en: "Analog Photography",
+                de: "Analogfotografie",
+            },
+            datetime: {
+                en: {
+                    date: "Sep 18th – Sep 20th, 2026",
+                    time: "",
+                },
+                de: {
+                    date: "18. – 20.09.2026",
+                    time: "",
+                },
+            },
+            venue: {
+                en: "tba",
+                de: "tba",
+            },
+            collab: {
+                label: {
+                    en: "At:",
+                    de: "Bei:",
+                },
+                value: [
+                    "[collecting dreams festival](https://collectingdreamsfestival.de)",
+                ],
+            },
+            description: null,
+            extra: null,
+        },
+        {
+            _id: 65,
+            past: 1,
+            title: "[DETOX /// Money Laundering](/projects/money-laundering)",
+            subtitle: {
+                en: "Live music / performance",
+                de: "Live-Musik / Performance",
+            },
+            datetime: {
+                en: {
+                    date: "Apr 18th, 2026",
+                    time: "1PM, 3PM, 5PN",
+                },
+                de: {
+                    date: "18.04.2026",
+                    time: "13:00, 15:00, 17:00",
+                },
+            },
+            venue: {
+                en: "Basement of Gro\u00dfbeerenstr. 19, 10963 Berlin",
+                de: "Keller der Gro\u00dfbeerenstr. 19, 10963 Berlin",
+            },
+            collab: {
+                label: {
+                    en: "With:",
+                    de: "Mit:",
+                },
+                value: ["[Maja von Kriegstein](https://majavonkriegstein.eu)"],
+            },
+            description: null,
+            extra: null,
+        },
+        {
             _id: 64,
             past: 1,
             title: "Echo Chamber",
@@ -374,7 +440,7 @@ events = {
             title: "[DETOX /// Money Laundering](/projects/money-laundering)",
             subtitle: {
                 en: "Live music / performance",
-                de: "Live Musik / Performance",
+                de: "Live-Musik / Performance",
             },
             datetime: {
                 en: {
@@ -406,7 +472,7 @@ events = {
             title: "[DETOX /// Money Laundering](/projects/money-laundering)",
             subtitle: {
                 en: "Live music / performance",
-                de: "Live Musik / Performance",
+                de: "Live-Musik / Performance",
             },
             datetime: {
                 en: {
@@ -502,7 +568,7 @@ events = {
             title: "[DETOX /// Money Laundering](/projects/money-laundering)",
             subtitle: {
                 en: "Live music / performance",
-                de: "Live Musik / Performance",
+                de: "Live-Musik / Performance",
             },
             datetime: {
                 en: {
@@ -534,7 +600,7 @@ events = {
             title: "[DETOX /// Money Laundering](/projects/money-laundering)",
             subtitle: {
                 en: "Live music / performance",
-                de: "Live Musik / Performance",
+                de: "Live-Musik / Performance",
             },
             datetime: {
                 en: {
